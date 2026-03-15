@@ -1,0 +1,14 @@
+chartbook.db
+*.db-wal
+*.db-shm
+*.db-journal
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pdf_pages/

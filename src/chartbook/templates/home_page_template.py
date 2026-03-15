@@ -1,0 +1,45 @@
+HTML_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Poultry Dashboard Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/split-dashboard.css">
+</head>
+<body>
+<div class="shell">
+  <header class="hero">
+    <div>
+      <div class="hero-tag">Poultry Intelligence</div>
+      <h1>Choose a dedicated dashboard</h1>
+      <p>The chartbook is now split into focused egg and broiler dashboards so each industry can carry its own storyline, cadence, and chart set.</p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-card"><span>Updated</span><strong>__UPDATED__</strong></div>
+      <div class="meta-card"><span>Egg Coverage</span><strong>Monthly chartbook-inspired egg view</strong></div>
+      <div class="meta-card"><span>Broiler Coverage</span><strong>Wholesale, supply, storage, and retail view</strong></div>
+    </div>
+  </header>
+
+  <section class="chooser">
+    <a class="chooser-card" href="egg-dashboard.html">
+      <h2>Egg Industry Dashboard</h2>
+      <p>Egg market pricing, HPAI layer impacts, egg production, rate of lay, breeder flock, pullets, breaker flow, and chartbook-style egg industry coverage.</p>
+      <strong>Open egg dashboard →</strong>
+    </a>
+    <a class="chooser-card" href="broiler-dashboard.html">
+      <h2>Broiler Industry Dashboard</h2>
+      <p>Broiler wholesale cuts, placements, hatchery activity, cold storage, retail pricing, and feature activity in a dedicated broiler view.</p>
+      <strong>Open broiler dashboard →</strong>
+    </a>
+  </section>
+
+  <div class="footer">Home page updated __UPDATED__.</div>
+</div>
+</body>
+</html>
+"""

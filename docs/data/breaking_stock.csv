@@ -1,0 +1,557 @@
+report_date,egg_type,price_low,price_high,avg_price,avg_price_prev,price_unit
+2025-02-03,Breaking Stock,390.0,441.0,425.75,,Cents Per Dozen
+2025-02-03,Undergrades,426.0,430.0,428.0,,Cents Per Dozen
+2025-02-04,Breaking Stock,440.0,575.0,484.5,425.75,Cents Per Dozen
+2025-02-04,Undergrades,451.0,455.0,453.0,428.0,Cents Per Dozen
+2025-02-05,Breaking Stock,440.0,575.0,518.75,484.5,Cents Per Dozen
+2025-02-05,Undergrades,479.0,483.0,481.0,453.0,Cents Per Dozen
+2025-02-06,Breaking Stock,485.0,575.0,537.0,518.75,Cents Per Dozen
+2025-02-06,Undergrades,507.0,511.0,509.0,481.0,Cents Per Dozen
+2025-02-07,Breaking Stock,548.0,640.0,584.5,537.0,Cents Per Dozen
+2025-02-07,Undergrades,542.0,546.0,544.0,509.0,Cents Per Dozen
+2025-02-10,Breaking Stock,575.0,640.0,597.5,584.5,Cents Per Dozen
+2025-02-10,Undergrades,577.0,581.0,579.0,544.0,Cents Per Dozen
+2025-02-11,Breaking Stock,608.0,640.0,620.25,597.5,Cents Per Dozen
+2025-02-11,Undergrades,602.0,606.0,604.0,579.0,Cents Per Dozen
+2025-02-12,Breaking Stock,616.0,640.0,627.25,620.25,Cents Per Dozen
+2025-02-12,Undergrades,616.0,620.0,618.0,604.0,Cents Per Dozen
+2025-02-13,Breaking Stock,612.0,646.0,633.25,627.25,Cents Per Dozen
+2025-02-13,Undergrades,631.0,635.0,633.0,618.0,Cents Per Dozen
+2025-02-14,Breaking Stock,612.0,646.0,633.25,633.25,Cents Per Dozen
+2025-02-14,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-18,Breaking Stock,612.0,646.0,633.75,633.25,Cents Per Dozen
+2025-02-18,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-19,Breaking Stock,595.0,646.0,629.5,633.75,Cents Per Dozen
+2025-02-19,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-20,Breaking Stock,595.0,646.0,629.5,629.5,Cents Per Dozen
+2025-02-20,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-21,Breaking Stock,605.0,648.0,632.5,629.5,Cents Per Dozen
+2025-02-21,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-24,Breaking Stock,598.0,648.0,630.75,632.5,Cents Per Dozen
+2025-02-24,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-25,Breaking Stock,598.0,648.0,630.75,630.75,Cents Per Dozen
+2025-02-25,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-26,Breaking Stock,601.0,648.0,631.5,630.75,Cents Per Dozen
+2025-02-26,Undergrades,631.0,635.0,633.0,633.0,Cents Per Dozen
+2025-02-27,Breaking Stock,601.0,648.0,630.25,631.5,Cents Per Dozen
+2025-02-27,Undergrades,626.0,630.0,628.0,633.0,Cents Per Dozen
+2025-02-28,Breaking Stock,516.0,640.0,604.75,630.25,Cents Per Dozen
+2025-02-28,Undergrades,621.0,625.0,623.0,628.0,Cents Per Dozen
+2025-03-03,Breaking Stock,496.0,616.0,583.75,604.75,Cents Per Dozen
+2025-03-03,Undergrades,601.0,605.0,603.0,623.0,Cents Per Dozen
+2025-03-04,Breaking Stock,475.0,601.0,564.75,583.75,Cents Per Dozen
+2025-03-04,Undergrades,581.0,585.0,583.0,603.0,Cents Per Dozen
+2025-03-05,Breaking Stock,475.0,574.0,538.5,564.75,Cents Per Dozen
+2025-03-05,Undergrades,559.0,563.0,561.0,583.0,Cents Per Dozen
+2025-03-06,Breaking Stock,376.0,550.0,503.75,538.5,Cents Per Dozen
+2025-03-06,Undergrades,534.0,538.0,536.0,561.0,Cents Per Dozen
+2025-03-07,Breaking Stock,340.0,519.0,467.25,503.75,Cents Per Dozen
+2025-03-07,Undergrades,504.0,508.0,506.0,536.0,Cents Per Dozen
+2025-03-10,Breaking Stock,340.0,496.0,451.25,467.25,Cents Per Dozen
+2025-03-10,Undergrades,474.0,478.0,476.0,506.0,Cents Per Dozen
+2025-03-11,Breaking Stock,340.0,475.0,429.0,451.25,Cents Per Dozen
+2025-03-11,Undergrades,440.0,444.0,442.0,476.0,Cents Per Dozen
+2025-03-12,Breaking Stock,260.0,446.0,362.75,429.0,Cents Per Dozen
+2025-03-12,Undergrades,390.0,394.0,392.0,442.0,Cents Per Dozen
+2025-03-13,Breaking Stock,260.0,380.0,342.75,362.75,Cents Per Dozen
+2025-03-13,Undergrades,355.0,359.0,357.0,392.0,Cents Per Dozen
+2025-03-14,Breaking Stock,226.0,340.0,282.75,342.75,Cents Per Dozen
+2025-03-14,Undergrades,320.0,324.0,322.0,357.0,Cents Per Dozen
+2025-03-17,Breaking Stock,220.0,310.0,267.25,282.75,Cents Per Dozen
+2025-03-17,Undergrades,295.0,299.0,297.0,322.0,Cents Per Dozen
+2025-03-18,Breaking Stock,220.0,290.0,257.25,267.25,Cents Per Dozen
+2025-03-18,Undergrades,275.0,279.0,277.0,297.0,Cents Per Dozen
+2025-03-19,Breaking Stock,220.0,285.0,254.75,257.25,Cents Per Dozen
+2025-03-19,Undergrades,270.0,274.0,272.0,277.0,Cents Per Dozen
+2025-03-20,Breaking Stock,250.0,285.0,269.75,254.75,Cents Per Dozen
+2025-03-20,Undergrades,270.0,274.0,272.0,272.0,Cents Per Dozen
+2025-03-21,Breaking Stock,245.0,280.0,262.5,269.75,Cents Per Dozen
+2025-03-21,Undergrades,260.0,264.0,262.0,272.0,Cents Per Dozen
+2025-03-24,Breaking Stock,245.0,267.0,257.0,262.5,Cents Per Dozen
+2025-03-24,Undergrades,252.0,256.0,254.0,262.0,Cents Per Dozen
+2025-03-25,Breaking Stock,226.0,259.0,247.0,257.0,Cents Per Dozen
+2025-03-25,Undergrades,244.0,248.0,246.0,254.0,Cents Per Dozen
+2025-03-26,Breaking Stock,230.0,258.0,246.25,247.0,Cents Per Dozen
+2025-03-26,Undergrades,238.0,242.0,240.0,246.0,Cents Per Dozen
+2025-03-27,Breaking Stock,226.0,258.0,241.75,246.25,Cents Per Dozen
+2025-03-27,Undergrades,238.0,242.0,240.0,240.0,Cents Per Dozen
+2025-03-28,Breaking Stock,226.0,258.0,241.75,241.75,Cents Per Dozen
+2025-03-28,Undergrades,238.0,242.0,240.0,240.0,Cents Per Dozen
+2025-03-31,Breaking Stock,226.0,258.0,241.75,241.75,Cents Per Dozen
+2025-03-31,Undergrades,238.0,242.0,240.0,240.0,Cents Per Dozen
+2025-04-01,Breaking Stock,226.0,253.0,240.25,241.75,Cents Per Dozen
+2025-04-01,Undergrades,238.0,242.0,240.0,240.0,Cents Per Dozen
+2025-04-02,Breaking Stock,231.0,253.0,245.0,240.25,Cents Per Dozen
+2025-04-02,Undergrades,238.0,242.0,240.0,240.0,Cents Per Dozen
+2025-04-03,Breaking Stock,231.0,252.0,243.5,245.0,Cents Per Dozen
+2025-04-03,Undergrades,235.0,239.0,237.0,240.0,Cents Per Dozen
+2025-04-04,Breaking Stock,231.0,250.0,241.5,243.5,Cents Per Dozen
+2025-04-04,Undergrades,232.0,236.0,234.0,237.0,Cents Per Dozen
+2025-04-07,Breaking Stock,231.0,245.0,238.75,241.5,Cents Per Dozen
+2025-04-07,Undergrades,229.0,233.0,231.0,234.0,Cents Per Dozen
+2025-04-08,Breaking Stock,231.0,245.0,238.75,238.75,Cents Per Dozen
+2025-04-08,Undergrades,229.0,233.0,231.0,231.0,Cents Per Dozen
+2025-04-09,Breaking Stock,235.0,250.0,242.5,238.75,Cents Per Dozen
+2025-04-09,Undergrades,229.0,233.0,231.0,231.0,Cents Per Dozen
+2025-04-10,Breaking Stock,235.0,250.0,242.75,242.5,Cents Per Dozen
+2025-04-10,Undergrades,229.0,233.0,231.0,231.0,Cents Per Dozen
+2025-04-11,Breaking Stock,235.0,250.0,242.75,242.75,Cents Per Dozen
+2025-04-11,Undergrades,229.0,233.0,231.0,231.0,Cents Per Dozen
+2025-04-14,Breaking Stock,235.0,250.0,242.75,242.75,Cents Per Dozen
+2025-04-14,Undergrades,229.0,233.0,231.0,231.0,Cents Per Dozen
+2025-04-15,Breaking Stock,235.0,250.0,242.75,242.75,Cents Per Dozen
+2025-04-15,Undergrades,229.0,233.0,231.0,231.0,Cents Per Dozen
+2025-04-16,Breaking Stock,238.0,265.0,249.0,242.75,Cents Per Dozen
+2025-04-16,Undergrades,232.0,236.0,234.0,231.0,Cents Per Dozen
+2025-04-17,Breaking Stock,238.0,265.0,248.5,249.0,Cents Per Dozen
+2025-04-17,Undergrades,232.0,236.0,234.0,234.0,Cents Per Dozen
+2025-04-18,Breaking Stock,240.0,265.0,249.5,248.5,Cents Per Dozen
+2025-04-18,Undergrades,234.0,238.0,236.0,234.0,Cents Per Dozen
+2025-04-21,Breaking Stock,243.0,255.0,248.5,249.5,Cents Per Dozen
+2025-04-21,Undergrades,237.0,241.0,239.0,236.0,Cents Per Dozen
+2025-04-22,Breaking Stock,244.0,255.0,249.5,248.5,Cents Per Dozen
+2025-04-22,Undergrades,239.0,243.0,241.0,239.0,Cents Per Dozen
+2025-04-23,Breaking Stock,247.0,256.0,251.75,249.5,Cents Per Dozen
+2025-04-23,Undergrades,241.0,245.0,243.0,241.0,Cents Per Dozen
+2025-04-24,Breaking Stock,249.0,258.0,253.5,251.75,Cents Per Dozen
+2025-04-24,Undergrades,243.0,247.0,245.0,243.0,Cents Per Dozen
+2025-04-25,Breaking Stock,250.0,259.0,254.0,253.5,Cents Per Dozen
+2025-04-25,Undergrades,244.0,248.0,246.0,245.0,Cents Per Dozen
+2025-04-28,Breaking Stock,253.0,274.0,259.5,254.0,Cents Per Dozen
+2025-04-28,Undergrades,247.0,251.0,249.0,246.0,Cents Per Dozen
+2025-04-29,Breaking Stock,255.0,274.0,262.5,259.5,Cents Per Dozen
+2025-04-29,Undergrades,250.0,254.0,252.0,249.0,Cents Per Dozen
+2025-04-30,Breaking Stock,256.0,274.0,262.75,262.5,Cents Per Dozen
+2025-04-30,Undergrades,252.0,254.0,253.0,252.0,Cents Per Dozen
+2025-05-01,Breaking Stock,259.0,277.0,265.75,262.75,Cents Per Dozen
+2025-05-01,Undergrades,255.0,257.0,256.0,253.0,Cents Per Dozen
+2025-05-02,Breaking Stock,263.0,278.0,270.75,265.75,Cents Per Dozen
+2025-05-02,Undergrades,257.0,261.0,259.0,256.0,Cents Per Dozen
+2025-05-05,Breaking Stock,263.0,280.0,271.25,270.75,Cents Per Dozen
+2025-05-05,Undergrades,257.0,261.0,259.0,259.0,Cents Per Dozen
+2025-05-06,Breaking Stock,263.0,280.0,271.5,271.25,Cents Per Dozen
+2025-05-06,Undergrades,257.0,261.0,259.0,259.0,Cents Per Dozen
+2025-05-07,Breaking Stock,263.0,280.0,271.5,271.5,Cents Per Dozen
+2025-05-07,Undergrades,257.0,261.0,259.0,259.0,Cents Per Dozen
+2025-05-08,Breaking Stock,263.0,280.0,271.5,271.5,Cents Per Dozen
+2025-05-08,Undergrades,257.0,261.0,259.0,259.0,Cents Per Dozen
+2025-05-09,Breaking Stock,257.0,278.0,267.5,271.5,Cents Per Dozen
+2025-05-09,Undergrades,257.0,261.0,259.0,259.0,Cents Per Dozen
+2025-05-12,Breaking Stock,263.0,278.0,271.0,267.5,Cents Per Dozen
+2025-05-12,Undergrades,257.0,261.0,259.0,259.0,Cents Per Dozen
+2025-05-13,Breaking Stock,265.0,278.0,272.25,271.0,Cents Per Dozen
+2025-05-13,Undergrades,259.0,263.0,261.0,259.0,Cents Per Dozen
+2025-05-14,Breaking Stock,265.0,278.0,272.25,272.25,Cents Per Dozen
+2025-05-14,Undergrades,259.0,263.0,261.0,261.0,Cents Per Dozen
+2025-05-15,Breaking Stock,256.0,278.0,270.0,272.25,Cents Per Dozen
+2025-05-15,Undergrades,259.0,263.0,261.0,261.0,Cents Per Dozen
+2025-05-16,Breaking Stock,253.0,273.0,267.25,270.0,Cents Per Dozen
+2025-05-16,Undergrades,256.0,260.0,258.0,261.0,Cents Per Dozen
+2025-05-19,Breaking Stock,259.0,273.0,268.0,267.25,Cents Per Dozen
+2025-05-19,Undergrades,253.0,257.0,255.0,258.0,Cents Per Dozen
+2025-05-20,Breaking Stock,259.0,273.0,266.75,268.0,Cents Per Dozen
+2025-05-20,Undergrades,253.0,257.0,255.0,255.0,Cents Per Dozen
+2025-05-21,Breaking Stock,235.0,272.0,258.5,266.75,Cents Per Dozen
+2025-05-21,Undergrades,253.0,257.0,255.0,255.0,Cents Per Dozen
+2025-05-22,Breaking Stock,235.0,267.0,253.75,258.5,Cents Per Dozen
+2025-05-22,Undergrades,246.0,250.0,248.0,255.0,Cents Per Dozen
+2025-05-23,Breaking Stock,207.5,256.0,238.13,253.75,Cents Per Dozen
+2025-05-23,Undergrades,234.0,238.0,236.0,248.0,Cents Per Dozen
+2025-05-27,Breaking Stock,207.5,237.0,226.88,238.13,Cents Per Dozen
+2025-05-27,Undergrades,222.0,226.0,224.0,236.0,Cents Per Dozen
+2025-05-28,Breaking Stock,207.5,235.0,220.88,226.88,Cents Per Dozen
+2025-05-28,Undergrades,210.0,214.0,212.0,224.0,Cents Per Dozen
+2025-05-29,Breaking Stock,207.5,235.0,219.88,220.88,Cents Per Dozen
+2025-05-29,Undergrades,208.0,212.0,210.0,212.0,Cents Per Dozen
+2025-05-30,Breaking Stock,170.0,220.0,201.75,219.88,Cents Per Dozen
+2025-05-30,Undergrades,198.0,202.0,200.0,210.0,Cents Per Dozen
+2025-06-02,Breaking Stock,170.0,220.0,201.75,201.75,Cents Per Dozen
+2025-06-02,Undergrades,198.0,202.0,200.0,200.0,Cents Per Dozen
+2025-06-03,Breaking Stock,170.0,220.0,201.75,201.75,Cents Per Dozen
+2025-06-03,Undergrades,198.0,202.0,200.0,200.0,Cents Per Dozen
+2025-06-04,Breaking Stock,170.0,210.0,197.75,201.75,Cents Per Dozen
+2025-06-04,Undergrades,195.0,199.0,197.0,200.0,Cents Per Dozen
+2025-06-05,Breaking Stock,190.0,210.0,201.25,197.75,Cents Per Dozen
+2025-06-05,Undergrades,192.0,196.0,194.0,197.0,Cents Per Dozen
+2025-06-06,Breaking Stock,190.0,210.0,201.25,201.25,Cents Per Dozen
+2025-06-06,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-09,Breaking Stock,190.0,210.0,201.25,201.25,Cents Per Dozen
+2025-06-09,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-10,Breaking Stock,195.0,215.0,203.75,201.25,Cents Per Dozen
+2025-06-10,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-11,Breaking Stock,195.0,215.0,203.75,203.75,Cents Per Dozen
+2025-06-11,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-12,Breaking Stock,195.0,215.0,203.75,203.75,Cents Per Dozen
+2025-06-12,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-13,Breaking Stock,195.0,215.0,203.75,203.75,Cents Per Dozen
+2025-06-13,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-16,Breaking Stock,195.0,215.0,203.75,203.75,Cents Per Dozen
+2025-06-16,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-17,Breaking Stock,193.0,215.0,203.25,203.75,Cents Per Dozen
+2025-06-17,Undergrades,192.0,196.0,194.0,194.0,Cents Per Dozen
+2025-06-18,Breaking Stock,193.0,220.0,205.5,203.25,Cents Per Dozen
+2025-06-18,Undergrades,194.0,198.0,196.0,194.0,Cents Per Dozen
+2025-06-20,Breaking Stock,191.0,220.0,205.0,205.5,Cents Per Dozen
+2025-06-20,Undergrades,194.0,198.0,196.0,196.0,Cents Per Dozen
+2025-06-23,Breaking Stock,200.0,210.0,206.25,205.0,Cents Per Dozen
+2025-06-23,Undergrades,194.0,198.0,196.0,196.0,Cents Per Dozen
+2025-06-24,Breaking Stock,180.0,210.0,199.75,206.25,Cents Per Dozen
+2025-06-24,Undergrades,194.0,198.0,196.0,196.0,Cents Per Dozen
+2025-06-25,Breaking Stock,180.0,210.0,197.75,199.75,Cents Per Dozen
+2025-06-25,Undergrades,190.0,194.0,192.0,196.0,Cents Per Dozen
+2025-06-26,Breaking Stock,180.0,206.0,194.75,197.75,Cents Per Dozen
+2025-06-26,Undergrades,186.0,190.0,188.0,192.0,Cents Per Dozen
+2025-06-27,Breaking Stock,187.0,198.0,192.25,194.75,Cents Per Dozen
+2025-06-27,Undergrades,183.0,187.0,185.0,188.0,Cents Per Dozen
+2025-06-30,Breaking Stock,175.0,196.0,188.25,192.25,Cents Per Dozen
+2025-06-30,Undergrades,181.0,185.0,183.0,185.0,Cents Per Dozen
+2025-07-01,Breaking Stock,175.0,195.0,187.25,188.25,Cents Per Dozen
+2025-07-01,Undergrades,179.0,183.0,181.0,183.0,Cents Per Dozen
+2025-07-02,Breaking Stock,175.0,195.0,186.75,187.25,Cents Per Dozen
+2025-07-02,Undergrades,178.0,182.0,180.0,181.0,Cents Per Dozen
+2025-07-03,Breaking Stock,175.0,191.0,184.5,186.75,Cents Per Dozen
+2025-07-03,Undergrades,176.0,180.0,178.0,180.0,Cents Per Dozen
+2025-07-07,Breaking Stock,175.0,191.0,184.5,184.5,Cents Per Dozen
+2025-07-07,Undergrades,176.0,180.0,178.0,178.0,Cents Per Dozen
+2025-07-08,Breaking Stock,160.0,191.0,180.75,184.5,Cents Per Dozen
+2025-07-08,Undergrades,176.0,180.0,178.0,178.0,Cents Per Dozen
+2025-07-09,Breaking Stock,160.0,190.0,179.25,180.75,Cents Per Dozen
+2025-07-09,Undergrades,173.0,177.0,175.0,178.0,Cents Per Dozen
+2025-07-10,Breaking Stock,160.0,190.0,177.75,179.25,Cents Per Dozen
+2025-07-10,Undergrades,170.0,174.0,172.0,175.0,Cents Per Dozen
+2025-07-11,Breaking Stock,160.0,190.0,177.75,177.75,Cents Per Dozen
+2025-07-11,Undergrades,170.0,174.0,172.0,172.0,Cents Per Dozen
+2025-07-14,Breaking Stock,160.0,190.0,177.75,177.75,Cents Per Dozen
+2025-07-14,Undergrades,170.0,174.0,172.0,172.0,Cents Per Dozen
+2025-07-15,Breaking Stock,166.0,192.0,181.25,177.75,Cents Per Dozen
+2025-07-15,Undergrades,173.0,177.0,175.0,172.0,Cents Per Dozen
+2025-07-16,Breaking Stock,166.0,198.0,183.75,181.25,Cents Per Dozen
+2025-07-16,Undergrades,175.0,179.0,177.0,175.0,Cents Per Dozen
+2025-07-17,Breaking Stock,175.0,198.0,187.0,183.75,Cents Per Dozen
+2025-07-17,Undergrades,177.0,181.0,179.0,177.0,Cents Per Dozen
+2025-07-18,Breaking Stock,175.0,198.0,188.0,187.0,Cents Per Dozen
+2025-07-18,Undergrades,179.0,183.0,181.0,179.0,Cents Per Dozen
+2025-07-21,Breaking Stock,175.0,198.0,189.0,188.0,Cents Per Dozen
+2025-07-21,Undergrades,181.0,185.0,183.0,181.0,Cents Per Dozen
+2025-07-22,Breaking Stock,178.0,198.0,189.75,189.0,Cents Per Dozen
+2025-07-22,Undergrades,181.0,185.0,183.0,183.0,Cents Per Dozen
+2025-07-23,Breaking Stock,178.0,198.0,189.75,189.75,Cents Per Dozen
+2025-07-23,Undergrades,181.0,185.0,183.0,183.0,Cents Per Dozen
+2025-07-24,Breaking Stock,178.0,198.0,189.75,189.75,Cents Per Dozen
+2025-07-24,Undergrades,181.0,185.0,183.0,183.0,Cents Per Dozen
+2025-07-25,Breaking Stock,178.0,198.0,189.75,189.75,Cents Per Dozen
+2025-07-25,Undergrades,181.0,185.0,183.0,183.0,Cents Per Dozen
+2025-07-28,Breaking Stock,178.0,200.0,189.25,189.75,Cents Per Dozen
+2025-07-28,Undergrades,179.0,183.0,181.0,183.0,Cents Per Dozen
+2025-07-29,Breaking Stock,178.0,200.0,189.25,189.25,Cents Per Dozen
+2025-07-29,Undergrades,179.0,183.0,181.0,181.0,Cents Per Dozen
+2025-07-30,Breaking Stock,178.0,200.0,189.25,189.25,Cents Per Dozen
+2025-07-30,Undergrades,179.0,183.0,181.0,181.0,Cents Per Dozen
+2025-07-31,Breaking Stock,177.0,192.0,184.75,189.25,Cents Per Dozen
+2025-07-31,Undergrades,177.0,181.0,179.0,181.0,Cents Per Dozen
+2025-08-01,Breaking Stock,173.0,188.0,180.75,184.75,Cents Per Dozen
+2025-08-01,Undergrades,173.0,177.0,175.0,179.0,Cents Per Dozen
+2025-08-04,Breaking Stock,172.0,188.0,178.5,180.75,Cents Per Dozen
+2025-08-04,Undergrades,166.0,170.0,168.0,175.0,Cents Per Dozen
+2025-08-05,Breaking Stock,148.0,187.0,168.5,178.5,Cents Per Dozen
+2025-08-05,Undergrades,159.0,163.0,161.0,168.0,Cents Per Dozen
+2025-08-06,Breaking Stock,140.0,180.0,158.75,168.5,Cents Per Dozen
+2025-08-06,Undergrades,147.0,151.0,149.0,161.0,Cents Per Dozen
+2025-08-07,Breaking Stock,140.0,178.0,153.25,158.75,Cents Per Dozen
+2025-08-07,Undergrades,137.0,141.0,139.0,149.0,Cents Per Dozen
+2025-08-08,Breaking Stock,139.0,148.0,143.75,153.25,Cents Per Dozen
+2025-08-08,Undergrades,133.0,137.0,135.0,139.0,Cents Per Dozen
+2025-08-11,Breaking Stock,135.0,148.0,141.5,143.75,Cents Per Dozen
+2025-08-11,Undergrades,131.0,135.0,133.0,135.0,Cents Per Dozen
+2025-08-12,Breaking Stock,135.0,148.0,141.5,141.5,Cents Per Dozen
+2025-08-12,Undergrades,131.0,135.0,133.0,133.0,Cents Per Dozen
+2025-08-13,Breaking Stock,134.0,148.0,140.0,141.5,Cents Per Dozen
+2025-08-13,Undergrades,128.0,132.0,130.0,133.0,Cents Per Dozen
+2025-08-14,Breaking Stock,134.0,148.0,140.0,140.0,Cents Per Dozen
+2025-08-14,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-15,Breaking Stock,134.0,148.0,140.0,140.0,Cents Per Dozen
+2025-08-15,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-18,Breaking Stock,134.0,148.0,140.0,140.0,Cents Per Dozen
+2025-08-18,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-19,Breaking Stock,134.0,143.0,140.0,140.0,Cents Per Dozen
+2025-08-19,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-20,Breaking Stock,134.0,143.0,140.0,140.0,Cents Per Dozen
+2025-08-20,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-21,Breaking Stock,134.0,143.0,140.0,140.0,Cents Per Dozen
+2025-08-21,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-22,Breaking Stock,134.0,143.0,139.75,140.0,Cents Per Dozen
+2025-08-22,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-25,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-08-25,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-26,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-08-26,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-27,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-08-27,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-28,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-08-28,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-08-29,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-08-29,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-02,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-02,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-03,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-03,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-04,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-04,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-05,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-05,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-08,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-08,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-09,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-09,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-10,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-10,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-11,Breaking Stock,134.0,143.0,139.75,139.75,Cents Per Dozen
+2025-09-11,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-12,Breaking Stock,134.0,143.0,138.5,139.75,Cents Per Dozen
+2025-09-12,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-15,Breaking Stock,130.0,143.0,137.25,138.5,Cents Per Dozen
+2025-09-15,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-16,Breaking Stock,130.0,143.0,137.25,137.25,Cents Per Dozen
+2025-09-16,Undergrades,128.0,132.0,130.0,130.0,Cents Per Dozen
+2025-09-17,Breaking Stock,130.0,141.0,135.25,137.25,Cents Per Dozen
+2025-09-17,Undergrades,126.0,130.0,128.0,130.0,Cents Per Dozen
+2025-09-18,Breaking Stock,129.0,138.0,133.5,135.25,Cents Per Dozen
+2025-09-18,Undergrades,123.0,127.0,125.0,128.0,Cents Per Dozen
+2025-09-19,Breaking Stock,115.0,135.0,126.25,133.5,Cents Per Dozen
+2025-09-19,Undergrades,117.0,121.0,119.0,125.0,Cents Per Dozen
+2025-09-22,Breaking Stock,115.0,129.0,121.75,126.25,Cents Per Dozen
+2025-09-22,Undergrades,111.0,115.0,113.0,119.0,Cents Per Dozen
+2025-09-23,Breaking Stock,109.0,123.0,115.75,121.75,Cents Per Dozen
+2025-09-23,Undergrades,105.0,109.0,107.0,113.0,Cents Per Dozen
+2025-09-24,Breaking Stock,100.0,117.0,109.0,115.75,Cents Per Dozen
+2025-09-24,Undergrades,99.0,103.0,101.0,107.0,Cents Per Dozen
+2025-09-25,Breaking Stock,99.0,115.0,105.5,109.0,Cents Per Dozen
+2025-09-25,Undergrades,93.0,97.0,95.0,101.0,Cents Per Dozen
+2025-09-26,Breaking Stock,96.0,115.0,103.5,105.5,Cents Per Dozen
+2025-09-26,Undergrades,90.0,94.0,92.0,95.0,Cents Per Dozen
+2025-09-29,Breaking Stock,94.0,115.0,102.5,103.5,Cents Per Dozen
+2025-09-29,Undergrades,88.0,92.0,90.0,92.0,Cents Per Dozen
+2025-09-30,Breaking Stock,94.0,115.0,102.5,102.5,Cents Per Dozen
+2025-09-30,Undergrades,88.0,92.0,90.0,90.0,Cents Per Dozen
+2025-10-01,Breaking Stock,94.0,103.0,99.25,102.5,Cents Per Dozen
+2025-10-01,Undergrades,88.0,92.0,90.0,90.0,Cents Per Dozen
+2025-10-02,Breaking Stock,90.0,102.0,95.75,99.25,Cents Per Dozen
+2025-10-02,Undergrades,85.0,89.0,87.0,90.0,Cents Per Dozen
+2025-10-03,Breaking Stock,90.0,102.0,95.75,95.75,Cents Per Dozen
+2025-10-03,Undergrades,85.0,89.0,87.0,87.0,Cents Per Dozen
+2025-10-06,Breaking Stock,90.0,102.0,95.75,95.75,Cents Per Dozen
+2025-10-06,Undergrades,85.0,89.0,87.0,87.0,Cents Per Dozen
+2025-10-07,Breaking Stock,90.0,102.0,95.75,95.75,Cents Per Dozen
+2025-10-07,Undergrades,85.0,89.0,87.0,87.0,Cents Per Dozen
+2025-10-08,Breaking Stock,90.0,102.0,95.75,95.75,Cents Per Dozen
+2025-10-08,Undergrades,85.0,89.0,87.0,87.0,Cents Per Dozen
+2025-10-09,Breaking Stock,90.0,102.0,95.75,95.75,Cents Per Dozen
+2025-10-09,Undergrades,85.0,89.0,87.0,87.0,Cents Per Dozen
+2025-10-10,Breaking Stock,92.0,108.0,98.75,95.75,Cents Per Dozen
+2025-10-10,Undergrades,87.0,91.0,89.0,87.0,Cents Per Dozen
+2025-10-14,Breaking Stock,95.0,125.0,104.75,98.75,Cents Per Dozen
+2025-10-14,Undergrades,89.0,93.0,91.0,89.0,Cents Per Dozen
+2025-10-15,Breaking Stock,97.0,125.0,106.75,104.75,Cents Per Dozen
+2025-10-15,Undergrades,92.0,96.0,94.0,91.0,Cents Per Dozen
+2025-10-16,Breaking Stock,101.0,125.0,111.0,106.75,Cents Per Dozen
+2025-10-16,Undergrades,95.0,99.0,97.0,94.0,Cents Per Dozen
+2025-10-17,Breaking Stock,104.0,125.0,113.0,111.0,Cents Per Dozen
+2025-10-17,Undergrades,98.0,102.0,100.0,97.0,Cents Per Dozen
+2025-10-20,Breaking Stock,106.0,125.0,114.0,113.0,Cents Per Dozen
+2025-10-20,Undergrades,100.0,104.0,102.0,100.0,Cents Per Dozen
+2025-10-21,Breaking Stock,109.0,140.0,119.25,114.0,Cents Per Dozen
+2025-10-21,Undergrades,103.0,107.0,105.0,102.0,Cents Per Dozen
+2025-10-22,Breaking Stock,113.0,140.0,123.25,119.25,Cents Per Dozen
+2025-10-22,Undergrades,107.0,111.0,109.0,105.0,Cents Per Dozen
+2025-10-23,Breaking Stock,117.0,140.0,125.25,123.25,Cents Per Dozen
+2025-10-23,Undergrades,111.0,115.0,113.0,109.0,Cents Per Dozen
+2025-10-24,Breaking Stock,118.0,140.0,127.25,125.25,Cents Per Dozen
+2025-10-24,Undergrades,115.0,119.0,117.0,113.0,Cents Per Dozen
+2025-10-27,Breaking Stock,118.0,140.0,128.75,127.25,Cents Per Dozen
+2025-10-27,Undergrades,118.0,122.0,120.0,117.0,Cents Per Dozen
+2025-10-28,Breaking Stock,125.0,140.0,132.0,128.75,Cents Per Dozen
+2025-10-28,Undergrades,121.0,125.0,123.0,120.0,Cents Per Dozen
+2025-10-29,Breaking Stock,125.0,140.0,132.5,132.0,Cents Per Dozen
+2025-10-29,Undergrades,122.0,126.0,124.0,123.0,Cents Per Dozen
+2025-10-30,Breaking Stock,128.0,140.0,133.75,132.5,Cents Per Dozen
+2025-10-30,Undergrades,122.0,126.0,124.0,124.0,Cents Per Dozen
+2025-10-31,Breaking Stock,130.0,140.0,134.75,133.75,Cents Per Dozen
+2025-10-31,Undergrades,124.0,128.0,126.0,124.0,Cents Per Dozen
+2025-11-03,Breaking Stock,130.0,142.0,136.25,134.75,Cents Per Dozen
+2025-11-03,Undergrades,127.0,131.0,129.0,126.0,Cents Per Dozen
+2025-11-04,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-04,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-05,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-05,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-06,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-06,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-07,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-07,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-10,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-10,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-12,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-12,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-13,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-13,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-14,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-14,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-17,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-17,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-18,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-18,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-19,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-19,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-20,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-20,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-21,Breaking Stock,130.0,142.0,136.25,136.25,Cents Per Dozen
+2025-11-21,Undergrades,127.0,131.0,129.0,129.0,Cents Per Dozen
+2025-11-24,Breaking Stock,130.0,140.0,135.0,136.25,Cents Per Dozen
+2025-11-24,Undergrades,125.0,129.0,127.0,129.0,Cents Per Dozen
+2025-11-25,Breaking Stock,129.0,139.0,134.0,135.0,Cents Per Dozen
+2025-11-25,Undergrades,123.0,127.0,125.0,127.0,Cents Per Dozen
+2025-11-26,Breaking Stock,127.0,139.0,133.0,134.0,Cents Per Dozen
+2025-11-26,Undergrades,121.0,125.0,123.0,125.0,Cents Per Dozen
+2025-11-28,Breaking Stock,125.0,134.0,130.5,133.0,Cents Per Dozen
+2025-11-28,Undergrades,119.0,123.0,121.0,123.0,Cents Per Dozen
+2025-12-01,Breaking Stock,125.0,134.0,130.5,130.5,Cents Per Dozen
+2025-12-01,Undergrades,119.0,123.0,121.0,121.0,Cents Per Dozen
+2025-12-02,Breaking Stock,125.0,134.0,130.5,130.5,Cents Per Dozen
+2025-12-02,Undergrades,119.0,123.0,121.0,121.0,Cents Per Dozen
+2025-12-03,Breaking Stock,125.0,134.0,130.5,130.5,Cents Per Dozen
+2025-12-03,Undergrades,119.0,123.0,121.0,121.0,Cents Per Dozen
+2025-12-04,Breaking Stock,120.0,130.0,126.75,130.5,Cents Per Dozen
+2025-12-04,Undergrades,114.0,118.0,116.0,121.0,Cents Per Dozen
+2025-12-05,Breaking Stock,115.0,128.0,122.5,126.75,Cents Per Dozen
+2025-12-05,Undergrades,109.0,113.0,111.0,116.0,Cents Per Dozen
+2025-12-08,Breaking Stock,110.0,128.0,120.0,122.5,Cents Per Dozen
+2025-12-08,Undergrades,104.0,108.0,106.0,111.0,Cents Per Dozen
+2025-12-09,Breaking Stock,105.0,123.0,115.0,120.0,Cents Per Dozen
+2025-12-09,Undergrades,99.0,103.0,101.0,106.0,Cents Per Dozen
+2025-12-10,Breaking Stock,97.0,121.0,110.5,115.0,Cents Per Dozen
+2025-12-10,Undergrades,91.0,95.0,93.0,101.0,Cents Per Dozen
+2025-12-11,Breaking Stock,87.0,121.0,102.25,110.5,Cents Per Dozen
+2025-12-11,Undergrades,81.0,85.0,83.0,93.0,Cents Per Dozen
+2025-12-12,Breaking Stock,77.0,121.0,97.25,102.25,Cents Per Dozen
+2025-12-12,Undergrades,71.0,75.0,73.0,83.0,Cents Per Dozen
+2025-12-15,Breaking Stock,67.0,106.0,81.0,97.25,Cents Per Dozen
+2025-12-15,Undergrades,61.0,65.0,63.0,73.0,Cents Per Dozen
+2025-12-16,Breaking Stock,62.0,83.0,72.75,81.0,Cents Per Dozen
+2025-12-16,Undergrades,56.0,60.0,58.0,63.0,Cents Per Dozen
+2025-12-17,Breaking Stock,59.0,83.0,71.25,72.75,Cents Per Dozen
+2025-12-17,Undergrades,53.0,57.0,55.0,58.0,Cents Per Dozen
+2025-12-18,Breaking Stock,49.0,73.0,61.25,71.25,Cents Per Dozen
+2025-12-18,Undergrades,43.0,47.0,45.0,55.0,Cents Per Dozen
+2025-12-19,Breaking Stock,39.0,63.0,51.25,61.25,Cents Per Dozen
+2025-12-19,Undergrades,33.0,37.0,35.0,45.0,Cents Per Dozen
+2025-12-22,Breaking Stock,34.0,43.0,38.0,51.25,Cents Per Dozen
+2025-12-22,Undergrades,28.0,32.0,30.0,35.0,Cents Per Dozen
+2025-12-23,Breaking Stock,31.0,40.0,36.5,38.0,Cents Per Dozen
+2025-12-23,Undergrades,25.0,29.0,27.0,30.0,Cents Per Dozen
+2025-12-24,Breaking Stock,25.0,40.0,31.5,36.5,Cents Per Dozen
+2025-12-24,Undergrades,20.0,24.0,22.0,27.0,Cents Per Dozen
+2025-12-26,Breaking Stock,21.0,35.0,27.75,31.5,Cents Per Dozen
+2025-12-26,Undergrades,15.0,19.0,17.0,22.0,Cents Per Dozen
+2025-12-29,Breaking Stock,16.0,35.0,23.25,27.75,Cents Per Dozen
+2025-12-29,Undergrades,10.0,14.0,12.0,17.0,Cents Per Dozen
+2025-12-30,Breaking Stock,13.0,25.0,19.25,23.25,Cents Per Dozen
+2025-12-30,Undergrades,7.0,11.0,9.0,12.0,Cents Per Dozen
+2025-12-31,Breaking Stock,13.0,25.0,19.25,19.25,Cents Per Dozen
+2025-12-31,Undergrades,7.0,11.0,9.0,9.0,Cents Per Dozen
+2026-01-02,Breaking Stock,13.0,25.0,19.25,19.25,Cents Per Dozen
+2026-01-02,Undergrades,7.0,11.0,9.0,9.0,Cents Per Dozen
+2026-01-05,Breaking Stock,13.0,25.0,19.25,19.25,Cents Per Dozen
+2026-01-05,Undergrades,7.0,11.0,9.0,9.0,Cents Per Dozen
+2026-01-06,Breaking Stock,10.0,20.0,16.5,19.25,Cents Per Dozen
+2026-01-06,Undergrades,4.0,8.0,6.0,9.0,Cents Per Dozen
+2026-01-07,Breaking Stock,7.0,20.0,15.0,16.5,Cents Per Dozen
+2026-01-07,Undergrades,1.0,5.0,3.0,6.0,Cents Per Dozen
+2026-01-08,Breaking Stock,7.0,20.0,15.0,15.0,Cents Per Dozen
+2026-01-08,Undergrades,1.0,5.0,3.0,3.0,Cents Per Dozen
+2026-01-09,Breaking Stock,7.0,17.0,13.0,15.0,Cents Per Dozen
+2026-01-09,Undergrades,1.0,5.0,3.0,3.0,Cents Per Dozen
+2026-01-12,Breaking Stock,7.0,17.0,13.0,13.0,Cents Per Dozen
+2026-01-12,Undergrades,1.0,5.0,3.0,3.0,Cents Per Dozen
+2026-01-13,Breaking Stock,6.0,17.0,11.5,13.0,Cents Per Dozen
+2026-01-13,Undergrades,1.0,4.0,2.5,3.0,Cents Per Dozen
+2026-01-14,Breaking Stock,6.0,17.0,11.5,11.5,Cents Per Dozen
+2026-01-14,Undergrades,1.0,4.0,2.5,2.5,Cents Per Dozen
+2026-01-15,Breaking Stock,6.0,20.0,12.25,11.5,Cents Per Dozen
+2026-01-15,Undergrades,1.0,4.0,2.5,2.5,Cents Per Dozen
+2026-01-16,Breaking Stock,8.0,20.0,13.25,12.25,Cents Per Dozen
+2026-01-16,Undergrades,2.0,6.0,4.0,2.5,Cents Per Dozen
+2026-01-20,Breaking Stock,10.0,20.0,16.0,13.25,Cents Per Dozen
+2026-01-20,Undergrades,4.0,8.0,6.0,4.0,Cents Per Dozen
+2026-01-21,Breaking Stock,10.0,20.0,16.0,16.0,Cents Per Dozen
+2026-01-21,Undergrades,4.0,8.0,6.0,6.0,Cents Per Dozen
+2026-01-22,Breaking Stock,12.0,21.0,17.0,16.0,Cents Per Dozen
+2026-01-22,Undergrades,6.0,10.0,8.0,6.0,Cents Per Dozen
+2026-01-23,Breaking Stock,13.0,22.0,17.5,17.0,Cents Per Dozen
+2026-01-23,Undergrades,7.0,11.0,9.0,8.0,Cents Per Dozen
+2026-01-26,Breaking Stock,15.0,24.0,18.5,17.5,Cents Per Dozen
+2026-01-26,Undergrades,9.0,13.0,11.0,9.0,Cents Per Dozen
+2026-01-27,Breaking Stock,15.0,24.0,18.5,18.5,Cents Per Dozen
+2026-01-27,Undergrades,9.0,13.0,11.0,11.0,Cents Per Dozen
+2026-01-28,Breaking Stock,15.0,30.0,21.0,18.5,Cents Per Dozen
+2026-01-28,Undergrades,9.0,13.0,11.0,11.0,Cents Per Dozen
+2026-01-29,Breaking Stock,17.0,32.0,23.25,21.0,Cents Per Dozen
+2026-01-29,Undergrades,11.0,15.0,13.0,11.0,Cents Per Dozen
+2026-01-30,Breaking Stock,18.0,35.0,25.0,23.25,Cents Per Dozen
+2026-01-30,Undergrades,13.0,17.0,15.0,13.0,Cents Per Dozen
+2026-02-02,Breaking Stock,18.0,35.0,26.0,25.0,Cents Per Dozen
+2026-02-02,Undergrades,15.0,19.0,17.0,15.0,Cents Per Dozen
+2026-02-03,Breaking Stock,23.0,35.0,29.75,26.0,Cents Per Dozen
+2026-02-03,Undergrades,17.0,21.0,19.0,17.0,Cents Per Dozen
+2026-02-04,Breaking Stock,26.0,35.0,31.25,29.75,Cents Per Dozen
+2026-02-04,Undergrades,20.0,24.0,22.0,19.0,Cents Per Dozen
+2026-02-05,Breaking Stock,28.0,37.0,33.25,31.25,Cents Per Dozen
+2026-02-05,Undergrades,22.0,26.0,24.0,22.0,Cents Per Dozen
+2026-02-06,Breaking Stock,28.0,37.0,33.25,33.25,Cents Per Dozen
+2026-02-06,Undergrades,22.0,26.0,24.0,24.0,Cents Per Dozen
+2026-02-09,Breaking Stock,28.0,37.0,33.25,33.25,Cents Per Dozen
+2026-02-09,Undergrades,22.0,26.0,24.0,24.0,Cents Per Dozen
+2026-02-10,Breaking Stock,28.0,37.0,33.25,33.25,Cents Per Dozen
+2026-02-10,Undergrades,22.0,26.0,24.0,24.0,Cents Per Dozen
+2026-02-11,Breaking Stock,28.0,37.0,33.25,33.25,Cents Per Dozen
+2026-02-11,Undergrades,22.0,26.0,24.0,24.0,Cents Per Dozen
+2026-02-12,Breaking Stock,26.0,35.0,30.5,33.25,Cents Per Dozen
+2026-02-12,Undergrades,20.0,24.0,22.0,24.0,Cents Per Dozen
+2026-02-13,Breaking Stock,23.0,35.0,29.0,30.5,Cents Per Dozen
+2026-02-13,Undergrades,17.0,21.0,19.0,22.0,Cents Per Dozen
+2026-02-17,Breaking Stock,21.0,35.0,28.0,29.0,Cents Per Dozen
+2026-02-17,Undergrades,15.0,19.0,17.0,19.0,Cents Per Dozen
+2026-02-18,Breaking Stock,21.0,30.0,26.5,28.0,Cents Per Dozen
+2026-02-18,Undergrades,15.0,19.0,17.0,17.0,Cents Per Dozen
+2026-02-19,Breaking Stock,18.0,29.0,24.5,26.5,Cents Per Dozen
+2026-02-19,Undergrades,12.0,16.0,14.0,17.0,Cents Per Dozen
+2026-02-20,Breaking Stock,16.0,27.0,22.5,24.5,Cents Per Dozen
+2026-02-20,Undergrades,10.0,14.0,12.0,14.0,Cents Per Dozen
+2026-02-23,Breaking Stock,14.0,24.0,20.75,22.5,Cents Per Dozen
+2026-02-23,Undergrades,8.0,12.0,10.0,12.0,Cents Per Dozen
+2026-02-24,Breaking Stock,14.0,24.0,20.75,20.75,Cents Per Dozen
+2026-02-24,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-02-25,Breaking Stock,14.0,24.0,20.75,20.75,Cents Per Dozen
+2026-02-25,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-02-26,Breaking Stock,14.0,24.0,20.75,20.75,Cents Per Dozen
+2026-02-26,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-02-27,Breaking Stock,14.0,24.0,20.25,20.75,Cents Per Dozen
+2026-02-27,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-02,Breaking Stock,14.0,24.0,20.25,20.25,Cents Per Dozen
+2026-03-02,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-03,Breaking Stock,14.0,24.0,20.25,20.25,Cents Per Dozen
+2026-03-03,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-04,Breaking Stock,14.0,24.0,20.25,20.25,Cents Per Dozen
+2026-03-04,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-05,Breaking Stock,14.0,25.0,20.5,20.25,Cents Per Dozen
+2026-03-05,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-06,Breaking Stock,14.0,25.0,20.5,20.5,Cents Per Dozen
+2026-03-06,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-09,Breaking Stock,14.0,25.0,20.5,20.5,Cents Per Dozen
+2026-03-09,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-10,Breaking Stock,14.0,25.0,20.5,20.5,Cents Per Dozen
+2026-03-10,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-11,Breaking Stock,14.0,25.0,20.5,20.5,Cents Per Dozen
+2026-03-11,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-12,Breaking Stock,14.0,25.0,20.5,20.5,Cents Per Dozen
+2026-03-12,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen
+2026-03-13,Breaking Stock,14.0,25.0,20.5,20.5,Cents Per Dozen
+2026-03-13,Undergrades,8.0,12.0,10.0,10.0,Cents Per Dozen

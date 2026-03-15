@@ -1,0 +1,5 @@
+# Poultry Intelligence Dashboard
+# All API clients use Python stdlib only (urllib, json, csv).
+# No third-party packages required for the core pipeline.
+#
+# Python >= 3.9 recommended (uses dict union, f-strings, etc.)
