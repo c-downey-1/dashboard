@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ingest.py — CLI for fetching MARS, NASS, FRED, BLS, and HPAI data into SQLite.
+ingest.py — CLI for fetching MARS, NASS, FRED, BLS, HPAI, and ERS data into SQLite.
 
 Usage:
     python ingest.py --backfill-mars              # All 12 MARS reports
@@ -9,6 +9,9 @@ Usage:
     python ingest.py --backfill-fred              # All FRED series
     python ingest.py --backfill-bls               # All BLS series
     python ingest.py --backfill-hpai              # HPAI flock detections
+    python ingest.py --backfill-cage-free-composition  # AMS monthly cage-free PDF
+    python ingest.py --backfill-ers-trade         # ERS monthly chicken/egg trade totals
+    python ingest.py --backfill-cme-feed          # CME-derived daily layer feed seed
     python ingest.py --update                     # Incremental (all APIs)
     python ingest.py --update --mars-only         # Incremental MARS
     python ingest.py --update --nass-only         # Incremental NASS
@@ -18,13 +21,17 @@ Usage:
 
 import argparse
 import csv
+import os
 from datetime import date, timedelta
 
 from . import db
 from . import parsers
 from .clients import bls_client
 from .clients import broiler_hatchery_client
+from .clients import cage_free_report_client
+from .clients import ers_trade_client
 from .clients import fred_client
+from .clients import google_sheets_client
 from .clients import hpai_client
 from .clients import mars_client
 from .clients import nass_client
@@ -145,6 +152,7 @@ NASS_SERIES = [
     {"short_desc": "CHICKENS, LAYERS - LOSS, DEATH & RENDERED, MEASURED IN HEAD", "label": "Layer Death/Rendered"},
     {"short_desc": "CHICKENS, LAYERS - SALES FOR SLAUGHTER, MEASURED IN HEAD", "label": "Layer Slaughter Sales"},
     {"short_desc": "CHICKENS, LAYERS - BEING MOLTED, MEASURED IN PCT OF INVENTORY", "label": "Layers Molted %"},
+    {"short_desc": "CHICKENS, LAYERS - MOLT COMPLETED, MEASURED IN PCT OF INVENTORY", "label": "Layers Molt Completed %"},
     {"short_desc": "CHICKENS, PULLETS, REPLACEMENT - INVENTORY", "label": "Replacement Pullet Inventory"},
 
     # Egg Production & Rate of Lay
@@ -196,6 +204,7 @@ FRED_SERIES = {
     "WPU0141":     "PPI: Slaughter Chickens",
     "WPU014102":   "PPI: Broilers & Meat-Type Chickens",
     "PPOULTUSDM":  "Global Price of Poultry ($/kg)",
+    "APU0000708111": "Eggs, Grade A, Large (per dozen)",
 }
 
 # ── BLS Series Configuration ──────────────────────────────────────────────
@@ -208,6 +217,17 @@ BLS_SERIES = {
 }
 
 BROILER_HATCHABILITY_SEED = SEEDS_ROOT / "broiler_hatchability_seed.csv"
+CAGE_FREE_COMPOSITION_SEED = SEEDS_ROOT / "cage_free_flock_composition_seed.csv"
+LAYER_FEED_SEED = SEEDS_ROOT / "layer_feed_seed.csv"
+
+
+def _cme_feed_sheet_ref():
+    """Return the configured public Google Sheet URL or id for feed ingestion."""
+    return (
+        os.environ.get("CME_FEED_GOOGLE_SHEET_URL", "").strip()
+        or os.environ.get("CME_FEED_GOOGLE_SHEET_ID", "").strip()
+        or None
+    )
 
 
 # ── Pipeline Functions ───────────────────────────────────────────────────
@@ -374,6 +394,146 @@ def ingest_broiler_hatchability(conn, start_after=None):
     return count
 
 
+def load_cage_free_composition_seed(conn):
+    """Load optional historical AMS cage-free composition seed data."""
+    if not CAGE_FREE_COMPOSITION_SEED.exists():
+        return 0
+
+    rows = []
+    with CAGE_FREE_COMPOSITION_SEED.open(newline="") as handle:
+        reader = csv.DictReader(handle)
+        for record in reader:
+            rows.append({
+                "report_month": record["report_month"],
+                "report_date": record["report_date"],
+                "category": record["category"],
+                "layer_flock_size": int(record["layer_flock_size"]) if record.get("layer_flock_size") else None,
+                "lay_rate_pct": float(record["lay_rate_pct"]) if record.get("lay_rate_pct") else None,
+                "weekly_production_cases": int(record["weekly_production_cases"]) if record.get("weekly_production_cases") else None,
+                "source_url": record.get("source_url") or None,
+                "source_type": record.get("source_type") or "seed",
+            })
+
+    inserted = db.insert_or_ignore_rows(conn, "cage_free_flock_composition", rows)
+    if inserted and rows:
+        db.log_fetch(
+            conn,
+            "ams_cage_free",
+            rows[0]["report_month"],
+            rows[-1]["report_month"],
+            inserted,
+            data_item="seed",
+        )
+    return inserted
+
+
+def ingest_cage_free_composition(conn):
+    """Fetch the latest AMS cage-free composition PDF and store monthly rows."""
+    seeded = load_cage_free_composition_seed(conn)
+    if seeded:
+        print(f"  Seeded {seeded} historical cage-free composition rows")
+
+    rows = cage_free_report_client.fetch_current_report_rows()
+    if not rows:
+        print("  No AMS cage-free composition rows parsed")
+        return 0
+
+    count = db.upsert_rows(conn, "cage_free_flock_composition", rows)
+    db.log_fetch(
+        conn,
+        "ams_cage_free",
+        rows[0]["report_month"],
+        rows[0]["report_month"],
+        count,
+        data_item="current_pdf",
+    )
+    return count
+
+
+def ingest_ers_trade_totals(conn):
+    """Fetch the ERS workbook and store monthly chicken and egg trade totals."""
+    rows = ers_trade_client.fetch_trade_rows()
+    if not rows:
+        print("  No ERS trade rows parsed")
+        return 0
+
+    count = db.upsert_rows(conn, "ers_trade_totals", rows)
+    db.log_fetch(
+        conn,
+        "ers_trade",
+        rows[0]["report_month"],
+        rows[-1]["report_month"],
+        count,
+        data_item="monthly_workbook",
+    )
+    return count
+
+
+def load_cme_feed_seed(conn):
+    """Load the reconstructed daily CME-derived layer feed history."""
+    if not LAYER_FEED_SEED.exists():
+        print("  WARNING: layer feed seed file missing, skipping CME feed seed load")
+        return 0
+
+    rows = []
+    with LAYER_FEED_SEED.open(newline="") as handle:
+        reader = csv.DictReader(handle)
+        for record in reader:
+            rows.append({
+                "trade_date": record["trade_date"],
+                "corn_per_ton": float(record["corn_per_ton"]) if record.get("corn_per_ton") else None,
+                "soymeal_per_ton": float(record["soymeal_per_ton"]) if record.get("soymeal_per_ton") else None,
+                "calcium_per_ton": float(record["calcium_per_ton"]) if record.get("calcium_per_ton") else None,
+                "other_per_ton": float(record["other_per_ton"]) if record.get("other_per_ton") else None,
+                "ration_cost": float(record["ration_cost"]) if record.get("ration_cost") else None,
+                "layer_feed_index": float(record["layer_feed_index"]) if record.get("layer_feed_index") else None,
+                "source_type": record.get("source_type") or "layerfeed_workbook_seed",
+                "source_note": record.get("source_note") or None,
+            })
+
+    count = db.upsert_rows(conn, "cme_feed_daily", rows)
+    if rows:
+        db.log_fetch(
+            conn,
+            "cme_feed",
+            rows[0]["trade_date"],
+            rows[-1]["trade_date"],
+            count,
+            data_item="seed",
+        )
+    return count
+
+
+def ingest_cme_feed(conn, gid=0):
+    """Fetch public Google Sheets feed data and fall back to the local seed."""
+    sheet_ref = _cme_feed_sheet_ref()
+    if not sheet_ref:
+        print("  CME_FEED_GOOGLE_SHEET_URL / CME_FEED_GOOGLE_SHEET_ID not set, falling back to seed")
+        return load_cme_feed_seed(conn)
+
+    try:
+        _, csv_rows = google_sheets_client.fetch_public_csv_rows(sheet_ref, gid=gid)
+        rows = google_sheets_client.parse_layer_feed_rows(csv_rows, "public_google_sheet")
+    except Exception as exc:
+        print(f"  Public Google Sheet fetch failed, falling back to seed: {exc}")
+        return load_cme_feed_seed(conn)
+
+    if not rows:
+        print("  Public Google Sheet returned no usable feed rows, falling back to seed")
+        return load_cme_feed_seed(conn)
+
+    count = db.upsert_rows(conn, "cme_feed_daily", rows)
+    db.log_fetch(
+        conn,
+        "cme_feed",
+        rows[0]["trade_date"],
+        rows[-1]["trade_date"],
+        count,
+        data_item="public_google_sheet",
+    )
+    return count
+
+
 def backfill_mars(conn, report_filter=None):
     """Full backfill of MARS reports."""
     today = date.today()
@@ -413,6 +573,39 @@ def backfill_broiler_hatchability(conn):
 
     total = ingest_broiler_hatchability(conn)
     print(f"\n  Broiler hatchability backfill complete: {total:,} scraped rows")
+    return total
+
+
+def backfill_cage_free_composition(conn):
+    """Load any seeded history and fetch the current AMS cage-free report."""
+    print(f"\n{'='*60}")
+    print("  AMS Cage-Free Flock Composition Backfill")
+    print(f"{'='*60}")
+
+    total = ingest_cage_free_composition(conn)
+    print(f"\n  AMS cage-free composition backfill complete: {total:,} rows")
+    return total
+
+
+def backfill_ers_trade(conn):
+    """Fetch the ERS monthly trade workbook and load full chicken/egg history."""
+    print(f"\n{'='*60}")
+    print("  ERS Chicken and Egg Trade Backfill")
+    print(f"{'='*60}")
+
+    total = ingest_ers_trade_totals(conn)
+    print(f"\n  ERS trade backfill complete: {total:,} rows")
+    return total
+
+
+def backfill_cme_feed(conn):
+    """Load daily CME-derived feed history from the public Google Sheet."""
+    print(f"\n{'='*60}")
+    print("  CME-Derived Layer Feed History Backfill")
+    print(f"{'='*60}")
+
+    total = ingest_cme_feed(conn)
+    print(f"\n  CME-derived layer feed backfill complete: {total:,} rows")
     return total
 
 
@@ -466,6 +659,39 @@ def update_broiler_hatchability(conn):
 
     total = ingest_broiler_hatchability(conn)
     print(f"\n  Broiler hatchability update complete: {total:,} scraped rows")
+    return total
+
+
+def update_cage_free_composition(conn):
+    """Refresh the current AMS monthly cage-free composition report."""
+    print(f"\n{'='*60}")
+    print("  AMS Cage-Free Flock Composition Incremental Update")
+    print(f"{'='*60}")
+
+    total = ingest_cage_free_composition(conn)
+    print(f"\n  AMS cage-free composition update complete: {total:,} rows")
+    return total
+
+
+def update_ers_trade(conn):
+    """Refresh ERS monthly chicken and egg trade totals."""
+    print(f"\n{'='*60}")
+    print("  ERS Chicken and Egg Trade Incremental Update")
+    print(f"{'='*60}")
+
+    total = ingest_ers_trade_totals(conn)
+    print(f"\n  ERS trade update complete: {total:,} rows")
+    return total
+
+
+def update_cme_feed(conn):
+    """Refresh daily CME-derived feed history."""
+    print(f"\n{'='*60}")
+    print("  CME-Derived Layer Feed Incremental Update")
+    print(f"{'='*60}")
+
+    total = ingest_cme_feed(conn)
+    print(f"\n  CME-derived layer feed update complete: {total:,} rows")
     return total
 
 
@@ -634,6 +860,12 @@ def main():
                     help="Download HPAI flock detections from APHIS")
     ap.add_argument("--backfill-broiler-hatchability", action="store_true",
                     help="Load seeded broiler hatchability history and scrape newer ESMIS releases")
+    ap.add_argument("--backfill-cage-free-composition", action="store_true",
+                    help="Load seeded history and fetch the current AMS cage-free flock composition PDF")
+    ap.add_argument("--backfill-ers-trade", action="store_true",
+                    help="Fetch ERS monthly chicken and egg trade totals from the workbook")
+    ap.add_argument("--backfill-cme-feed", action="store_true",
+                    help="Load daily CME-derived layer feed history from the public Google Sheet")
     ap.add_argument("--update", action="store_true",
                     help="Incremental update (all APIs)")
     ap.add_argument("--mars-only", action="store_true",
@@ -677,6 +909,15 @@ def main():
         if args.backfill_broiler_hatchability:
             backfill_broiler_hatchability(conn)
 
+        if args.backfill_cage_free_composition:
+            backfill_cage_free_composition(conn)
+
+        if args.backfill_ers_trade:
+            backfill_ers_trade(conn)
+
+        if args.backfill_cme_feed:
+            backfill_cme_feed(conn)
+
         if args.update:
             run_mars = not args.nass_only
             run_nass = not args.mars_only and not args.frequent_only
@@ -684,6 +925,9 @@ def main():
             run_bls = not (args.mars_only or args.nass_only or args.frequent_only)
             run_hpai = not args.nass_only
             run_broiler_hatchability = not (args.mars_only or args.nass_only or args.frequent_only)
+            run_cage_free_composition = not (args.mars_only or args.nass_only or args.frequent_only)
+            run_ers_trade = not (args.mars_only or args.nass_only or args.frequent_only)
+            run_cme_feed = not (args.mars_only or args.nass_only or args.frequent_only)
 
             if run_mars:
                 update_mars(conn, report_filter=args.report)
@@ -697,10 +941,19 @@ def main():
                 update_hpai(conn)
             if run_broiler_hatchability:
                 update_broiler_hatchability(conn)
+            if run_cage_free_composition:
+                update_cage_free_composition(conn)
+            if run_ers_trade:
+                update_ers_trade(conn)
+            if run_cme_feed:
+                update_cme_feed(conn)
 
         all_actions = [args.backfill_mars, args.backfill_nass,
                        args.backfill_fred, args.backfill_bls,
                        args.backfill_hpai, args.backfill_broiler_hatchability,
+                       args.backfill_cage_free_composition,
+                       args.backfill_ers_trade,
+                       args.backfill_cme_feed,
                        args.update, args.status]
         if not any(all_actions):
             ap.print_help()

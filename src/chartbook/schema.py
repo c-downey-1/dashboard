@@ -241,6 +241,51 @@ TABLES = {
         )
     """,
 
+    "cage_free_flock_composition": """
+        CREATE TABLE IF NOT EXISTS cage_free_flock_composition (
+            report_month            TEXT NOT NULL,
+            report_date             TEXT NOT NULL,
+            category                TEXT NOT NULL,
+            layer_flock_size        INTEGER,
+            lay_rate_pct            REAL,
+            weekly_production_cases INTEGER,
+            source_url              TEXT,
+            source_type             TEXT NOT NULL DEFAULT 'ams_pdf_current',
+            fetched_at              TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (report_month, category)
+        )
+    """,
+
+    "ers_trade_totals": """
+        CREATE TABLE IF NOT EXISTS ers_trade_totals (
+            report_month        TEXT NOT NULL,
+            commodity           TEXT NOT NULL,
+            flow                TEXT NOT NULL,
+            product             TEXT NOT NULL,
+            section_label       TEXT NOT NULL,
+            value               REAL,
+            unit                TEXT NOT NULL,
+            source_url          TEXT,
+            fetched_at          TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (report_month, commodity, flow, product)
+        )
+    """,
+
+    "cme_feed_daily": """
+        CREATE TABLE IF NOT EXISTS cme_feed_daily (
+            trade_date          TEXT PRIMARY KEY,
+            corn_per_ton        REAL,
+            soymeal_per_ton     REAL,
+            calcium_per_ton     REAL,
+            other_per_ton       REAL,
+            ration_cost         REAL,
+            layer_feed_index    REAL,
+            source_type         TEXT NOT NULL DEFAULT 'seed',
+            source_note         TEXT,
+            fetched_at          TEXT DEFAULT (datetime('now'))
+        )
+    """,
+
     "source_freshness": """
         CREATE TABLE IF NOT EXISTS source_freshness (
             source_name        TEXT PRIMARY KEY,
@@ -352,6 +397,10 @@ INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_hpai_state ON hpai_detections(state)",
     "CREATE INDEX IF NOT EXISTS idx_hpai_flock_type ON hpai_detections(flock_type)",
     "CREATE INDEX IF NOT EXISTS idx_broiler_hatchability_week_end ON broiler_hatchability(week_ending_date)",
+    "CREATE INDEX IF NOT EXISTS idx_cage_free_month ON cage_free_flock_composition(report_month)",
+    "CREATE INDEX IF NOT EXISTS idx_ers_trade_month ON ers_trade_totals(report_month)",
+    "CREATE INDEX IF NOT EXISTS idx_ers_trade_lookup ON ers_trade_totals(commodity, flow, product)",
+    "CREATE INDEX IF NOT EXISTS idx_cme_feed_daily_trade_date ON cme_feed_daily(trade_date)",
     "CREATE UNIQUE INDEX IF NOT EXISTS idx_hpai_dedupe ON hpai_detections("
     "COALESCE(detection_date, ''), COALESCE(state, ''), COALESCE(county, ''), "
     "COALESCE(species, ''), COALESCE(flock_type, ''), COALESCE(flock_size, -1))",

@@ -8,106 +8,109 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20260320cb">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
 <div class="shell">
-  <header class="hero">
-    <div>
-      <div class="hero-tag">Egg Industry Dashboard</div>
-      <h1>Executive egg market dashboard</h1>
-      <p>A dedicated egg-industry view built to mirror the structure of the monthly executive chartbook while using the live chartbook database behind this project.</p>
-    </div>
-    <div class="hero-meta">
-      <div class="meta-card"><span>Updated</span><strong id="updatedStamp">__UPDATED__</strong></div>
-      <div class="meta-card"><span>Coverage</span><strong id="coverageStamp">Loading…</strong></div>
-      <div class="meta-card"><span>Status</span><strong id="statusStamp">Loading…</strong></div>
-    </div>
+  <header class="iaa-bar">
+    <a class="iaa-brand" href="https://innovateanimalag.org/" target="_blank" rel="noreferrer">
+      <img src="assets/iaa-logo-with-navy-font-full-color.png" alt="Innovate Animal Ag">
+      <div class="iaa-brand-copy">
+        <span class="iaa-eyebrow">Innovate Animal Ag</span>
+        <strong>Egg Industry Dashboard</strong>
+      </div>
+    </a>
+    <nav class="iaa-nav" aria-label="Innovate Animal Ag">
+      <a href="https://innovateanimalag.org/research" target="_blank" rel="noreferrer">Research</a>
+      <a href="https://innovateanimalag.org/#what-we-do" target="_blank" rel="noreferrer">Projects</a>
+      <a href="https://innovateanimalag.org/grants" target="_blank" rel="noreferrer">Grants</a>
+      <a href="https://innovateanimalag.org/about" target="_blank" rel="noreferrer">About</a>
+      <a href="https://innovateanimalag.org/blog" target="_blank" rel="noreferrer">Blog</a>
+      <a class="iaa-home-link" href="https://innovateanimalag.org/" target="_blank" rel="noreferrer">InnovateAnimalAg.org</a>
+    </nav>
   </header>
 
-  <nav class="topnav">
-    <a class="nav-link" href="index.html">Dashboard Home</a>
-    <a class="nav-link active" href="egg-dashboard.html">Egg Industry</a>
-    <a class="nav-link" href="broiler-dashboard.html">Broiler Industry</a>
-  </nav>
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar" aria-label="Egg dashboard outline">
+      <div class="dashboard-sidebar-inner">
+        <nav class="dashboard-sidebar-nav" id="eggSidebarNav"></nav>
+      </div>
+    </aside>
 
-  <section class="kpi-row">
-    <article class="kpi"><div class="label">Wholesale Eggs</div><div class="value" id="kpiEggPrice">—</div><div class="sub" id="kpiEggPriceSub"></div></article>
-    <article class="kpi"><div class="label">Retail Eggs</div><div class="value" id="kpiRetailEgg">—</div><div class="sub" id="kpiRetailEggSub"></div></article>
-    <article class="kpi"><div class="label">Layers</div><div class="value" id="kpiLayers">—</div><div class="sub" id="kpiLayersSub"></div></article>
-    <article class="kpi"><div class="label">Pullets</div><div class="value" id="kpiPullets">—</div><div class="sub" id="kpiPulletsSub"></div></article>
-    <article class="kpi"><div class="label">HPAI 30D</div><div class="value" id="kpiHpai">—</div><div class="sub" id="kpiHpaiSub"></div></article>
-    <article class="kpi"><div class="label">Feed Index</div><div class="value" id="kpiFeed">—</div><div class="sub" id="kpiFeedSub"></div></article>
-  </section>
-
-  <section class="section">
-    <div class="section-head"><div><h2>Charts of the Month</h2><p>Top-of-book retail activity and flock pipeline signals.</p></div></div>
+    <main class="dashboard-content">
+  <section class="section" id="layer-flock">
+    <div class="section-head"><div><div class="section-number">I</div><h2>Layer Flock</h2><p>Seasonality, Flock Size, Turnover, Molting, Cage-Free Composition</p></div></div>
     <div class="grid">
-      <article class="card" id="retailFeatureWrap"><h3>Egg Retail Feature Rates</h3><div class="sub">4-week average retail feature participation</div><canvas id="retailFeatureChart" height="120"></canvas></article>
-      <article class="card"><h3>Pullet Inventories Continue Climb</h3><div class="sub">Replacement pullets on hand</div><canvas id="pulletClimbChart" height="120"></canvas></article>
+      <article class="card"><h3>Table-Egg Layer Flock Size Comparison</h3><div class="sub">Seasonal comparison of table-egg layers on hand</div><canvas id="tableLayersChart" height="120"></canvas></article>
+      <article class="card"><h3>Table-Egg Layer Flock Size</h3><div class="sub">Monthly table-egg layers on hand (first of month)</div><canvas id="tableLayersTrendChart" height="120"></canvas></article>
+      <article class="card" id="compositionWrap"><h3>Flock Cage-Free Composition</h3><div class="sub">Table layer flock by system type and cage-free share</div><canvas id="compositionChart" height="120"></canvas></article>
+      <article class="card"><h3>Flock Turnover</h3><div class="sub">Hens sold for slaughter, destroyed, composted, etc</div><canvas id="turnoverChart" height="120"></canvas></article>
+      <article class="card wide"><h3>Flock Turnover Rate</h3><div class="sub">Monthly flock turnover as a share of the table-egg layer flock</div><canvas id="turnoverRateChart" height="110"></canvas></article>
+      <article class="card"><h3>Molting Data</h3><div class="sub">Share of flock molted or being molted</div><canvas id="moltChart" height="120"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><h2>Avian Influenza</h2><p>Disease pressure and layer-specific bird impacts.</p></div></div>
+  <section class="section" id="production-figures">
+    <div class="section-head"><div><div class="section-number">II</div><h2>Production Figures</h2><p>Production, lay rate, and breaker flow.</p></div></div>
     <div class="grid">
-      <article class="card"><h3>HPAI Detections Per Month</h3><div class="sub">All operations and flock types</div><canvas id="hpaiDetectionsChart" height="120"></canvas></article>
-      <article class="card"><h3>Commercial Layer Depopulations</h3><div class="sub">Layer-related birds affected by month</div><canvas id="hpaiLayersChart" height="120"></canvas></article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head"><div><h2>Production Figures</h2><p>Production, lay rate, and breaker flow.</p></div></div>
-    <div class="grid">
-      <article class="card"><h3>Production Recovering Sharply</h3><div class="sub">Trailing 3-month table egg production</div><canvas id="trailingProdChart" height="120"></canvas></article>
       <article class="card"><h3>Monthly Egg Production</h3><div class="sub">Current year versus prior year</div><canvas id="monthlyProdChart" height="120"></canvas></article>
+      <article class="card"><h3>Trailing Three Month Table Egg Production</h3><div class="sub">Trailing 3-month table egg production</div><canvas id="trailingProdChart" height="120"></canvas></article>
       <article class="card"><h3>Rate of Lay</h3><div class="sub">Table eggs per 100 layers per day</div><canvas id="rolChart" height="120"></canvas></article>
       <article class="card"><h3>Eggs Delivered to Breakers</h3><div class="sub">Broken shell eggs and share of total production</div><canvas id="breakersChart" height="120"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><h2>Layer Flock</h2><p>Seasonality, turnover, and molting.</p></div></div>
+  <section class="section" id="prices">
+    <div class="section-head"><div><div class="section-number">III</div><h2>Prices</h2><p>Wholesale, retail feature activity, and retail-farmgate price context.</p></div></div>
     <div class="grid">
-      <article class="card"><h3>Table-Egg Layer Flock Size</h3><div class="sub">Seasonal comparison of table-egg layers on hand</div><canvas id="tableLayersChart" height="120"></canvas></article>
-      <article class="card"><h3>Turnover Slows in Mid 2025</h3><div class="sub">Slaughter sales and loss / rendered birds</div><canvas id="turnoverChart" height="120"></canvas></article>
-      <article class="card"><h3>Molting Watch</h3><div class="sub">Share of the flock being molted</div><canvas id="moltChart" height="120"></canvas></article>
-      <article class="card note-card" id="compositionPlaceholder"><h3>Flock Size and Composition</h3></article>
+      <article class="card"><h3>Wholesale Prices</h3><div class="sub">Large Eggs, Conventional, 5-Day Rolling Average</div><canvas id="wholesaleChart" height="120"></canvas></article>
+      <article class="card"><h3>Retail Egg Price</h3><div class="sub">FRED Grade A Large eggs, U.S. city average</div><canvas id="eggPriceCompareChart" height="120"></canvas></article>
+      <article class="card"><h3>Retail to Farmgate Spread Estimate</h3><div class="sub">FRED Grade A Large eggs, U.S. city average - prior-month NASS all-eggs price received</div><canvas id="eggPriceSpreadChart" height="120"></canvas></article>
+      <article class="card" id="retailFeatureWrap"><h3>Egg Retail Feature Rates</h3><div class="sub">4-week average retail feature participation</div><canvas id="retailFeatureChart" height="120"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><h2>Breeder Flock and Supply</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
+  <section class="section" id="inputs">
+    <div class="section-head"><div><div class="section-number">IV</div><h2>Inputs</h2><p>Feed-cost context and input pressure.</p></div></div>
     <div class="grid">
-      <article class="card"><h3>Breeder Flock Size and Change</h3><div class="sub">Hatching layers and monthly change</div><canvas id="breederFlockChart" height="120"></canvas></article>
-      <article class="card"><h3>Egg-Type Chicks Hatched</h3><div class="sub">Current year versus historical average</div><canvas id="chicksChart" height="120"></canvas></article>
+      <article class="card" id="feedIndexWrap"><h3>Layer Feed Index</h3><div class="sub" id="feedIndexSub">67% corn, 22% soybean meal, 8% calcium, 3% other</div><canvas id="feedIndexChart" height="120"></canvas></article>
+    </div>
+  </section>
+
+  <section class="section" id="breeder-flock">
+    <div class="section-head"><div><div class="section-number">V</div><h2>Pullet Supply and Breeder Flock</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
+    <div class="grid">
+      <article class="card"><h3>Egg-Type Chicks Hatched Comparison</h3><div class="sub">Monthly egg-type chicks hatched in 2025-2026 vs. 2021-2024</div><canvas id="chicksChart" height="120"></canvas></article>
+      <article class="card wide"><h3>Egg-Type Chicks Hatched</h3><div class="sub">Historical monthly egg-type chicks hatched</div><canvas id="chicksTrendChart" height="110"></canvas></article>
+      <article class="card"><h3>Pullet Inventory</h3><div class="sub">Replacement Egg-Type Pullets on Hand (1st of Month)</div><canvas id="pulletClimbChart" height="120"></canvas></article>
       <article class="card wide"><h3>Flock Pipeline Intensity</h3><div class="sub">Pullets per 100 table layers</div><canvas id="pipelineChart" height="110"></canvas></article>
+      <article class="card"><h3>Breeder Flock Size and Change</h3><div class="sub">Hatching layers and monthly change</div><canvas id="breederFlockChart" height="120"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><h2>Prices</h2><p>Wholesale, retail, regional, and feed-cost context.</p></div></div>
+  <section class="section" id="avian-influenza">
+    <div class="section-head"><div><div class="section-number">VI</div><h2>Avian Influenza</h2><p>Disease pressure and layer-specific bird impacts.</p></div></div>
     <div class="grid">
-      <article class="card"><h3>Wholesale Rates Continue to Fall</h3><div class="sub">5-day average caged large white egg index</div><canvas id="wholesaleChart" height="120"></canvas></article>
-      <article class="card"><h3>Retail Prices by Environment</h3><div class="sub">National large white featured prices</div><canvas id="retailPriceChart" height="120"></canvas></article>
-      <article class="card" id="feedIndexWrap"><h3>Layer Feed Index</h3><div class="sub">Composite layer ration cost proxy</div><canvas id="feedIndexChart" height="120"></canvas></article>
-      <article class="card"><h3>Regional Egg Prices</h3><div class="sub">Combined regional shell egg prices</div><canvas id="regionalEggChart" height="120"></canvas></article>
+      <article class="card"><h3>HPAI Detections Per Month</h3><div class="sub">All operations and flock types</div><canvas id="hpaiDetectionsChart" height="120"></canvas></article>
+      <article class="card"><h3>Commercial Layers Impacted by Month</h3><div class="sub">Includes Commercial Table Egg Layer, Commercial Table Egg Pullets, and Commercial Table Egg Breeder.</div><canvas id="hpaiLayersChart" height="120"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><h2>International</h2><p>Reserved for the trade pages from the monthly chartbook.</p></div></div>
+  <section class="section" id="international">
+    <div class="section-head"><div><div class="section-number">VII</div><h2>International Trade</h2><p>USDA ERS monthly trade totals for eggs and egg products.</p></div></div>
     <div class="grid">
-      <article class="card note-card" id="importsPlaceholder"><h3>Egg Imports</h3></article>
-      <article class="card note-card" id="exportsPlaceholder"><h3>Monthly Egg Exports</h3></article>
+      <article class="card" id="importsWrap"><h3>Egg Imports</h3><div class="sub">Total, shell-egg, and egg product imports</div><canvas id="eggImportsTradeChart" height="120"></canvas></article>
+      <article class="card" id="exportsWrap"><h3>Egg Exports</h3><div class="sub">Total, shell-egg, and egg product exports</div><canvas id="eggExportsTradeChart" height="120"></canvas></article>
     </div>
   </section>
 
-  <div class="footer">Egg dashboard updated __UPDATED__. Sources in this build include USDA MARS, USDA NASS, and USDA APHIS.</div>
+  <div class="footer">Egg dashboard updated __UPDATED__. Sources in this build include USDA MARS, USDA NASS, USDA ERS, and USDA APHIS.</div>
+    </main>
+  </div>
 </div>
-<script src="assets/dashboard-common.js"></script>
-<script src="assets/egg-dashboard.js"></script>
+<script src="assets/dashboard-common.js?v=20260320cb"></script>
+<script src="assets/egg-dashboard.js?v=20260320cb"></script>
 </body>
 </html>
 """

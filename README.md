@@ -27,8 +27,15 @@ Optional environment variables:
 - `NASS_API_KEY`
 - `FRED_API_KEY`
 - `BLS_API_KEY`
+- `CME_FEED_GOOGLE_SHEET_URL` or `CME_FEED_GOOGLE_SHEET_ID`
 
 You can keep local secrets in a `.env` file if you want, but it is gitignored.
+
+Example:
+
+```bash
+CME_FEED_GOOGLE_SHEET_URL=https://docs.google.com/spreadsheets/d/your-sheet-id/
+```
 
 ## Common Commands
 

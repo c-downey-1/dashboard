@@ -117,6 +117,9 @@ def get_status(conn):
         ("retail_metrics", "slug_id", "report_date"),
         ("retail_prices", "slug_id", "report_date"),
         ("report_narratives", "slug_id", "report_date"),
+        ("cage_free_flock_composition", "category", "report_month"),
+        ("ers_trade_totals", "section_label", "report_month"),
+        ("cme_feed_daily", None, "trade_date"),
     ]
     for table, group_col, date_col in mars_tables:
         try:

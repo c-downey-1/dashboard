@@ -16,9 +16,12 @@ import shutil
 from datetime import date, datetime
 
 from . import db
+from .hpai_categories import ALL_POULTRY_PRODUCTION_TYPES
+from .hpai_categories import COMMERCIAL_LAYER_TYPES
 from .paths import ASSETS_ROOT
 from .paths import DOCS_ROOT
 from .paths import PACKAGE_ROOT
+from .paths import REPO_ROOT
 
 DATA_JSON_PATH = DOCS_ROOT / "data.json"
 
@@ -322,6 +325,127 @@ def build_nass_layers(conn):
     return {"dates": d1, "total": v1, "dates_table": d2, "table": v2}
 
 
+def build_cage_free_composition(conn):
+    """AMS cage-free flock composition combined with NASS table-layer totals."""
+    empty = {
+        "dates": [],
+        "organic": [],
+        "non_organic_cage_free": [],
+        "all_cage_free": [],
+        "conventional": [],
+        "cage_free_pct": [],
+        "table_layers": [],
+    }
+
+    try:
+        rows = conn.execute("""
+            SELECT report_month, category, layer_flock_size
+            FROM cage_free_flock_composition
+            WHERE layer_flock_size IS NOT NULL
+            ORDER BY report_month, category
+        """).fetchall()
+    except Exception:
+        return empty
+
+    if not rows:
+        return empty
+
+    by_month = {}
+    for report_month, category, flock_size in rows:
+        by_month.setdefault(report_month, {})[category] = flock_size
+
+    table_layer_dates, table_layer_values = nass_monthly_series(
+        conn,
+        "CHICKENS, LAYERS, TABLE - INVENTORY",
+    )
+    table_layers_by_month = {
+        report_month: value
+        for report_month, value in zip(table_layer_dates, table_layer_values)
+    }
+
+    dates = []
+    organic = []
+    non_organic_cage_free = []
+    all_cage_free = []
+    conventional = []
+    cage_free_pct = []
+    table_layers = []
+
+    for report_month in sorted(by_month):
+        organic_value = by_month[report_month].get("organic")
+        non_org_value = by_month[report_month].get("non_organic_cage_free")
+        all_cf_value = by_month[report_month].get("all_cage_free")
+        table_layers_value = table_layers_by_month.get(report_month)
+        if table_layers_value is None or all_cf_value is None:
+            continue
+
+        conventional_value = max(table_layers_value - all_cf_value, 0)
+        cage_free_share = (all_cf_value / table_layers_value * 100) if table_layers_value else None
+
+        dates.append(report_month)
+        organic.append((organic_value / 1e6) if organic_value is not None else None)
+        non_organic_cage_free.append((non_org_value / 1e6) if non_org_value is not None else None)
+        all_cage_free.append((all_cf_value / 1e6) if all_cf_value is not None else None)
+        conventional.append(conventional_value / 1e6)
+        cage_free_pct.append(cage_free_share)
+        table_layers.append(table_layers_value / 1e6)
+
+    return {
+        "dates": dates,
+        "organic": organic,
+        "non_organic_cage_free": non_organic_cage_free,
+        "all_cage_free": all_cage_free,
+        "conventional": conventional,
+        "cage_free_pct": cage_free_pct,
+        "table_layers": table_layers,
+    }
+
+
+def _ers_trade_series(conn, commodity, product_order):
+    """Normalized ERS trade totals by month for a commodity group."""
+    empty = {"dates": []}
+
+    try:
+        rows = conn.execute("""
+            SELECT report_month, flow, product, value
+            FROM ers_trade_totals
+            WHERE commodity = ?
+            ORDER BY report_month, flow, product
+        """, (commodity,)).fetchall()
+    except Exception:
+        return empty
+
+    if not rows:
+        return empty
+
+    by_month = {}
+    for report_month, flow, product, value in rows:
+        by_month.setdefault(report_month, {})[f"{flow}_{product}"] = value
+
+    dates = sorted(by_month)
+    payload = {"dates": dates}
+    for flow in ("import", "export"):
+        for product in product_order:
+            key = f"{flow}_{product}"
+            payload[key] = [by_month[report_month].get(key) for report_month in dates]
+    return payload
+
+
+def build_ers_trade_egg(conn):
+    """ERS monthly egg trade totals and component sections."""
+    data = _ers_trade_series(conn, "egg", ["total", "shell_egg", "egg_product"])
+    data["unit_total"] = "1,000 dozen (shell-egg equivalent)"
+    data["unit_shell_egg"] = "1,000 dozen"
+    return data
+
+
+def build_ers_trade_chicken(conn):
+    """ERS monthly chicken trade totals for broilers and other chicken."""
+    data = _ers_trade_series(conn, "chicken", ["broiler", "other_chicken"])
+    data["unit"] = "1,000 pounds"
+    return data
+
+
 def build_nass_egg_production(conn):
     """NASS egg production: all + table eggs, national."""
     d1, v1 = nass_monthly_series(conn, "EGGS - PRODUCTION, MEASURED IN EGGS")
@@ -371,7 +495,18 @@ def build_nass_breeder_flock(conn):
     """NASS hatching layer inventory, national."""
     d1, v1 = nass_monthly_series(conn, "CHICKENS, LAYERS, HATCHING - INVENTORY")
     d2, v2 = nass_monthly_series(conn, "CHICKENS, LAYERS, HATCHING, BROILER TYPE - INVENTORY")
-    return {"dates": d1, "layers": v1, "dates_broiler": d2, "broiler_type": v2}
+    broiler_map = {date: value for date, value in zip(d2, v2)}
+    egg_type = [
+        (value - broiler_map[date]) if value is not None and broiler_map.get(date) is not None else None
+        for date, value in zip(d1, v1)
+    ]
+    return {
+        "dates": d1,
+        "layers": v1,
+        "dates_broiler": d2,
+        "broiler_type": v2,
+        "egg_type": egg_type,
+    }
 
 
 def build_nass_layer_disposition(conn):
@@ -379,10 +514,12 @@ def build_nass_layer_disposition(conn):
     d1, v1 = nass_monthly_series(conn, "CHICKENS, LAYERS - SALES FOR SLAUGHTER, MEASURED IN HEAD")
     d2, v2 = nass_monthly_series(conn, "CHICKENS, LAYERS - LOSS, DEATH & RENDERED, MEASURED IN HEAD")
     d3, v3 = nass_monthly_series(conn, "CHICKENS, LAYERS - BEING MOLTED, MEASURED IN PCT OF INVENTORY")
+    d4, v4 = nass_monthly_series(conn, "CHICKENS, LAYERS - MOLT COMPLETED, MEASURED IN PCT OF INVENTORY")
     return {
         "dates_sales": d1, "sales": v1,
         "dates_loss": d2, "loss": v2,
         "dates_molted": d3, "being_molted_pct": v3,
+        "dates_molt_completed": d4, "molt_completed_pct": v4,
     }
 
 
@@ -688,6 +825,25 @@ def build_fred_ppi(conn):
     return {"dates": dates, "series": series, "labels": labels}
 
 
+def build_fred_retail_egg(conn):
+    """FRED retail egg series (BLS via FRED), monthly."""
+    try:
+        rows = conn.execute("""
+            SELECT substr(observation_date, 1, 7) AS month, value
+            FROM fred_series
+            WHERE series_id = 'APU0000708111'
+              AND value IS NOT NULL
+            ORDER BY observation_date
+        """).fetchall()
+    except Exception:
+        return {"dates": [], "values": []}
+
+    return {
+        "dates": [row[0] for row in rows],
+        "values": [row[1] for row in rows],
+    }
+
+
 def build_bls_retail(conn):
     """BLS CPI retail prices for eggs and chicken."""
     try:
@@ -712,14 +868,24 @@ def build_bls_retail(conn):
 
 
 def build_hpai_summary(conn):
-    """Monthly HPAI detection counts + commercial bird totals."""
+    """Monthly HPAI detection counts + bird totals across all APHIS categories."""
+    all_types_placeholders = ", ".join("?" for _ in ALL_POULTRY_PRODUCTION_TYPES)
     try:
         rows = conn.execute("""
-            SELECT month, SUM(detections), SUM(commercial_birds)
-            FROM v_hpai_monthly
+            WITH dedup AS (
+                SELECT confirmation_date, state, county, flock_type, flock_size
+                FROM hpai_detections
+                WHERE confirmation_date IS NOT NULL
+                  AND flock_type IN (""" + all_types_placeholders + """)
+                GROUP BY confirmation_date, state, county, flock_type, flock_size
+            )
+            SELECT strftime('%Y-%m', confirmation_date) AS month,
+                   COUNT(*) AS detections,
+                   SUM(CASE WHEN flock_size IS NOT NULL THEN flock_size ELSE 0 END) AS birds
+            FROM dedup
             GROUP BY month
             ORDER BY month
-        """).fetchall()
+        """, ALL_POULTRY_PRODUCTION_TYPES).fetchall()
     except Exception:
         return {"dates": [], "detections": [], "commercial_birds": []}
 
@@ -753,28 +919,90 @@ def build_hpai_by_state(conn):
 
 
 def build_hpai_layers(conn):
-    """Monthly HPAI birds affected in layer-related commercial operations."""
+    """Monthly HPAI birds affected for the HPAI dashboard's Commercial Layers set."""
+    all_types_placeholders = ", ".join("?" for _ in ALL_POULTRY_PRODUCTION_TYPES)
+    layer_type_placeholders = ", ".join("?" for _ in COMMERCIAL_LAYER_TYPES)
     try:
+        month_rows = conn.execute("""
+            WITH dedup AS (
+                SELECT confirmation_date, state, county, flock_type, flock_size
+                FROM hpai_detections
+                WHERE confirmation_date IS NOT NULL
+                  AND flock_type IN (""" + all_types_placeholders + """)
+                GROUP BY confirmation_date, state, county, flock_type, flock_size
+            )
+            SELECT DISTINCT strftime('%Y-%m', confirmation_date) AS month
+            FROM dedup
+            ORDER BY month
+        """, ALL_POULTRY_PRODUCTION_TYPES).fetchall()
+
         rows = conn.execute("""
+            WITH dedup AS (
+                SELECT confirmation_date, state, county, flock_type, flock_size
+                FROM hpai_detections
+                WHERE confirmation_date IS NOT NULL
+                  AND flock_type IN (""" + all_types_placeholders + """)
+                GROUP BY confirmation_date, state, county, flock_type, flock_size
+            )
             SELECT strftime('%Y-%m', confirmation_date) AS month,
                    COUNT(*) AS detections,
                    SUM(CASE WHEN flock_size IS NOT NULL THEN flock_size ELSE 0 END) AS birds
-            FROM hpai_detections
-            WHERE confirmation_date IS NOT NULL
-              AND (
-                    flock_type LIKE '%Layer%'
-                 OR flock_type LIKE '%Table Egg%'
-              )
+            FROM dedup
+            WHERE flock_type IN (?, ?, ?)
             GROUP BY month
             ORDER BY month
-        """).fetchall()
+        """, ALL_POULTRY_PRODUCTION_TYPES + COMMERCIAL_LAYER_TYPES).fetchall()
+
+        category_rows = conn.execute("""
+            WITH dedup AS (
+                SELECT confirmation_date, state, county, flock_type, flock_size
+                FROM hpai_detections
+                WHERE confirmation_date IS NOT NULL
+                  AND flock_type IN (""" + all_types_placeholders + """)
+                GROUP BY confirmation_date, state, county, flock_type, flock_size
+            )
+            SELECT strftime('%Y-%m', confirmation_date) AS month,
+                   flock_type,
+                   COUNT(*) AS detections,
+                   SUM(CASE WHEN flock_size IS NOT NULL THEN flock_size ELSE 0 END) AS birds
+            FROM dedup
+            WHERE flock_type IN (""" + layer_type_placeholders + """)
+            GROUP BY month, flock_type
+            ORDER BY month, flock_type
+        """, ALL_POULTRY_PRODUCTION_TYPES + COMMERCIAL_LAYER_TYPES).fetchall()
     except Exception:
         return {"dates": [], "detections": [], "birds": []}
 
+    all_months = [row[0] for row in month_rows]
+    layer_by_month = {
+        row[0]: {
+            "detections": row[1],
+            "birds": row[2],
+        }
+        for row in rows
+    }
+    category_map = {
+        flock_type: {"birds": {}, "detections": {}}
+        for flock_type in COMMERCIAL_LAYER_TYPES
+    }
+    for month, flock_type, detections, birds in category_rows:
+        category_map.setdefault(flock_type, {"birds": {}, "detections": {}})
+        category_map[flock_type]["birds"][month] = birds or 0
+        category_map[flock_type]["detections"][month] = detections or 0
+
     return {
-        "dates": [r[0] for r in rows],
-        "detections": [r[1] for r in rows],
-        "birds": [r[2] for r in rows],
+        "dates": all_months,
+        "detections": [layer_by_month.get(month, {}).get("detections", 0) for month in all_months],
+        "birds": [layer_by_month.get(month, {}).get("birds", 0) for month in all_months],
+        "categories": list(COMMERCIAL_LAYER_TYPES),
+        "birds_by_category": {
+            flock_type: [category_map[flock_type]["birds"].get(month, 0) for month in all_months]
+            for flock_type in COMMERCIAL_LAYER_TYPES
+        },
+        "detections_by_category": {
+            flock_type: [category_map[flock_type]["detections"].get(month, 0) for month in all_months]
+            for flock_type in COMMERCIAL_LAYER_TYPES
+        },
     }
 
 
@@ -809,10 +1037,55 @@ def build_cage_free_spread(conn):
 
 
 def build_feed_index(conn):
-    """Layer feed cost index: 67% corn + 22% SBM + 11% other (fixed).
+    """Layer feed cost index.
 
-    Indexed to earliest available date = 100.
+    Prefer the reconstructed daily CME-derived series when present.
+    Fall back to the older monthly FRED proxy otherwise.
     """
+    try:
+        rows = conn.execute("""
+            SELECT trade_date, ration_cost
+            FROM cme_feed_daily
+            WHERE ration_cost IS NOT NULL
+            ORDER BY trade_date
+        """).fetchall()
+    except Exception:
+        rows = []
+
+    if rows:
+        target_reset_date = "2026-01-01"
+        source_row = conn.execute("""
+            SELECT source_type
+            FROM cme_feed_daily
+            WHERE source_type IS NOT NULL
+            ORDER BY trade_date DESC
+            LIMIT 1
+        """).fetchone()
+        base_row = conn.execute("""
+            SELECT trade_date, ration_cost
+            FROM cme_feed_daily
+            WHERE ration_cost IS NOT NULL
+              AND trade_date >= ?
+            ORDER BY trade_date
+            LIMIT 1
+        """, (target_reset_date,)).fetchone()
+        if not base_row:
+            base_row = rows[0]
+        base_date = base_row[0]
+        base_ration = base_row[1]
+        return {
+            "dates": [r[0] for r in rows],
+            "index": [((r[1] / base_ration) * 100.0) if base_ration else None for r in rows],
+            "base_date": base_date,
+            "source": source_row[0] if source_row else "cme_feed_daily",
+            "composition": {
+                "corn": 0.67,
+                "soymeal": 0.22,
+                "calcium": 0.08,
+                "other": 0.03,
+            },
+        }
+
     try:
         rows = conn.execute("""
             SELECT observation_date, corn_price, sbm_price
@@ -826,7 +1099,6 @@ def build_feed_index(conn):
     if not rows:
         return {"dates": [], "index": []}
 
-    # Baseline = first observation
     base_corn = rows[0][1]
     base_sbm = rows[0][2]
     base_composite = 0.67 * base_corn + 0.22 * base_sbm
@@ -839,28 +1111,40 @@ def build_feed_index(conn):
         dates.append(dt)
         index_vals.append(idx)
 
-    return {"dates": dates, "index": index_vals, "base_date": rows[0][0]}
+    return {"dates": dates, "index": index_vals, "base_date": rows[0][0], "source": "FRED proxy"}
 
 
 def build_feed_ratios(conn):
-    """Egg/feed and broiler/feed ratios using NASS prices + FRED feed costs."""
+    """Egg/feed and broiler/feed ratios using NASS prices + available feed costs."""
     # Get NASS egg prices (monthly)
     egg_d, egg_v = nass_monthly_series(conn, "EGGS - PRICE RECEIVED, MEASURED IN $ / DOZEN")
     broiler_d, broiler_v = nass_monthly_series(conn, "CHICKENS, BROILERS - PRICE RECEIVED, MEASURED IN $ / LB")
 
-    # Get feed costs (monthly, keyed by YYYY-MM)
     try:
         feed_rows = conn.execute("""
-            SELECT substr(observation_date, 1, 7) as month, corn_price, sbm_price
-            FROM v_feed_costs
-            WHERE corn_price IS NOT NULL AND sbm_price IS NOT NULL
+            SELECT substr(trade_date, 1, 7) AS month, AVG(ration_cost)
+            FROM cme_feed_daily
+            WHERE ration_cost IS NOT NULL
+            GROUP BY month
         """).fetchall()
     except Exception:
-        return {"egg_dates": [], "egg_ratio": [], "broiler_dates": [], "broiler_ratio": []}
+        feed_rows = []
 
-    feed_by_month = {}
-    for month, corn, sbm in feed_rows:
-        feed_by_month[month] = 0.67 * corn + 0.22 * sbm
+    if feed_rows:
+        feed_by_month = {month: ration_cost for month, ration_cost in feed_rows}
+    else:
+        try:
+            feed_rows = conn.execute("""
+                SELECT substr(observation_date, 1, 7) as month, corn_price, sbm_price
+                FROM v_feed_costs
+                WHERE corn_price IS NOT NULL AND sbm_price IS NOT NULL
+            """).fetchall()
+        except Exception:
+            return {"egg_dates": [], "egg_ratio": [], "broiler_dates": [], "broiler_ratio": []}
+
+        feed_by_month = {}
+        for month, corn, sbm in feed_rows:
+            feed_by_month[month] = 0.67 * corn + 0.22 * sbm
 
     # Compute ratios
     egg_ratio_dates, egg_ratios = [], []
@@ -967,6 +1251,18 @@ def build_data_json(conn):
     data["nass_layers"] = build_nass_layers(conn)
     print(f"{len(data['nass_layers']['dates'])} dates")
 
+    print("    Cage-Free Composition ...", end=" ", flush=True)
+    data["cage_free_composition"] = build_cage_free_composition(conn)
+    print(f"{len(data['cage_free_composition']['dates'])} dates")
+
+    print("    ERS Egg Trade ...", end=" ", flush=True)
+    data["ers_trade_egg"] = build_ers_trade_egg(conn)
+    print(f"{len(data['ers_trade_egg']['dates'])} dates")
+
+    print("    ERS Chicken Trade ...", end=" ", flush=True)
+    data["ers_trade_chicken"] = build_ers_trade_chicken(conn)
+    print(f"{len(data['ers_trade_chicken']['dates'])} dates")
+
     print("    NASS Egg Production ...", end=" ", flush=True)
     data["nass_egg_production"] = build_nass_egg_production(conn)
     print(f"{len(data['nass_egg_production']['dates'])} dates")
@@ -1060,6 +1356,10 @@ def build_data_json(conn):
     data["fred_ppi"] = build_fred_ppi(conn)
     print(f"{len(data['fred_ppi']['dates'])} dates")
 
+    print("    FRED Retail Egg ...", end=" ", flush=True)
+    data["fred_retail_egg"] = build_fred_retail_egg(conn)
+    print(f"{len(data['fred_retail_egg']['dates'])} dates")
+
     print("    BLS Retail ...", end=" ", flush=True)
     data["bls_retail"] = build_bls_retail(conn)
     print(f"{len(data['bls_retail']['dates'])} dates")
@@ -1120,6 +1420,10 @@ def build_html(data):
         "broiler-dashboard.js",
     ):
         shutil.copy2(web_root / asset_name, ASSETS_ROOT / asset_name)
+    shutil.copy2(
+        REPO_ROOT / "iaa-logo-with-navy-font-full-color.png",
+        ASSETS_ROOT / "iaa-logo-with-navy-font-full-color.png",
+    )
 
     outputs = {
         "index.html": HOME_TEMPLATE,

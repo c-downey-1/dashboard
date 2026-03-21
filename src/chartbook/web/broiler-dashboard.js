@@ -7,10 +7,14 @@ function renderMixedChart(id, labels, datasets, yLabel, y2Label) {
   const ctx = document.getElementById(id);
   if (!ctx) return;
   destroyChart(id);
+  const normalizedDatasets = datasets.map(entry => Object.assign(
+    { order: entry.type === 'line' ? 0 : 10 },
+    entry
+  ));
   charts[id] = new Chart(ctx, {
     type: 'bar',
-    data: { labels, datasets },
-    options: baseOptions(yLabel, { y2: y2Label, maxTicks: 12 })
+    data: { labels, datasets: normalizedDatasets },
+    options: baseOptions(yLabel, { chartId: id, y2: y2Label, maxTicks: 12 })
   });
 }
 
@@ -65,7 +69,7 @@ async function bootBroilerDashboard() {
         'wholesaleVolumeChart',
         dates.slice(start, end),
         volKeys.map((key, idx) => dataset(key, D.chicken_volume.series[key].slice(start, end), DASH_COLORS.seq[idx % DASH_COLORS.seq.length], {
-          backgroundColor: `${DASH_COLORS.seq[idx % DASH_COLORS.seq.length]}88`,
+          backgroundColor: `${DASH_COLORS.seq[idx % DASH_COLORS.seq.length]}`,
           borderWidth: 1
         })),
         'Loads',
@@ -238,7 +242,7 @@ async function bootBroilerDashboard() {
       renderBarChart(
         'hpaiChart',
         dates.slice(start, end),
-        [dataset('Commercial birds affected', D.hpai_summary.commercial_birds.slice(start, end).map(v => v ? v / 1e6 : 0), DASH_COLORS.red, { backgroundColor: '#991b1b88', borderWidth: 1 })],
+        [dataset('Commercial birds affected', D.hpai_summary.commercial_birds.slice(start, end).map(v => v ? v / 1e6 : 0), DASH_COLORS.red, { backgroundColor: '#991b1b', borderWidth: 1 })],
         'Million birds'
       );
     }
