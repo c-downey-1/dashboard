@@ -29,7 +29,6 @@ const DASH_COLORS = {
   seq: ['#F6851F', '#1F9EBC', '#013046', '#FDB714', '#8FCAE6', '#939598', '#E5700A']
 };
 
-
 const htmlLegendPlugin = {
   id: 'htmlLegend',
   afterUpdate(chart, args, options) {

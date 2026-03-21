@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20260321f">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20260321h">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
@@ -34,7 +34,7 @@
   <section class="section" id="layer-flock">
     <div class="section-head"><div><div class="section-number">I</div><h2>Layer Flock</h2><p>Seasonality, Flock Size, Turnover, Molting, Cage-Free Composition</p></div></div>
     <div class="grid">
-      <article class="card"><h3>Table-Egg Layer Flock Size Comparison</h3><div class="sub">Seasonal comparison of table-egg layers on hand</div><canvas id="tableLayersChart" height="120"></canvas></article>
+      <article class="card"><h3>Table-Egg Layer Flock Size Comparison</h3><div class="sub">Historical comparison of table-egg layers on hand</div><canvas id="tableLayersChart" height="120"></canvas></article>
       <article class="card"><h3>Table-Egg Layer Flock Size</h3><div class="sub">Monthly table-egg layers on hand (first of month)</div><canvas id="tableLayersTrendChart" height="120"></canvas></article>
       <article class="card" id="compositionWrap"><h3>Flock Cage-Free Composition</h3><div class="sub">Table layer flock by system type and cage-free share</div><canvas id="compositionChart" height="120"></canvas></article>
       <article class="card"><h3>Flock Turnover</h3><div class="sub">Hens sold for slaughter, destroyed, composted, etc</div><canvas id="turnoverChart" height="120"></canvas></article>
@@ -47,7 +47,7 @@
     <div class="section-head"><div><div class="section-number">II</div><h2>Production Figures</h2><p>Production, lay rate, and breaker flow.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Monthly Egg Production</h3><div class="sub">Current year versus prior year</div><canvas id="monthlyProdChart" height="120"></canvas></article>
-      <article class="card"><h3>Trailing Three Month Table Egg Production</h3><div class="sub">Trailing 3-month table egg production</div><canvas id="trailingProdChart" height="120"></canvas></article>
+      <article class="card"><h3>Historical Table Egg Production</h3><div class="sub">Trailing 3-month table egg production</div><canvas id="trailingProdChart" height="120"></canvas></article>
       <article class="card"><h3>Rate of Lay</h3><div class="sub">Table eggs per 100 layers per day</div><canvas id="rolChart" height="120"></canvas></article>
       <article class="card"><h3>Eggs Delivered to Breakers</h3><div class="sub">Broken shell eggs and share of total production</div><canvas id="breakersChart" height="120"></canvas></article>
     </div>
@@ -57,20 +57,20 @@
     <div class="section-head"><div><div class="section-number">III</div><h2>Prices</h2><p>Wholesale, retail feature activity, and retail-farmgate price context.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Wholesale Prices</h3><div class="sub">Large Eggs, Conventional, 5-Day Rolling Average</div><canvas id="wholesaleChart" height="120"></canvas></article>
-      <article class="card"><h3>Retail Egg Price</h3><div class="sub">FRED Grade A Large eggs, U.S. city average</div><canvas id="eggPriceCompareChart" height="120"></canvas></article>
-      <article class="card"><h3>Retail to Farmgate Spread Estimate</h3><div class="sub">FRED Grade A Large eggs, U.S. city average - prior-month NASS all-eggs price received</div><canvas id="eggPriceSpreadChart" height="120"></canvas></article>
-      <article class="card" id="retailFeatureWrap"><h3>Egg Retail Feature Rates</h3><div class="sub">4-week average retail feature participation</div><canvas id="retailFeatureChart" height="120"></canvas></article>
+      <article class="card"><h3>Retail Egg Price</h3><div class="sub">Grade A Large eggs, U.S. city average</div><canvas id="eggPriceCompareChart" height="120"></canvas></article>
+      <article class="card"><h3>Retail Prices vs Farmgate Price Received Spread Estimate</h3><div class="sub">Grade A Large eggs, U.S. city average minus USDA NASS all-eggs price received (prior month average)</div><canvas id="eggPriceSpreadChart" height="120"></canvas></article>
+      <article class="card" id="retailFeatureWrap"><h3>Egg Retail Feature Rates</h3><div class="sub">% of retailers discounting eggs</div><canvas id="retailFeatureChart" height="120"></canvas></article>
     </div>
   </section>
 
   <section class="section" id="breeder-flock">
-    <div class="section-head"><div><div class="section-number">IV</div><h2>Pullet Supply and Breeder Flock</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
+    <div class="section-head"><div><div class="section-number">IV</div><h2>Pullets and Breeder Flock</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Egg-Type Chicks Hatched Comparison</h3><div class="sub">Monthly egg-type chicks hatched in 2025-2026 vs. 2021-2024</div><canvas id="chicksChart" height="120"></canvas></article>
       <article class="card wide"><h3>Egg-Type Chicks Hatched</h3><div class="sub">Historical monthly egg-type chicks hatched</div><canvas id="chicksTrendChart" height="110"></canvas></article>
       <article class="card"><h3>Pullet Inventory</h3><div class="sub">Replacement Egg-Type Pullets on Hand (1st of Month)</div><canvas id="pulletClimbChart" height="120"></canvas></article>
       <article class="card wide"><h3>Flock Pipeline Intensity</h3><div class="sub">Pullets per 100 table layers</div><canvas id="pipelineChart" height="110"></canvas></article>
-      <article class="card"><h3>Breeder Flock Size and Change</h3><div class="sub">Hatching layers and monthly change</div><canvas id="breederFlockChart" height="120"></canvas></article>
+      <article class="card"><h3>Breeder Flock Size and Change</h3><div class="sub">Egg-type breeder flock size (first of month)</div><canvas id="breederFlockChart" height="120"></canvas></article>
     </div>
   </section>
 
@@ -78,7 +78,7 @@
     <div class="section-head"><div><div class="section-number">V</div><h2>Inputs</h2><p>Feed-cost context and input pressure.</p></div></div>
     <div class="grid">
       <article class="card" id="feedIndexWrap"><h3>Layer Feed Index</h3><div class="sub" id="feedIndexSub">67% corn, 22% soybean meal, 8% calcium, 3% other</div><canvas id="feedIndexChart" height="120"></canvas></article>
-      <article class="card" id="dieselWrap"><h3>Input Cost Indices</h3><div class="sub">Weekly feed and diesel plus monthly packaging and electricity; Jan 2025 baseline = 100</div><canvas id="dieselChart" height="120"></canvas></article>
+      <article class="card" id="dieselWrap"><h3>Input Cost Price Changes</h3><div class="sub">% change in price of common egg input costs</div><canvas id="dieselChart" height="120"></canvas></article>
     </div>
   </section>
 
@@ -102,20 +102,32 @@
     <div class="section-head"><div><h2>Monthly Updates</h2><p>Sign up for monthly updates of the Egg Executive Chartbook.</p></div></div>
     <div class="grid">
       <article class="card">
-        <h3>Sign Up for Monthly Updates of the Egg Executive Chartbook</h3>
         <form class="dashboard-signup-form" id="eggDashboardSignupForm">
-          <label class="dashboard-signup-field" for="dashboardSignupFirstName">
-            <span>First Name</span>
-            <input id="dashboardSignupFirstName" name="firstName" type="text" autocomplete="given-name" placeholder="First name" required>
-          </label>
-          <label class="dashboard-signup-field" for="dashboardSignupLastName">
-            <span>Last Name</span>
-            <input id="dashboardSignupLastName" name="lastName" type="text" autocomplete="family-name" placeholder="Last name" required>
-          </label>
+          <div class="dashboard-signup-row">
+            <label class="dashboard-signup-field" for="dashboardSignupFirstName">
+              <span>First Name</span>
+              <input id="dashboardSignupFirstName" name="firstName" type="text" autocomplete="given-name" placeholder="First name" required>
+            </label>
+            <label class="dashboard-signup-field" for="dashboardSignupLastName">
+              <span>Last Name</span>
+              <input id="dashboardSignupLastName" name="lastName" type="text" autocomplete="family-name" placeholder="Last name">
+            </label>
+          </div>
           <label class="dashboard-signup-field" for="dashboardSignupEmail">
             <span>Email</span>
             <input id="dashboardSignupEmail" name="email" type="email" autocomplete="email" placeholder="Email address" required>
           </label>
+          <div class="dashboard-signup-checkboxes">
+            <span class="dashboard-signup-checkboxes-label">I'm interested in:</span>
+            <label class="dashboard-signup-checkbox">
+              <input type="checkbox" name="eggUpdates" checked>
+              <span>Egg Executive Monthly Updates</span>
+            </label>
+            <label class="dashboard-signup-checkbox">
+              <input type="checkbox" name="layerResearch">
+              <span>Other Innovate Animal Ag Layer Research</span>
+            </label>
+          </div>
           <button class="dashboard-signup-button" type="submit">Submit Sign Up</button>
           <p class="dashboard-signup-status" id="eggDashboardSignupStatus" aria-live="polite"></p>
         </form>
@@ -127,7 +139,7 @@
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20260321e"></script>
-<script src="assets/egg-dashboard.js?v=20260321e"></script>
+<script src="assets/dashboard-common.js?v=20260321h"></script>
+<script src="assets/egg-dashboard.js?v=20260321h"></script>
 </body>
 </html>

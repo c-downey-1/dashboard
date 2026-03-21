@@ -160,8 +160,15 @@ a{color:inherit}
 
 .dashboard-signup-form{
   display:grid;
-  gap:12px;
+  gap:14px;
   margin-top:18px;
+  max-width:460px;
+}
+
+.dashboard-signup-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
 }
 
 .dashboard-signup-field{
@@ -224,6 +231,43 @@ a{color:inherit}
 .dashboard-signup-button:focus-visible{
   outline:none;
   box-shadow:0 0 0 4px rgba(31,158,188,.12);
+}
+
+.dashboard-signup-checkboxes{
+  display:grid;
+  gap:8px;
+  margin-top:2px;
+}
+
+.dashboard-signup-checkboxes-label{
+  color:var(--navy);
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.dashboard-signup-checkbox{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+}
+
+.dashboard-signup-checkbox input[type="checkbox"]{
+  width:16px;
+  height:16px;
+  margin:0;
+  accent-color:var(--orange);
+  cursor:pointer;
+  flex:0 0 auto;
+}
+
+.dashboard-signup-checkbox span{
+  color:var(--ink);
+  font-size:.88rem;
+  font-weight:600;
+  line-height:1.35;
 }
 
 .dashboard-signup-status{

@@ -166,12 +166,18 @@ function initEggSidebarNav() {
 
   const updateActiveSidebarState = () => {
     const offset = window.innerHeight * 0.22;
+    const atBottom = (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 40);
+
     let activeSectionId = sections[0].id;
-    sections.forEach(section => {
-      if (section.getBoundingClientRect().top - offset <= 0) {
-        activeSectionId = section.id;
-      }
-    });
+    if (atBottom) {
+      activeSectionId = sections[sections.length - 1].id;
+    } else {
+      sections.forEach(section => {
+        if (section.getBoundingClientRect().top - offset <= 0) {
+          activeSectionId = section.id;
+        }
+      });
+    }
 
     const sectionCharts = chartEntries.filter(entry => entry.sectionId === activeSectionId);
     let activeChartId = sectionCharts[0]?.card.id || null;
@@ -209,13 +215,17 @@ function initEggDashboardSignup() {
     const firstName = form.elements.firstName?.value?.trim() || '';
     const lastName = form.elements.lastName?.value?.trim() || '';
     const email = form.elements.email?.value?.trim() || '';
+    const interests = [];
+    if (form.elements.eggUpdates?.checked) interests.push('Egg Executive Monthly Updates');
+    if (form.elements.layerResearch?.checked) interests.push('Other Innovate Animal Ag Layer Research');
     const subject = 'Monthly updates signup';
     const body = [
       'Please add me to Innovate Animal Ag monthly updates.',
       '',
       `First name: ${firstName}`,
       `Last name: ${lastName}`,
-      `Email: ${email}`
+      `Email: ${email}`,
+      `Interests: ${interests.length ? interests.join(', ') : 'None selected'}`
     ].join('\n');
 
     setStatus('Opening your email app to finish signup.');
@@ -495,7 +505,7 @@ async function bootEggDashboard() {
         dates.slice(start, end),
         [
           dataset('Table layer rate of lay', values.slice(start, end), DASH_COLORS.navy, { type: 'bar', backgroundColor: DASH_COLORS.navy, borderWidth: 1 }),
-          dataset('12-month average', avg.slice(start, end), DASH_COLORS.gold, { type: 'line', borderDash: [6, 4], backgroundColor: 'transparent' })
+          dataset('12-Month Rolling Average', avg.slice(start, end), DASH_COLORS.orange, { type: 'line', backgroundColor: DASH_COLORS.orange, fill: false })
         ],
         'Eggs / 100 layers / day',
         undefined,
@@ -672,7 +682,7 @@ async function bootEggDashboard() {
       MON_SHORT,
       layerSets.length ? layerSets : fallbackYears.map(year => dataset(String(year), monthsForYear(map, year), DASH_COLORS.slate)),
       'Hens',
-      { maxTicks: 12, yTickCallback: value => fmtMillionsAxis(value) }
+      { maxTicks: 12, yTickCallback: value => fmtMillionsAxis(value), tooltip: { filter: item => !item.dataset.legendKey } }
     );
   }
 
@@ -687,7 +697,7 @@ async function bootEggDashboard() {
       renderEggLineChart(
         'tableLayersTrendChart',
         dates.slice(start, end),
-        [dataset('Table-egg layers', values.slice(start, end), '#a23508')],
+        [dataset('Table-egg layers', values.slice(start, end), '#a23508', { fill: true, backgroundColor: 'rgba(162,53,8,0.075)' })],
         'Hens',
         { yTickCallback: value => fmtMillionsAxis(value) }
       );
@@ -1010,7 +1020,7 @@ async function bootEggDashboard() {
       renderEggLineChart(
         'eggPriceCompareChart',
         fredDates.slice(start, end),
-        [dataset('FRED Grade A Large', fredValues.slice(start, end), '#a23508')],
+        [dataset('Price of Grade A, Large Eggs', fredValues.slice(start, end), '#a23508')],
         '$ / dozen',
         { yTickCallback: value => `$${fmtNum(value, 2)}` }
       );
