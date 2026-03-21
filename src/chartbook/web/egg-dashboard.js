@@ -218,18 +218,26 @@ function initEggDashboardSignup() {
     const interests = [];
     if (form.elements.eggUpdates?.checked) interests.push('Egg Executive Monthly Updates');
     if (form.elements.layerResearch?.checked) interests.push('Other Innovate Animal Ag Layer Research');
-    const subject = 'Monthly updates signup';
-    const body = [
-      'Please add me to Innovate Animal Ag monthly updates.',
-      '',
-      `First name: ${firstName}`,
-      `Last name: ${lastName}`,
-      `Email: ${email}`,
-      `Interests: ${interests.length ? interests.join(', ') : 'None selected'}`
-    ].join('\n');
 
-    setStatus('Opening your email app to finish signup.');
-    window.location.href = `mailto:contact@animalinnovation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+    setStatus('Submitting…');
+
+    fetch('https://script.google.com/macros/s/AKfycbx9JZ0nE9lMeJFL9atk8tgTvbc-KgVyJCX3eutpBkf9kuKMUWL0JkTPU6Yut7RP6sS0Bw/exec', {
+      method: 'POST',
+      body: JSON.stringify({ firstName, lastName, email, interests })
+    })
+      .then(response => {
+        if (!response.ok) throw new Error('Network error');
+        setStatus('Thank you! You have been signed up.');
+        form.reset();
+      })
+      .catch(() => {
+        setStatus('Something went wrong. Please try again.');
+      })
+      .finally(() => {
+        if (submitBtn) submitBtn.disabled = false;
+      });
   });
 }
 
