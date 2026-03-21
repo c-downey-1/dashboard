@@ -203,8 +203,10 @@ FRED_SERIES = {
     "WPU0171":     "PPI: Chicken Eggs",
     "WPU0141":     "PPI: Slaughter Chickens",
     "WPU014102":   "PPI: Broilers & Meat-Type Chickens",
+    "PCU322219322219": "Other Paperboard Container Manufacturing",
     "PPOULTUSDM":  "Global Price of Poultry ($/kg)",
     "APU0000708111": "Eggs, Grade A, Large (per dozen)",
+    "GASDESW":     "US Diesel Sales Price ($/gallon)",
 }
 
 # ── BLS Series Configuration ──────────────────────────────────────────────

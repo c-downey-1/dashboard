@@ -13,7 +13,7 @@ Usage:
 import argparse
 import json
 import shutil
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 from . import db
 from .hpai_categories import ALL_POULTRY_PRODUCTION_TYPES
@@ -844,6 +844,122 @@ def build_fred_retail_egg(conn):
     }
 
 
+def build_fred_diesel(conn):
+    """FRED diesel series (EIA via FRED), weekly."""
+    try:
+        rows = conn.execute("""
+            SELECT observation_date, value
+            FROM fred_series
+            WHERE series_id = 'GASDESW'
+              AND value IS NOT NULL
+            ORDER BY observation_date
+        """).fetchall()
+    except Exception:
+        return {"dates": [], "values": []}
+
+    return {
+        "dates": [row[0] for row in rows],
+        "values": [row[1] for row in rows],
+    }
+
+
+def build_input_indices(conn):
+    """Feed, diesel, and packaging indices rebased to Jan 2025 = 100."""
+    base_month = "2025-01"
+
+    def rebase(date_rows):
+        values_by_date = {label: value for label, value in date_rows if value is not None}
+        jan_values = [value for label, value in values_by_date.items() if str(label).startswith(base_month)]
+        if not jan_values:
+            return {}
+        base_value = sum(jan_values) / len(jan_values)
+        return {
+            label: round((value / base_value) * 100.0, 4)
+            for label, value in values_by_date.items()
+            if value is not None
+        }
+
+    def weekly_average(date_rows):
+        grouped = {}
+        for trade_date, value in date_rows:
+            if value is None:
+                continue
+            dt = date.fromisoformat(trade_date)
+            week_start = (dt - timedelta(days=dt.weekday())).isoformat()
+            grouped.setdefault(week_start, []).append(value)
+        return [
+            (week_start, sum(values) / len(values))
+            for week_start, values in sorted(grouped.items())
+        ]
+
+    try:
+        feed_rows = conn.execute("""
+            SELECT trade_date, ration_cost
+            FROM cme_feed_daily
+            WHERE ration_cost IS NOT NULL
+            ORDER BY trade_date
+        """).fetchall()
+    except Exception:
+        feed_rows = []
+
+    feed_rows = weekly_average(feed_rows) if feed_rows else []
+
+    if not feed_rows:
+        try:
+            feed_rows = conn.execute("""
+                SELECT substr(observation_date, 1, 7) AS month,
+                       AVG(0.67 * corn_price + 0.22 * sbm_price) AS avg_feed_cost
+                FROM v_feed_costs
+                WHERE corn_price IS NOT NULL AND sbm_price IS NOT NULL
+                GROUP BY substr(observation_date, 1, 7)
+                ORDER BY month
+            """).fetchall()
+        except Exception:
+            feed_rows = []
+
+    try:
+        diesel_rows = conn.execute("""
+            SELECT observation_date, value
+            FROM fred_series
+            WHERE series_id = 'GASDESW'
+              AND value IS NOT NULL
+            ORDER BY observation_date
+        """).fetchall()
+    except Exception:
+        diesel_rows = []
+
+    try:
+        packaging_rows = conn.execute("""
+            SELECT substr(observation_date, 1, 7) AS month, AVG(value) AS avg_packaging
+            FROM fred_series
+            WHERE series_id = 'PCU322219322219'
+              AND value IS NOT NULL
+            GROUP BY substr(observation_date, 1, 7)
+            ORDER BY month
+        """).fetchall()
+    except Exception:
+        packaging_rows = []
+
+    series_maps = {
+        "Layer feed": rebase(feed_rows),
+        "Diesel": rebase(diesel_rows),
+        "Paperboard packaging": rebase(packaging_rows),
+    }
+    active_series = {label: values for label, values in series_maps.items() if values}
+    if not active_series:
+        return {"dates": [], "series": {}, "base_month": base_month}
+
+    dates = sorted({month for values in active_series.values() for month in values})
+    return {
+        "dates": dates,
+        "series": {
+            label: [values.get(month) for month in dates]
+            for label, values in active_series.items()
+        },
+        "base_month": base_month,
+    }
+
+
 def build_bls_retail(conn):
     """BLS CPI retail prices for eggs and chicken."""
     try:
@@ -1360,6 +1476,10 @@ def build_data_json(conn):
     data["fred_retail_egg"] = build_fred_retail_egg(conn)
     print(f"{len(data['fred_retail_egg']['dates'])} dates")
 
+    print("    FRED Diesel ...", end=" ", flush=True)
+    data["fred_diesel"] = build_fred_diesel(conn)
+    print(f"{len(data['fred_diesel']['dates'])} dates")
+
     print("    BLS Retail ...", end=" ", flush=True)
     data["bls_retail"] = build_bls_retail(conn)
     print(f"{len(data['bls_retail']['dates'])} dates")
@@ -1379,6 +1499,10 @@ def build_data_json(conn):
     print("    Feed Index ...", end=" ", flush=True)
     data["feed_index"] = build_feed_index(conn)
     print(f"{len(data['feed_index']['dates'])} dates")
+
+    print("    Input Indices ...", end=" ", flush=True)
+    data["input_indices"] = build_input_indices(conn)
+    print(f"{len(data['input_indices']['dates'])} dates")
 
     print("    Feed Ratios ...", end=" ", flush=True)
     data["feed_ratios"] = build_feed_ratios(conn)

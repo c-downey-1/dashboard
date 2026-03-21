@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20260320cb">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20260320cc">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
@@ -71,21 +71,22 @@
     </div>
   </section>
 
-  <section class="section" id="inputs">
-    <div class="section-head"><div><div class="section-number">IV</div><h2>Inputs</h2><p>Feed-cost context and input pressure.</p></div></div>
-    <div class="grid">
-      <article class="card" id="feedIndexWrap"><h3>Layer Feed Index</h3><div class="sub" id="feedIndexSub">67% corn, 22% soybean meal, 8% calcium, 3% other</div><canvas id="feedIndexChart" height="120"></canvas></article>
-    </div>
-  </section>
-
   <section class="section" id="breeder-flock">
-    <div class="section-head"><div><div class="section-number">V</div><h2>Pullet Supply and Breeder Flock</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
+    <div class="section-head"><div><div class="section-number">IV</div><h2>Pullet Supply and Breeder Flock</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Egg-Type Chicks Hatched Comparison</h3><div class="sub">Monthly egg-type chicks hatched in 2025-2026 vs. 2021-2024</div><canvas id="chicksChart" height="120"></canvas></article>
       <article class="card wide"><h3>Egg-Type Chicks Hatched</h3><div class="sub">Historical monthly egg-type chicks hatched</div><canvas id="chicksTrendChart" height="110"></canvas></article>
       <article class="card"><h3>Pullet Inventory</h3><div class="sub">Replacement Egg-Type Pullets on Hand (1st of Month)</div><canvas id="pulletClimbChart" height="120"></canvas></article>
       <article class="card wide"><h3>Flock Pipeline Intensity</h3><div class="sub">Pullets per 100 table layers</div><canvas id="pipelineChart" height="110"></canvas></article>
       <article class="card"><h3>Breeder Flock Size and Change</h3><div class="sub">Hatching layers and monthly change</div><canvas id="breederFlockChart" height="120"></canvas></article>
+    </div>
+  </section>
+
+  <section class="section" id="inputs">
+    <div class="section-head"><div><div class="section-number">V</div><h2>Inputs</h2><p>Feed-cost context and input pressure.</p></div></div>
+    <div class="grid">
+      <article class="card" id="feedIndexWrap"><h3>Layer Feed Index</h3><div class="sub" id="feedIndexSub">67% corn, 22% soybean meal, 8% calcium, 3% other</div><canvas id="feedIndexChart" height="120"></canvas></article>
+      <article class="card" id="dieselWrap"><h3>Input Cost Indices</h3><div class="sub">Weekly feed and diesel with monthly packaging; Jan 2025 = 100</div><canvas id="dieselChart" height="120"></canvas></article>
     </div>
   </section>
 
@@ -109,7 +110,7 @@
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20260320cb"></script>
-<script src="assets/egg-dashboard.js?v=20260320cb"></script>
+<script src="assets/dashboard-common.js?v=20260320cc"></script>
+<script src="assets/egg-dashboard.js?v=20260320cc"></script>
 </body>
 </html>

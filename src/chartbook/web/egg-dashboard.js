@@ -57,6 +57,7 @@ function setChartSources() {
     eggPriceCompareChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a>',
     eggPriceSpreadChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a> and <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Prices_Received_and_Prices_Received_Indexes/" target="_blank" rel="noreferrer">USDA NASS Agricultural Prices</a>',
     feedIndexChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a>',
+    dieselChart: 'Chart: Innovate Animal Ag • Sources: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a> · <a href="https://fred.stlouisfed.org/series/GASDESW" target="_blank" rel="noreferrer">FRED GASDESW</a> · <a href="https://fred.stlouisfed.org/series/PCU322219322219" target="_blank" rel="noreferrer">FRED PCU322219322219</a>',
     regionalEggChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2848" target="_blank" rel="noreferrer">USDA AMS Weekly Combined Regional Shell Egg Report</a>',
     eggImportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
     eggExportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>'
@@ -1050,6 +1051,33 @@ async function bootEggDashboard() {
     });
   } else {
     showPlaceholder('feedIndexWrap', 'Feed cost inputs are not currently ingested in this environment, so this chart will populate once FRED data is loaded.');
+  }
+
+  if ((D.input_indices?.dates || []).length) {
+    registerRangeControl({
+      chartId: 'dieselChart',
+      options: ['1y', '3y', '5y', 'all'],
+      defaultRange: '3y',
+      renderer(range) {
+        const dates = D.input_indices.dates;
+        const { start, end } = getRangeSlice(dates, range);
+        const colorByLabel = {
+          'Layer feed': DASH_COLORS.orange,
+          Diesel: DASH_COLORS.navy,
+          'Paperboard packaging': DASH_COLORS.teal
+        };
+        renderEggLineChart(
+          'dieselChart',
+          dates.slice(start, end),
+          Object.keys(D.input_indices.series).map(label =>
+            dataset(label, D.input_indices.series[label].slice(start, end), colorByLabel[label] || DASH_COLORS.slate)
+          ),
+          'Index'
+        );
+      }
+    });
+  } else {
+    showPlaceholder('dieselWrap', 'Input index comparison data is not fully ingested in this environment yet. Once feed and FRED input series are loaded, this chart will populate.');
   }
 
   registerRangeControl({
