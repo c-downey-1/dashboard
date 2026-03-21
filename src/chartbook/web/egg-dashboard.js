@@ -193,6 +193,46 @@ function initEggSidebarNav() {
   updateActiveSidebarState();
   window.addEventListener('scroll', updateActiveSidebarState, { passive: true });
   window.addEventListener('resize', updateActiveSidebarState);
+
+  /* Mobile section jumper */
+  const mobileSelect = document.getElementById('mobileSectionSelect');
+  if (mobileSelect) {
+    sections.forEach(section => {
+      const option = document.createElement('option');
+      option.value = section.id;
+      option.textContent = section.dataset.sidebarTitle
+        || section.querySelector('.section-head h2')?.textContent?.trim()
+        || section.id;
+      mobileSelect.appendChild(option);
+    });
+
+    mobileSelect.addEventListener('change', () => {
+      const target = document.getElementById(mobileSelect.value);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => { mobileSelect.value = ''; }, 600);
+      }
+    });
+
+    const updateMobileNav = () => {
+      let currentId = sections[0]?.id || '';
+      const atBottom = (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 40);
+      if (atBottom) {
+        currentId = sections[sections.length - 1].id;
+      } else {
+        sections.forEach(section => {
+          if (section.getBoundingClientRect().top <= window.innerHeight * 0.3) {
+            currentId = section.id;
+          }
+        });
+      }
+      if (document.activeElement !== mobileSelect) {
+        mobileSelect.value = currentId;
+      }
+    };
+    window.addEventListener('scroll', updateMobileNav, { passive: true });
+    updateMobileNav();
+  }
 }
 
 function initEggDashboardSignup() {
@@ -267,7 +307,7 @@ function boostEggLineDataset(entry) {
   const effectiveType = entry.type || 'line';
   if (effectiveType !== 'line') return entry;
   return Object.assign({}, entry, {
-    borderWidth: (entry.borderWidth ?? 3.4) + 1
+    borderWidth: (entry.borderWidth ?? 3.4) + (isMobileWidth() ? 0 : 1)
   });
 }
 
@@ -994,28 +1034,226 @@ async function bootEggDashboard() {
     }
   });
 
-  registerRangeControl({
-    chartId: 'wholesaleChart',
-    options: ['30d', '90d', '6m', '1y', 'all'],
-    defaultRange: 'all',
-    renderer(range) {
-      const dates = D.egg_index.dates;
+  /* Wholesale Prices — with Percent Change toggle */
+  const wholesaleMode = { view: 'prices' };
+  (function () {
+    const wDates = D.egg_index.dates;
+    if (!wDates.length) return;
+    const lastDate = wDates[wDates.length - 1];
+    wholesaleMode.baseMonth = '2026-01';
+
+    function rebaseWholesale(values, dates, baseMonth) {
+      var baseVal = null;
+      for (var i = 0; i < dates.length; i++) {
+        if (dates[i].startsWith(baseMonth) && values[i] != null) {
+          baseVal = values[i]; break;
+        }
+      }
+      if (!baseVal) return values;
+      return values.map(function (v) {
+        return v != null ? Math.round((v / baseVal - 1) * 100 * 100) / 100 : null;
+      });
+    }
+
+    const wholesaleEndLabelPlugin = {
+      id: 'wholesaleEndLabels',
+      afterDatasetsDraw(chart) {
+        const MIN_GAP = 13;
+        const items = [];
+        chart.data.datasets.forEach(function (ds, dsIdx) {
+          const meta = chart.getDatasetMeta(dsIdx);
+          if (meta.hidden) return;
+          var lastIdx = -1;
+          for (var i = ds.data.length - 1; i >= 0; i--) {
+            if (ds.data[i] != null) { lastIdx = i; break; }
+          }
+          if (lastIdx === -1) return;
+          const pt = meta.data[lastIdx];
+          if (!pt) return;
+          const v = ds.data[lastIdx];
+          const sign = v > 0 ? '+' : '';
+          items.push({ text: sign + v.toFixed(1) + '%', color: ds.borderColor || '#013046', x: pt.x, y: pt.y, drawY: pt.y });
+        });
+        items.sort(function (a, b) { return a.y - b.y; });
+        for (var i = 1; i < items.length; i++) {
+          var overlap = items[i - 1].drawY + MIN_GAP - items[i].drawY;
+          if (overlap > 0) { items[i - 1].drawY -= overlap / 2; items[i].drawY += overlap / 2; }
+        }
+        for (var i = 1; i < items.length; i++) {
+          var overlap = items[i - 1].drawY + MIN_GAP - items[i].drawY;
+          if (overlap > 0) { items[i].drawY = items[i - 1].drawY + MIN_GAP; }
+        }
+        var ctx = chart.ctx;
+        ctx.save();
+        ctx.font = 'bold 11px Lexend, sans-serif';
+        ctx.textBaseline = 'middle';
+        ctx.textAlign = 'left';
+        ctx.strokeStyle = '#faf8f5';
+        ctx.lineWidth = 4;
+        ctx.lineJoin = 'round';
+        items.forEach(function (item) { ctx.strokeText(item.text, item.x + 6, item.drawY); });
+        items.forEach(function (item) { ctx.fillStyle = item.color; ctx.fillText(item.text, item.x + 6, item.drawY); });
+        ctx.restore();
+      }
+    };
+
+    function renderWholesalePctChange() {
+      const baseMonth = wholesaleMode.baseMonth;
       const cagedRolling = rollingAverage(D.egg_index.series.Caged || [], 5);
       const breakingStock = D.egg_index.series['Breaking Stock'] || [];
       const undergrades = D.egg_index.series.Undergrades || [];
-      const { start, end } = getRangeSlice(dates, range);
-      renderEggLineChart(
-        'wholesaleChart',
-        dates.slice(start, end),
-        [
-          dataset('Wholesale Price', cagedRolling.slice(start, end), DASH_COLORS.orange),
-          dataset('Breaking Stock', breakingStock.slice(start, end), DASH_COLORS.lightBlue),
-          dataset('Undergrades', undergrades.slice(start, end), DASH_COLORS.teal)
-        ],
-        '¢ / dozen'
-      );
+      var startIdx = 0;
+      for (var i = 0; i < wDates.length; i++) {
+        if (wDates[i] >= baseMonth) { startIdx = i; break; }
+      }
+      const slicedDates = wDates.slice(startIdx);
+      const ds = [
+        boostEggLineDataset(dataset('Wholesale Price', rebaseWholesale(cagedRolling.slice(startIdx), slicedDates, baseMonth), DASH_COLORS.orange)),
+        boostEggLineDataset(dataset('Breaking Stock', rebaseWholesale(breakingStock.slice(startIdx), slicedDates, baseMonth), DASH_COLORS.lightBlue)),
+        boostEggLineDataset(dataset('Undergrades', rebaseWholesale(undergrades.slice(startIdx), slicedDates, baseMonth), DASH_COLORS.teal))
+      ];
+      var ctx = document.getElementById('wholesaleChart');
+      if (!ctx) return;
+      destroyChart('wholesaleChart');
+      var opts = baseOptions('% Change', {
+        chartId: 'wholesaleChart',
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              var v = context.parsed?.y;
+              if (v == null || !Number.isFinite(v)) return context.dataset?.label || '';
+              var sign = v > 0 ? '+' : '';
+              return (context.dataset?.label ? context.dataset.label + ': ' : '') + sign + v.toFixed(1) + '%';
+            }
+          }
+        }
+      });
+      opts.layout.padding.right = 62;
+      charts['wholesaleChart'] = new Chart(ctx, {
+        type: 'line',
+        data: { labels: slicedDates, datasets: ds },
+        options: opts,
+        plugins: [wholesaleEndLabelPlugin]
+      });
     }
-  });
+
+    registerRangeControl({
+      chartId: 'wholesaleChart',
+      options: ['30d', '90d', '6m', '1y', 'all'],
+      defaultRange: 'all',
+      renderer(range) {
+        if (wholesaleMode.view === 'pctChange') {
+          renderWholesalePctChange();
+          return;
+        }
+        const dates = wDates;
+        const cagedRolling = rollingAverage(D.egg_index.series.Caged || [], 5);
+        const breakingStock = D.egg_index.series['Breaking Stock'] || [];
+        const undergrades = D.egg_index.series.Undergrades || [];
+        const { start, end } = getRangeSlice(dates, range);
+        renderEggLineChart(
+          'wholesaleChart',
+          dates.slice(start, end),
+          [
+            dataset('Wholesale Price', cagedRolling.slice(start, end), DASH_COLORS.orange),
+            dataset('Breaking Stock', breakingStock.slice(start, end), DASH_COLORS.lightBlue),
+            dataset('Undergrades', undergrades.slice(start, end), DASH_COLORS.teal)
+          ],
+          '¢ / dozen'
+        );
+      }
+    });
+
+    /* Add toggle buttons and base-month picker to toolbar */
+    const toolbar = document.querySelector('.chart-toolbar[data-chart="wholesaleChart"]');
+    if (!toolbar) return;
+    const rangeControls = toolbar.querySelector('.range-controls[data-chart="wholesaleChart"]');
+    const legend = toolbar.querySelector('.chart-legend');
+
+    const pctBtn = document.createElement('button');
+    pctBtn.type = 'button';
+    pctBtn.className = 'range-btn wholesale-mode-btn';
+    pctBtn.textContent = '% Change';
+
+    const pricesBtn = document.createElement('button');
+    pricesBtn.type = 'button';
+    pricesBtn.className = 'range-btn wholesale-mode-btn';
+    pricesBtn.textContent = 'Prices';
+    pricesBtn.style.display = 'none';
+
+    const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const minYear = 2025;
+    const maxYear = parseInt(lastDate.slice(0, 4), 10);
+
+    const baseWrap = document.createElement('div');
+    baseWrap.className = 'base-month-control';
+    baseWrap.style.display = 'none';
+
+    const bLabel = document.createElement('span');
+    bLabel.className = 'base-month-label';
+    bLabel.textContent = 'Index date:';
+    const monthSel = document.createElement('select');
+    monthSel.className = 'base-month-select';
+    MONTH_NAMES.forEach(function (name, i) {
+      var opt = document.createElement('option');
+      opt.value = String(i + 1).padStart(2, '0');
+      opt.textContent = name;
+      monthSel.appendChild(opt);
+    });
+    const yearSel = document.createElement('select');
+    yearSel.className = 'base-month-select';
+    for (var y = maxYear; y >= minYear; y--) {
+      var opt = document.createElement('option');
+      opt.value = String(y);
+      opt.textContent = String(y);
+      yearSel.appendChild(opt);
+    }
+    monthSel.value = wholesaleMode.baseMonth.slice(5, 7);
+    yearSel.value = wholesaleMode.baseMonth.slice(0, 4);
+    baseWrap.appendChild(bLabel);
+    baseWrap.appendChild(monthSel);
+    baseWrap.appendChild(yearSel);
+
+    /* Insert into toolbar: [rangeControls] [pctBtn] [pricesBtn] [baseWrap] [legend] */
+    toolbar.insertBefore(pctBtn, legend);
+    toolbar.insertBefore(pricesBtn, legend);
+    toolbar.insertBefore(baseWrap, legend);
+
+    pctBtn.addEventListener('click', function () {
+      wholesaleMode.view = 'pctChange';
+      rangeControls.style.display = 'none';
+      pctBtn.style.display = 'none';
+      pricesBtn.style.display = '';
+      baseWrap.style.display = '';
+      renderWholesalePctChange();
+    });
+
+    pricesBtn.addEventListener('click', function () {
+      wholesaleMode.view = 'prices';
+      rangeControls.style.display = '';
+      pctBtn.style.display = '';
+      pricesBtn.style.display = 'none';
+      baseWrap.style.display = 'none';
+      chartRenderers['wholesaleChart'](chartRanges['wholesaleChart']);
+    });
+
+    function enforceMinMonth() {
+      Array.from(monthSel.options).forEach(function (opt) {
+        opt.disabled = (yearSel.value === '2025' && parseInt(opt.value, 10) < 2);
+      });
+      if (yearSel.value === '2025' && parseInt(monthSel.value, 10) < 2) {
+        monthSel.value = '02';
+      }
+    }
+    function onBaseChange() {
+      enforceMinMonth();
+      wholesaleMode.baseMonth = yearSel.value + '-' + monthSel.value;
+      renderWholesalePctChange();
+    }
+    monthSel.addEventListener('change', onBaseChange);
+    yearSel.addEventListener('change', onBaseChange);
+    enforceMinMonth();
+  })();
 
   registerRangeControl({
     chartId: 'eggPriceCompareChart',

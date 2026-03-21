@@ -69,10 +69,35 @@ const htmlLegendPlugin = {
   }
 };
 
+const touchTooltipPlugin = {
+  id: 'touchTooltip',
+  afterEvent(chart, args) {
+    if (args.event.type === 'pointerup' || args.event.type === 'pointerleave') {
+      if ('ontouchstart' in window) {
+        clearTimeout(chart._touchTooltipTimeout);
+        chart._touchTooltipTimeout = setTimeout(() => {
+          chart.tooltip.setActiveElements([], { x: 0, y: 0 });
+          chart.update('none');
+        }, 2000);
+        args.cancelable = false;
+        args.changed = false;
+      }
+    }
+  }
+};
+
+function isMobileWidth() { return window.innerWidth <= 480; }
+
+function mobileAspectRatio(desktopRatio) {
+  if (window.innerWidth <= 480) return Math.max(desktopRatio * 0.7, 1.0);
+  if (window.innerWidth <= 768) return Math.max(desktopRatio * 0.85, 1.1);
+  return desktopRatio;
+}
+
 if (window.Chart) {
-  Chart.register(htmlLegendPlugin);
+  Chart.register(htmlLegendPlugin, touchTooltipPlugin);
   Chart.defaults.font.family = 'Lexend';
-  Chart.defaults.font.size = 13;
+  Chart.defaults.font.size = isMobileWidth() ? 11 : 13;
   Chart.defaults.color = DASH_COLORS.navy;
   Chart.defaults.plugins.legend.labels.usePointStyle = true;
   Chart.defaults.plugins.legend.labels.pointStyle = 'rect';
@@ -80,7 +105,7 @@ if (window.Chart) {
   Chart.defaults.plugins.tooltip.titleColor = '#fff';
   Chart.defaults.plugins.tooltip.bodyColor = '#eaf2f7';
   Chart.defaults.plugins.tooltip.cornerRadius = 12;
-  Chart.defaults.plugins.tooltip.padding = 12;
+  Chart.defaults.plugins.tooltip.padding = isMobileWidth() ? 10 : 12;
 }
 
 const MON_SHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -459,7 +484,7 @@ function dataset(label, data, color, extra = {}) {
     pointHoverRadius: 5,
     pointHoverBorderWidth: 3,
     pointHoverBorderColor: '#fff',
-    borderWidth: 3.4,
+    borderWidth: isMobileWidth() ? 2 : 3.4,
     tension: 0.12,
     spanGaps: true,
     fill: false
@@ -482,9 +507,9 @@ function baseOptions(yLabel, extra = {}) {
   const options = {
     responsive: true,
     maintainAspectRatio: true,
-    aspectRatio: extra.aspect || 1.7,
+    aspectRatio: mobileAspectRatio(extra.aspect || 1.7),
     interaction: { mode: 'index', intersect: false },
-    layout: { padding: { top: 4, right: 8, bottom: 14, left: 8 } },
+    layout: { padding: isMobileWidth() ? { top: 2, right: 2, bottom: 8, left: 2 } : { top: 4, right: 8, bottom: 14, left: 8 } },
     plugins: {
       legend: {
         display: false,
@@ -494,7 +519,7 @@ function baseOptions(yLabel, extra = {}) {
           boxWidth: 10,
           boxHeight: 10,
           padding: 14,
-          font: { size: 13, weight: '600' },
+          font: { size: isMobileWidth() ? 11 : 13, weight: '600' },
           generateLabels: defaultGenerateLabels ? chart => {
             const seenLegendKeys = new Set();
             return defaultGenerateLabels(chart).reduce((items, item) => {
@@ -542,19 +567,20 @@ function baseOptions(yLabel, extra = {}) {
     scales: {
       x: {
         afterBuildTicks(scale) {
-          const plan = buildDateTickPlan(scale.getLabels(), extra.maxTicks || 12);
+          const mobileTicks = isMobileWidth() ? Math.min(extra.maxTicks || 12, 4) : (extra.maxTicks || 12);
+          const plan = buildDateTickPlan(scale.getLabels(), mobileTicks);
           if (!plan) return;
           scale.$dateTickPlan = plan;
           scale.ticks = plan.indices.map(index => ({ value: index }));
         },
         ticks: {
-          maxTicksLimit: extra.maxTicks || 12,
+          maxTicksLimit: isMobileWidth() ? Math.min(extra.maxTicks || 12, 4) : (extra.maxTicks || 12),
           autoSkip: false,
           color: '#627684',
-          padding: 10,
+          padding: isMobileWidth() ? 6 : 10,
           maxRotation: 0,
           minRotation: 0,
-          font: { size: 13 },
+          font: { size: isMobileWidth() ? 10 : 13 },
           callback(value) {
             const label = this.getLabelForValue(value);
             return formatAxisDateLabel(label, this.$dateTickPlan?.mode);
@@ -564,11 +590,11 @@ function baseOptions(yLabel, extra = {}) {
         grid: { drawOnChartArea: false, drawTicks: true, tickLength: 6 }
       },
       y: {
-        title: { display: !!yLabel, text: yLabel, color: '#5f7180', font: { size: 13, weight: '600' } },
+        title: { display: !!yLabel, text: yLabel, color: '#5f7180', font: { size: isMobileWidth() ? 10 : 13, weight: '600' } },
         ticks: {
           color: '#627684',
-          padding: 10,
-          font: { size: 13 },
+          padding: isMobileWidth() ? 6 : 10,
+          font: { size: isMobileWidth() ? 10 : 13 },
           callback: extra.yTickCallback || fmtAxisNumber
         },
         border: { display: false },
@@ -579,11 +605,11 @@ function baseOptions(yLabel, extra = {}) {
   if (hasY2) {
     options.scales.y2 = {
       position: 'right',
-      title: { display: true, text: extra.y2, color: '#5f7180', font: { size: 13, weight: '600' } },
+      title: { display: true, text: extra.y2, color: '#5f7180', font: { size: isMobileWidth() ? 10 : 13, weight: '600' } },
       ticks: {
         color: '#627684',
-        padding: 10,
-        font: { size: 13 },
+        padding: isMobileWidth() ? 6 : 10,
+        font: { size: isMobileWidth() ? 10 : 13 },
         callback: extra.y2TickCallback || fmtAxisNumber
       },
       border: { display: false },
@@ -707,6 +733,21 @@ document.addEventListener('click', event => {
   insertRangeControls(chartId, button.parentElement ? Array.from(button.parentElement.querySelectorAll('.range-btn')).map(node => node.dataset.range) : [range]);
   chartRenderers[chartId](range);
 });
+
+/* Re-render charts on resize/orientation change for mobile aspect ratios */
+(function () {
+  let resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      Object.keys(chartRenderers).forEach(function (chartId) {
+        if (chartRenderers[chartId] && chartRanges[chartId]) {
+          chartRenderers[chartId](chartRanges[chartId]);
+        }
+      });
+    }, 250);
+  });
+})();
 
 /* Show sidebar logo when header brand scrolls out of view */
 (function () {

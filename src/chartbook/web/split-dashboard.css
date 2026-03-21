@@ -838,6 +838,22 @@ a{color:inherit}
   line-height:1.6;
 }
 
+.mobile-section-nav{display:none}
+
+.mobile-section-select{
+  width:100%;
+  padding:10px 36px 10px 12px;
+  border:1px solid rgba(1,48,70,.14);
+  border-radius:10px;
+  background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23013046' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 12px center;
+  color:var(--navy);
+  font-family:'Lexend',sans-serif;
+  font-size:.88rem;
+  font-weight:600;
+  appearance:none;
+  -webkit-appearance:none;
+}
+
 @media(max-width:1080px){
   .iaa-bar{
     align-items:flex-start;
@@ -878,6 +894,21 @@ a{color:inherit}
   .card,.card.narrow,.card.wide{grid-column:span 12}
   .chooser-card{grid-template-columns:1fr}
   .chooser-link{align-self:start}
+
+  .mobile-section-nav{
+    display:block;
+    position:sticky;
+    top:0;
+    z-index:100;
+    padding:8px 16px;
+    background:rgba(250,248,245,.95);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(1,48,70,.08);
+  }
+
+  .section,.overview-band{scroll-margin-top:56px}
+  .card{scroll-margin-top:56px}
 }
 
 @media(max-width:768px){
@@ -891,4 +922,37 @@ a{color:inherit}
   .section,.overview-band{padding:26px 0}
   .section-head h2{font-size:1.62rem}
   .topnav{gap:10px}
+}
+
+@media(max-width:480px){
+  .shell{padding:10px 4px 32px}
+
+  .iaa-header-title{font-size:clamp(1.1rem,4.5vw,1.5rem);text-align:left}
+
+  .section,.overview-band{padding:14px 0}
+  .section-head{padding:0 8px}
+  .section-head h2{font-size:1.28rem}
+  .section-head p{font-size:.88rem}
+  .section-number{font-size:.7rem;margin-bottom:4px}
+
+  .card{padding:12px 6px}
+  .card h3{font-size:1rem;padding:0 4px}
+  .card .sub{font-size:.8rem;margin:4px 4px 8px;padding:0}
+  .card-source{font-size:.64rem;padding:0 4px}
+
+  .chart-toolbar{gap:6px;margin:-2px 4px 8px}
+  .range-btn{padding:4px 8px;font-size:.7rem}
+
+  .chart-legend-label{font-size:.68rem}
+  .chart-legend-swatch{width:8px;height:8px}
+  .chart-legend-list{gap:4px 8px;padding:0 4px}
+
+  .dashboard-signup-row{grid-template-columns:1fr}
+  .dashboard-signup-button{width:100%;justify-self:stretch}
+
+  .card canvas{min-height:200px}
+
+  .grid{gap:12px}
+
+  .footer{font-size:.72rem;margin-top:18px;padding:0 8px}
 }
