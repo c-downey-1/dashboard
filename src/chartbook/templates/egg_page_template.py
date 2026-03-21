@@ -107,7 +107,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="monthly-updates" data-sidebar-title="Subscribe for Free">
-    <div class="section-head"><div><div class="section-number">VIII</div><h2>Monthly Updates</h2><p>Sign up for monthly updates of the Egg Executive Chartbook.</p></div></div>
+    <div class="section-head"><div><h2>Monthly Updates</h2><p>Sign up for monthly updates of the Egg Executive Chartbook.</p></div></div>
     <div class="grid">
       <article class="card">
         <h3>Sign Up for Monthly Updates of the Egg Executive Chartbook</h3>

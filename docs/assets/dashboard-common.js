@@ -29,6 +29,7 @@ const DASH_COLORS = {
   seq: ['#F6851F', '#1F9EBC', '#013046', '#FDB714', '#8FCAE6', '#939598', '#E5700A']
 };
 
+
 const htmlLegendPlugin = {
   id: 'htmlLegend',
   afterUpdate(chart, args, options) {
@@ -624,9 +625,13 @@ function renderBarChart(id, labels, datasets, yLabel, extra = {}) {
   if (extra.horizontal) {
     options.indexAxis = 'y';
   }
+  const cleanDatasets = datasets.map(ds => Object.assign({}, ds, {
+    borderWidth: 0, borderColor: 'transparent',
+    hoverBorderWidth: 0, hoverBorderColor: 'transparent'
+  }));
   charts[id] = new Chart(ctx, {
     type: 'bar',
-    data: { labels, datasets },
+    data: { labels, datasets: cleanDatasets },
     options
   });
 }
@@ -703,3 +708,14 @@ document.addEventListener('click', event => {
   insertRangeControls(chartId, button.parentElement ? Array.from(button.parentElement.querySelectorAll('.range-btn')).map(node => node.dataset.range) : [range]);
   chartRenderers[chartId](range);
 });
+
+/* Show sidebar logo when header brand scrolls out of view */
+(function () {
+  const headerBrand = document.getElementById('topHeaderBrand');
+  const sidebarBrand = document.getElementById('sidebarBrand');
+  if (!headerBrand || !sidebarBrand) return;
+  const observer = new IntersectionObserver(function (entries) {
+    sidebarBrand.classList.toggle('is-visible', !entries[0].isIntersecting);
+  }, { threshold: 0 });
+  observer.observe(headerBrand);
+})();

@@ -953,10 +953,23 @@ def build_input_indices(conn):
     except Exception:
         packaging_rows = []
 
+    try:
+        electricity_rows = conn.execute("""
+            SELECT substr(observation_date, 1, 7) AS month, AVG(value) AS avg_electricity
+            FROM fred_series
+            WHERE series_id = 'APU000072610'
+              AND value IS NOT NULL
+            GROUP BY substr(observation_date, 1, 7)
+            ORDER BY month
+        """).fetchall()
+    except Exception:
+        electricity_rows = []
+
     series_maps = {
         "Layer feed": rebase(feed_rows, base_floor=base_start),
         "Diesel": rebase(diesel_rows, base_floor=base_start),
         "Paperboard packaging": rebase(packaging_rows, base_prefix=base_month),
+        "Electricity": rebase(electricity_rows, base_prefix=base_month),
     }
     active_series = {label: values for label, values in series_maps.items() if values}
     if not active_series:

@@ -207,6 +207,7 @@ FRED_SERIES = {
     "PPOULTUSDM":  "Global Price of Poultry ($/kg)",
     "APU0000708111": "Eggs, Grade A, Large (per dozen)",
     "GASDESW":     "US Diesel Sales Price ($/gallon)",
+    "APU000072610": "Avg Price: Electricity per kWh",
 }
 
 # ── BLS Series Configuration ──────────────────────────────────────────────

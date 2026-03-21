@@ -57,7 +57,7 @@ function setChartSources() {
     eggPriceCompareChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a>',
     eggPriceSpreadChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a> and <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Prices_Received_and_Prices_Received_Indexes/" target="_blank" rel="noreferrer">USDA NASS Agricultural Prices</a>',
     feedIndexChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a>',
-    dieselChart: 'Chart: Innovate Animal Ag • Sources: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a> · <a href="https://fred.stlouisfed.org/series/GASDESW" target="_blank" rel="noreferrer">FRED GASDESW</a> · <a href="https://fred.stlouisfed.org/series/PCU322219322219" target="_blank" rel="noreferrer">FRED PCU322219322219</a>',
+    dieselChart: 'Chart: Innovate Animal Ag • Sources: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a> · <a href="https://fred.stlouisfed.org/series/GASDESW" target="_blank" rel="noreferrer">FRED GASDESW</a> · <a href="https://fred.stlouisfed.org/series/PCU322219322219" target="_blank" rel="noreferrer">FRED PCU322219322219</a> · <a href="https://fred.stlouisfed.org/series/APU000072610" target="_blank" rel="noreferrer">FRED APU000072610</a>',
     regionalEggChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2848" target="_blank" rel="noreferrer">USDA AMS Weekly Combined Regional Shell Egg Report</a>',
     eggImportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
     eggExportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>'
@@ -267,9 +267,14 @@ function renderMixedChart(id, labels, datasets, yLabel, y2Label, extra = {}) {
   destroyChart(id);
   const normalizedDatasets = datasets.map(entry => {
     const boosted = boostEggLineDataset(entry);
+    const isBar = (boosted.type || 'bar') === 'bar';
+    const styled = isBar ? Object.assign({}, boosted, {
+      borderWidth: 0, borderColor: 'transparent',
+      hoverBorderWidth: 0, hoverBorderColor: 'transparent'
+    }) : boosted;
     return Object.assign(
-      { order: boosted.type === 'line' ? 0 : 10 },
-      boosted
+      { order: styled.type === 'line' ? 0 : 10 },
+      styled
     );
   });
   charts[id] = new Chart(ctx, {
@@ -1089,28 +1094,174 @@ async function bootEggDashboard() {
   }
 
   if ((D.input_indices?.dates || []).length) {
+    const iiDates = D.input_indices.dates;
+    const iiBasePicker = { month: '2023-01' };
+
+    function rebaseAsChange(seriesValues, dates, baseMonth) {
+      var baseVal = null;
+      for (var i = 0; i < dates.length; i++) {
+        if (dates[i].startsWith(baseMonth) && seriesValues[i] != null) {
+          baseVal = seriesValues[i];
+          break;
+        }
+      }
+      if (!baseVal) return seriesValues;
+      return seriesValues.map(function (v) {
+        return v != null ? Math.round((v / baseVal - 1) * 100 * 100) / 100 : null;
+      });
+    }
+
+    const endLabelPlugin = {
+      id: 'inputIndicesEndLabels',
+      afterDatasetsDraw(chart) {
+        const MIN_GAP = 13;
+        const items = [];
+        chart.data.datasets.forEach(function (ds, dsIdx) {
+          const meta = chart.getDatasetMeta(dsIdx);
+          if (meta.hidden) return;
+          var lastIdx = -1;
+          for (var i = ds.data.length - 1; i >= 0; i--) {
+            if (ds.data[i] != null) { lastIdx = i; break; }
+          }
+          if (lastIdx === -1) return;
+          const pt = meta.data[lastIdx];
+          if (!pt) return;
+          const v = ds.data[lastIdx];
+          const sign = v > 0 ? '+' : '';
+          items.push({
+            text: sign + v.toFixed(1) + '%',
+            color: ds.borderColor || '#013046',
+            x: pt.x,
+            y: pt.y,
+            drawY: pt.y
+          });
+        });
+        /* Sort by y and nudge overlapping labels apart */
+        items.sort(function (a, b) { return a.y - b.y; });
+        for (var i = 1; i < items.length; i++) {
+          var overlap = items[i - 1].drawY + MIN_GAP - items[i].drawY;
+          if (overlap > 0) {
+            items[i - 1].drawY -= overlap / 2;
+            items[i].drawY += overlap / 2;
+          }
+        }
+        /* Second pass to fix any remaining overlaps after nudging */
+        for (var i = 1; i < items.length; i++) {
+          var overlap = items[i - 1].drawY + MIN_GAP - items[i].drawY;
+          if (overlap > 0) {
+            items[i].drawY = items[i - 1].drawY + MIN_GAP;
+          }
+        }
+        const ctx = chart.ctx;
+        ctx.save();
+        ctx.font = 'bold 11px Lexend, sans-serif';
+        ctx.textBaseline = 'middle';
+        ctx.textAlign = 'left';
+        ctx.strokeStyle = '#faf8f5';
+        ctx.lineWidth = 4;
+        ctx.lineJoin = 'round';
+        items.forEach(function (item) {
+          ctx.strokeText(item.text, item.x + 6, item.drawY);
+        });
+        items.forEach(function (item) {
+          ctx.fillStyle = item.color;
+          ctx.fillText(item.text, item.x + 6, item.drawY);
+        });
+        ctx.restore();
+      }
+    };
+
+    function renderInputIndices() {
+      const baseMonth = iiBasePicker.month;
+      var startIdx = 0;
+      for (var i = 0; i < iiDates.length; i++) {
+        if (iiDates[i] >= baseMonth) { startIdx = i; break; }
+      }
+      const slicedDates = iiDates.slice(startIdx);
+      const colorByLabel = {
+        'Layer feed': DASH_COLORS.orange,
+        Diesel: DASH_COLORS.navy,
+        'Paperboard packaging': DASH_COLORS.teal,
+        Electricity: DASH_COLORS.gold
+      };
+      const ctx = document.getElementById('dieselChart');
+      if (!ctx) return;
+      destroyChart('dieselChart');
+      const ds = Object.keys(D.input_indices.series).map(function (label) {
+        const raw = D.input_indices.series[label].slice(startIdx);
+        const rebased = rebaseAsChange(raw, slicedDates, baseMonth);
+        return boostEggLineDataset(dataset(label, rebased, colorByLabel[label] || DASH_COLORS.slate));
+      });
+      const opts = baseOptions('% Change', {
+        chartId: 'dieselChart',
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              var v = context.parsed?.y;
+              if (v == null || !Number.isFinite(v)) return context.dataset?.label || '';
+              var sign = v > 0 ? '+' : '';
+              var lbl = context.dataset?.label ? context.dataset.label + ': ' : '';
+              return lbl + sign + v.toFixed(1) + '%';
+            }
+          }
+        }
+      });
+      opts.layout.padding.right = 62;
+      charts['dieselChart'] = new Chart(ctx, {
+        type: 'line',
+        data: { labels: slicedDates, datasets: ds },
+        options: opts,
+        plugins: [endLabelPlugin]
+      });
+    }
+
+    /* Use registerRangeControl with no range options to create toolbar/legend */
     registerRangeControl({
       chartId: 'dieselChart',
-      options: ['1y', '3y', '5y', 'all'],
-      defaultRange: '3y',
-      renderer(range) {
-        const dates = D.input_indices.dates;
-        const { start, end } = getRangeSlice(dates, range);
-        const colorByLabel = {
-          'Layer feed': DASH_COLORS.orange,
-          Diesel: DASH_COLORS.navy,
-          'Paperboard packaging': DASH_COLORS.teal
-        };
-        renderEggLineChart(
-          'dieselChart',
-          dates.slice(start, end),
-          Object.keys(D.input_indices.series).map(label =>
-            dataset(label, D.input_indices.series[label].slice(start, end), colorByLabel[label] || DASH_COLORS.slate)
-          ),
-          'Index'
-        );
-      }
+      options: [],
+      renderer: renderInputIndices
     });
+
+    /* Base-month picker (two dropdowns: month + year) */
+    const dieselToolbar = document.querySelector('.chart-toolbar[data-chart="dieselChart"]');
+    if (dieselToolbar) {
+      const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const minYear = 2023;
+      const maxYear = parseInt(iiDates[iiDates.length - 1].slice(0, 4), 10);
+      const baseWrap = document.createElement('div');
+      baseWrap.className = 'base-month-control';
+      const label = document.createElement('span');
+      label.className = 'base-month-label';
+      label.textContent = 'Index date:';
+      const monthSel = document.createElement('select');
+      monthSel.className = 'base-month-select';
+      MONTH_NAMES.forEach((name, i) => {
+        const opt = document.createElement('option');
+        opt.value = String(i + 1).padStart(2, '0');
+        opt.textContent = name;
+        monthSel.appendChild(opt);
+      });
+      const yearSel = document.createElement('select');
+      yearSel.className = 'base-month-select';
+      for (let y = maxYear; y >= minYear; y--) {
+        const opt = document.createElement('option');
+        opt.value = String(y);
+        opt.textContent = String(y);
+        yearSel.appendChild(opt);
+      }
+      monthSel.value = iiBasePicker.month.slice(5, 7);
+      yearSel.value = iiBasePicker.month.slice(0, 4);
+      baseWrap.appendChild(label);
+      baseWrap.appendChild(monthSel);
+      baseWrap.appendChild(yearSel);
+      dieselToolbar.insertBefore(baseWrap, dieselToolbar.querySelector('.chart-legend'));
+      function onBaseChange() {
+        iiBasePicker.month = yearSel.value + '-' + monthSel.value;
+        renderInputIndices();
+      }
+      monthSel.addEventListener('change', onBaseChange);
+      yearSel.addEventListener('change', onBaseChange);
+    }
   } else {
     showPlaceholder('dieselWrap', 'Input index comparison data is not fully ingested in this environment yet. Once feed and FRED input series are loaded, this chart will populate.');
   }

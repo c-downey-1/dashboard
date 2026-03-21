@@ -95,28 +95,13 @@ a{color:inherit}
   letter-spacing:.01em;
 }
 
-.iaa-nav{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:flex-end;
-  gap:10px 18px;
-}
-
-.iaa-nav a{
-  color:var(--muted);
-  text-decoration:none;
-  font-size:.88rem;
-  font-weight:700;
-  letter-spacing:.03em;
-  transition:color .15s ease;
-}
-
-.iaa-nav a:hover{
+.iaa-header-title{
+  flex:1;
   color:var(--navy);
-}
-
-.iaa-home-link{
-  color:var(--navy) !important;
+  font-size:clamp(1.6rem,3.2vw,2.8rem);
+  font-weight:700;
+  letter-spacing:-.03em;
+  text-align:right;
 }
 
 .dashboard-layout{
@@ -136,8 +121,6 @@ a{color:inherit}
 }
 
 .dashboard-sidebar-inner{
-  display:grid;
-  gap:22px;
   padding:8px 18px 0 0;
 }
 
@@ -146,6 +129,33 @@ a{color:inherit}
   gap:8px;
   padding-right:18px;
   border-right:1px solid var(--line);
+}
+
+.sidebar-brand{
+  position:fixed;
+  bottom:18px;
+  left:max(20px, calc((100vw - 1160px) / 2 - 30px));
+  width:222px;
+  z-index:10;
+  padding:0;
+  text-align:right;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity 2s ease, visibility 2s ease;
+}
+.sidebar-brand.is-visible{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+.sidebar-brand img{
+  width:180px;
+  opacity:.85;
+  transition:opacity .15s ease;
+}
+.sidebar-brand:hover img{
+  opacity:1;
 }
 
 .dashboard-signup-form{
@@ -246,23 +256,8 @@ a{color:inherit}
 }
 
 .sidebar-group[data-section='monthly-updates'] .sidebar-section-link{
-  position:relative;
-  padding-left:16px;
   color:var(--orange);
   font-weight:800;
-}
-
-.sidebar-group[data-section='monthly-updates'] .sidebar-section-link::before{
-  content:'';
-  position:absolute;
-  top:.58em;
-  left:0;
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:var(--orange);
-  box-shadow:0 0 0 3px rgba(246,133,31,.16);
-  transform:translateY(-50%);
 }
 
 .sidebar-group[data-section='monthly-updates'].is-active .sidebar-section-link,
@@ -691,6 +686,28 @@ a{color:inherit}
   box-shadow:0 10px 18px rgba(1,48,70,.16);
 }
 
+.base-month-control{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+.base-month-label{
+  font-size:.78rem;
+  font-weight:500;
+  color:var(--navy);
+  white-space:nowrap;
+}
+.base-month-select{
+  padding:5px 8px;
+  border:1px solid rgba(1,48,70,.14);
+  border-radius:6px;
+  font-size:.78rem;
+  font-family:inherit;
+  color:var(--navy);
+  background:rgba(255,255,255,.5);
+  cursor:pointer;
+}
+
 .card canvas{width:100%}
 
 .card-source{
@@ -806,6 +823,11 @@ a{color:inherit}
 
   .dashboard-sidebar{
     display:none;
+  }
+
+  .sidebar-brand{
+    visibility:hidden !important;
+    opacity:0 !important;
   }
 
   .hero{grid-template-columns:1fr}

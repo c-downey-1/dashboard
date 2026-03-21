@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Egg Industry Dashboard</title>
+<title>Egg Industry Executive Chartbook</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20260321d">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20260321f">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
@@ -16,19 +16,8 @@
   <header class="iaa-bar">
     <a class="iaa-brand" id="topHeaderBrand" href="https://innovateanimalag.org/" target="_blank" rel="noreferrer">
       <img class="iaa-brand-logo" src="assets/iaa-logo-with-navy-font-full-color.png" alt="Innovate Animal Ag">
-      <div class="iaa-brand-copy">
-        <span class="iaa-eyebrow">Innovate Animal Ag</span>
-        <strong>Egg Industry Dashboard</strong>
-      </div>
     </a>
-    <nav class="iaa-nav" aria-label="Innovate Animal Ag">
-      <a href="https://innovateanimalag.org/research" target="_blank" rel="noreferrer">Research</a>
-      <a href="https://innovateanimalag.org/#what-we-do" target="_blank" rel="noreferrer">Projects</a>
-      <a href="https://innovateanimalag.org/grants" target="_blank" rel="noreferrer">Grants</a>
-      <a href="https://innovateanimalag.org/about" target="_blank" rel="noreferrer">About</a>
-      <a href="https://innovateanimalag.org/blog" target="_blank" rel="noreferrer">Blog</a>
-      <a class="iaa-home-link" href="https://innovateanimalag.org/" target="_blank" rel="noreferrer">InnovateAnimalAg.org</a>
-    </nav>
+    <strong class="iaa-header-title">Egg Industry Executive Chartbook</strong>
   </header>
 
   <div class="dashboard-layout">
@@ -37,6 +26,9 @@
         <nav class="dashboard-sidebar-nav" id="eggSidebarNav"></nav>
       </div>
     </aside>
+    <a class="sidebar-brand" id="sidebarBrand" href="https://innovateanimalag.org/" target="_blank" rel="noreferrer">
+      <img src="assets/iaa-logo-with-navy-font-full-color.png" alt="Innovate Animal Ag">
+    </a>
 
     <main class="dashboard-content">
   <section class="section" id="layer-flock">
@@ -86,7 +78,7 @@
     <div class="section-head"><div><div class="section-number">V</div><h2>Inputs</h2><p>Feed-cost context and input pressure.</p></div></div>
     <div class="grid">
       <article class="card" id="feedIndexWrap"><h3>Layer Feed Index</h3><div class="sub" id="feedIndexSub">67% corn, 22% soybean meal, 8% calcium, 3% other</div><canvas id="feedIndexChart" height="120"></canvas></article>
-      <article class="card" id="dieselWrap"><h3>Input Cost Indices</h3><div class="sub">Weekly feed and diesel plus monthly packaging; Jan 2025 baseline = 100</div><canvas id="dieselChart" height="120"></canvas></article>
+      <article class="card" id="dieselWrap"><h3>Input Cost Indices</h3><div class="sub">Weekly feed and diesel plus monthly packaging and electricity; Jan 2025 baseline = 100</div><canvas id="dieselChart" height="120"></canvas></article>
     </div>
   </section>
 
@@ -107,7 +99,7 @@
   </section>
 
   <section class="section" id="monthly-updates" data-sidebar-title="Subscribe for Free">
-    <div class="section-head"><div><div class="section-number">VIII</div><h2>Monthly Updates</h2><p>Sign up for monthly updates of the Egg Executive Chartbook.</p></div></div>
+    <div class="section-head"><div><h2>Monthly Updates</h2><p>Sign up for monthly updates of the Egg Executive Chartbook.</p></div></div>
     <div class="grid">
       <article class="card">
         <h3>Sign Up for Monthly Updates of the Egg Executive Chartbook</h3>
@@ -135,7 +127,7 @@
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20260321d"></script>
-<script src="assets/egg-dashboard.js?v=20260321d"></script>
+<script src="assets/dashboard-common.js?v=20260321e"></script>
+<script src="assets/egg-dashboard.js?v=20260321e"></script>
 </body>
 </html>
