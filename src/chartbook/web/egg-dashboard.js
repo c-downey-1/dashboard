@@ -114,7 +114,7 @@ function initEggSidebarNav() {
     const sectionLink = document.createElement('a');
     sectionLink.className = 'sidebar-section-link';
     sectionLink.href = `#${section.id}`;
-    sectionLink.textContent = section.querySelector('.section-head h2')?.textContent?.trim() || section.id;
+    sectionLink.textContent = section.dataset.sidebarTitle || section.querySelector('.section-head h2')?.textContent?.trim() || section.id;
     group.appendChild(sectionLink);
 
     const chartLinks = document.createElement('div');
@@ -189,6 +189,40 @@ function initEggSidebarNav() {
   window.addEventListener('resize', updateActiveSidebarState);
 }
 
+function initEggDashboardSignup() {
+  const form = document.getElementById('eggDashboardSignupForm');
+  const status = document.getElementById('eggDashboardSignupStatus');
+  if (!form || !status) return;
+
+  const setStatus = text => {
+    status.textContent = text || '';
+  };
+
+  Array.from(form.querySelectorAll('input')).forEach(input => {
+    input.addEventListener('input', () => setStatus(''));
+  });
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const firstName = form.elements.firstName?.value?.trim() || '';
+    const lastName = form.elements.lastName?.value?.trim() || '';
+    const email = form.elements.email?.value?.trim() || '';
+    const subject = 'Monthly updates signup';
+    const body = [
+      'Please add me to Innovate Animal Ag monthly updates.',
+      '',
+      `First name: ${firstName}`,
+      `Last name: ${lastName}`,
+      `Email: ${email}`
+    ].join('\n');
+
+    setStatus('Opening your email app to finish signup.');
+    window.location.href = `mailto:contact@animalinnovation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+}
+
 function alignValues(primaryDates, secondaryDates, secondaryValues) {
   const map = Object.fromEntries(secondaryDates.map((date, idx) => [date, secondaryValues[idx]]));
   return primaryDates.map(date => map[date] ?? null);
@@ -247,6 +281,7 @@ function renderMixedChart(id, labels, datasets, yLabel, y2Label, extra = {}) {
 
 async function bootEggDashboard() {
   initEggSidebarNav();
+  initEggDashboardSignup();
   setChartSources();
   const response = await fetch(`data.json?v=${Date.now()}`);
   const D = await response.json();

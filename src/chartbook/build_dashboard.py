@@ -866,13 +866,26 @@ def build_fred_diesel(conn):
 def build_input_indices(conn):
     """Feed, diesel, and packaging indices rebased to Jan 2025 = 100."""
     base_month = "2025-01"
+    base_start = "2025-01-01"
 
-    def rebase(date_rows):
+    def rebase(date_rows, *, base_prefix=None, base_floor=None):
         values_by_date = {label: value for label, value in date_rows if value is not None}
-        jan_values = [value for label, value in values_by_date.items() if str(label).startswith(base_month)]
-        if not jan_values:
+        if base_floor:
+            base_candidates = [
+                (label, value) for label, value in sorted(values_by_date.items())
+                if str(label) >= base_floor
+            ]
+            base_value = base_candidates[0][1] if base_candidates else None
+        else:
+            prefix = base_prefix or base_month
+            base_candidates = [
+                value for label, value in values_by_date.items()
+                if str(label).startswith(prefix)
+            ]
+            base_value = base_candidates[0] if base_candidates else None
+
+        if not base_value:
             return {}
-        base_value = sum(jan_values) / len(jan_values)
         return {
             label: round((value / base_value) * 100.0, 4)
             for label, value in values_by_date.items()
@@ -885,11 +898,11 @@ def build_input_indices(conn):
             if value is None:
                 continue
             dt = date.fromisoformat(trade_date)
-            week_start = (dt - timedelta(days=dt.weekday())).isoformat()
-            grouped.setdefault(week_start, []).append(value)
+            week_label = (dt + timedelta(days=(7 - dt.weekday()) % 7)).isoformat()
+            grouped.setdefault(week_label, []).append(value)
         return [
-            (week_start, sum(values) / len(values))
-            for week_start, values in sorted(grouped.items())
+            (week_label, sum(values) / len(values))
+            for week_label, values in sorted(grouped.items())
         ]
 
     try:
@@ -941,9 +954,9 @@ def build_input_indices(conn):
         packaging_rows = []
 
     series_maps = {
-        "Layer feed": rebase(feed_rows),
-        "Diesel": rebase(diesel_rows),
-        "Paperboard packaging": rebase(packaging_rows),
+        "Layer feed": rebase(feed_rows, base_floor=base_start),
+        "Diesel": rebase(diesel_rows, base_floor=base_start),
+        "Paperboard packaging": rebase(packaging_rows, base_prefix=base_month),
     }
     active_series = {label: values for label, values in series_maps.items() if values}
     if not active_series:
