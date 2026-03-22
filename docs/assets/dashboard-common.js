@@ -542,7 +542,7 @@ function baseOptions(yLabel, extra = {}) {
         }
       },
       htmlLegend: extra.legend === false ? undefined : { containerID: `legend-${extra.chartId}` },
-      tooltip: Object.assign({}, tooltipConfig, {
+      tooltip: Object.assign({ filter: function (item) { return item.raw != null; } }, tooltipConfig, {
         callbacks: Object.assign({
           title(items) {
             const item = items && items[0];
