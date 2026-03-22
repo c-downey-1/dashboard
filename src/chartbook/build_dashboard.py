@@ -1014,17 +1014,12 @@ def build_hpai_summary(conn):
     all_types_placeholders = ", ".join("?" for _ in ALL_POULTRY_PRODUCTION_TYPES)
     try:
         rows = conn.execute("""
-            WITH dedup AS (
-                SELECT confirmation_date, state, county, flock_type, flock_size
-                FROM hpai_detections
-                WHERE confirmation_date IS NOT NULL
-                  AND flock_type IN (""" + all_types_placeholders + """)
-                GROUP BY confirmation_date, state, county, flock_type, flock_size
-            )
             SELECT strftime('%Y-%m', confirmation_date) AS month,
                    COUNT(*) AS detections,
                    SUM(CASE WHEN flock_size IS NOT NULL THEN flock_size ELSE 0 END) AS birds
-            FROM dedup
+            FROM hpai_detections
+            WHERE confirmation_date IS NOT NULL
+              AND flock_type IN (""" + all_types_placeholders + """)
             GROUP BY month
             ORDER BY month
         """, ALL_POULTRY_PRODUCTION_TYPES).fetchall()
@@ -1066,52 +1061,35 @@ def build_hpai_layers(conn):
     layer_type_placeholders = ", ".join("?" for _ in COMMERCIAL_LAYER_TYPES)
     try:
         month_rows = conn.execute("""
-            WITH dedup AS (
-                SELECT confirmation_date, state, county, flock_type, flock_size
-                FROM hpai_detections
-                WHERE confirmation_date IS NOT NULL
-                  AND flock_type IN (""" + all_types_placeholders + """)
-                GROUP BY confirmation_date, state, county, flock_type, flock_size
-            )
             SELECT DISTINCT strftime('%Y-%m', confirmation_date) AS month
-            FROM dedup
+            FROM hpai_detections
+            WHERE confirmation_date IS NOT NULL
+              AND flock_type IN (""" + all_types_placeholders + """)
             ORDER BY month
         """, ALL_POULTRY_PRODUCTION_TYPES).fetchall()
 
         rows = conn.execute("""
-            WITH dedup AS (
-                SELECT confirmation_date, state, county, flock_type, flock_size
-                FROM hpai_detections
-                WHERE confirmation_date IS NOT NULL
-                  AND flock_type IN (""" + all_types_placeholders + """)
-                GROUP BY confirmation_date, state, county, flock_type, flock_size
-            )
             SELECT strftime('%Y-%m', confirmation_date) AS month,
                    COUNT(*) AS detections,
                    SUM(CASE WHEN flock_size IS NOT NULL THEN flock_size ELSE 0 END) AS birds
-            FROM dedup
-            WHERE flock_type IN (?, ?, ?)
+            FROM hpai_detections
+            WHERE confirmation_date IS NOT NULL
+              AND flock_type IN (""" + layer_type_placeholders + """)
             GROUP BY month
             ORDER BY month
-        """, ALL_POULTRY_PRODUCTION_TYPES + COMMERCIAL_LAYER_TYPES).fetchall()
+        """, COMMERCIAL_LAYER_TYPES).fetchall()
 
         category_rows = conn.execute("""
-            WITH dedup AS (
-                SELECT confirmation_date, state, county, flock_type, flock_size
-                FROM hpai_detections
-                WHERE confirmation_date IS NOT NULL
-                  AND flock_type IN (""" + all_types_placeholders + """)
-                GROUP BY confirmation_date, state, county, flock_type, flock_size
-            )
             SELECT strftime('%Y-%m', confirmation_date) AS month,
                    flock_type,
                    COUNT(*) AS detections,
                    SUM(CASE WHEN flock_size IS NOT NULL THEN flock_size ELSE 0 END) AS birds
-            FROM dedup
-            WHERE flock_type IN (""" + layer_type_placeholders + """)
+            FROM hpai_detections
+            WHERE confirmation_date IS NOT NULL
+              AND flock_type IN (""" + layer_type_placeholders + """)
             GROUP BY month, flock_type
             ORDER BY month, flock_type
-        """, ALL_POULTRY_PRODUCTION_TYPES + COMMERCIAL_LAYER_TYPES).fetchall()
+        """, COMMERCIAL_LAYER_TYPES).fetchall()
     except Exception:
         return {"dates": [], "detections": [], "birds": []}
 

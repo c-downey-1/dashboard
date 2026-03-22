@@ -762,6 +762,7 @@ def backfill_hpai(conn):
     rows = [r for r in rows if r["state"] is not None]
 
     if rows:
+        conn.execute("DELETE FROM hpai_detections")
         count = db.insert_or_ignore_rows(conn, "hpai_detections", rows)
         dates = [r["confirmation_date"] for r in rows if r["confirmation_date"]]
         db.log_fetch(conn, "hpai",

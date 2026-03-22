@@ -224,8 +224,7 @@ TABLES = {
             flock_size         INTEGER,
             confirmation_date  TEXT,
             source_file        TEXT,
-            fetched_at         TEXT DEFAULT (datetime('now')),
-            UNIQUE (detection_date, state, county, species, flock_type, flock_size)
+            fetched_at         TEXT DEFAULT (datetime('now'))
         )
     """,
 
@@ -401,9 +400,6 @@ INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_ers_trade_month ON ers_trade_totals(report_month)",
     "CREATE INDEX IF NOT EXISTS idx_ers_trade_lookup ON ers_trade_totals(commodity, flow, product)",
     "CREATE INDEX IF NOT EXISTS idx_cme_feed_daily_trade_date ON cme_feed_daily(trade_date)",
-    "CREATE UNIQUE INDEX IF NOT EXISTS idx_hpai_dedupe ON hpai_detections("
-    "COALESCE(detection_date, ''), COALESCE(state, ''), COALESCE(county, ''), "
-    "COALESCE(species, ''), COALESCE(flock_type, ''), COALESCE(flock_size, -1))",
     "CREATE INDEX IF NOT EXISTS idx_source_freshness ON source_freshness(source_name)",
 ]
 
@@ -411,26 +407,21 @@ INDEXES = [
 def create_all(conn):
     """Execute all CREATE TABLE, VIEW, and INDEX statements."""
     cur = conn.cursor()
+    # One-time migration: drop hpai_detections if it has the old UNIQUE
+    # constraint (which collapsed legitimately distinct detections).
+    # Safe because data is full-refreshed on every ingestion run.
+    row = cur.execute(
+        "SELECT sql FROM sqlite_master "
+        "WHERE type='table' AND name='hpai_detections'"
+    ).fetchone()
+    if row and "UNIQUE" in (row[0] or ""):
+        cur.execute("DROP TABLE hpai_detections")
     for ddl in TABLES.values():
         cur.execute(ddl)
     for ddl in VIEWS.values():
         cur.execute(ddl)
     for ddl in INDEXES:
-        if "idx_hpai_dedupe" in ddl:
-            # Older databases may already contain duplicate HPAI rows because
-            # SQLite UNIQUE constraints treat NULL values as distinct.
-            cur.execute("""
-                DELETE FROM hpai_detections
-                WHERE id NOT IN (
-                    SELECT MIN(id)
-                    FROM hpai_detections
-                    GROUP BY COALESCE(detection_date, ''),
-                             COALESCE(state, ''),
-                             COALESCE(county, ''),
-                             COALESCE(species, ''),
-                             COALESCE(flock_type, ''),
-                             COALESCE(flock_size, -1)
-                )
-            """)
         cur.execute(ddl)
+    # Drop stale HPAI dedup index if present (removed: data is now full-refreshed)
+    cur.execute("DROP INDEX IF EXISTS idx_hpai_dedupe")
     conn.commit()
