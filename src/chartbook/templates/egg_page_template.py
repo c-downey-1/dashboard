@@ -39,7 +39,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <main class="dashboard-content">
   <section class="section" id="layer-flock">
-    <div class="section-head"><div><div class="section-number">I</div><h2>Layer Flock</h2><p>Seasonality, Flock Size, Turnover, Molting, Cage-Free Composition</p></div></div>
+    <div class="section-head"><div><h2>Layer Flock</h2><p>Seasonality, Flock Size, Turnover, Molting, Cage-Free Composition</p></div></div>
     <div class="grid">
       <article class="card"><h3>Table-Egg Layer Flock Size Comparison</h3><div class="sub">Historical comparison of table-egg layers on hand</div><canvas id="tableLayersChart"></canvas></article>
       <article class="card"><h3>Table-Egg Layer Flock Size</h3><div class="sub">Monthly table-egg layers on hand (first of month)</div><canvas id="tableLayersTrendChart"></canvas></article>
@@ -51,7 +51,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="production-figures">
-    <div class="section-head"><div><div class="section-number">II</div><h2>Production Figures</h2><p>Production, lay rate, and breaker flow.</p></div></div>
+    <div class="section-head"><div><h2>Production Figures</h2><p>Production, lay rate, and breaker flow.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Monthly Egg Production</h3><div class="sub">Current year versus prior year</div><canvas id="monthlyProdChart"></canvas></article>
       <article class="card"><h3>Historical Table Egg Production</h3><div class="sub">Trailing 3-month table egg production</div><canvas id="trailingProdChart"></canvas></article>
@@ -61,7 +61,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="prices">
-    <div class="section-head"><div><div class="section-number">III</div><h2>Prices</h2><p>Wholesale, retail feature activity, and retail-farmgate price context.</p></div></div>
+    <div class="section-head"><div><h2>Prices</h2><p>Wholesale, retail feature activity, and retail-farmgate price context.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Wholesale Prices</h3><div class="sub">Large Eggs, Conventional, 5-Day Rolling Average</div><canvas id="wholesaleChart"></canvas></article>
       <article class="card" id="sentIdxWrap"><h3>Sentiment and Demand Conditions Index</h3><div class="sub">Weighted composite of market undertone, retail demand, offerings, supplies, and trading activity from USDA commentary</div><canvas id="sentIdxChart"></canvas></article>
@@ -72,7 +72,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="breeder-flock">
-    <div class="section-head"><div><div class="section-number">IV</div><h2>Pullets and Breeder Flock</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
+    <div class="section-head"><div><h2>Pullets and Breeder Flock</h2><p>Breeder inventory, hatch, and pullet pipeline intensity.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Egg-Type Chicks Hatched Comparison</h3><div class="sub">Monthly egg-type chicks hatched in 2025-2026 vs. 2021-2024</div><canvas id="chicksChart"></canvas></article>
       <article class="card wide"><h3>Egg-Type Chicks Hatched</h3><div class="sub">Historical monthly egg-type chicks hatched</div><canvas id="chicksTrendChart"></canvas></article>
@@ -83,7 +83,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="inputs">
-    <div class="section-head"><div><div class="section-number">V</div><h2>Inputs</h2><p>Feed-cost context and input pressure.</p></div></div>
+    <div class="section-head"><div><h2>Inputs</h2><p>Feed-cost context and input pressure.</p></div></div>
     <div class="grid">
       <article class="card" id="feedIndexWrap"><h3>Layer Feed Index</h3><div class="sub" id="feedIndexSub">67% corn, 22% soybean meal, 8% calcium, 3% other</div><canvas id="feedIndexChart"></canvas></article>
       <article class="card" id="dieselWrap"><h3>Input Cost Price Changes</h3><div class="sub">% change in price of common egg input costs</div><canvas id="dieselChart"></canvas></article>
@@ -91,7 +91,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="avian-influenza">
-    <div class="section-head"><div><div class="section-number">VI</div><h2>Avian Influenza</h2><p>Disease pressure and layer-specific bird impacts.</p></div></div>
+    <div class="section-head"><div><h2>Avian Influenza</h2><p>Disease pressure and layer-specific bird impacts.</p></div></div>
     <div class="grid">
       <article class="card"><h3>HPAI Detections Per Month</h3><div class="sub">All operations and flock types</div><canvas id="hpaiDetectionsChart"></canvas></article>
       <article class="card"><h3>Commercial Layers Impacted by Month</h3><div class="sub">Includes Commercial Table Egg Layer, Commercial Table Egg Pullets, and Commercial Table Egg Breeder.</div><canvas id="hpaiLayersChart"></canvas></article>
@@ -99,7 +99,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="international">
-    <div class="section-head"><div><div class="section-number">VII</div><h2>International Trade</h2><p>USDA ERS monthly trade totals for eggs and egg products.</p></div></div>
+    <div class="section-head"><div><h2>International Trade</h2><p>USDA ERS monthly trade totals for eggs and egg products.</p></div></div>
     <div class="grid">
       <article class="card" id="importsWrap"><h3>Egg Imports</h3><div class="sub">Total, shell-egg, and egg product imports</div><canvas id="eggImportsTradeChart"></canvas></article>
       <article class="card" id="exportsWrap"><h3>Egg Exports</h3><div class="sub">Total, shell-egg, and egg product exports</div><canvas id="eggExportsTradeChart"></canvas></article>
