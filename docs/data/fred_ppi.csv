@@ -1,0 +1,2820 @@
+observation_date,series_id,series_label,value
+1947-01-01,WPU0141,PPI: Slaughter Chickens,104.9
+1947-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.9
+1947-02-01,WPU0141,PPI: Slaughter Chickens,104.8
+1947-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.5
+1947-03-01,WPU0141,PPI: Slaughter Chickens,116.5
+1947-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,106.0
+1947-04-01,WPU0141,PPI: Slaughter Chickens,116.7
+1947-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.4
+1947-05-01,WPU0141,PPI: Slaughter Chickens,118.4
+1947-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.8
+1947-06-01,WPU0141,PPI: Slaughter Chickens,113.2
+1947-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.2
+1947-07-01,WPU0141,PPI: Slaughter Chickens,111.9
+1947-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,115.9
+1947-08-01,WPU0141,PPI: Slaughter Chickens,113.2
+1947-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,120.4
+1947-09-01,WPU0141,PPI: Slaughter Chickens,120.9
+1947-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,131.4
+1947-10-01,WPU0141,PPI: Slaughter Chickens,109.5
+1947-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,116.8
+1947-11-01,WPU0141,PPI: Slaughter Chickens,108.6
+1947-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,116.2
+1947-12-01,WPU0141,PPI: Slaughter Chickens,118.9
+1947-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.6
+1948-01-01,WPU0141,PPI: Slaughter Chickens,129.9
+1948-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,137.1
+1948-02-01,WPU0141,PPI: Slaughter Chickens,120.6
+1948-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,123.8
+1948-03-01,WPU0141,PPI: Slaughter Chickens,132.9
+1948-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.1
+1948-04-01,WPU0141,PPI: Slaughter Chickens,136.6
+1948-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.8
+1948-05-01,WPU0141,PPI: Slaughter Chickens,133.2
+1948-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,138.1
+1948-06-01,WPU0141,PPI: Slaughter Chickens,134.8
+1948-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.7
+1948-07-01,WPU0141,PPI: Slaughter Chickens,130.7
+1948-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.2
+1948-08-01,WPU0141,PPI: Slaughter Chickens,132.5
+1948-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.3
+1948-09-01,WPU0141,PPI: Slaughter Chickens,131.8
+1948-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,133.4
+1948-10-01,WPU0141,PPI: Slaughter Chickens,120.8
+1948-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.7
+1948-11-01,WPU0141,PPI: Slaughter Chickens,125.3
+1948-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,122.7
+1948-12-01,WPU0141,PPI: Slaughter Chickens,133.0
+1948-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.8
+1949-01-01,WPU0141,PPI: Slaughter Chickens,125.3
+1949-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.1
+1949-02-01,WPU0141,PPI: Slaughter Chickens,117.7
+1949-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.3
+1949-03-01,WPU0141,PPI: Slaughter Chickens,124.2
+1949-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.7
+1949-04-01,WPU0141,PPI: Slaughter Chickens,121.9
+1949-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.4
+1949-05-01,WPU0141,PPI: Slaughter Chickens,109.6
+1949-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,99.2
+1949-06-01,WPU0141,PPI: Slaughter Chickens,98.9
+1949-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.9
+1949-07-01,WPU0141,PPI: Slaughter Chickens,99.2
+1949-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,99.7
+1949-08-01,WPU0141,PPI: Slaughter Chickens,104.0
+1949-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.7
+1949-09-01,WPU0141,PPI: Slaughter Chickens,98.6
+1949-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,99.8
+1949-10-01,WPU0141,PPI: Slaughter Chickens,96.6
+1949-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,98.1
+1949-11-01,WPU0141,PPI: Slaughter Chickens,99.1
+1949-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,104.1
+1949-12-01,WPU0141,PPI: Slaughter Chickens,86.0
+1949-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,84.3
+1950-01-01,WPU0141,PPI: Slaughter Chickens,80.4
+1950-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,76.1
+1950-02-01,WPU0141,PPI: Slaughter Chickens,98.5
+1950-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,98.9
+1950-03-01,WPU0141,PPI: Slaughter Chickens,107.1
+1950-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,109.9
+1950-04-01,WPU0141,PPI: Slaughter Chickens,103.8
+1950-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.7
+1950-05-01,WPU0141,PPI: Slaughter Chickens,96.8
+1950-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.0
+1950-06-01,WPU0141,PPI: Slaughter Chickens,93.6
+1950-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.2
+1950-07-01,WPU0141,PPI: Slaughter Chickens,106.2
+1950-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.9
+1950-08-01,WPU0141,PPI: Slaughter Chickens,109.2
+1950-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.8
+1950-09-01,WPU0141,PPI: Slaughter Chickens,103.6
+1950-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.0
+1950-10-01,WPU0141,PPI: Slaughter Chickens,93.5
+1950-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,95.2
+1950-11-01,WPU0141,PPI: Slaughter Chickens,90.3
+1950-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.6
+1950-12-01,WPU0141,PPI: Slaughter Chickens,91.6
+1950-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,86.6
+1951-01-01,WPU0141,PPI: Slaughter Chickens,101.5
+1951-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,95.0
+1951-02-01,WPU0141,PPI: Slaughter Chickens,113.1
+1951-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.7
+1951-03-01,WPU0141,PPI: Slaughter Chickens,121.4
+1951-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,113.1
+1951-04-01,WPU0141,PPI: Slaughter Chickens,122.3
+1951-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.9
+1951-05-01,WPU0141,PPI: Slaughter Chickens,115.4
+1951-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.7
+1951-06-01,WPU0141,PPI: Slaughter Chickens,113.2
+1951-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.0
+1951-07-01,WPU0141,PPI: Slaughter Chickens,109.9
+1951-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,106.4
+1951-08-01,WPU0141,PPI: Slaughter Chickens,107.7
+1951-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.1
+1951-09-01,WPU0141,PPI: Slaughter Chickens,103.5
+1951-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.3
+1951-10-01,WPU0141,PPI: Slaughter Chickens,95.2
+1951-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.3
+1951-11-01,WPU0141,PPI: Slaughter Chickens,92.1
+1951-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,88.9
+1951-12-01,WPU0141,PPI: Slaughter Chickens,96.3
+1951-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,90.5
+1952-01-01,WPU0141,PPI: Slaughter Chickens,105.7
+1952-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.9
+1952-02-01,WPU0141,PPI: Slaughter Chickens,109.8
+1952-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.9
+1952-03-01,WPU0141,PPI: Slaughter Chickens,104.0
+1952-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.3
+1952-04-01,WPU0141,PPI: Slaughter Chickens,99.0
+1952-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,99.1
+1952-05-01,WPU0141,PPI: Slaughter Chickens,90.0
+1952-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.7
+1952-06-01,WPU0141,PPI: Slaughter Chickens,93.7
+1952-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.8
+1952-07-01,WPU0141,PPI: Slaughter Chickens,102.2
+1952-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,109.9
+1952-08-01,WPU0141,PPI: Slaughter Chickens,106.3
+1952-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,113.3
+1952-09-01,WPU0141,PPI: Slaughter Chickens,106.5
+1952-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.1
+1952-10-01,WPU0141,PPI: Slaughter Chickens,99.5
+1952-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.2
+1952-11-01,WPU0141,PPI: Slaughter Chickens,114.1
+1952-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,124.9
+1952-12-01,WPU0141,PPI: Slaughter Chickens,100.2
+1952-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.6
+1953-01-01,WPU0141,PPI: Slaughter Chickens,107.5
+1953-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.3
+1953-02-01,WPU0141,PPI: Slaughter Chickens,106.5
+1953-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.1
+1953-03-01,WPU0141,PPI: Slaughter Chickens,108.6
+1953-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.9
+1953-04-01,WPU0141,PPI: Slaughter Chickens,112.2
+1953-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.2
+1953-05-01,WPU0141,PPI: Slaughter Chickens,107.2
+1953-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,98.6
+1953-06-01,WPU0141,PPI: Slaughter Chickens,95.5
+1953-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.1
+1953-07-01,WPU0141,PPI: Slaughter Chickens,107.9
+1953-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,109.8
+1953-08-01,WPU0141,PPI: Slaughter Chickens,103.9
+1953-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.6
+1953-09-01,WPU0141,PPI: Slaughter Chickens,100.6
+1953-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.9
+1953-10-01,WPU0141,PPI: Slaughter Chickens,94.2
+1953-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.7
+1953-11-01,WPU0141,PPI: Slaughter Chickens,92.6
+1953-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.9
+1953-12-01,WPU0141,PPI: Slaughter Chickens,83.0
+1953-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,77.6
+1954-01-01,WPU0141,PPI: Slaughter Chickens,92.3
+1954-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,91.1
+1954-02-01,WPU0141,PPI: Slaughter Chickens,88.9
+1954-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,79.6
+1954-03-01,WPU0141,PPI: Slaughter Chickens,92.8
+1954-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,83.0
+1954-04-01,WPU0141,PPI: Slaughter Chickens,89.5
+1954-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,88.9
+1954-05-01,WPU0141,PPI: Slaughter Chickens,85.3
+1954-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,81.6
+1954-06-01,WPU0141,PPI: Slaughter Chickens,84.5
+1954-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,89.8
+1954-07-01,WPU0141,PPI: Slaughter Chickens,84.1
+1954-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.2
+1954-08-01,WPU0141,PPI: Slaughter Chickens,84.2
+1954-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.9
+1954-09-01,WPU0141,PPI: Slaughter Chickens,78.8
+1954-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,88.1
+1954-10-01,WPU0141,PPI: Slaughter Chickens,73.0
+1954-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,80.5
+1954-11-01,WPU0141,PPI: Slaughter Chickens,71.1
+1954-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,73.9
+1954-12-01,WPU0141,PPI: Slaughter Chickens,67.6
+1954-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,68.8
+1955-01-01,WPU0141,PPI: Slaughter Chickens,85.9
+1955-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,89.8
+1955-02-01,WPU0141,PPI: Slaughter Chickens,93.5
+1955-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,94.0
+1955-03-01,WPU0141,PPI: Slaughter Chickens,111.0
+1955-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,113.2
+1955-04-01,WPU0141,PPI: Slaughter Chickens,107.6
+1955-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.9
+1955-05-01,WPU0141,PPI: Slaughter Chickens,99.4
+1955-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.1
+1955-06-01,WPU0141,PPI: Slaughter Chickens,100.5
+1955-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.0
+1955-07-01,WPU0141,PPI: Slaughter Chickens,95.6
+1955-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.0
+1955-08-01,WPU0141,PPI: Slaughter Chickens,98.1
+1955-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.2
+1955-09-01,WPU0141,PPI: Slaughter Chickens,94.2
+1955-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.6
+1955-10-01,WPU0141,PPI: Slaughter Chickens,80.4
+1955-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,80.9
+1955-11-01,WPU0141,PPI: Slaughter Chickens,78.0
+1955-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,78.3
+1955-12-01,WPU0141,PPI: Slaughter Chickens,72.8
+1955-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,71.2
+1956-01-01,WPU0141,PPI: Slaughter Chickens,75.4
+1956-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,72.8
+1956-02-01,WPU0141,PPI: Slaughter Chickens,79.9
+1956-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,78.1
+1956-03-01,WPU0141,PPI: Slaughter Chickens,83.5
+1956-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,82.0
+1956-04-01,WPU0141,PPI: Slaughter Chickens,77.9
+1956-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,75.6
+1956-05-01,WPU0141,PPI: Slaughter Chickens,79.6
+1956-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,77.7
+1956-06-01,WPU0141,PPI: Slaughter Chickens,73.7
+1956-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,72.1
+1956-07-01,WPU0141,PPI: Slaughter Chickens,79.3
+1956-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,81.4
+1956-08-01,WPU0141,PPI: Slaughter Chickens,71.3
+1956-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,71.4
+1956-09-01,WPU0141,PPI: Slaughter Chickens,65.1
+1956-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.1
+1956-10-01,WPU0141,PPI: Slaughter Chickens,64.2
+1956-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.2
+1956-11-01,WPU0141,PPI: Slaughter Chickens,64.5
+1956-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.3
+1956-12-01,WPU0141,PPI: Slaughter Chickens,64.4
+1956-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.5
+1957-01-01,WPU0141,PPI: Slaughter Chickens,64.2
+1957-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.9
+1957-02-01,WPU0141,PPI: Slaughter Chickens,70.0
+1957-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,72.2
+1957-03-01,WPU0141,PPI: Slaughter Chickens,73.3
+1957-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,75.7
+1957-04-01,WPU0141,PPI: Slaughter Chickens,68.9
+1957-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,70.8
+1957-05-01,WPU0141,PPI: Slaughter Chickens,71.3
+1957-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,73.9
+1957-06-01,WPU0141,PPI: Slaughter Chickens,74.7
+1957-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,78.1
+1957-07-01,WPU0141,PPI: Slaughter Chickens,78.4
+1957-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,82.4
+1957-08-01,WPU0141,PPI: Slaughter Chickens,76.2
+1957-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,79.8
+1957-09-01,WPU0141,PPI: Slaughter Chickens,67.4
+1957-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,69.2
+1957-10-01,WPU0141,PPI: Slaughter Chickens,63.1
+1957-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.0
+1957-11-01,WPU0141,PPI: Slaughter Chickens,63.8
+1957-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.0
+1957-12-01,WPU0141,PPI: Slaughter Chickens,62.3
+1957-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,63.1
+1958-01-01,WPU0141,PPI: Slaughter Chickens,73.2
+1958-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,75.1
+1958-02-01,WPU0141,PPI: Slaughter Chickens,74.2
+1958-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,75.9
+1958-03-01,WPU0141,PPI: Slaughter Chickens,79.7
+1958-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,81.0
+1958-04-01,WPU0141,PPI: Slaughter Chickens,69.4
+1958-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,69.2
+1958-05-01,WPU0141,PPI: Slaughter Chickens,76.6
+1958-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,77.3
+1958-06-01,WPU0141,PPI: Slaughter Chickens,77.3
+1958-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,78.8
+1958-07-01,WPU0141,PPI: Slaughter Chickens,71.3
+1958-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,72.4
+1958-08-01,WPU0141,PPI: Slaughter Chickens,64.8
+1958-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.6
+1958-09-01,WPU0141,PPI: Slaughter Chickens,59.6
+1958-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.7
+1958-10-01,WPU0141,PPI: Slaughter Chickens,55.3
+1958-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,56.7
+1958-11-01,WPU0141,PPI: Slaughter Chickens,59.8
+1958-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,61.2
+1958-12-01,WPU0141,PPI: Slaughter Chickens,54.4
+1958-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.1
+1959-01-01,WPU0141,PPI: Slaughter Chickens,62.2
+1959-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,64.0
+1959-02-01,WPU0141,PPI: Slaughter Chickens,63.5
+1959-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.4
+1959-03-01,WPU0141,PPI: Slaughter Chickens,62.9
+1959-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,64.4
+1959-04-01,WPU0141,PPI: Slaughter Chickens,56.6
+1959-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,58.2
+1959-05-01,WPU0141,PPI: Slaughter Chickens,57.8
+1959-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.8
+1959-06-01,WPU0141,PPI: Slaughter Chickens,56.9
+1959-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.0
+1959-07-01,WPU0141,PPI: Slaughter Chickens,57.9
+1959-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.7
+1959-08-01,WPU0141,PPI: Slaughter Chickens,55.8
+1959-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.4
+1959-09-01,WPU0141,PPI: Slaughter Chickens,55.1
+1959-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.7
+1959-10-01,WPU0141,PPI: Slaughter Chickens,52.4
+1959-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.4
+1959-11-01,WPU0141,PPI: Slaughter Chickens,52.2
+1959-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.6
+1959-12-01,WPU0141,PPI: Slaughter Chickens,65.1
+1959-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,68.5
+1960-01-01,WPU0141,PPI: Slaughter Chickens,61.0
+1960-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,62.8
+1960-02-01,WPU0141,PPI: Slaughter Chickens,63.1
+1960-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.1
+1960-03-01,WPU0141,PPI: Slaughter Chickens,65.5
+1960-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,67.3
+1960-04-01,WPU0141,PPI: Slaughter Chickens,64.8
+1960-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.1
+1960-05-01,WPU0141,PPI: Slaughter Chickens,65.1
+1960-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.5
+1960-06-01,WPU0141,PPI: Slaughter Chickens,64.8
+1960-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.5
+1960-07-01,WPU0141,PPI: Slaughter Chickens,65.3
+1960-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,67.5
+1960-08-01,WPU0141,PPI: Slaughter Chickens,60.0
+1960-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.7
+1960-09-01,WPU0141,PPI: Slaughter Chickens,58.4
+1960-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.0
+1960-10-01,WPU0141,PPI: Slaughter Chickens,57.5
+1960-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,58.5
+1960-11-01,WPU0141,PPI: Slaughter Chickens,58.2
+1960-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.4
+1960-12-01,WPU0141,PPI: Slaughter Chickens,57.0
+1960-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.7
+1961-01-01,WPU0141,PPI: Slaughter Chickens,61.9
+1961-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,62.9
+1961-02-01,WPU0141,PPI: Slaughter Chickens,66.1
+1961-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,67.8
+1961-03-01,WPU0141,PPI: Slaughter Chickens,61.0
+1961-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,62.1
+1961-04-01,WPU0141,PPI: Slaughter Chickens,54.9
+1961-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,56.0
+1961-05-01,WPU0141,PPI: Slaughter Chickens,52.4
+1961-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.6
+1961-06-01,WPU0141,PPI: Slaughter Chickens,44.9
+1961-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,45.7
+1961-07-01,WPU0141,PPI: Slaughter Chickens,46.3
+1961-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,47.0
+1961-08-01,WPU0141,PPI: Slaughter Chickens,46.1
+1961-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,47.0
+1961-09-01,WPU0141,PPI: Slaughter Chickens,40.2
+1961-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,40.7
+1961-10-01,WPU0141,PPI: Slaughter Chickens,43.6
+1961-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,44.8
+1961-11-01,WPU0141,PPI: Slaughter Chickens,42.2
+1961-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,43.3
+1961-12-01,WPU0141,PPI: Slaughter Chickens,54.7
+1961-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,56.7
+1962-01-01,WPU0141,PPI: Slaughter Chickens,58.9
+1962-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.9
+1962-02-01,WPU0141,PPI: Slaughter Chickens,60.2
+1962-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,62.1
+1962-03-01,WPU0141,PPI: Slaughter Chickens,58.9
+1962-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.7
+1962-04-01,WPU0141,PPI: Slaughter Chickens,53.1
+1962-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.5
+1962-05-01,WPU0141,PPI: Slaughter Chickens,50.9
+1962-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.1
+1962-06-01,WPU0141,PPI: Slaughter Chickens,50.7
+1962-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.2
+1962-07-01,WPU0141,PPI: Slaughter Chickens,54.0
+1962-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.6
+1962-08-01,WPU0141,PPI: Slaughter Chickens,55.5
+1962-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.0
+1962-09-01,WPU0141,PPI: Slaughter Chickens,59.8
+1962-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,61.7
+1962-10-01,WPU0141,PPI: Slaughter Chickens,53.8
+1962-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.1
+1962-11-01,WPU0141,PPI: Slaughter Chickens,51.7
+1962-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.8
+1962-12-01,WPU0141,PPI: Slaughter Chickens,53.3
+1962-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.6
+1963-01-01,WPU0141,PPI: Slaughter Chickens,53.4
+1963-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.6
+1963-02-01,WPU0141,PPI: Slaughter Chickens,57.5
+1963-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.0
+1963-03-01,WPU0141,PPI: Slaughter Chickens,56.3
+1963-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.7
+1963-04-01,WPU0141,PPI: Slaughter Chickens,56.6
+1963-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,58.1
+1963-05-01,WPU0141,PPI: Slaughter Chickens,52.8
+1963-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.0
+1963-06-01,WPU0141,PPI: Slaughter Chickens,51.7
+1963-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.8
+1963-07-01,WPU0141,PPI: Slaughter Chickens,53.9
+1963-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.3
+1963-08-01,WPU0141,PPI: Slaughter Chickens,51.8
+1963-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.1
+1963-09-01,WPU0141,PPI: Slaughter Chickens,50.4
+1963-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,51.6
+1963-10-01,WPU0141,PPI: Slaughter Chickens,50.7
+1963-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,51.9
+1963-11-01,WPU0141,PPI: Slaughter Chickens,53.1
+1963-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.8
+1963-12-01,WPU0141,PPI: Slaughter Chickens,45.9
+1963-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,46.9
+1964-01-01,WPU0141,PPI: Slaughter Chickens,53.1
+1964-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.8
+1964-02-01,WPU0141,PPI: Slaughter Chickens,52.2
+1964-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.7
+1964-03-01,WPU0141,PPI: Slaughter Chickens,51.7
+1964-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.1
+1964-04-01,WPU0141,PPI: Slaughter Chickens,50.7
+1964-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.1
+1964-05-01,WPU0141,PPI: Slaughter Chickens,47.7
+1964-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,48.9
+1964-06-01,WPU0141,PPI: Slaughter Chickens,49.2
+1964-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.6
+1964-07-01,WPU0141,PPI: Slaughter Chickens,55.0
+1964-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,56.8
+1964-08-01,WPU0141,PPI: Slaughter Chickens,51.8
+1964-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.4
+1964-09-01,WPU0141,PPI: Slaughter Chickens,52.8
+1964-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.5
+1964-10-01,WPU0141,PPI: Slaughter Chickens,51.7
+1964-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.3
+1964-11-01,WPU0141,PPI: Slaughter Chickens,52.4
+1964-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.3
+1964-12-01,WPU0141,PPI: Slaughter Chickens,48.4
+1964-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.0
+1965-01-01,WPU0141,PPI: Slaughter Chickens,51.7
+1965-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.5
+1965-02-01,WPU0141,PPI: Slaughter Chickens,53.7
+1965-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.6
+1965-03-01,WPU0141,PPI: Slaughter Chickens,56.8
+1965-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,58.9
+1965-04-01,WPU0141,PPI: Slaughter Chickens,54.4
+1965-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,56.0
+1965-05-01,WPU0141,PPI: Slaughter Chickens,52.2
+1965-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.6
+1965-06-01,WPU0141,PPI: Slaughter Chickens,55.5
+1965-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.4
+1965-07-01,WPU0141,PPI: Slaughter Chickens,55.7
+1965-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.6
+1965-08-01,WPU0141,PPI: Slaughter Chickens,54.3
+1965-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,56.1
+1965-09-01,WPU0141,PPI: Slaughter Chickens,53.1
+1965-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.6
+1965-10-01,WPU0141,PPI: Slaughter Chickens,53.9
+1965-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.6
+1965-11-01,WPU0141,PPI: Slaughter Chickens,52.4
+1965-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.0
+1965-12-01,WPU0141,PPI: Slaughter Chickens,52.3
+1965-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.8
+1966-01-01,WPU0141,PPI: Slaughter Chickens,56.4
+1966-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,58.2
+1966-02-01,WPU0141,PPI: Slaughter Chickens,59.3
+1966-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,61.2
+1966-03-01,WPU0141,PPI: Slaughter Chickens,63.7
+1966-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.9
+1966-04-01,WPU0141,PPI: Slaughter Chickens,58.9
+1966-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.1
+1966-05-01,WPU0141,PPI: Slaughter Chickens,64.4
+1966-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.3
+1966-06-01,WPU0141,PPI: Slaughter Chickens,59.6
+1966-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,61.1
+1966-07-01,WPU0141,PPI: Slaughter Chickens,60.2
+1966-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,61.9
+1966-08-01,WPU0141,PPI: Slaughter Chickens,58.3
+1966-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.0
+1966-09-01,WPU0141,PPI: Slaughter Chickens,55.9
+1966-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.6
+1966-10-01,WPU0141,PPI: Slaughter Chickens,50.5
+1966-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,51.7
+1966-11-01,WPU0141,PPI: Slaughter Chickens,51.3
+1966-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.8
+1966-12-01,WPU0141,PPI: Slaughter Chickens,43.6
+1966-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,44.3
+1967-01-01,WPU0141,PPI: Slaughter Chickens,52.8
+1967-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.6
+1967-02-01,WPU0141,PPI: Slaughter Chickens,60.2
+1967-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,63.0
+1967-03-01,WPU0141,PPI: Slaughter Chickens,55.1
+1967-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.4
+1967-04-01,WPU0141,PPI: Slaughter Chickens,53.8
+1967-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.8
+1967-05-01,WPU0141,PPI: Slaughter Chickens,51.1
+1967-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.3
+1967-06-01,WPU0141,PPI: Slaughter Chickens,51.0
+1967-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.4
+1967-07-01,WPU0141,PPI: Slaughter Chickens,56.1
+1967-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.2
+1967-08-01,WPU0141,PPI: Slaughter Chickens,48.6
+1967-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.6
+1967-09-01,WPU0141,PPI: Slaughter Chickens,44.9
+1967-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,46.5
+1967-10-01,WPU0141,PPI: Slaughter Chickens,46.6
+1967-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,48.9
+1967-11-01,WPU0141,PPI: Slaughter Chickens,41.1
+1967-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,42.9
+1967-12-01,WPU0141,PPI: Slaughter Chickens,43.6
+1967-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,45.5
+1968-01-01,WPU0141,PPI: Slaughter Chickens,51.8
+1968-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.9
+1968-02-01,WPU0141,PPI: Slaughter Chickens,59.1
+1968-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,62.9
+1968-03-01,WPU0141,PPI: Slaughter Chickens,54.4
+1968-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.7
+1968-04-01,WPU0141,PPI: Slaughter Chickens,54.0
+1968-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.1
+1968-05-01,WPU0141,PPI: Slaughter Chickens,56.5
+1968-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.9
+1968-06-01,WPU0141,PPI: Slaughter Chickens,58.2
+1968-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,62.1
+1968-07-01,WPU0141,PPI: Slaughter Chickens,61.5
+1968-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.5
+1968-08-01,WPU0141,PPI: Slaughter Chickens,56.8
+1968-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.7
+1968-09-01,WPU0141,PPI: Slaughter Chickens,53.9
+1968-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,56.6
+1968-10-01,WPU0141,PPI: Slaughter Chickens,49.1
+1968-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,51.0
+1968-11-01,WPU0141,PPI: Slaughter Chickens,55.5
+1968-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,58.0
+1968-12-01,WPU0141,PPI: Slaughter Chickens,51.1
+1968-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.1
+1969-01-01,WPU0141,PPI: Slaughter Chickens,57.4
+1969-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.2
+1969-02-01,WPU0141,PPI: Slaughter Chickens,60.4
+1969-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,63.4
+1969-03-01,WPU0141,PPI: Slaughter Chickens,61.5
+1969-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,64.2
+1969-04-01,WPU0141,PPI: Slaughter Chickens,58.1
+1969-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.3
+1969-05-01,WPU0141,PPI: Slaughter Chickens,64.0
+1969-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.8
+1969-06-01,WPU0141,PPI: Slaughter Chickens,62.8
+1969-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.5
+1969-07-01,WPU0141,PPI: Slaughter Chickens,67.3
+1969-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,70.5
+1969-08-01,WPU0141,PPI: Slaughter Chickens,58.9
+1969-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,60.9
+1969-09-01,WPU0141,PPI: Slaughter Chickens,55.9
+1969-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.1
+1969-10-01,WPU0141,PPI: Slaughter Chickens,51.8
+1969-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.1
+1969-11-01,WPU0141,PPI: Slaughter Chickens,51.5
+1969-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,51.8
+1969-12-01,WPU0141,PPI: Slaughter Chickens,50.7
+1969-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.8
+1970-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,57.3
+1970-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.9
+1970-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.9
+1970-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,49.2
+1970-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,49.9
+1970-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,44.9
+1970-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,49.9
+1970-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,46.0
+1970-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.0
+1970-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,46.1
+1970-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,47.7
+1970-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,36.4
+1971-01-01,WPU0141,PPI: Slaughter Chickens,47.2
+1971-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,47.3
+1971-01-01,WPU0171,PPI: Chicken Eggs,63.4
+1971-02-01,WPU0141,PPI: Slaughter Chickens,49.8
+1971-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,49.8
+1971-02-01,WPU0171,PPI: Chicken Eggs,54.6
+1971-03-01,WPU0141,PPI: Slaughter Chickens,49.9
+1971-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.0
+1971-03-01,WPU0171,PPI: Chicken Eggs,56.6
+1971-04-01,WPU0141,PPI: Slaughter Chickens,49.6
+1971-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,49.7
+1971-04-01,WPU0171,PPI: Chicken Eggs,58.4
+1971-05-01,WPU0141,PPI: Slaughter Chickens,50.5
+1971-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.6
+1971-05-01,WPU0171,PPI: Chicken Eggs,51.7
+1971-06-01,WPU0141,PPI: Slaughter Chickens,55.9
+1971-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.9
+1971-06-01,WPU0171,PPI: Chicken Eggs,54.8
+1971-07-01,WPU0141,PPI: Slaughter Chickens,64.9
+1971-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,65.0
+1971-07-01,WPU0171,PPI: Chicken Eggs,50.0
+1971-08-01,WPU0141,PPI: Slaughter Chickens,50.8
+1971-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.9
+1971-08-01,WPU0171,PPI: Chicken Eggs,61.6
+1971-09-01,WPU0141,PPI: Slaughter Chickens,51.9
+1971-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,52.0
+1971-09-01,WPU0171,PPI: Chicken Eggs,60.3
+1971-10-01,WPU0141,PPI: Slaughter Chickens,46.1
+1971-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,46.2
+1971-10-01,WPU0171,PPI: Chicken Eggs,51.7
+1971-11-01,WPU0141,PPI: Slaughter Chickens,44.9
+1971-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,44.9
+1971-11-01,WPU0171,PPI: Chicken Eggs,49.5
+1971-12-01,WPU0141,PPI: Slaughter Chickens,40.4
+1971-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,40.4
+1971-12-01,WPU0171,PPI: Chicken Eggs,64.0
+1972-01-01,WPU0141,PPI: Slaughter Chickens,46.1
+1972-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,46.1
+1972-01-01,WPU0171,PPI: Chicken Eggs,51.8
+1972-02-01,WPU0141,PPI: Slaughter Chickens,53.6
+1972-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.6
+1972-02-01,WPU0171,PPI: Chicken Eggs,51.4
+1972-03-01,WPU0141,PPI: Slaughter Chickens,54.8
+1972-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.8
+1972-03-01,WPU0171,PPI: Chicken Eggs,60.3
+1972-04-01,WPU0141,PPI: Slaughter Chickens,45.7
+1972-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,45.7
+1972-04-01,WPU0171,PPI: Chicken Eggs,48.8
+1972-05-01,WPU0141,PPI: Slaughter Chickens,48.3
+1972-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,48.3
+1972-05-01,WPU0171,PPI: Chicken Eggs,50.7
+1972-06-01,WPU0141,PPI: Slaughter Chickens,53.4
+1972-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,53.4
+1972-06-01,WPU0171,PPI: Chicken Eggs,51.4
+1972-07-01,WPU0141,PPI: Slaughter Chickens,63.6
+1972-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,63.6
+1972-07-01,WPU0171,PPI: Chicken Eggs,57.2
+1972-08-01,WPU0141,PPI: Slaughter Chickens,55.8
+1972-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,55.8
+1972-08-01,WPU0171,PPI: Chicken Eggs,55.6
+1972-09-01,WPU0141,PPI: Slaughter Chickens,59.2
+1972-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,59.2
+1972-09-01,WPU0171,PPI: Chicken Eggs,64.3
+1972-10-01,WPU0141,PPI: Slaughter Chickens,54.3
+1972-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,54.3
+1972-10-01,WPU0171,PPI: Chicken Eggs,55.4
+1972-11-01,WPU0141,PPI: Slaughter Chickens,51.4
+1972-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,51.4
+1972-11-01,WPU0171,PPI: Chicken Eggs,68.9
+1972-12-01,WPU0141,PPI: Slaughter Chickens,50.0
+1972-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,50.0
+1972-12-01,WPU0171,PPI: Chicken Eggs,80.5
+1973-01-01,WPU0141,PPI: Slaughter Chickens,66.3
+1973-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,66.3
+1973-01-01,WPU0171,PPI: Chicken Eggs,88.5
+1973-02-01,WPU0141,PPI: Slaughter Chickens,72.4
+1973-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,72.4
+1973-02-01,WPU0171,PPI: Chicken Eggs,72.8
+1973-03-01,WPU0141,PPI: Slaughter Chickens,91.1
+1973-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,91.1
+1973-03-01,WPU0171,PPI: Chicken Eggs,85.4
+1973-04-01,WPU0141,PPI: Slaughter Chickens,102.0
+1973-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.0
+1973-04-01,WPU0171,PPI: Chicken Eggs,81.1
+1973-05-01,WPU0141,PPI: Slaughter Chickens,94.9
+1973-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,94.9
+1973-05-01,WPU0171,PPI: Chicken Eggs,76.7
+1973-06-01,WPU0141,PPI: Slaughter Chickens,96.1
+1973-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.1
+1973-06-01,WPU0171,PPI: Chicken Eggs,89.2
+1973-07-01,WPU0141,PPI: Slaughter Chickens,100.1
+1973-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,100.1
+1973-07-01,WPU0171,PPI: Chicken Eggs,86.9
+1973-08-01,WPU0141,PPI: Slaughter Chickens,144.2
+1973-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,144.2
+1973-08-01,WPU0171,PPI: Chicken Eggs,117.3
+1973-09-01,WPU0141,PPI: Slaughter Chickens,116.0
+1973-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,116.0
+1973-09-01,WPU0171,PPI: Chicken Eggs,107.2
+1973-10-01,WPU0141,PPI: Slaughter Chickens,93.5
+1973-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.5
+1973-10-01,WPU0171,PPI: Chicken Eggs,99.4
+1973-11-01,WPU0141,PPI: Slaughter Chickens,71.7
+1973-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,71.7
+1973-11-01,WPU0171,PPI: Chicken Eggs,101.4
+1973-12-01,WPU0141,PPI: Slaughter Chickens,67.7
+1973-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,67.7
+1973-12-01,WPU0171,PPI: Chicken Eggs,106.6
+1974-01-01,WPU0141,PPI: Slaughter Chickens,71.9
+1974-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,71.9
+1974-01-01,WPU0171,PPI: Chicken Eggs,110.7
+1974-02-01,WPU0141,PPI: Slaughter Chickens,96.4
+1974-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.4
+1974-02-01,WPU0171,PPI: Chicken Eggs,104.5
+1974-03-01,WPU0141,PPI: Slaughter Chickens,87.3
+1974-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.3
+1974-03-01,WPU0171,PPI: Chicken Eggs,93.9
+1974-04-01,WPU0141,PPI: Slaughter Chickens,73.7
+1974-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,73.7
+1974-04-01,WPU0171,PPI: Chicken Eggs,88.8
+1974-05-01,WPU0141,PPI: Slaughter Chickens,80.4
+1974-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,80.4
+1974-05-01,WPU0171,PPI: Chicken Eggs,70.5
+1974-06-01,WPU0141,PPI: Slaughter Chickens,71.3
+1974-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,71.3
+1974-06-01,WPU0171,PPI: Chicken Eggs,69.8
+1974-07-01,WPU0141,PPI: Slaughter Chickens,81.4
+1974-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,81.4
+1974-07-01,WPU0171,PPI: Chicken Eggs,73.8
+1974-08-01,WPU0141,PPI: Slaughter Chickens,76.3
+1974-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,76.3
+1974-08-01,WPU0171,PPI: Chicken Eggs,83.7
+1974-09-01,WPU0141,PPI: Slaughter Chickens,93.9
+1974-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.9
+1974-09-01,WPU0171,PPI: Chicken Eggs,95.0
+1974-10-01,WPU0141,PPI: Slaughter Chickens,83.3
+1974-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,83.3
+1974-10-01,WPU0171,PPI: Chicken Eggs,93.9
+1974-11-01,WPU0141,PPI: Slaughter Chickens,92.1
+1974-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.1
+1974-11-01,WPU0171,PPI: Chicken Eggs,92.3
+1974-12-01,WPU0141,PPI: Slaughter Chickens,84.4
+1974-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,84.4
+1974-12-01,WPU0171,PPI: Chicken Eggs,101.3
+1975-01-01,WPU0141,PPI: Slaughter Chickens,90.0
+1975-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,90.0
+1975-01-01,WPU0171,PPI: Chicken Eggs,94.4
+1975-02-01,WPU0141,PPI: Slaughter Chickens,93.0
+1975-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.0
+1975-02-01,WPU0171,PPI: Chicken Eggs,90.9
+1975-03-01,WPU0141,PPI: Slaughter Chickens,88.9
+1975-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,88.9
+1975-03-01,WPU0171,PPI: Chicken Eggs,93.0
+1975-04-01,WPU0141,PPI: Slaughter Chickens,90.0
+1975-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,90.0
+1975-04-01,WPU0171,PPI: Chicken Eggs,78.3
+1975-05-01,WPU0141,PPI: Slaughter Chickens,95.8
+1975-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,95.8
+1975-05-01,WPU0171,PPI: Chicken Eggs,81.4
+1975-06-01,WPU0141,PPI: Slaughter Chickens,104.2
+1975-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,104.2
+1975-06-01,WPU0171,PPI: Chicken Eggs,77.1
+1975-07-01,WPU0141,PPI: Slaughter Chickens,121.2
+1975-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.2
+1975-07-01,WPU0171,PPI: Chicken Eggs,78.2
+1975-08-01,WPU0141,PPI: Slaughter Chickens,108.4
+1975-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.4
+1975-08-01,WPU0171,PPI: Chicken Eggs,87.7
+1975-09-01,WPU0141,PPI: Slaughter Chickens,109.1
+1975-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,109.1
+1975-09-01,WPU0171,PPI: Chicken Eggs,97.6
+1975-10-01,WPU0141,PPI: Slaughter Chickens,113.9
+1975-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,113.9
+1975-10-01,WPU0171,PPI: Chicken Eggs,88.6
+1975-11-01,WPU0141,PPI: Slaughter Chickens,108.6
+1975-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.6
+1975-11-01,WPU0171,PPI: Chicken Eggs,98.4
+1975-12-01,WPU0141,PPI: Slaughter Chickens,94.8
+1975-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,94.8
+1975-12-01,WPU0171,PPI: Chicken Eggs,107.6
+1976-01-01,WPU0141,PPI: Slaughter Chickens,87.4
+1976-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.4
+1976-01-01,WPU0171,PPI: Chicken Eggs,101.9
+1976-02-01,WPU0141,PPI: Slaughter Chickens,92.1
+1976-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.1
+1976-02-01,WPU0171,PPI: Chicken Eggs,99.0
+1976-03-01,WPU0141,PPI: Slaughter Chickens,97.3
+1976-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.3
+1976-03-01,WPU0171,PPI: Chicken Eggs,89.1
+1976-04-01,WPU0141,PPI: Slaughter Chickens,86.2
+1976-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,86.2
+1976-04-01,WPU0171,PPI: Chicken Eggs,91.0
+1976-05-01,WPU0141,PPI: Slaughter Chickens,92.0
+1976-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.0
+1976-05-01,WPU0171,PPI: Chicken Eggs,96.0
+1976-06-01,WPU0141,PPI: Slaughter Chickens,93.8
+1976-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.8
+1976-06-01,WPU0171,PPI: Chicken Eggs,92.8
+1976-07-01,WPU0141,PPI: Slaughter Chickens,100.4
+1976-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,100.4
+1976-07-01,WPU0171,PPI: Chicken Eggs,93.9
+1976-08-01,WPU0141,PPI: Slaughter Chickens,97.3
+1976-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.3
+1976-08-01,WPU0171,PPI: Chicken Eggs,104.5
+1976-09-01,WPU0141,PPI: Slaughter Chickens,88.6
+1976-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,88.6
+1976-09-01,WPU0171,PPI: Chicken Eggs,105.7
+1976-10-01,WPU0141,PPI: Slaughter Chickens,79.0
+1976-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,79.0
+1976-10-01,WPU0171,PPI: Chicken Eggs,101.1
+1976-11-01,WPU0141,PPI: Slaughter Chickens,70.9
+1976-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,70.9
+1976-11-01,WPU0171,PPI: Chicken Eggs,107.9
+1976-12-01,WPU0141,PPI: Slaughter Chickens,72.5
+1976-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,72.5
+1976-12-01,WPU0171,PPI: Chicken Eggs,119.5
+1977-01-01,WPU0141,PPI: Slaughter Chickens,77.9
+1977-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,77.9
+1977-01-01,WPU0171,PPI: Chicken Eggs,105.9
+1977-02-01,WPU0141,PPI: Slaughter Chickens,97.9
+1977-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.9
+1977-02-01,WPU0171,PPI: Chicken Eggs,109.0
+1977-03-01,WPU0141,PPI: Slaughter Chickens,93.5
+1977-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.5
+1977-03-01,WPU0171,PPI: Chicken Eggs,97.1
+1977-04-01,WPU0141,PPI: Slaughter Chickens,97.0
+1977-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.0
+1977-04-01,WPU0171,PPI: Chicken Eggs,92.4
+1977-05-01,WPU0141,PPI: Slaughter Chickens,96.8
+1977-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.8
+1977-05-01,WPU0171,PPI: Chicken Eggs,80.8
+1977-06-01,WPU0141,PPI: Slaughter Chickens,97.2
+1977-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.2
+1977-06-01,WPU0171,PPI: Chicken Eggs,79.1
+1977-07-01,WPU0141,PPI: Slaughter Chickens,105.4
+1977-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.4
+1977-07-01,WPU0171,PPI: Chicken Eggs,87.6
+1977-08-01,WPU0141,PPI: Slaughter Chickens,93.2
+1977-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.2
+1977-08-01,WPU0171,PPI: Chicken Eggs,90.7
+1977-09-01,WPU0141,PPI: Slaughter Chickens,95.4
+1977-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,95.4
+1977-09-01,WPU0171,PPI: Chicken Eggs,91.4
+1977-10-01,WPU0141,PPI: Slaughter Chickens,87.0
+1977-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.0
+1977-10-01,WPU0171,PPI: Chicken Eggs,77.0
+1977-11-01,WPU0141,PPI: Slaughter Chickens,79.5
+1977-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,79.5
+1977-11-01,WPU0171,PPI: Chicken Eggs,83.6
+1977-12-01,WPU0141,PPI: Slaughter Chickens,75.8
+1977-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,75.8
+1977-12-01,WPU0171,PPI: Chicken Eggs,93.1
+1978-01-01,WPU0141,PPI: Slaughter Chickens,84.8
+1978-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,84.8
+1978-01-01,WPU0171,PPI: Chicken Eggs,81.2
+1978-02-01,WPU0141,PPI: Slaughter Chickens,97.2
+1978-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.2
+1978-02-01,WPU0171,PPI: Chicken Eggs,95.3
+1978-03-01,WPU0141,PPI: Slaughter Chickens,97.2
+1978-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.2
+1978-03-01,WPU0171,PPI: Chicken Eggs,93.6
+1978-04-01,WPU0141,PPI: Slaughter Chickens,102.6
+1978-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.6
+1978-04-01,WPU0171,PPI: Chicken Eggs,85.2
+1978-05-01,WPU0141,PPI: Slaughter Chickens,101.2
+1978-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.2
+1978-05-01,WPU0171,PPI: Chicken Eggs,79.0
+1978-06-01,WPU0141,PPI: Slaughter Chickens,117.6
+1978-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.6
+1978-06-01,WPU0171,PPI: Chicken Eggs,71.3
+1978-07-01,WPU0141,PPI: Slaughter Chickens,133.5
+1978-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,133.5
+1978-07-01,WPU0171,PPI: Chicken Eggs,84.1
+1978-08-01,WPU0141,PPI: Slaughter Chickens,105.7
+1978-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.7
+1978-08-01,WPU0171,PPI: Chicken Eggs,88.4
+1978-09-01,WPU0141,PPI: Slaughter Chickens,109.0
+1978-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,109.0
+1978-09-01,WPU0171,PPI: Chicken Eggs,93.9
+1978-10-01,WPU0141,PPI: Slaughter Chickens,91.6
+1978-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,91.6
+1978-10-01,WPU0171,PPI: Chicken Eggs,87.5
+1978-11-01,WPU0141,PPI: Slaughter Chickens,93.8
+1978-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.8
+1978-11-01,WPU0171,PPI: Chicken Eggs,99.6
+1978-12-01,WPU0141,PPI: Slaughter Chickens,97.0
+1978-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.0
+1978-12-01,WPU0171,PPI: Chicken Eggs,105.7
+1979-01-01,WPU0141,PPI: Slaughter Chickens,100.5
+1979-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,100.5
+1979-01-01,WPU0171,PPI: Chicken Eggs,99.9
+1979-02-01,WPU0141,PPI: Slaughter Chickens,111.5
+1979-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.5
+1979-02-01,WPU0171,PPI: Chicken Eggs,98.9
+1979-03-01,WPU0141,PPI: Slaughter Chickens,112.4
+1979-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.4
+1979-03-01,WPU0171,PPI: Chicken Eggs,111.9
+1979-04-01,WPU0141,PPI: Slaughter Chickens,107.0
+1979-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.0
+1979-04-01,WPU0171,PPI: Chicken Eggs,103.8
+1979-05-01,WPU0141,PPI: Slaughter Chickens,112.2
+1979-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.2
+1979-05-01,WPU0171,PPI: Chicken Eggs,91.7
+1979-06-01,WPU0141,PPI: Slaughter Chickens,92.4
+1979-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.4
+1979-06-01,WPU0171,PPI: Chicken Eggs,95.5
+1979-07-01,WPU0141,PPI: Slaughter Chickens,93.5
+1979-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.5
+1979-07-01,WPU0171,PPI: Chicken Eggs,93.8
+1979-08-01,WPU0141,PPI: Slaughter Chickens,86.3
+1979-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,86.3
+1979-08-01,WPU0171,PPI: Chicken Eggs,93.3
+1979-09-01,WPU0141,PPI: Slaughter Chickens,87.4
+1979-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.4
+1979-09-01,WPU0171,PPI: Chicken Eggs,98.1
+1979-10-01,WPU0141,PPI: Slaughter Chickens,78.9
+1979-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,78.9
+1979-10-01,WPU0171,PPI: Chicken Eggs,87.2
+1979-11-01,WPU0141,PPI: Slaughter Chickens,96.8
+1979-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.8
+1979-11-01,WPU0171,PPI: Chicken Eggs,100.0
+1979-12-01,WPU0141,PPI: Slaughter Chickens,95.5
+1979-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,95.5
+1979-12-01,WPU0171,PPI: Chicken Eggs,111.0
+1980-01-01,WPU0141,PPI: Slaughter Chickens,100.1
+1980-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,100.1
+1980-01-01,WPU0171,PPI: Chicken Eggs,92.6
+1980-02-01,WPU0141,PPI: Slaughter Chickens,94.5
+1980-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,94.5
+1980-02-01,WPU0171,PPI: Chicken Eggs,84.2
+1980-03-01,WPU0141,PPI: Slaughter Chickens,91.1
+1980-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,91.1
+1980-03-01,WPU0171,PPI: Chicken Eggs,103.1
+1980-04-01,WPU0141,PPI: Slaughter Chickens,85.6
+1980-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,85.6
+1980-04-01,WPU0171,PPI: Chicken Eggs,85.8
+1980-05-01,WPU0141,PPI: Slaughter Chickens,86.7
+1980-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,86.7
+1980-05-01,WPU0171,PPI: Chicken Eggs,78.6
+1980-06-01,WPU0141,PPI: Slaughter Chickens,85.7
+1980-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,85.7
+1980-06-01,WPU0171,PPI: Chicken Eggs,82.1
+1980-07-01,WPU0141,PPI: Slaughter Chickens,121.7
+1980-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.7
+1980-07-01,WPU0171,PPI: Chicken Eggs,89.2
+1980-08-01,WPU0141,PPI: Slaughter Chickens,118.1
+1980-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,118.1
+1980-08-01,WPU0171,PPI: Chicken Eggs,99.0
+1980-09-01,WPU0141,PPI: Slaughter Chickens,127.1
+1980-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,127.1
+1980-09-01,WPU0171,PPI: Chicken Eggs,105.4
+1980-10-01,WPU0141,PPI: Slaughter Chickens,112.6
+1980-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.6
+1980-10-01,WPU0171,PPI: Chicken Eggs,98.0
+1980-11-01,WPU0141,PPI: Slaughter Chickens,109.0
+1980-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,109.0
+1980-11-01,WPU0171,PPI: Chicken Eggs,108.6
+1980-12-01,WPU0141,PPI: Slaughter Chickens,108.7
+1980-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.7
+1980-12-01,WPU0171,PPI: Chicken Eggs,121.7
+1981-01-01,WPU0141,PPI: Slaughter Chickens,113.1
+1981-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,113.1
+1981-01-01,WPU0171,PPI: Chicken Eggs,103.9
+1981-02-01,WPU0141,PPI: Slaughter Chickens,118.1
+1981-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,118.1
+1981-02-01,WPU0171,PPI: Chicken Eggs,103.4
+1981-03-01,WPU0141,PPI: Slaughter Chickens,113.2
+1981-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,113.2
+1981-03-01,WPU0171,PPI: Chicken Eggs,100.9
+1981-04-01,WPU0141,PPI: Slaughter Chickens,99.8
+1981-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,99.8
+1981-04-01,WPU0171,PPI: Chicken Eggs,109.8
+1981-05-01,WPU0141,PPI: Slaughter Chickens,107.7
+1981-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.7
+1981-05-01,WPU0171,PPI: Chicken Eggs,92.3
+1981-06-01,WPU0141,PPI: Slaughter Chickens,106.8
+1981-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,106.8
+1981-06-01,WPU0171,PPI: Chicken Eggs,97.7
+1981-07-01,WPU0141,PPI: Slaughter Chickens,110.5
+1981-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.5
+1981-07-01,WPU0171,PPI: Chicken Eggs,103.5
+1981-08-01,WPU0141,PPI: Slaughter Chickens,110.5
+1981-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.5
+1981-08-01,WPU0171,PPI: Chicken Eggs,101.1
+1981-09-01,WPU0141,PPI: Slaughter Chickens,102.3
+1981-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.3
+1981-09-01,WPU0171,PPI: Chicken Eggs,108.1
+1981-10-01,WPU0141,PPI: Slaughter Chickens,95.0
+1981-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,95.0
+1981-10-01,WPU0171,PPI: Chicken Eggs,108.4
+1981-11-01,WPU0141,PPI: Slaughter Chickens,89.8
+1981-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,89.8
+1981-11-01,WPU0171,PPI: Chicken Eggs,117.3
+1981-12-01,WPU0141,PPI: Slaughter Chickens,87.5
+1981-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.5
+1981-12-01,WPU0171,PPI: Chicken Eggs,109.4
+1982-01-01,WPU0141,PPI: Slaughter Chickens,99.6
+1982-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,99.6
+1982-01-01,WPU0171,PPI: Chicken Eggs,104.7
+1982-02-01,WPU0141,PPI: Slaughter Chickens,103.4
+1982-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.4
+1982-02-01,WPU0171,PPI: Chicken Eggs,112.2
+1982-03-01,WPU0141,PPI: Slaughter Chickens,105.8
+1982-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.8
+1982-03-01,WPU0171,PPI: Chicken Eggs,114.2
+1982-04-01,WPU0141,PPI: Slaughter Chickens,98.1
+1982-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,98.1
+1982-04-01,WPU0171,PPI: Chicken Eggs,107.5
+1982-05-01,WPU0141,PPI: Slaughter Chickens,102.4
+1982-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.4
+1982-05-01,WPU0171,PPI: Chicken Eggs,91.9
+1982-06-01,WPU0141,PPI: Slaughter Chickens,111.4
+1982-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.4
+1982-06-01,WPU0171,PPI: Chicken Eggs,89.1
+1982-07-01,WPU0141,PPI: Slaughter Chickens,112.6
+1982-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.6
+1982-07-01,WPU0171,PPI: Chicken Eggs,96.1
+1982-08-01,WPU0141,PPI: Slaughter Chickens,96.5
+1982-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,96.5
+1982-09-01,WPU0141,PPI: Slaughter Chickens,100.7
+1982-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,100.7
+1982-09-01,WPU0171,PPI: Chicken Eggs,97.0
+1982-10-01,WPU0141,PPI: Slaughter Chickens,87.2
+1982-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,87.2
+1982-10-01,WPU0171,PPI: Chicken Eggs,99.5
+1982-11-01,WPU0141,PPI: Slaughter Chickens,89.1
+1982-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,89.1
+1982-11-01,WPU0171,PPI: Chicken Eggs,96.5
+1982-12-01,WPU0141,PPI: Slaughter Chickens,93.2
+1982-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.2
+1982-12-01,WPU0171,PPI: Chicken Eggs,95.1
+1983-01-01,WPU0141,PPI: Slaughter Chickens,92.8
+1983-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.8
+1983-02-01,WPU0141,PPI: Slaughter Chickens,107.7
+1983-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.7
+1983-03-01,WPU0141,PPI: Slaughter Chickens,92.4
+1983-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,92.4
+1983-04-01,WPU0141,PPI: Slaughter Chickens,88.4
+1983-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,88.4
+1983-05-01,WPU0141,PPI: Slaughter Chickens,97.0
+1983-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,97.0
+1983-05-01,WPU0171,PPI: Chicken Eggs,103.6
+1983-06-01,WPU0141,PPI: Slaughter Chickens,103.2
+1983-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.2
+1983-06-01,WPU0171,PPI: Chicken Eggs,94.7
+1983-07-01,WPU0141,PPI: Slaughter Chickens,114.3
+1983-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.3
+1983-07-01,WPU0171,PPI: Chicken Eggs,99.2
+1983-08-01,WPU0141,PPI: Slaughter Chickens,120.4
+1983-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,120.4
+1983-08-01,WPU0171,PPI: Chicken Eggs,106.0
+1983-09-01,WPU0141,PPI: Slaughter Chickens,128.3
+1983-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,128.3
+1983-09-01,WPU0171,PPI: Chicken Eggs,112.0
+1983-10-01,WPU0141,PPI: Slaughter Chickens,105.9
+1983-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.9
+1983-11-01,WPU0141,PPI: Slaughter Chickens,124.7
+1983-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,124.7
+1983-12-01,WPU0141,PPI: Slaughter Chickens,121.5
+1983-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.5
+1984-01-01,WPU0141,PPI: Slaughter Chickens,130.0
+1984-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,130.0
+1984-01-01,WPU0171,PPI: Chicken Eggs,158.0
+1984-02-01,WPU0141,PPI: Slaughter Chickens,135.0
+1984-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,135.0
+1984-02-01,WPU0171,PPI: Chicken Eggs,157.1
+1984-03-01,WPU0141,PPI: Slaughter Chickens,138.6
+1984-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,138.6
+1984-03-01,WPU0171,PPI: Chicken Eggs,132.0
+1984-04-01,WPU0141,PPI: Slaughter Chickens,126.3
+1984-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.3
+1984-04-01,WPU0171,PPI: Chicken Eggs,147.9
+1984-05-01,WPU0141,PPI: Slaughter Chickens,126.3
+1984-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.3
+1984-05-01,WPU0171,PPI: Chicken Eggs,112.5
+1984-06-01,WPU0141,PPI: Slaughter Chickens,117.7
+1984-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.7
+1984-06-01,WPU0171,PPI: Chicken Eggs,99.5
+1984-07-01,WPU0141,PPI: Slaughter Chickens,136.7
+1984-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.7
+1984-07-01,WPU0171,PPI: Chicken Eggs,103.5
+1984-08-01,WPU0141,PPI: Slaughter Chickens,107.7
+1984-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.7
+1984-08-01,WPU0171,PPI: Chicken Eggs,101.4
+1984-09-01,WPU0141,PPI: Slaughter Chickens,120.4
+1984-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,120.4
+1984-09-01,WPU0171,PPI: Chicken Eggs,99.4
+1984-10-01,WPU0141,PPI: Slaughter Chickens,105.4
+1984-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.4
+1984-10-01,WPU0171,PPI: Chicken Eggs,100.7
+1984-11-01,WPU0141,PPI: Slaughter Chickens,115.5
+1984-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,115.5
+1984-11-01,WPU0171,PPI: Chicken Eggs,98.5
+1984-12-01,WPU0141,PPI: Slaughter Chickens,101.4
+1984-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.4
+1984-12-01,WPU0171,PPI: Chicken Eggs,104.9
+1985-01-01,WPU0141,PPI: Slaughter Chickens,114.7
+1985-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.7
+1985-01-01,WPU0171,PPI: Chicken Eggs,79.4
+1985-02-01,WPU0141,PPI: Slaughter Chickens,114.9
+1985-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.9
+1985-02-01,WPU0171,PPI: Chicken Eggs,90.4
+1985-03-01,WPU0141,PPI: Slaughter Chickens,110.6
+1985-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.6
+1985-03-01,WPU0171,PPI: Chicken Eggs,93.8
+1985-04-01,WPU0141,PPI: Slaughter Chickens,101.2
+1985-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.2
+1985-04-01,WPU0171,PPI: Chicken Eggs,98.0
+1985-05-01,WPU0141,PPI: Slaughter Chickens,109.1
+1985-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,109.1
+1985-05-01,WPU0171,PPI: Chicken Eggs,84.0
+1985-06-01,WPU0141,PPI: Slaughter Chickens,114.7
+1985-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.7
+1985-06-01,WPU0171,PPI: Chicken Eggs,82.7
+1985-07-01,WPU0141,PPI: Slaughter Chickens,114.1
+1985-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.1
+1985-07-01,WPU0171,PPI: Chicken Eggs,91.8
+1985-08-01,WPU0141,PPI: Slaughter Chickens,102.8
+1985-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.8
+1985-08-01,WPU0171,PPI: Chicken Eggs,94.5
+1985-09-01,WPU0141,PPI: Slaughter Chickens,118.3
+1985-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,118.3
+1985-09-01,WPU0171,PPI: Chicken Eggs,105.4
+1985-10-01,WPU0141,PPI: Slaughter Chickens,100.3
+1985-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,100.3
+1985-10-01,WPU0171,PPI: Chicken Eggs,106.9
+1985-11-01,WPU0141,PPI: Slaughter Chickens,119.7
+1985-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.7
+1985-11-01,WPU0171,PPI: Chicken Eggs,109.2
+1985-12-01,WPU0141,PPI: Slaughter Chickens,105.1
+1985-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.1
+1985-12-01,WPU0171,PPI: Chicken Eggs,111.9
+1986-01-01,WPU0141,PPI: Slaughter Chickens,112.6
+1986-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.6
+1986-01-01,WPU0171,PPI: Chicken Eggs,107.2
+1986-02-01,WPU0141,PPI: Slaughter Chickens,101.5
+1986-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.5
+1986-02-01,WPU0171,PPI: Chicken Eggs,98.5
+1986-03-01,WPU0141,PPI: Slaughter Chickens,108.3
+1986-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.3
+1986-03-01,WPU0171,PPI: Chicken Eggs,101.9
+1986-04-01,WPU0141,PPI: Slaughter Chickens,108.1
+1986-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.1
+1986-04-01,WPU0171,PPI: Chicken Eggs,94.9
+1986-05-01,WPU0141,PPI: Slaughter Chickens,110.1
+1986-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.1
+1986-05-01,WPU0171,PPI: Chicken Eggs,90.7
+1986-06-01,WPU0141,PPI: Slaughter Chickens,117.9
+1986-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.9
+1986-06-01,WPU0171,PPI: Chicken Eggs,83.4
+1986-07-01,WPU0141,PPI: Slaughter Chickens,156.3
+1986-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,156.3
+1986-07-01,WPU0171,PPI: Chicken Eggs,93.6
+1986-08-01,WPU0141,PPI: Slaughter Chickens,182.8
+1986-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,182.8
+1986-08-01,WPU0171,PPI: Chicken Eggs,107.1
+1986-09-01,WPU0141,PPI: Slaughter Chickens,140.7
+1986-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.7
+1986-09-01,WPU0171,PPI: Chicken Eggs,101.3
+1986-10-01,WPU0141,PPI: Slaughter Chickens,162.9
+1986-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,162.9
+1986-10-01,WPU0171,PPI: Chicken Eggs,97.1
+1986-11-01,WPU0141,PPI: Slaughter Chickens,125.1
+1986-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.1
+1986-11-01,WPU0171,PPI: Chicken Eggs,110.4
+1986-12-01,WPU0141,PPI: Slaughter Chickens,112.1
+1986-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.1
+1986-12-01,WPU0171,PPI: Chicken Eggs,108.5
+1987-01-01,WPU0141,PPI: Slaughter Chickens,114.7
+1987-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.7
+1987-01-01,WPU0171,PPI: Chicken Eggs,99.0
+1987-02-01,WPU0141,PPI: Slaughter Chickens,105.0
+1987-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.0
+1987-02-01,WPU0171,PPI: Chicken Eggs,98.2
+1987-03-01,WPU0141,PPI: Slaughter Chickens,103.1
+1987-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.1
+1987-03-01,WPU0171,PPI: Chicken Eggs,89.7
+1987-04-01,WPU0141,PPI: Slaughter Chickens,104.7
+1987-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,104.7
+1987-04-01,WPU0171,PPI: Chicken Eggs,90.1
+1987-05-01,WPU0141,PPI: Slaughter Chickens,115.2
+1987-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,115.2
+1987-05-01,WPU0171,PPI: Chicken Eggs,84.4
+1987-06-01,WPU0141,PPI: Slaughter Chickens,93.2
+1987-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.2
+1987-06-01,WPU0171,PPI: Chicken Eggs,80.1
+1987-07-01,WPU0141,PPI: Slaughter Chickens,103.3
+1987-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.3
+1987-07-01,WPU0171,PPI: Chicken Eggs,85.3
+1987-08-01,WPU0141,PPI: Slaughter Chickens,115.4
+1987-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,115.4
+1987-08-01,WPU0171,PPI: Chicken Eggs,79.7
+1987-09-01,WPU0141,PPI: Slaughter Chickens,101.3
+1987-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.3
+1987-09-01,WPU0171,PPI: Chicken Eggs,100.6
+1987-10-01,WPU0141,PPI: Slaughter Chickens,89.3
+1987-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,89.3
+1987-10-01,WPU0171,PPI: Chicken Eggs,81.1
+1987-11-01,WPU0141,PPI: Slaughter Chickens,93.3
+1987-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,93.3
+1987-11-01,WPU0171,PPI: Chicken Eggs,92.6
+1987-12-01,WPU0141,PPI: Slaughter Chickens,78.2
+1987-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,78.2
+1987-12-01,WPU0171,PPI: Chicken Eggs,70.6
+1988-01-01,WPU0141,PPI: Slaughter Chickens,101.9
+1988-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.9
+1988-01-01,WPU0171,PPI: Chicken Eggs,76.5
+1988-02-01,WPU0141,PPI: Slaughter Chickens,90.0
+1988-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,90.0
+1988-02-01,WPU0171,PPI: Chicken Eggs,73.8
+1988-03-01,WPU0141,PPI: Slaughter Chickens,102.8
+1988-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.8
+1988-03-01,WPU0171,PPI: Chicken Eggs,79.7
+1988-04-01,WPU0141,PPI: Slaughter Chickens,103.9
+1988-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.9
+1988-04-01,WPU0171,PPI: Chicken Eggs,73.1
+1988-05-01,WPU0141,PPI: Slaughter Chickens,122.4
+1988-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,122.4
+1988-05-01,WPU0171,PPI: Chicken Eggs,70.8
+1988-06-01,WPU0141,PPI: Slaughter Chickens,139.9
+1988-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,139.9
+1988-06-01,WPU0171,PPI: Chicken Eggs,77.1
+1988-07-01,WPU0141,PPI: Slaughter Chickens,164.4
+1988-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,164.4
+1988-07-01,WPU0171,PPI: Chicken Eggs,95.7
+1988-08-01,WPU0141,PPI: Slaughter Chickens,148.8
+1988-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,148.8
+1988-08-01,WPU0171,PPI: Chicken Eggs,107.0
+1988-09-01,WPU0141,PPI: Slaughter Chickens,141.7
+1988-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,141.7
+1988-09-01,WPU0171,PPI: Chicken Eggs,102.1
+1988-10-01,WPU0141,PPI: Slaughter Chickens,136.2
+1988-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.2
+1988-10-01,WPU0171,PPI: Chicken Eggs,107.4
+1988-11-01,WPU0141,PPI: Slaughter Chickens,125.2
+1988-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.2
+1988-11-01,WPU0171,PPI: Chicken Eggs,99.7
+1988-12-01,WPU0141,PPI: Slaughter Chickens,127.2
+1988-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,127.2
+1988-12-01,WPU0171,PPI: Chicken Eggs,100.3
+1989-01-01,WPU0141,PPI: Slaughter Chickens,129.5
+1989-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.5
+1989-01-01,WPU0171,PPI: Chicken Eggs,127.3
+1989-02-01,WPU0141,PPI: Slaughter Chickens,125.1
+1989-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.1
+1989-02-01,WPU0171,PPI: Chicken Eggs,96.7
+1989-03-01,WPU0141,PPI: Slaughter Chickens,147.0
+1989-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,147.0
+1989-03-01,WPU0171,PPI: Chicken Eggs,135.8
+1989-04-01,WPU0141,PPI: Slaughter Chickens,142.1
+1989-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,142.1
+1989-04-01,WPU0171,PPI: Chicken Eggs,110.8
+1989-05-01,WPU0141,PPI: Slaughter Chickens,162.3
+1989-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,162.3
+1989-05-01,WPU0171,PPI: Chicken Eggs,107.0
+1989-06-01,WPU0141,PPI: Slaughter Chickens,153.0
+1989-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,153.0
+1989-06-01,WPU0171,PPI: Chicken Eggs,104.8
+1989-07-01,WPU0141,PPI: Slaughter Chickens,137.3
+1989-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,137.3
+1989-07-01,WPU0171,PPI: Chicken Eggs,111.0
+1989-08-01,WPU0141,PPI: Slaughter Chickens,127.9
+1989-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,127.9
+1989-08-01,WPU0171,PPI: Chicken Eggs,116.7
+1989-09-01,WPU0141,PPI: Slaughter Chickens,142.0
+1989-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,142.0
+1989-09-01,WPU0171,PPI: Chicken Eggs,124.6
+1989-10-01,WPU0141,PPI: Slaughter Chickens,106.3
+1989-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,106.3
+1989-10-01,WPU0171,PPI: Chicken Eggs,124.3
+1989-11-01,WPU0141,PPI: Slaughter Chickens,106.6
+1989-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,106.6
+1989-11-01,WPU0171,PPI: Chicken Eggs,134.5
+1989-12-01,WPU0141,PPI: Slaughter Chickens,101.2
+1989-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,101.2
+1989-12-01,WPU0171,PPI: Chicken Eggs,141.3
+1990-01-01,WPU0141,PPI: Slaughter Chickens,107.1
+1990-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.1
+1990-01-01,WPU0171,PPI: Chicken Eggs,154.8
+1990-02-01,WPU0141,PPI: Slaughter Chickens,121.5
+1990-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.5
+1990-02-01,WPU0171,PPI: Chicken Eggs,114.0
+1990-03-01,WPU0141,PPI: Slaughter Chickens,134.9
+1990-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,134.9
+1990-03-01,WPU0171,PPI: Chicken Eggs,128.9
+1990-04-01,WPU0141,PPI: Slaughter Chickens,120.9
+1990-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,120.9
+1990-04-01,WPU0171,PPI: Chicken Eggs,127.9
+1990-05-01,WPU0141,PPI: Slaughter Chickens,132.8
+1990-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.8
+1990-05-01,WPU0171,PPI: Chicken Eggs,95.3
+1990-06-01,WPU0141,PPI: Slaughter Chickens,119.3
+1990-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.3
+1990-06-01,WPU0171,PPI: Chicken Eggs,100.4
+1990-07-01,WPU0141,PPI: Slaughter Chickens,139.7
+1990-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,139.7
+1990-07-01,WPU0171,PPI: Chicken Eggs,91.6
+1990-08-01,WPU0141,PPI: Slaughter Chickens,121.8
+1990-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.8
+1990-08-01,WPU0171,PPI: Chicken Eggs,114.4
+1990-09-01,WPU0141,PPI: Slaughter Chickens,129.1
+1990-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.1
+1990-09-01,WPU0171,PPI: Chicken Eggs,112.6
+1990-10-01,WPU0141,PPI: Slaughter Chickens,102.2
+1990-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,102.2
+1990-10-01,WPU0171,PPI: Chicken Eggs,121.6
+1990-11-01,WPU0141,PPI: Slaughter Chickens,100.1
+1990-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,100.1
+1990-11-01,WPU0171,PPI: Chicken Eggs,125.0
+1990-12-01,WPU0141,PPI: Slaughter Chickens,105.0
+1990-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.0
+1990-12-01,WPU0171,PPI: Chicken Eggs,124.5
+1991-01-01,WPU0141,PPI: Slaughter Chickens,116.4
+1991-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,116.4
+1991-01-01,WPU0171,PPI: Chicken Eggs,140.0
+1991-02-01,WPU0141,PPI: Slaughter Chickens,105.8
+1991-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,105.8
+1991-02-01,WPU0171,PPI: Chicken Eggs,110.5
+1991-03-01,WPU0141,PPI: Slaughter Chickens,111.9
+1991-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.9
+1991-03-01,WPU0171,PPI: Chicken Eggs,131.7
+1991-04-01,WPU0141,PPI: Slaughter Chickens,106.9
+1991-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,106.9
+1991-04-01,WPU0171,PPI: Chicken Eggs,113.2
+1991-05-01,WPU0141,PPI: Slaughter Chickens,114.8
+1991-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.8
+1991-05-01,WPU0171,PPI: Chicken Eggs,94.6
+1991-06-01,WPU0141,PPI: Slaughter Chickens,111.3
+1991-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.3
+1991-06-01,WPU0171,PPI: Chicken Eggs,96.9
+1991-07-01,WPU0141,PPI: Slaughter Chickens,119.4
+1991-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.4
+1991-07-01,WPU0171,PPI: Chicken Eggs,100.7
+1991-08-01,WPU0141,PPI: Slaughter Chickens,119.6
+1991-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.6
+1991-08-01,WPU0171,PPI: Chicken Eggs,109.0
+1991-09-01,WPU0141,PPI: Slaughter Chickens,114.9
+1991-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.9
+1991-09-01,WPU0171,PPI: Chicken Eggs,105.8
+1991-10-01,WPU0141,PPI: Slaughter Chickens,110.4
+1991-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.4
+1991-10-01,WPU0171,PPI: Chicken Eggs,105.0
+1991-11-01,WPU0141,PPI: Slaughter Chickens,107.3
+1991-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.3
+1991-11-01,WPU0171,PPI: Chicken Eggs,102.1
+1991-12-01,WPU0141,PPI: Slaughter Chickens,103.8
+1991-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.8
+1991-12-01,WPU0171,PPI: Chicken Eggs,118.7
+1992-01-01,WPU0141,PPI: Slaughter Chickens,110.8
+1992-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.5
+1992-01-01,WPU0171,PPI: Chicken Eggs,91.9
+1992-02-01,WPU0141,PPI: Slaughter Chickens,106.6
+1992-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,107.1
+1992-02-01,WPU0171,PPI: Chicken Eggs,94.1
+1992-03-01,WPU0141,PPI: Slaughter Chickens,108.6
+1992-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.6
+1992-03-01,WPU0171,PPI: Chicken Eggs,92.8
+1992-04-01,WPU0141,PPI: Slaughter Chickens,102.9
+1992-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,103.8
+1992-04-01,WPU0171,PPI: Chicken Eggs,90.1
+1992-05-01,WPU0141,PPI: Slaughter Chickens,119.3
+1992-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,120.7
+1992-05-01,WPU0171,PPI: Chicken Eggs,86.4
+1992-06-01,WPU0141,PPI: Slaughter Chickens,111.1
+1992-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.1
+1992-06-01,WPU0171,PPI: Chicken Eggs,84.6
+1992-07-01,WPU0141,PPI: Slaughter Chickens,129.1
+1992-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.8
+1992-07-01,WPU0171,PPI: Chicken Eggs,83.9
+1992-08-01,WPU0141,PPI: Slaughter Chickens,123.9
+1992-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.0
+1992-08-01,WPU0171,PPI: Chicken Eggs,87.3
+1992-09-01,WPU0141,PPI: Slaughter Chickens,112.3
+1992-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,113.0
+1992-09-01,WPU0171,PPI: Chicken Eggs,103.6
+1992-10-01,WPU0141,PPI: Slaughter Chickens,120.7
+1992-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.2
+1992-10-01,WPU0171,PPI: Chicken Eggs,94.7
+1992-11-01,WPU0141,PPI: Slaughter Chickens,123.8
+1992-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,123.2
+1992-11-01,WPU0171,PPI: Chicken Eggs,112.4
+1992-12-01,WPU0141,PPI: Slaughter Chickens,106.6
+1992-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,106.6
+1992-12-01,WPU0171,PPI: Chicken Eggs,107.7
+1993-01-01,WPU0141,PPI: Slaughter Chickens,116.2
+1993-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,116.6
+1993-01-01,WPU0171,PPI: Chicken Eggs,102.9
+1993-02-01,WPU0141,PPI: Slaughter Chickens,114.8
+1993-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,115.3
+1993-02-01,WPU0171,PPI: Chicken Eggs,107.0
+1993-03-01,WPU0141,PPI: Slaughter Chickens,120.5
+1993-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,120.5
+1993-03-01,WPU0171,PPI: Chicken Eggs,121.3
+1993-04-01,WPU0141,PPI: Slaughter Chickens,119.9
+1993-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.1
+1993-04-01,WPU0171,PPI: Chicken Eggs,111.1
+1993-05-01,WPU0141,PPI: Slaughter Chickens,139.5
+1993-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.9
+1993-05-01,WPU0171,PPI: Chicken Eggs,101.6
+1993-06-01,WPU0141,PPI: Slaughter Chickens,122.6
+1993-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,123.8
+1993-06-01,WPU0171,PPI: Chicken Eggs,109.5
+1993-07-01,WPU0141,PPI: Slaughter Chickens,128.4
+1993-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.8
+1993-07-01,WPU0171,PPI: Chicken Eggs,95.5
+1993-08-01,WPU0141,PPI: Slaughter Chickens,128.5
+1993-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.6
+1993-08-01,WPU0171,PPI: Chicken Eggs,110.5
+1993-09-01,WPU0141,PPI: Slaughter Chickens,139.7
+1993-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,141.1
+1993-09-01,WPU0171,PPI: Chicken Eggs,93.2
+1993-10-01,WPU0141,PPI: Slaughter Chickens,125.0
+1993-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.2
+1993-10-01,WPU0171,PPI: Chicken Eggs,105.2
+1993-11-01,WPU0141,PPI: Slaughter Chickens,127.2
+1993-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,128.1
+1993-11-01,WPU0171,PPI: Chicken Eggs,108.6
+1993-12-01,WPU0141,PPI: Slaughter Chickens,116.8
+1993-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.7
+1993-12-01,WPU0171,PPI: Chicken Eggs,103.8
+1994-01-01,WPU0141,PPI: Slaughter Chickens,114.1
+1994-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,115.1
+1994-01-01,WPU0171,PPI: Chicken Eggs,100.1
+1994-02-01,WPU0141,PPI: Slaughter Chickens,124.6
+1994-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.8
+1994-02-01,WPU0171,PPI: Chicken Eggs,109.1
+1994-03-01,WPU0141,PPI: Slaughter Chickens,137.1
+1994-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,138.4
+1994-03-01,WPU0171,PPI: Chicken Eggs,112.3
+1994-04-01,WPU0141,PPI: Slaughter Chickens,131.5
+1994-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,133.0
+1994-04-01,WPU0171,PPI: Chicken Eggs,99.0
+1994-05-01,WPU0141,PPI: Slaughter Chickens,146.3
+1994-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,148.2
+1994-05-01,WPU0171,PPI: Chicken Eggs,84.2
+1994-06-01,WPU0141,PPI: Slaughter Chickens,141.3
+1994-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,143.2
+1994-06-01,WPU0171,PPI: Chicken Eggs,91.1
+1994-07-01,WPU0141,PPI: Slaughter Chickens,134.9
+1994-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.7
+1994-07-01,WPU0171,PPI: Chicken Eggs,89.3
+1994-08-01,WPU0141,PPI: Slaughter Chickens,118.6
+1994-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,120.1
+1994-08-01,WPU0171,PPI: Chicken Eggs,100.1
+1994-09-01,WPU0141,PPI: Slaughter Chickens,127.7
+1994-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.3
+1994-09-01,WPU0171,PPI: Chicken Eggs,98.8
+1994-10-01,WPU0141,PPI: Slaughter Chickens,121.7
+1994-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,123.2
+1994-10-01,WPU0171,PPI: Chicken Eggs,89.2
+1994-11-01,WPU0141,PPI: Slaughter Chickens,106.9
+1994-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,108.1
+1994-11-01,WPU0171,PPI: Chicken Eggs,100.5
+1994-12-01,WPU0141,PPI: Slaughter Chickens,110.0
+1994-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.3
+1994-12-01,WPU0171,PPI: Chicken Eggs,100.0
+1995-01-01,WPU0141,PPI: Slaughter Chickens,109.8
+1995-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,111.1
+1995-01-01,WPU0171,PPI: Chicken Eggs,92.6
+1995-02-01,WPU0141,PPI: Slaughter Chickens,111.5
+1995-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,112.8
+1995-02-01,WPU0171,PPI: Chicken Eggs,95.8
+1995-03-01,WPU0141,PPI: Slaughter Chickens,115.7
+1995-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.0
+1995-03-01,WPU0171,PPI: Chicken Eggs,97.1
+1995-04-01,WPU0141,PPI: Slaughter Chickens,109.4
+1995-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,110.6
+1995-04-01,WPU0171,PPI: Chicken Eggs,97.1
+1995-05-01,WPU0141,PPI: Slaughter Chickens,112.6
+1995-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,114.1
+1995-05-01,WPU0171,PPI: Chicken Eggs,85.4
+1995-06-01,WPU0141,PPI: Slaughter Chickens,124.2
+1995-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.9
+1995-06-01,WPU0171,PPI: Chicken Eggs,88.8
+1995-07-01,WPU0141,PPI: Slaughter Chickens,134.7
+1995-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.6
+1995-07-01,WPU0171,PPI: Chicken Eggs,97.4
+1995-08-01,WPU0141,PPI: Slaughter Chickens,143.9
+1995-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,145.8
+1995-08-01,WPU0171,PPI: Chicken Eggs,99.2
+1995-09-01,WPU0141,PPI: Slaughter Chickens,150.5
+1995-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,152.5
+1995-09-01,WPU0171,PPI: Chicken Eggs,108.9
+1995-10-01,WPU0141,PPI: Slaughter Chickens,133.6
+1995-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,135.4
+1995-10-01,WPU0171,PPI: Chicken Eggs,111.1
+1995-11-01,WPU0141,PPI: Slaughter Chickens,150.4
+1995-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,152.3
+1995-11-01,WPU0171,PPI: Chicken Eggs,136.9
+1995-12-01,WPU0141,PPI: Slaughter Chickens,134.0
+1995-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,135.6
+1995-12-01,WPU0171,PPI: Chicken Eggs,138.8
+1996-01-01,WPU0141,PPI: Slaughter Chickens,139.4
+1996-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,141.1
+1996-01-01,WPU0171,PPI: Chicken Eggs,123.4
+1996-02-01,WPU0141,PPI: Slaughter Chickens,125.4
+1996-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.9
+1996-02-01,WPU0171,PPI: Chicken Eggs,126.7
+1996-03-01,WPU0141,PPI: Slaughter Chickens,121.9
+1996-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,123.4
+1996-03-01,WPU0171,PPI: Chicken Eggs,138.5
+1996-04-01,WPU0141,PPI: Slaughter Chickens,123.0
+1996-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,124.5
+1996-04-01,WPU0171,PPI: Chicken Eggs,132.1
+1996-05-01,WPU0141,PPI: Slaughter Chickens,146.9
+1996-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,148.7
+1996-05-01,WPU0171,PPI: Chicken Eggs,112.4
+1996-06-01,WPU0141,PPI: Slaughter Chickens,165.7
+1996-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,167.8
+1996-06-01,WPU0171,PPI: Chicken Eggs,119.2
+1996-07-01,WPU0141,PPI: Slaughter Chickens,158.9
+1996-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,160.9
+1996-07-01,WPU0171,PPI: Chicken Eggs,116.7
+1996-08-01,WPU0141,PPI: Slaughter Chickens,156.4
+1996-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,158.3
+1996-08-01,WPU0171,PPI: Chicken Eggs,130.6
+1996-09-01,WPU0141,PPI: Slaughter Chickens,155.2
+1996-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,157.1
+1996-09-01,WPU0171,PPI: Chicken Eggs,134.0
+1996-10-01,WPU0141,PPI: Slaughter Chickens,149.4
+1996-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,151.1
+1996-10-01,WPU0171,PPI: Chicken Eggs,128.8
+1996-11-01,WPU0141,PPI: Slaughter Chickens,157.0
+1996-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,158.6
+1996-11-01,WPU0171,PPI: Chicken Eggs,143.9
+1996-12-01,WPU0141,PPI: Slaughter Chickens,155.9
+1996-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,157.5
+1996-12-01,WPU0171,PPI: Chicken Eggs,161.8
+1997-01-01,WPU0141,PPI: Slaughter Chickens,149.3
+1997-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,150.8
+1997-01-01,WPU0171,PPI: Chicken Eggs,125.8
+1997-02-01,WPU0141,PPI: Slaughter Chickens,138.9
+1997-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.1
+1997-02-01,WPU0171,PPI: Chicken Eggs,129.4
+1997-03-01,WPU0141,PPI: Slaughter Chickens,122.6
+1997-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,123.4
+1997-03-01,WPU0171,PPI: Chicken Eggs,119.7
+1997-04-01,WPU0141,PPI: Slaughter Chickens,131.4
+1997-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.3
+1997-04-01,WPU0171,PPI: Chicken Eggs,108.2
+1997-05-01,WPU0141,PPI: Slaughter Chickens,134.4
+1997-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,135.4
+1997-05-01,WPU0171,PPI: Chicken Eggs,106.2
+1997-06-01,WPU0141,PPI: Slaughter Chickens,137.5
+1997-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,138.4
+1997-06-01,WPU0171,PPI: Chicken Eggs,97.4
+1997-07-01,WPU0141,PPI: Slaughter Chickens,154.6
+1997-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,155.9
+1997-07-01,WPU0171,PPI: Chicken Eggs,117.7
+1997-08-01,WPU0141,PPI: Slaughter Chickens,155.6
+1997-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,156.7
+1997-08-01,WPU0171,PPI: Chicken Eggs,107.7
+1997-09-01,WPU0141,PPI: Slaughter Chickens,146.8
+1997-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,147.9
+1997-09-01,WPU0171,PPI: Chicken Eggs,120.0
+1997-10-01,WPU0141,PPI: Slaughter Chickens,124.6
+1997-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.4
+1997-10-01,WPU0171,PPI: Chicken Eggs,111.6
+1997-11-01,WPU0141,PPI: Slaughter Chickens,122.1
+1997-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,122.7
+1997-11-01,WPU0171,PPI: Chicken Eggs,148.5
+1997-12-01,WPU0141,PPI: Slaughter Chickens,116.8
+1997-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.3
+1997-12-01,WPU0171,PPI: Chicken Eggs,136.2
+1998-01-01,WPU0141,PPI: Slaughter Chickens,124.5
+1998-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.1
+1998-01-01,WPU0171,PPI: Chicken Eggs,117.4
+1998-02-01,WPU0141,PPI: Slaughter Chickens,123.8
+1998-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,124.7
+1998-02-01,WPU0171,PPI: Chicken Eggs,103.2
+1998-03-01,WPU0141,PPI: Slaughter Chickens,133.7
+1998-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,134.7
+1998-03-01,WPU0171,PPI: Chicken Eggs,118.5
+1998-04-01,WPU0141,PPI: Slaughter Chickens,136.6
+1998-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,138.0
+1998-04-01,WPU0171,PPI: Chicken Eggs,99.5
+1998-05-01,WPU0141,PPI: Slaughter Chickens,140.2
+1998-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,141.6
+1998-05-01,WPU0171,PPI: Chicken Eggs,83.8
+1998-06-01,WPU0141,PPI: Slaughter Chickens,151.3
+1998-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,152.8
+1998-06-01,WPU0171,PPI: Chicken Eggs,100.7
+1998-07-01,WPU0141,PPI: Slaughter Chickens,170.3
+1998-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,172.1
+1998-07-01,WPU0171,PPI: Chicken Eggs,95.2
+1998-08-01,WPU0141,PPI: Slaughter Chickens,182.2
+1998-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,184.1
+1998-08-01,WPU0171,PPI: Chicken Eggs,107.7
+1998-09-01,WPU0141,PPI: Slaughter Chickens,176.1
+1998-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,177.9
+1998-09-01,WPU0171,PPI: Chicken Eggs,107.4
+1998-10-01,WPU0141,PPI: Slaughter Chickens,169.8
+1998-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,171.6
+1998-10-01,WPU0171,PPI: Chicken Eggs,111.7
+1998-11-01,WPU0141,PPI: Slaughter Chickens,155.6
+1998-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,157.2
+1998-11-01,WPU0171,PPI: Chicken Eggs,124.6
+1998-12-01,WPU0141,PPI: Slaughter Chickens,140.1
+1998-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,141.4
+1998-12-01,WPU0171,PPI: Chicken Eggs,121.5
+1999-01-01,WPU0141,PPI: Slaughter Chickens,138.9
+1999-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.2
+1999-01-01,WPU0171,PPI: Chicken Eggs,109.7
+1999-02-01,WPU0141,PPI: Slaughter Chickens,134.7
+1999-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.0
+1999-02-01,WPU0171,PPI: Chicken Eggs,98.2
+1999-03-01,WPU0141,PPI: Slaughter Chickens,130.8
+1999-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.1
+1999-03-01,WPU0171,PPI: Chicken Eggs,104.9
+1999-04-01,WPU0141,PPI: Slaughter Chickens,121.5
+1999-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,122.7
+1999-04-01,WPU0171,PPI: Chicken Eggs,85.3
+1999-05-01,WPU0141,PPI: Slaughter Chickens,142.4
+1999-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,144.2
+1999-05-01,WPU0171,PPI: Chicken Eggs,77.1
+1999-06-01,WPU0141,PPI: Slaughter Chickens,139.2
+1999-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,141.0
+1999-06-01,WPU0171,PPI: Chicken Eggs,80.8
+1999-07-01,WPU0141,PPI: Slaughter Chickens,140.9
+1999-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,142.7
+1999-07-01,WPU0171,PPI: Chicken Eggs,80.7
+1999-08-01,WPU0141,PPI: Slaughter Chickens,125.2
+1999-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.9
+1999-08-01,WPU0171,PPI: Chicken Eggs,95.7
+1999-09-01,WPU0141,PPI: Slaughter Chickens,132.1
+1999-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,133.8
+1999-09-01,WPU0171,PPI: Chicken Eggs,87.7
+1999-10-01,WPU0141,PPI: Slaughter Chickens,118.2
+1999-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.8
+1999-10-01,WPU0171,PPI: Chicken Eggs,68.8
+1999-11-01,WPU0141,PPI: Slaughter Chickens,137.7
+1999-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,139.5
+1999-11-01,WPU0171,PPI: Chicken Eggs,101.7
+1999-12-01,WPU0141,PPI: Slaughter Chickens,133.0
+1999-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,134.8
+1999-12-01,WPU0171,PPI: Chicken Eggs,82.1
+2000-01-01,WPU0141,PPI: Slaughter Chickens,127.5
+2000-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.3
+2000-01-01,WPU0171,PPI: Chicken Eggs,89.5
+2000-02-01,WPU0141,PPI: Slaughter Chickens,116.9
+2000-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,118.5
+2000-02-01,WPU0171,PPI: Chicken Eggs,112.3
+2000-03-01,WPU0141,PPI: Slaughter Chickens,120.3
+2000-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,121.9
+2000-03-01,WPU0171,PPI: Chicken Eggs,79.6
+2000-04-01,WPU0141,PPI: Slaughter Chickens,123.1
+2000-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,124.8
+2000-04-01,WPU0171,PPI: Chicken Eggs,98.5
+2000-05-01,WPU0141,PPI: Slaughter Chickens,125.0
+2000-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.7
+2000-05-01,WPU0171,PPI: Chicken Eggs,73.8
+2000-06-01,WPU0141,PPI: Slaughter Chickens,125.2
+2000-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.9
+2000-06-01,WPU0171,PPI: Chicken Eggs,94.5
+2000-07-01,WPU0141,PPI: Slaughter Chickens,128.0
+2000-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,129.7
+2000-07-01,WPU0171,PPI: Chicken Eggs,80.9
+2000-08-01,WPU0141,PPI: Slaughter Chickens,117.3
+2000-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,118.9
+2000-08-01,WPU0171,PPI: Chicken Eggs,108.6
+2000-09-01,WPU0141,PPI: Slaughter Chickens,133.9
+2000-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,135.8
+2000-09-01,WPU0171,PPI: Chicken Eggs,92.4
+2000-10-01,WPU0141,PPI: Slaughter Chickens,129.2
+2000-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,131.0
+2000-10-01,WPU0171,PPI: Chicken Eggs,109.1
+2000-11-01,WPU0141,PPI: Slaughter Chickens,133.3
+2000-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,135.1
+2000-11-01,WPU0171,PPI: Chicken Eggs,112.1
+2000-12-01,WPU0141,PPI: Slaughter Chickens,130.7
+2000-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.5
+2000-12-01,WPU0171,PPI: Chicken Eggs,122.3
+2001-01-01,WPU0141,PPI: Slaughter Chickens,130.7
+2001-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.4
+2001-01-01,WPU0171,PPI: Chicken Eggs,108.8
+2001-02-01,WPU0141,PPI: Slaughter Chickens,129.9
+2001-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,131.7
+2001-02-01,WPU0171,PPI: Chicken Eggs,104.3
+2001-03-01,WPU0141,PPI: Slaughter Chickens,136.3
+2001-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,138.2
+2001-03-01,WPU0171,PPI: Chicken Eggs,103.0
+2001-04-01,WPU0141,PPI: Slaughter Chickens,134.0
+2001-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,135.9
+2001-04-01,WPU0171,PPI: Chicken Eggs,117.4
+2001-05-01,WPU0141,PPI: Slaughter Chickens,139.2
+2001-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,141.2
+2001-05-01,WPU0171,PPI: Chicken Eggs,81.0
+2001-06-01,WPU0141,PPI: Slaughter Chickens,138.5
+2001-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.4
+2001-06-01,WPU0171,PPI: Chicken Eggs,79.1
+2001-07-01,WPU0141,PPI: Slaughter Chickens,141.1
+2001-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,143.0
+2001-07-01,WPU0171,PPI: Chicken Eggs,82.0
+2001-08-01,WPU0141,PPI: Slaughter Chickens,138.9
+2001-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,140.8
+2001-08-01,WPU0171,PPI: Chicken Eggs,87.0
+2001-09-01,WPU0141,PPI: Slaughter Chickens,146.2
+2001-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,148.2
+2001-09-01,WPU0171,PPI: Chicken Eggs,81.8
+2001-10-01,WPU0141,PPI: Slaughter Chickens,141.8
+2001-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,143.8
+2001-10-01,WPU0171,PPI: Chicken Eggs,86.5
+2001-11-01,WPU0141,PPI: Slaughter Chickens,137.0
+2001-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,139.0
+2001-11-01,WPU0171,PPI: Chicken Eggs,103.3
+2001-12-01,WPU0141,PPI: Slaughter Chickens,124.4
+2001-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.1
+2001-12-01,WPU0171,PPI: Chicken Eggs,89.7
+2002-01-01,WPU0141,PPI: Slaughter Chickens,131.1
+2002-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.9
+2002-01-01,WPU0171,PPI: Chicken Eggs,100.0
+2002-02-01,WPU0141,PPI: Slaughter Chickens,126.1
+2002-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,127.9
+2002-02-01,WPU0171,PPI: Chicken Eggs,85.0
+2002-03-01,WPU0141,PPI: Slaughter Chickens,124.7
+2002-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,126.5
+2002-03-01,WPU0171,PPI: Chicken Eggs,102.4
+2002-04-01,WPU0141,PPI: Slaughter Chickens,117.7
+2002-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.3
+2002-04-01,WPU0171,PPI: Chicken Eggs,81.2
+2002-05-01,WPU0141,PPI: Slaughter Chickens,125.6
+2002-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,127.3
+2002-05-01,WPU0171,PPI: Chicken Eggs,77.2
+2002-06-01,WPU0141,PPI: Slaughter Chickens,134.8
+2002-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.7
+2002-06-01,WPU0171,PPI: Chicken Eggs,102.7
+2002-07-01,WPU0141,PPI: Slaughter Chickens,130.2
+2002-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,132.0
+2002-07-01,WPU0171,PPI: Chicken Eggs,89.8
+2002-08-01,WPU0141,PPI: Slaughter Chickens,124.1
+2002-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,125.8
+2002-08-01,WPU0171,PPI: Chicken Eggs,100.8
+2002-09-01,WPU0141,PPI: Slaughter Chickens,127.2
+2002-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,128.9
+2002-09-01,WPU0171,PPI: Chicken Eggs,89.0
+2002-10-01,WPU0141,PPI: Slaughter Chickens,114.5
+2002-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,116.1
+2002-10-01,WPU0171,PPI: Chicken Eggs,87.9
+2002-11-01,WPU0141,PPI: Slaughter Chickens,115.6
+2002-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,117.2
+2002-11-01,WPU0171,PPI: Chicken Eggs,120.5
+2002-12-01,WPU0141,PPI: Slaughter Chickens,118.0
+2002-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,119.7
+2002-12-01,WPU0171,PPI: Chicken Eggs,112.7
+2003-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),62.25362346483313
+2003-01-01,WPU0141,PPI: Slaughter Chickens,145.8
+2003-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,147.9
+2003-01-01,WPU0171,PPI: Chicken Eggs,106.0
+2003-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),63.06250095367432
+2003-02-01,WPU0141,PPI: Slaughter Chickens,142.3
+2003-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,144.3
+2003-02-01,WPU0171,PPI: Chicken Eggs,106.1
+2003-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),63.84127008347284
+2003-03-01,WPU0141,PPI: Slaughter Chickens,143.2
+2003-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,145.2
+2003-03-01,WPU0171,PPI: Chicken Eggs,113.9
+2003-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),63.53787873008034
+2003-04-01,WPU0141,PPI: Slaughter Chickens,132.1
+2003-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,133.9
+2003-04-01,WPU0171,PPI: Chicken Eggs,114.8
+2003-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),64.48106158863415
+2003-05-01,WPU0141,PPI: Slaughter Chickens,136.1
+2003-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,138.0
+2003-05-01,WPU0171,PPI: Chicken Eggs,99.9
+2003-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),65.87698291596912
+2003-06-01,WPU0141,PPI: Slaughter Chickens,144.3
+2003-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,146.3
+2003-06-01,WPU0171,PPI: Chicken Eggs,115.7
+2003-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),67.38767905857252
+2003-07-01,WPU0141,PPI: Slaughter Chickens,153.4
+2003-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,155.5
+2003-07-01,WPU0171,PPI: Chicken Eggs,121.3
+2003-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),68.51190221877326
+2003-08-01,WPU0141,PPI: Slaughter Chickens,151.7
+2003-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,153.8
+2003-08-01,WPU0171,PPI: Chicken Eggs,146.7
+2003-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.20643962513317
+2003-09-01,WPU0141,PPI: Slaughter Chickens,153.9
+2003-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,156.1
+2003-09-01,WPU0171,PPI: Chicken Eggs,145.4
+2003-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),68.57608894679858
+2003-10-01,WPU0141,PPI: Slaughter Chickens,152.4
+2003-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,154.6
+2003-10-01,WPU0171,PPI: Chicken Eggs,159.4
+2003-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),68.38541603088379
+2003-11-01,WPU0141,PPI: Slaughter Chickens,151.5
+2003-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,153.6
+2003-11-01,WPU0171,PPI: Chicken Eggs,182.9
+2003-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),68.98188350511634
+2003-12-01,WPU0141,PPI: Slaughter Chickens,159.9
+2003-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,162.1
+2003-12-01,WPU0171,PPI: Chicken Eggs,173.4
+2004-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.60606176202947
+2004-01-01,WPU0141,PPI: Slaughter Chickens,165.7
+2004-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,168.0
+2004-01-01,WPU0171,PPI: Chicken Eggs,162.8
+2004-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),71.625
+2004-02-01,WPU0141,PPI: Slaughter Chickens,192.0
+2004-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,194.7
+2004-02-01,WPU0171,PPI: Chicken Eggs,172.0
+2004-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),73.08695685345194
+2004-03-01,WPU0141,PPI: Slaughter Chickens,191.6
+2004-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,194.3
+2004-03-01,WPU0171,PPI: Chicken Eggs,199.4
+2004-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.72727064652877
+2004-04-01,WPU0141,PPI: Slaughter Chickens,194.0
+2004-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,196.7
+2004-04-01,WPU0171,PPI: Chicken Eggs,141.6
+2004-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),76.60714285714286
+2004-05-01,WPU0141,PPI: Slaughter Chickens,201.2
+2004-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,204.0
+2004-05-01,WPU0171,PPI: Chicken Eggs,111.9
+2004-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),79.54924392700195
+2004-06-01,WPU0141,PPI: Slaughter Chickens,215.9
+2004-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,218.9
+2004-06-01,WPU0171,PPI: Chicken Eggs,116.0
+2004-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),80.92424323342063
+2004-07-01,WPU0141,PPI: Slaughter Chickens,208.2
+2004-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,211.1
+2004-07-01,WPU0171,PPI: Chicken Eggs,100.9
+2004-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),80.08522761951794
+2004-08-01,WPU0141,PPI: Slaughter Chickens,192.5
+2004-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,195.2
+2004-08-01,WPU0171,PPI: Chicken Eggs,97.1
+2004-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),78.10037786310369
+2004-09-01,WPU0141,PPI: Slaughter Chickens,170.8
+2004-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,173.2
+2004-09-01,WPU0171,PPI: Chicken Eggs,90.2
+2004-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),75.99801526750836
+2004-10-01,WPU0141,PPI: Slaughter Chickens,166.4
+2004-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,168.7
+2004-10-01,WPU0171,PPI: Chicken Eggs,85.9
+2004-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.66098681363192
+2004-11-01,WPU0141,PPI: Slaughter Chickens,165.6
+2004-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,167.9
+2004-11-01,WPU0171,PPI: Chicken Eggs,88.6
+2004-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),73.58514636495839
+2004-12-01,WPU0141,PPI: Slaughter Chickens,166.7
+2004-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,169.0
+2004-12-01,WPU0171,PPI: Chicken Eggs,103.3
+2005-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),73.41269720168341
+2005-01-01,WPU0141,PPI: Slaughter Chickens,180.5
+2005-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,183.1
+2005-01-01,WPU0171,PPI: Chicken Eggs,80.0
+2005-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),73.75
+2005-02-01,WPU0141,PPI: Slaughter Chickens,178.2
+2005-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,180.7
+2005-02-01,WPU0171,PPI: Chicken Eggs,94.0
+2005-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),73.88405741815981
+2005-03-01,WPU0141,PPI: Slaughter Chickens,187.4
+2005-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,190.0
+2005-03-01,WPU0171,PPI: Chicken Eggs,89.8
+2005-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.0
+2005-04-01,WPU0141,PPI: Slaughter Chickens,183.0
+2005-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,185.6
+2005-04-01,WPU0171,PPI: Chicken Eggs,76.7
+2005-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.2916655106978
+2005-05-01,WPU0141,PPI: Slaughter Chickens,180.9
+2005-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,183.4
+2005-05-01,WPU0171,PPI: Chicken Eggs,78.0
+2005-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.53030256791548
+2005-06-01,WPU0141,PPI: Slaughter Chickens,184.1
+2005-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,186.7
+2005-06-01,WPU0171,PPI: Chicken Eggs,73.1
+2005-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.74603162493024
+2005-07-01,WPU0141,PPI: Slaughter Chickens,183.3
+2005-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,185.9
+2005-07-01,WPU0171,PPI: Chicken Eggs,85.0
+2005-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.77173879872198
+2005-08-01,WPU0141,PPI: Slaughter Chickens,192.0
+2005-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,194.7
+2005-08-01,WPU0171,PPI: Chicken Eggs,76.9
+2005-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),75.18181852860884
+2005-09-01,WPU0141,PPI: Slaughter Chickens,184.3
+2005-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,186.9
+2005-09-01,WPU0171,PPI: Chicken Eggs,110.9
+2005-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),74.38889058430989
+2005-10-01,WPU0141,PPI: Slaughter Chickens,169.5
+2005-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,171.9
+2005-10-01,WPU0171,PPI: Chicken Eggs,87.1
+2005-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),72.7424247048118
+2005-11-01,WPU0141,PPI: Slaughter Chickens,164.7
+2005-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,167.0
+2005-11-01,WPU0171,PPI: Chicken Eggs,113.3
+2005-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),71.17424323342063
+2005-12-01,WPU0141,PPI: Slaughter Chickens,154.5
+2005-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,156.7
+2005-12-01,WPU0171,PPI: Chicken Eggs,115.1
+2006-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.863637750799
+2006-01-01,WPU0141,PPI: Slaughter Chickens,150.4
+2006-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,152.5
+2006-01-01,WPU0171,PPI: Chicken Eggs,108.2
+2006-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.15833396911621
+2006-02-01,WPU0141,PPI: Slaughter Chickens,149.2
+2006-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,151.3
+2006-02-01,WPU0171,PPI: Chicken Eggs,81.9
+2006-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),68.28985761559528
+2006-03-01,WPU0141,PPI: Slaughter Chickens,142.5
+2006-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,144.4
+2006-03-01,WPU0171,PPI: Chicken Eggs,105.6
+2006-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),67.52083396911621
+2006-04-01,WPU0141,PPI: Slaughter Chickens,134.8
+2006-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,136.6
+2006-04-01,WPU0171,PPI: Chicken Eggs,98.0
+2006-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),67.90217225447945
+2006-05-01,WPU0141,PPI: Slaughter Chickens,135.3
+2006-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,137.2
+2006-05-01,WPU0171,PPI: Chicken Eggs,72.9
+2006-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),68.97348369251598
+2006-06-01,WPU0141,PPI: Slaughter Chickens,155.2
+2006-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,157.3
+2006-06-01,WPU0171,PPI: Chicken Eggs,102.6
+2006-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.90079243977864
+2006-07-01,WPU0141,PPI: Slaughter Chickens,165.0
+2006-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,167.3
+2006-07-01,WPU0171,PPI: Chicken Eggs,74.2
+2006-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),70.43115731944208
+2006-08-01,WPU0141,PPI: Slaughter Chickens,170.3
+2006-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,172.7
+2006-08-01,WPU0171,PPI: Chicken Eggs,96.6
+2006-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),70.6984143938337
+2006-09-01,WPU0141,PPI: Slaughter Chickens,166.0
+2006-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,168.3
+2006-09-01,WPU0171,PPI: Chicken Eggs,92.6
+2006-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.63257772272283
+2006-10-01,WPU0141,PPI: Slaughter Chickens,158.4
+2006-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,160.6
+2006-10-01,WPU0171,PPI: Chicken Eggs,93.7
+2006-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.0113639831543
+2006-11-01,WPU0141,PPI: Slaughter Chickens,160.7
+2006-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,163.0
+2006-11-01,WPU0171,PPI: Chicken Eggs,136.0
+2006-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),69.41666666666667
+2006-12-01,WPU0141,PPI: Slaughter Chickens,160.3
+2006-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,162.5
+2006-12-01,WPU0171,PPI: Chicken Eggs,134.5
+2007-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),71.26449419104534
+2007-01-01,WPU0141,PPI: Slaughter Chickens,175.5
+2007-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,178.0
+2007-01-01,WPU0171,PPI: Chicken Eggs,127.3
+2007-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),73.85833358764648
+2007-02-01,WPU0141,PPI: Slaughter Chickens,190.8
+2007-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,193.4
+2007-02-01,WPU0171,PPI: Chicken Eggs,138.2
+2007-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),76.30681818181819
+2007-03-01,WPU0141,PPI: Slaughter Chickens,204.4
+2007-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,207.2
+2007-03-01,WPU0171,PPI: Chicken Eggs,145.9
+2007-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),78.08333442324684
+2007-04-01,WPU0141,PPI: Slaughter Chickens,203.4
+2007-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,206.2
+2007-04-01,WPU0171,PPI: Chicken Eggs,127.5
+2007-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),79.65217225447945
+2007-05-01,WPU0141,PPI: Slaughter Chickens,216.7
+2007-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,219.7
+2007-05-01,WPU0171,PPI: Chicken Eggs,140.4
+2007-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),80.7579352969215
+2007-06-01,WPU0141,PPI: Slaughter Chickens,207.6
+2007-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,210.5
+2007-06-01,WPU0171,PPI: Chicken Eggs,113.4
+2007-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),81.16098542646928
+2007-07-01,WPU0141,PPI: Slaughter Chickens,211.7
+2007-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,214.7
+2007-07-01,WPU0171,PPI: Chicken Eggs,156.6
+2007-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),81.27173747187075
+2007-08-01,WPU0141,PPI: Slaughter Chickens,200.7
+2007-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,203.5
+2007-08-01,WPU0171,PPI: Chicken Eggs,156.0
+2007-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),81.5625
+2007-09-01,WPU0141,PPI: Slaughter Chickens,209.2
+2007-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,212.1
+2007-09-01,WPU0171,PPI: Chicken Eggs,189.6
+2007-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),79.75362064527428
+2007-10-01,WPU0141,PPI: Slaughter Chickens,186.1
+2007-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,188.7
+2007-10-01,WPU0171,PPI: Chicken Eggs,173.2
+2007-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),77.7954548922452
+2007-11-01,WPU0141,PPI: Slaughter Chickens,184.5
+2007-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,187.1
+2007-11-01,WPU0171,PPI: Chicken Eggs,219.7
+2007-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),76.84920756022136
+2007-12-01,WPU0141,PPI: Slaughter Chickens,175.2
+2007-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,177.6
+2007-12-01,WPU0171,PPI: Chicken Eggs,240.3
+2008-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),77.2826096907906
+2008-01-01,WPU0141,PPI: Slaughter Chickens,203.6
+2008-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,206.4
+2008-01-01,WPU0171,PPI: Chicken Eggs,228.4
+2008-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),79.22222355433873
+2008-02-01,WPU0141,PPI: Slaughter Chickens,202.1
+2008-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,204.9
+2008-02-01,WPU0171,PPI: Chicken Eggs,235.6
+2008-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),81.22222210112072
+2008-03-01,WPU0141,PPI: Slaughter Chickens,207.5
+2008-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,210.4
+2008-03-01,WPU0171,PPI: Chicken Eggs,246.9
+2008-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),82.03030291470614
+2008-04-01,WPU0141,PPI: Slaughter Chickens,203.8
+2008-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,206.6
+2008-04-01,WPU0171,PPI: Chicken Eggs,184.7
+2008-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),83.50757772272283
+2008-05-01,WPU0141,PPI: Slaughter Chickens,210.6
+2008-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,213.5
+2008-05-01,WPU0171,PPI: Chicken Eggs,153.4
+2008-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.69643038795108
+2008-06-01,WPU0141,PPI: Slaughter Chickens,215.0
+2008-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,218.0
+2008-06-01,WPU0171,PPI: Chicken Eggs,179.9
+2008-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.13768171227497
+2008-07-01,WPU0141,PPI: Slaughter Chickens,229.2
+2008-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,232.4
+2008-07-01,WPU0171,PPI: Chicken Eggs,150.3
+2008-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.54563431512742
+2008-08-01,WPU0141,PPI: Slaughter Chickens,205.6
+2008-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,208.5
+2008-08-01,WPU0171,PPI: Chicken Eggs,163.7
+2008-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.38257772272283
+2008-09-01,WPU0141,PPI: Slaughter Chickens,201.8
+2008-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,204.6
+2008-09-01,WPU0171,PPI: Chicken Eggs,191.8
+2008-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.54347859258237
+2008-10-01,WPU0141,PPI: Slaughter Chickens,198.5
+2008-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,201.3
+2008-10-01,WPU0171,PPI: Chicken Eggs,185.1
+2008-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.90625
+2008-11-01,WPU0141,PPI: Slaughter Chickens,202.1
+2008-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,204.9
+2008-11-01,WPU0171,PPI: Chicken Eggs,184.2
+2008-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.02173879872198
+2008-12-01,WPU0141,PPI: Slaughter Chickens,214.3
+2008-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,217.3
+2008-12-01,WPU0171,PPI: Chicken Eggs,166.9
+2009-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.24242401123047
+2009-01-01,WPU0141,PPI: Slaughter Chickens,212.6
+2009-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,215.5
+2009-01-01,WPU0171,PPI: Chicken Eggs,166.5
+2009-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.69791793823242
+2009-02-01,WPU0141,PPI: Slaughter Chickens,210.3
+2009-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,213.2
+2009-02-01,WPU0171,PPI: Chicken Eggs,139.2
+2009-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.72727446122603
+2009-03-01,WPU0141,PPI: Slaughter Chickens,192.7
+2009-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,195.4
+2009-03-01,WPU0171,PPI: Chicken Eggs,133.4
+2009-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.67045350508256
+2009-04-01,WPU0141,PPI: Slaughter Chickens,195.5
+2009-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,198.3
+2009-04-01,WPU0171,PPI: Chicken Eggs,156.1
+2009-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.98809632800874
+2009-05-01,WPU0141,PPI: Slaughter Chickens,223.4
+2009-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,226.5
+2009-05-01,WPU0171,PPI: Chicken Eggs,100.4
+2009-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.1249982660467
+2009-06-01,WPU0141,PPI: Slaughter Chickens,230.9
+2009-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,234.2
+2009-06-01,WPU0171,PPI: Chicken Eggs,121.9
+2009-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.58695652173913
+2009-07-01,WPU0141,PPI: Slaughter Chickens,211.4
+2009-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,214.4
+2009-07-01,WPU0171,PPI: Chicken Eggs,114.7
+2009-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.9047608148484
+2009-08-01,WPU0141,PPI: Slaughter Chickens,190.9
+2009-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,193.6
+2009-08-01,WPU0171,PPI: Chicken Eggs,131.8
+2009-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),84.96590805053711
+2009-09-01,WPU0141,PPI: Slaughter Chickens,180.4
+2009-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,182.9
+2009-09-01,WPU0171,PPI: Chicken Eggs,133.4
+2009-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),82.87500034679066
+2009-10-01,WPU0141,PPI: Slaughter Chickens,178.1
+2009-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,180.6
+2009-10-01,WPU0171,PPI: Chicken Eggs,137.6
+2009-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),82.1388894943964
+2009-11-01,WPU0141,PPI: Slaughter Chickens,180.9
+2009-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,183.4
+2009-11-01,WPU0171,PPI: Chicken Eggs,165.9
+2009-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),82.1557965485946
+2009-12-01,WPU0141,PPI: Slaughter Chickens,190.0
+2009-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,192.6
+2009-12-01,WPU0171,PPI: Chicken Eggs,170.5
+2010-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),82.99007815406436
+2010-01-01,WPU0141,PPI: Slaughter Chickens,215.5
+2010-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,218.5
+2010-01-01,WPU0171,PPI: Chicken Eggs,153.7
+2010-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),83.25
+2010-02-01,WPU0141,PPI: Slaughter Chickens,216.2
+2010-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,219.2
+2010-02-01,WPU0171,PPI: Chicken Eggs,165.6
+2010-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),83.95652140741763
+2010-03-01,WPU0141,PPI: Slaughter Chickens,216.9
+2010-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,219.9
+2010-03-01,WPU0171,PPI: Chicken Eggs,182.9
+2010-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.23863497647372
+2010-04-01,WPU0141,PPI: Slaughter Chickens,213.5
+2010-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,216.5
+2010-04-01,WPU0171,PPI: Chicken Eggs,132.8
+2010-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.47619047619048
+2010-05-01,WPU0141,PPI: Slaughter Chickens,226.1
+2010-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,229.2
+2010-05-01,WPU0171,PPI: Chicken Eggs,106.3
+2010-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.17045454545455
+2010-06-01,WPU0141,PPI: Slaughter Chickens,231.3
+2010-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,234.5
+2010-06-01,WPU0171,PPI: Chicken Eggs,108.4
+2010-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.82197085293856
+2010-07-01,WPU0141,PPI: Slaughter Chickens,235.5
+2010-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,238.7
+2010-07-01,WPU0171,PPI: Chicken Eggs,122.6
+2010-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.7916655106978
+2010-08-01,WPU0141,PPI: Slaughter Chickens,214.1
+2010-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,217.1
+2010-08-01,WPU0171,PPI: Chicken Eggs,123.1
+2010-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.74621373956853
+2010-09-01,WPU0141,PPI: Slaughter Chickens,225.4
+2010-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,228.6
+2010-09-01,WPU0171,PPI: Chicken Eggs,107.9
+2010-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.71825590587798
+2010-10-01,WPU0141,PPI: Slaughter Chickens,208.5
+2010-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,211.4
+2010-10-01,WPU0171,PPI: Chicken Eggs,117.2
+2010-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.72727446122603
+2010-11-01,WPU0141,PPI: Slaughter Chickens,213.7
+2010-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,216.7
+2010-11-01,WPU0171,PPI: Chicken Eggs,193.4
+2010-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.32789910357931
+2010-12-01,WPU0141,PPI: Slaughter Chickens,202.1
+2010-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,204.9
+2010-12-01,WPU0171,PPI: Chicken Eggs,165.7
+2011-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.0
+2011-01-01,WPU0141,PPI: Slaughter Chickens,197.9
+2011-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,200.7
+2011-01-01,WPU0171,PPI: Chicken Eggs,137.2
+2011-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.26249923706055
+2011-02-01,WPU0141,PPI: Slaughter Chickens,192.4
+2011-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,195.1
+2011-02-01,WPU0171,PPI: Chicken Eggs,156.5
+2011-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.05796946649966
+2011-03-01,WPU0141,PPI: Slaughter Chickens,222.8
+2011-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,225.9
+2011-03-01,WPU0171,PPI: Chicken Eggs,137.8
+2011-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.40872955322266
+2011-04-01,WPU0141,PPI: Slaughter Chickens,219.6
+2011-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,222.7
+2011-04-01,WPU0171,PPI: Chicken Eggs,171.3
+2011-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.56060548262163
+2011-05-01,WPU0141,PPI: Slaughter Chickens,226.1
+2011-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,229.3
+2011-05-01,WPU0171,PPI: Chicken Eggs,147.3
+2011-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),86.94696911898527
+2011-06-01,WPU0141,PPI: Slaughter Chickens,231.4
+2011-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,234.6
+2011-06-01,WPU0171,PPI: Chicken Eggs,143.4
+2011-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),87.33730098179409
+2011-07-01,WPU0141,PPI: Slaughter Chickens,207.6
+2011-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,210.5
+2011-07-01,WPU0171,PPI: Chicken Eggs,150.9
+2011-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.1231858626656
+2011-08-01,WPU0141,PPI: Slaughter Chickens,210.2
+2011-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,213.2
+2011-08-01,WPU0171,PPI: Chicken Eggs,181.2
+2011-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.9696967385032
+2011-09-01,WPU0141,PPI: Slaughter Chickens,194.5
+2011-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,197.2
+2011-09-01,WPU0171,PPI: Chicken Eggs,164.3
+2011-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),89.0
+2011-10-01,WPU0141,PPI: Slaughter Chickens,181.9
+2011-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,184.4
+2011-10-01,WPU0171,PPI: Chicken Eggs,186.3
+2011-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),89.21401422674006
+2011-11-01,WPU0141,PPI: Slaughter Chickens,191.4
+2011-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,194.0
+2011-11-01,WPU0171,PPI: Chicken Eggs,186.0
+2011-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),89.82765128395774
+2011-12-01,WPU0141,PPI: Slaughter Chickens,209.7
+2011-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,212.6
+2011-12-01,WPU0171,PPI: Chicken Eggs,195.4
+2012-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),90.37121096524325
+2012-01-01,WPU0141,PPI: Slaughter Chickens,212.7
+2012-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,215.7
+2012-01-01,WPU0171,PPI: Chicken Eggs,148.9
+2012-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),91.1984111240932
+2012-02-01,WPU0141,PPI: Slaughter Chickens,229.7
+2012-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,232.9
+2012-02-01,WPU0171,PPI: Chicken Eggs,139.6
+2012-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),92.76515128395774
+2012-03-01,WPU0141,PPI: Slaughter Chickens,257.6
+2012-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,261.2
+2012-03-01,WPU0171,PPI: Chicken Eggs,148.5
+2012-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),93.25793638683501
+2012-04-01,WPU0141,PPI: Slaughter Chickens,223.7
+2012-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,226.9
+2012-04-01,WPU0171,PPI: Chicken Eggs,151.5
+2012-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),94.07608596138333
+2012-05-01,WPU0141,PPI: Slaughter Chickens,241.9
+2012-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,245.3
+2012-05-01,WPU0171,PPI: Chicken Eggs,127.0
+2012-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),94.5
+2012-06-01,WPU0141,PPI: Slaughter Chickens,232.6
+2012-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,235.8
+2012-06-01,WPU0171,PPI: Chicken Eggs,145.0
+2012-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),94.7215909090909
+2012-07-01,WPU0141,PPI: Slaughter Chickens,219.7
+2012-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,222.7
+2012-07-01,WPU0171,PPI: Chicken Eggs,147.0
+2012-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),95.02173747187075
+2012-08-01,WPU0141,PPI: Slaughter Chickens,219.0
+2012-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,222.1
+2012-08-01,WPU0171,PPI: Chicken Eggs,202.1
+2012-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),95.64583396911621
+2012-09-01,WPU0141,PPI: Slaughter Chickens,219.0
+2012-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,222.0
+2012-09-01,WPU0171,PPI: Chicken Eggs,193.8
+2012-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),95.84057882557745
+2012-10-01,WPU0141,PPI: Slaughter Chickens,217.9
+2012-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,220.9
+2012-10-01,WPU0171,PPI: Chicken Eggs,179.6
+2012-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),96.6212113120339
+2012-11-01,WPU0141,PPI: Slaughter Chickens,247.8
+2012-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,251.2
+2012-11-01,WPU0171,PPI: Chicken Eggs,204.8
+2012-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),97.67857033865792
+2012-12-01,WPU0141,PPI: Slaughter Chickens,264.7
+2012-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,268.4
+2012-12-01,WPU0171,PPI: Chicken Eggs,196.6
+2013-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),99.09057915729025
+2013-01-01,WPU0141,PPI: Slaughter Chickens,280.7
+2013-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,284.6
+2013-01-01,WPU0171,PPI: Chicken Eggs,166.0
+2013-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),100.2083312988281
+2013-02-01,WPU0141,PPI: Slaughter Chickens,279.8
+2013-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,283.7
+2013-02-01,WPU0171,PPI: Chicken Eggs,164.5
+2013-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),101.4722210112072
+2013-03-01,WPU0141,PPI: Slaughter Chickens,303.1
+2013-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,307.3
+2013-03-01,WPU0171,PPI: Chicken Eggs,182.9
+2013-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),102.6174222772772
+2013-04-01,WPU0141,PPI: Slaughter Chickens,300.2
+2013-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,304.4
+2013-04-01,WPU0171,PPI: Chicken Eggs,153.5
+2013-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),104.1630448051121
+2013-05-01,WPU0141,PPI: Slaughter Chickens,314.5
+2013-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,318.8
+2013-05-01,WPU0171,PPI: Chicken Eggs,180.5
+2013-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),105.5416641235352
+2013-06-01,WPU0141,PPI: Slaughter Chickens,307.9
+2013-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,312.2
+2013-06-01,WPU0171,PPI: Chicken Eggs,146.7
+2013-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),106.4094191841457
+2013-07-01,WPU0141,PPI: Slaughter Chickens,282.1
+2013-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,286.0
+2013-07-01,WPU0171,PPI: Chicken Eggs,173.7
+2013-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),106.5
+2013-08-01,WPU0141,PPI: Slaughter Chickens,247.0
+2013-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,250.4
+2013-08-01,WPU0171,PPI: Chicken Eggs,179.5
+2013-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),106.1984133039202
+2013-09-01,WPU0141,PPI: Slaughter Chickens,246.0
+2013-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,249.4
+2013-09-01,WPU0171,PPI: Chicken Eggs,182.7
+2013-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),105.2777790493435
+2013-10-01,WPU0141,PPI: Slaughter Chickens,246.1
+2013-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,249.6
+2013-10-01,WPU0171,PPI: Chicken Eggs,182.1
+2013-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),104.664682660784
+2013-11-01,WPU0141,PPI: Slaughter Chickens,258.7
+2013-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,262.3
+2013-11-01,WPU0171,PPI: Chicken Eggs,223.4
+2013-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),104.25
+2013-12-01,WPU0141,PPI: Slaughter Chickens,259.0
+2013-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,262.6
+2013-12-01,WPU0171,PPI: Chicken Eggs,236.3
+2014-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),104.3949269833772
+2014-01-01,WPU0141,PPI: Slaughter Chickens,266.7
+2014-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,270.4
+2014-01-01,WPU0171,PPI: Chicken Eggs,169.9
+2014-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),104.5
+2014-02-01,WPU0141,PPI: Slaughter Chickens,247.7
+2014-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,251.2
+2014-02-01,WPU0171,PPI: Chicken Eggs,203.2
+2014-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),105.2341268630255
+2014-03-01,WPU0141,PPI: Slaughter Chickens,299.3
+2014-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,303.4
+2014-03-01,WPU0171,PPI: Chicken Eggs,215.3
+2014-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),107.0909097844904
+2014-04-01,WPU0141,PPI: Slaughter Chickens,316.9
+2014-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,321.3
+2014-04-01,WPU0171,PPI: Chicken Eggs,247.2
+2014-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),108.6893927834251
+2014-05-01,WPU0141,PPI: Slaughter Chickens,333.6
+2014-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,338.2
+2014-05-01,WPU0171,PPI: Chicken Eggs,215.0
+2014-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),110.8690494355701
+2014-06-01,WPU0141,PPI: Slaughter Chickens,321.2
+2014-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,325.6
+2014-06-01,WPU0171,PPI: Chicken Eggs,211.4
+2014-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),112.528984401537
+2014-07-01,WPU0141,PPI: Slaughter Chickens,306.6
+2014-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,310.9
+2014-07-01,WPU0171,PPI: Chicken Eggs,200.4
+2014-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),112.789681934175
+2014-08-01,WPU0141,PPI: Slaughter Chickens,275.7
+2014-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,279.5
+2014-08-01,WPU0171,PPI: Chicken Eggs,182.3
+2014-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),113.522725538774
+2014-09-01,WPU0141,PPI: Slaughter Chickens,301.7
+2014-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,305.9
+2014-09-01,WPU0171,PPI: Chicken Eggs,193.2
+2014-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),113.8949269833772
+2014-10-01,WPU0141,PPI: Slaughter Chickens,302.6
+2014-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,306.8
+2014-10-01,WPU0171,PPI: Chicken Eggs,206.0
+2014-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),113.9375
+2014-11-01,WPU0141,PPI: Slaughter Chickens,290.2
+2014-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,294.3
+2014-11-01,WPU0171,PPI: Chicken Eggs,217.3
+2014-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),113.7681164948837
+2014-12-01,WPU0141,PPI: Slaughter Chickens,266.9
+2014-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,270.6
+2014-12-01,WPU0171,PPI: Chicken Eggs,297.5
+2015-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.0909073569558
+2015-01-01,WPU0141,PPI: Slaughter Chickens,287.2
+2015-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,291.2
+2015-01-01,WPU0171,PPI: Chicken Eggs,177.2
+2015-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),113.7708339691162
+2015-02-01,WPU0141,PPI: Slaughter Chickens,242.6
+2015-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,246.0
+2015-02-01,WPU0171,PPI: Chicken Eggs,220.3
+2015-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.272725538774
+2015-03-01,WPU0141,PPI: Slaughter Chickens,270.6
+2015-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,274.4
+2015-03-01,WPU0171,PPI: Chicken Eggs,236.6
+2015-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.973483692516
+2015-04-01,WPU0141,PPI: Slaughter Chickens,296.1
+2015-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,300.2
+2015-04-01,WPU0171,PPI: Chicken Eggs,173.4
+2015-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),115.9682533627465
+2015-05-01,WPU0141,PPI: Slaughter Chickens,301.1
+2015-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,305.3
+2015-05-01,WPU0171,PPI: Chicken Eggs,234.7
+2015-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),116.0037873008034
+2015-06-01,WPU0141,PPI: Slaughter Chickens,277.2
+2015-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,281.1
+2015-06-01,WPU0171,PPI: Chicken Eggs,434.0
+2015-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),115.9239147020423
+2015-07-01,WPU0141,PPI: Slaughter Chickens,239.4
+2015-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,242.7
+2015-07-01,WPU0171,PPI: Chicken Eggs,341.5
+2015-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),115.4404769170852
+2015-08-01,WPU0141,PPI: Slaughter Chickens,220.0
+2015-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,223.1
+2015-08-01,WPU0171,PPI: Chicken Eggs,464.7
+2015-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.9981065229936
+2015-09-01,WPU0141,PPI: Slaughter Chickens,204.6
+2015-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,207.4
+2015-09-01,WPU0171,PPI: Chicken Eggs,352.6
+2015-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.3068181818182
+2015-10-01,WPU0141,PPI: Slaughter Chickens,189.7
+2015-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,192.3
+2015-10-01,WPU0171,PPI: Chicken Eggs,255.9
+2015-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),113.3492075602214
+2015-11-01,WPU0141,PPI: Slaughter Chickens,187.2
+2015-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,189.8
+2015-11-01,WPU0171,PPI: Chicken Eggs,301.2
+2015-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),113.0615947557532
+2015-12-01,WPU0141,PPI: Slaughter Chickens,205.7
+2015-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,208.5
+2015-12-01,WPU0171,PPI: Chicken Eggs,182.2
+2016-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),112.5436513991583
+2016-01-01,WPU0141,PPI: Slaughter Chickens,240.7
+2016-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,244.0
+2016-01-01,WPU0171,PPI: Chicken Eggs,159.5
+2016-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),112.1071446736654
+2016-02-01,WPU0141,PPI: Slaughter Chickens,216.5
+2016-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,219.6
+2016-02-01,WPU0171,PPI: Chicken Eggs,203.7
+2016-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.5615947557532
+2016-03-01,WPU0141,PPI: Slaughter Chickens,231.3
+2016-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,234.5
+2016-03-01,WPU0171,PPI: Chicken Eggs,157.4
+2016-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.5595238095238
+2016-04-01,WPU0141,PPI: Slaughter Chickens,237.1
+2016-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,240.3
+2016-04-01,WPU0171,PPI: Chicken Eggs,102.9
+2016-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.9810600280762
+2016-05-01,WPU0141,PPI: Slaughter Chickens,245.3
+2016-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,248.7
+2016-05-01,WPU0171,PPI: Chicken Eggs,99.3
+2016-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.8598490628329
+2016-06-01,WPU0141,PPI: Slaughter Chickens,266.4
+2016-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,270.1
+2016-06-01,WPU0171,PPI: Chicken Eggs,73.8
+2016-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.4523827689035
+2016-07-01,WPU0141,PPI: Slaughter Chickens,247.6
+2016-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,251.0
+2016-07-01,WPU0171,PPI: Chicken Eggs,111.3
+2016-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.0265230925187
+2016-08-01,WPU0141,PPI: Slaughter Chickens,209.8
+2016-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,212.7
+2016-08-01,WPU0171,PPI: Chicken Eggs,77.9
+2016-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),110.3775773481889
+2016-09-01,WPU0141,PPI: Slaughter Chickens,203.1
+2016-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,205.9
+2016-09-01,WPU0171,PPI: Chicken Eggs,94.1
+2016-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),110.1301592872256
+2016-10-01,WPU0141,PPI: Slaughter Chickens,179.1
+2016-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,181.6
+2016-10-01,WPU0171,PPI: Chicken Eggs,70.4
+2016-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),109.8522727272727
+2016-11-01,WPU0141,PPI: Slaughter Chickens,209.3
+2016-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,212.2
+2016-11-01,WPU0171,PPI: Chicken Eggs,83.9
+2016-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),112.7143318869851
+2016-12-01,WPU0141,PPI: Slaughter Chickens,218.6
+2016-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,221.6
+2016-12-01,WPU0171,PPI: Chicken Eggs,145.0
+2017-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.8248155767267
+2017-01-01,WPU0141,PPI: Slaughter Chickens,231.4
+2017-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,234.6
+2017-01-01,WPU0171,PPI: Chicken Eggs,100.0
+2017-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.4979442596436
+2017-02-01,WPU0141,PPI: Slaughter Chickens,228.2
+2017-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,231.4
+2017-02-01,WPU0171,PPI: Chicken Eggs,96.0
+2017-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),124.663876409116
+2017-03-01,WPU0141,PPI: Slaughter Chickens,263.2
+2017-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,266.9
+2017-03-01,WPU0171,PPI: Chicken Eggs,107.1
+2017-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),130.6962242126465
+2017-04-01,WPU0141,PPI: Slaughter Chickens,262.7
+2017-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,266.4
+2017-04-01,WPU0171,PPI: Chicken Eggs,115.3
+2017-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),144.7078731371009
+2017-05-01,WPU0141,PPI: Slaughter Chickens,287.5
+2017-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,291.5
+2017-05-01,WPU0171,PPI: Chicken Eggs,99.5
+2017-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),147.4123112071644
+2017-06-01,WPU0141,PPI: Slaughter Chickens,298.8
+2017-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,303.0
+2017-06-01,WPU0171,PPI: Chicken Eggs,102.5
+2017-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),138.827646891276
+2017-07-01,WPU0141,PPI: Slaughter Chickens,293.9
+2017-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,298.0
+2017-07-01,WPU0171,PPI: Chicken Eggs,117.2
+2017-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),124.8427714472232
+2017-08-01,WPU0141,PPI: Slaughter Chickens,252.0
+2017-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,255.5
+2017-08-01,WPU0171,PPI: Chicken Eggs,120.9
+2017-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),119.4871579124814
+2017-09-01,WPU0141,PPI: Slaughter Chickens,242.0
+2017-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,245.3
+2017-09-01,WPU0171,PPI: Chicken Eggs,166.7
+2017-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.2551755038175
+2017-10-01,WPU0141,PPI: Slaughter Chickens,224.2
+2017-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,227.3
+2017-10-01,WPU0171,PPI: Chicken Eggs,195.7
+2017-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),115.6945564963601
+2017-11-01,WPU0141,PPI: Slaughter Chickens,228.5
+2017-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,231.7
+2017-11-01,WPU0171,PPI: Chicken Eggs,226.7
+2017-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),117.4196032569522
+2017-12-01,WPU0141,PPI: Slaughter Chickens,231.3
+2017-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,234.6
+2017-12-01,WPU0171,PPI: Chicken Eggs,256.8
+2018-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),126.6966323852539
+2018-01-01,WPU0141,PPI: Slaughter Chickens,261.4
+2018-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,265.0
+2018-01-01,WPU0171,PPI: Chicken Eggs,157.0
+2018-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),122.3900062561035
+2018-02-01,WPU0141,PPI: Slaughter Chickens,245.9
+2018-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,249.4
+2018-02-01,WPU0171,PPI: Chicken Eggs,210.8
+2018-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),135.7750143571334
+2018-03-01,WPU0141,PPI: Slaughter Chickens,270.8
+2018-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,274.6
+2018-03-01,WPU0171,PPI: Chicken Eggs,298.4
+2018-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),146.5286254882812
+2018-04-01,WPU0141,PPI: Slaughter Chickens,300.6
+2018-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,304.7
+2018-04-01,WPU0171,PPI: Chicken Eggs,228.1
+2018-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),158.2215629245924
+2018-05-01,WPU0141,PPI: Slaughter Chickens,331.3
+2018-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,335.9
+2018-05-01,WPU0171,PPI: Chicken Eggs,156.9
+2018-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),159.9475555419922
+2018-06-01,WPU0141,PPI: Slaughter Chickens,337.9
+2018-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,342.6
+2018-06-01,WPU0171,PPI: Chicken Eggs,148.6
+2018-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),146.9728580821644
+2018-07-01,WPU0141,PPI: Slaughter Chickens,313.8
+2018-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,318.2
+2018-07-01,WPU0171,PPI: Chicken Eggs,197.4
+2018-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),116.528183646824
+2018-08-01,WPU0141,PPI: Slaughter Chickens,229.6
+2018-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,232.8
+2018-08-01,WPU0171,PPI: Chicken Eggs,176.0
+2018-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.7703304290771
+2018-09-01,WPU0141,PPI: Slaughter Chickens,219.9
+2018-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,223.0
+2018-09-01,WPU0171,PPI: Chicken Eggs,153.0
+2018-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),112.2580563089122
+2018-10-01,WPU0141,PPI: Slaughter Chickens,220.7
+2018-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,223.7
+2018-10-01,WPU0171,PPI: Chicken Eggs,164.2
+2018-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),116.6260292746804
+2018-11-01,WPU0141,PPI: Slaughter Chickens,234.8
+2018-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,238.1
+2018-11-01,WPU0171,PPI: Chicken Eggs,190.9
+2018-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),121.9331316266741
+2018-12-01,WPU0141,PPI: Slaughter Chickens,229.5
+2018-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,232.7
+2018-12-01,WPU0171,PPI: Chicken Eggs,188.3
+2019-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),133.1532679018767
+2019-01-01,WPU0141,PPI: Slaughter Chickens,273.7
+2019-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,277.5
+2019-01-01,WPU0171,PPI: Chicken Eggs,131.4
+2019-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),121.0302337646484
+2019-02-01,WPU0141,PPI: Slaughter Chickens,244.9
+2019-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,248.3
+2019-02-01,WPU0171,PPI: Chicken Eggs,146.3
+2019-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),125.1007345290411
+2019-03-01,WPU0141,PPI: Slaughter Chickens,248.3
+2019-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,251.7
+2019-03-01,WPU0171,PPI: Chicken Eggs,121.3
+2019-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),131.5626081986861
+2019-04-01,WPU0141,PPI: Slaughter Chickens,261.9
+2019-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,265.5
+2019-04-01,WPU0171,PPI: Chicken Eggs,110.5
+2019-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),135.6794499936311
+2019-05-01,WPU0141,PPI: Slaughter Chickens,279.8
+2019-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,283.7
+2019-05-01,WPU0171,PPI: Chicken Eggs,75.0
+2019-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),127.2068653106689
+2019-06-01,WPU0141,PPI: Slaughter Chickens,256.7
+2019-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,260.3
+2019-06-01,WPU0171,PPI: Chicken Eggs,91.9
+2019-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),119.4577586961829
+2019-07-01,WPU0141,PPI: Slaughter Chickens,250.9
+2019-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,254.4
+2019-07-01,WPU0171,PPI: Chicken Eggs,86.2
+2019-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),108.8545889420943
+2019-08-01,WPU0141,PPI: Slaughter Chickens,218.1
+2019-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,221.1
+2019-08-01,WPU0171,PPI: Chicken Eggs,108.7
+2019-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),103.5961325509208
+2019-09-01,WPU0141,PPI: Slaughter Chickens,197.8
+2019-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,200.5
+2019-09-01,WPU0171,PPI: Chicken Eggs,137.8
+2019-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),105.9164272805919
+2019-10-01,WPU0141,PPI: Slaughter Chickens,205.1
+2019-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,208.0
+2019-10-01,WPU0171,PPI: Chicken Eggs,112.1
+2019-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),105.4279251098633
+2019-11-01,WPU0141,PPI: Slaughter Chickens,204.6
+2019-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,207.4
+2019-11-01,WPU0171,PPI: Chicken Eggs,202.3
+2019-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.5137138366699
+2019-12-01,WPU0141,PPI: Slaughter Chickens,225.6
+2019-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,228.7
+2019-12-01,WPU0171,PPI: Chicken Eggs,173.4
+2020-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),121.7091641633407
+2020-01-01,WPU0141,PPI: Slaughter Chickens,245.0
+2020-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,248.4
+2020-01-01,WPU0171,PPI: Chicken Eggs,99.8
+2020-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),108.4255237579346
+2020-02-01,WPU0141,PPI: Slaughter Chickens,215.1
+2020-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,218.1
+2020-02-01,WPU0171,PPI: Chicken Eggs,127.5
+2020-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),108.4102443348278
+2020-03-01,WPU0141,PPI: Slaughter Chickens,210.9
+2020-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,213.8
+2020-03-01,WPU0171,PPI: Chicken Eggs,183.0
+2020-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),73.8577336398038
+2020-04-01,WPU0141,PPI: Slaughter Chickens,114.0
+2020-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,115.6
+2020-04-01,WPU0171,PPI: Chicken Eggs,197.4
+2020-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),98.10984838576545
+2020-05-01,WPU0141,PPI: Slaughter Chickens,201.7
+2020-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,204.5
+2020-05-01,WPU0171,PPI: Chicken Eggs,116.1
+2020-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),99.13035306063566
+2020-06-01,WPU0141,PPI: Slaughter Chickens,187.9
+2020-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,190.5
+2020-06-01,WPU0171,PPI: Chicken Eggs,114.2
+2020-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),94.28949604863706
+2020-07-01,WPU0141,PPI: Slaughter Chickens,181.8
+2020-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,184.3
+2020-07-01,WPU0171,PPI: Chicken Eggs,116.9
+2020-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),88.75815727597191
+2020-08-01,WPU0141,PPI: Slaughter Chickens,166.6
+2020-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,168.9
+2020-08-01,WPU0171,PPI: Chicken Eggs,102.6
+2020-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),85.50053336403586
+2020-09-01,WPU0141,PPI: Slaughter Chickens,156.9
+2020-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,159.1
+2020-09-01,WPU0171,PPI: Chicken Eggs,134.5
+2020-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),90.4781677939675
+2020-10-01,WPU0141,PPI: Slaughter Chickens,170.9
+2020-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,173.3
+2020-10-01,WPU0171,PPI: Chicken Eggs,178.8
+2020-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),104.3394008818127
+2020-11-01,WPU0141,PPI: Slaughter Chickens,193.6
+2020-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,196.3
+2020-11-01,WPU0171,PPI: Chicken Eggs,175.6
+2020-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),110.8344872516135
+2020-12-01,WPU0141,PPI: Slaughter Chickens,215.3
+2020-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,218.3
+2020-12-01,WPU0171,PPI: Chicken Eggs,114.9
+2021-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),110.5599866594587
+2021-01-01,WPU0141,PPI: Slaughter Chickens,217.0
+2021-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,220.0
+2021-01-01,WPU0171,PPI: Chicken Eggs,120.5
+2021-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),111.5652732849121
+2021-02-01,WPU0141,PPI: Slaughter Chickens,218.4
+2021-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,221.4
+2021-02-01,WPU0171,PPI: Chicken Eggs,166.8
+2021-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),114.7205133852751
+2021-03-01,WPU0141,PPI: Slaughter Chickens,222.4
+2021-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,225.4
+2021-03-01,WPU0171,PPI: Chicken Eggs,203.0
+2021-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),135.2939938631925
+2021-04-01,WPU0141,PPI: Slaughter Chickens,273.3
+2021-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,277.1
+2021-04-01,WPU0171,PPI: Chicken Eggs,148.7
+2021-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),141.775623139881
+2021-05-01,WPU0141,PPI: Slaughter Chickens,291.6
+2021-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,295.7
+2021-05-01,WPU0171,PPI: Chicken Eggs,135.4
+2021-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),143.1980694857511
+2021-06-01,WPU0141,PPI: Slaughter Chickens,296.2
+2021-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,300.3
+2021-06-01,WPU0171,PPI: Chicken Eggs,132.8
+2021-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),141.9536604447798
+2021-07-01,WPU0141,PPI: Slaughter Chickens,290.378
+2021-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,294.419
+2021-07-01,WPU0171,PPI: Chicken Eggs,149.839
+2021-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),140.9683997414329
+2021-08-01,WPU0141,PPI: Slaughter Chickens,289.684
+2021-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,293.715
+2021-08-01,WPU0171,PPI: Chicken Eggs,153.496
+2021-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),142.1266257546165
+2021-09-01,WPU0141,PPI: Slaughter Chickens,292.78
+2021-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,296.854
+2021-09-01,WPU0171,PPI: Chicken Eggs,187.187
+2021-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),138.6253117152623
+2021-10-01,WPU0141,PPI: Slaughter Chickens,285.963
+2021-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,289.942
+2021-10-01,WPU0171,PPI: Chicken Eggs,165.077
+2021-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),143.0929364291104
+2021-11-01,WPU0141,PPI: Slaughter Chickens,282.848
+2021-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,286.784
+2021-11-01,WPU0171,PPI: Chicken Eggs,157.684
+2021-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.4537333612857
+2021-12-01,WPU0141,PPI: Slaughter Chickens,351.388
+2021-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,356.277
+2021-12-01,WPU0171,PPI: Chicken Eggs,224.694
+2022-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),176.2273733956473
+2022-01-01,WPU0141,PPI: Slaughter Chickens,383.105
+2022-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,388.436
+2022-01-01,WPU0171,PPI: Chicken Eggs,193.605
+2022-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.6021308898926
+2022-02-01,WPU0141,PPI: Slaughter Chickens,354.393
+2022-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,359.324
+2022-02-01,WPU0171,PPI: Chicken Eggs,243.047
+2022-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),198.3721021569293
+2022-03-01,WPU0141,PPI: Slaughter Chickens,430.24
+2022-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,436.226
+2022-03-01,WPU0171,PPI: Chicken Eggs,226.525
+2022-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),223.9866354806083
+2022-04-01,WPU0141,PPI: Slaughter Chickens,487.697
+2022-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,494.483
+2022-04-01,WPU0171,PPI: Chicken Eggs,475.935
+2022-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),227.9633241133256
+2022-05-01,WPU0141,PPI: Slaughter Chickens,498.373
+2022-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,505.308
+2022-05-01,WPU0171,PPI: Chicken Eggs,487.265
+2022-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),222.8475577614524
+2022-06-01,WPU0141,PPI: Slaughter Chickens,485.346
+2022-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,492.099
+2022-06-01,WPU0171,PPI: Chicken Eggs,340.102
+2022-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),197.1026789347331
+2022-07-01,WPU0141,PPI: Slaughter Chickens,454.592
+2022-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,460.917
+2022-07-01,WPU0171,PPI: Chicken Eggs,486.64
+2022-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),175.722063810929
+2022-08-01,WPU0141,PPI: Slaughter Chickens,377.037
+2022-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,382.284
+2022-08-01,WPU0171,PPI: Chicken Eggs,367.822
+2022-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.1787893121893
+2022-09-01,WPU0141,PPI: Slaughter Chickens,351.52
+2022-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,356.411
+2022-09-01,WPU0171,PPI: Chicken Eggs,412.206
+2022-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),166.3837738037109
+2022-10-01,WPU0141,PPI: Slaughter Chickens,343.483
+2022-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,348.262
+2022-10-01,WPU0171,PPI: Chicken Eggs,502.166
+2022-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.6967759565873
+2022-11-01,WPU0141,PPI: Slaughter Chickens,352.6
+2022-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,357.506
+2022-11-01,WPU0171,PPI: Chicken Eggs,600.677
+2022-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.4147234829989
+2022-12-01,WPU0141,PPI: Slaughter Chickens,352.731
+2022-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,357.64
+2022-12-01,WPU0171,PPI: Chicken Eggs,782.151
+2023-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),164.7574053677646
+2023-01-01,WPU0141,PPI: Slaughter Chickens,344.537
+2023-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,349.331
+2023-01-01,WPU0171,PPI: Chicken Eggs,624.892
+2023-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),163.8630226135254
+2023-02-01,WPU0141,PPI: Slaughter Chickens,344.122
+2023-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,348.91
+2023-02-01,WPU0171,PPI: Chicken Eggs,399.43
+2023-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),170.9726648745329
+2023-03-01,WPU0141,PPI: Slaughter Chickens,369.923
+2023-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,375.07
+2023-03-01,WPU0171,PPI: Chicken Eggs,549.467
+2023-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),179.6553421020508
+2023-04-01,WPU0141,PPI: Slaughter Chickens,400.468
+2023-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,406.04
+2023-04-01,WPU0171,PPI: Chicken Eggs,341.179
+2023-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),182.0729602316152
+2023-05-01,WPU0141,PPI: Slaughter Chickens,408.07
+2023-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,413.748
+2023-05-01,WPU0171,PPI: Chicken Eggs,128.022
+2023-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),174.092978737571
+2023-06-01,WPU0141,PPI: Slaughter Chickens,391.627
+2023-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,397.076
+2023-06-01,WPU0171,PPI: Chicken Eggs,189.415
+2023-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),154.1092296781994
+2023-07-01,WPU0141,PPI: Slaughter Chickens,343.879
+2023-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,348.664
+2023-07-01,WPU0171,PPI: Chicken Eggs,198.949
+2023-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),147.5447281547215
+2023-08-01,WPU0141,PPI: Slaughter Chickens,309.036
+2023-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,313.336
+2023-08-01,WPU0171,PPI: Chicken Eggs,211.413
+2023-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),155.9459199451265
+2023-09-01,WPU0141,PPI: Slaughter Chickens,324.935
+2023-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,329.457
+2023-09-01,WPU0171,PPI: Chicken Eggs,227.042
+2023-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),155.7319238836115
+2023-10-01,WPU0141,PPI: Slaughter Chickens,315.334
+2023-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,319.722
+2023-10-01,WPU0171,PPI: Chicken Eggs,202.509
+2023-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),159.2253286188299
+2023-11-01,WPU0141,PPI: Slaughter Chickens,317.453
+2023-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,321.87
+2023-11-01,WPU0171,PPI: Chicken Eggs,321.527
+2023-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),167.0633210681734
+2023-12-01,WPU0141,PPI: Slaughter Chickens,358.243
+2023-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,363.228
+2023-12-01,WPU0171,PPI: Chicken Eggs,275.247
+2024-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.7589383332626
+2024-01-01,WPU0141,PPI: Slaughter Chickens,368.106
+2024-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,373.228
+2024-01-01,WPU0171,PPI: Chicken Eggs,298.893
+2024-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),167.023675101144
+2024-02-01,WPU0141,PPI: Slaughter Chickens,357.16
+2024-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,362.13
+2024-02-01,WPU0171,PPI: Chicken Eggs,459.694
+2024-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.4180755615234
+2024-03-01,WPU0141,PPI: Slaughter Chickens,364.184
+2024-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,369.251
+2024-03-01,WPU0171,PPI: Chicken Eggs,353.138
+2024-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),170.8597460660067
+2024-04-01,WPU0141,PPI: Slaughter Chickens,378.234
+2024-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,383.497
+2024-04-01,WPU0171,PPI: Chicken Eggs,380.935
+2024-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),170.8745320638021
+2024-05-01,WPU0141,PPI: Slaughter Chickens,375.569
+2024-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,380.795
+2024-05-01,WPU0171,PPI: Chicken Eggs,253.033
+2024-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),171.466423034668
+2024-06-01,WPU0141,PPI: Slaughter Chickens,373.393
+2024-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,378.589
+2024-06-01,WPU0171,PPI: Chicken Eggs,393.118
+2024-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),171.6530721913213
+2024-07-01,WPU0141,PPI: Slaughter Chickens,375.552
+2024-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,380.778
+2024-07-01,WPU0171,PPI: Chicken Eggs,379.375
+2024-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.6045303344727
+2024-08-01,WPU0141,PPI: Slaughter Chickens,352.182
+2024-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,357.083
+2024-08-01,WPU0171,PPI: Chicken Eggs,549.479
+2024-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),171.0247490292504
+2024-09-01,WPU0141,PPI: Slaughter Chickens,360.333
+2024-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,365.347
+2024-09-01,WPU0171,PPI: Chicken Eggs,509.253
+2024-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),173.1807304050612
+2024-10-01,WPU0141,PPI: Slaughter Chickens,365.449
+2024-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,370.535
+2024-10-01,WPU0171,PPI: Chicken Eggs,404.269
+2024-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),172.4371148972284
+2024-11-01,WPU0141,PPI: Slaughter Chickens,367.438
+2024-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,372.551
+2024-11-01,WPU0171,PPI: Chicken Eggs,623.918
+2024-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),175.3559993397106
+2024-12-01,WPU0141,PPI: Slaughter Chickens,376.694
+2024-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,381.936
+2024-12-01,WPU0171,PPI: Chicken Eggs,645.396
+2025-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),176.7941733466254
+2025-01-01,WPU0141,PPI: Slaughter Chickens,378.569
+2025-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,383.837
+2025-01-01,WPU0171,PPI: Chicken Eggs,847.829
+2025-02-01,PPOULTUSDM,Global Price of Poultry ($/kg),171.8696899414062
+2025-02-01,WPU0141,PPI: Slaughter Chickens,359.483
+2025-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,364.485
+2025-02-01,WPU0171,PPI: Chicken Eggs,1302.339
+2025-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),173.492669241769
+2025-03-01,WPU0141,PPI: Slaughter Chickens,372.441
+2025-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,377.624
+2025-03-01,WPU0171,PPI: Chicken Eggs,943.017
+2025-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),176.1111795525802
+2025-04-01,WPU0141,PPI: Slaughter Chickens,386.261
+2025-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,391.636
+2025-04-01,WPU0171,PPI: Chicken Eggs,571.503
+2025-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),175.6779594421387
+2025-05-01,WPU0141,PPI: Slaughter Chickens,385.846
+2025-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,391.215
+2025-05-01,WPU0171,PPI: Chicken Eggs,600.817
+2025-06-01,PPOULTUSDM,Global Price of Poultry ($/kg),177.9414596557617
+2025-06-01,WPU0141,PPI: Slaughter Chickens,390.793
+2025-06-01,WPU014102,PPI: Broilers & Meat-Type Chickens,396.231
+2025-06-01,WPU0171,PPI: Chicken Eggs,469.701
+2025-07-01,PPOULTUSDM,Global Price of Poultry ($/kg),176.1187109696238
+2025-07-01,WPU0141,PPI: Slaughter Chickens,375.537
+2025-07-01,WPU014102,PPI: Broilers & Meat-Type Chickens,380.763
+2025-07-01,WPU0171,PPI: Chicken Eggs,475.522
+2025-08-01,PPOULTUSDM,Global Price of Poultry ($/kg),172.4947240920294
+2025-08-01,WPU0141,PPI: Slaughter Chickens,332.75
+2025-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,337.38
+2025-08-01,WPU0171,PPI: Chicken Eggs,366.991
+2025-09-01,PPOULTUSDM,Global Price of Poultry ($/kg),171.4371528625488
+2025-09-01,WPU0141,PPI: Slaughter Chickens,327.465
+2025-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,332.021
+2025-09-01,WPU0171,PPI: Chicken Eggs,363.336
+2025-10-01,PPOULTUSDM,Global Price of Poultry ($/kg),162.994571685791
+2025-10-01,WPU0141,PPI: Slaughter Chickens,296.897
+2025-10-01,WPU014102,PPI: Broilers & Meat-Type Chickens,301.028
+2025-10-01,WPU0171,PPI: Chicken Eggs,323.307
+2025-11-01,PPOULTUSDM,Global Price of Poultry ($/kg),161.6286659240723
+2025-11-01,WPU0141,PPI: Slaughter Chickens,296.452
+2025-11-01,WPU014102,PPI: Broilers & Meat-Type Chickens,300.577
+2025-11-01,WPU0171,PPI: Chicken Eggs,343.349
+2025-12-01,PPOULTUSDM,Global Price of Poultry ($/kg),164.2401428222656
+2025-12-01,WPU0141,PPI: Slaughter Chickens,320.901
+2025-12-01,WPU014102,PPI: Broilers & Meat-Type Chickens,325.366
+2025-12-01,WPU0171,PPI: Chicken Eggs,301.955
+2026-01-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.220775604248
+2026-01-01,WPU0141,PPI: Slaughter Chickens,344.312
+2026-01-01,WPU014102,PPI: Broilers & Meat-Type Chickens,349.103
+2026-01-01,WPU0171,PPI: Chicken Eggs,86.02
+2026-02-01,WPU0141,PPI: Slaughter Chickens,332.914
+2026-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,337.547
+2026-02-01,WPU0171,PPI: Chicken Eggs,176.628

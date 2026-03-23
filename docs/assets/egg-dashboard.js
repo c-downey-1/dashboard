@@ -981,7 +981,7 @@ async function bootEggDashboard() {
       })] : []),
       ...(map[2026] ? [dataset('2026', monthsForYear(map, 2026), DASH_COLORS.gold, {
         borderWidth: 4.2,
-        pointRadius: 4,
+        pointRadius: 0,
         pointHoverRadius: 5,
         order: 0
       })] : [])

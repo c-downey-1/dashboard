@@ -1,0 +1,327 @@
+month,flock_type,detections,commercial_birds
+2022-02,Commercial Broiler Production,1,0
+2022-02,Commercial Table Egg Layer,1,0
+2022-02,Commercial Turkey Meat Bird,6,0
+2022-02,WOAH Non-Poultry,7,0
+2022-03,Commercial Broiler Production,5,0
+2022-03,Commercial Table Egg Layer,8,0
+2022-03,Commercial Table Egg Pullets,3,0
+2022-03,Commercial Turkey Breeder Hens,3,0
+2022-03,Commercial Turkey Breeder Replacement Hens,1,0
+2022-03,Commercial Turkey Meat Bird,30,0
+2022-03,Commercial Upland Gamebird Producer,1,0
+2022-03,WOAH Non-Poultry,29,0
+2022-03,WOAH Poultry,7,0
+2022-04,Commercial Broiler Breeder,2,0
+2022-04,Commercial Broiler Breeder Pullets,1,0
+2022-04,Commercial Broiler Production,5,0
+2022-04,Commercial Duck Breeder,2,0
+2022-04,Commercial Duck Meat Bird,2,0
+2022-04,Commercial Table Egg Breeder,1,0
+2022-04,Commercial Table Egg Layer,9,0
+2022-04,Commercial Turkey Breeder Hens,5,0
+2022-04,Commercial Turkey Breeder Replacement Hens,1,0
+2022-04,Commercial Turkey Meat Bird,75,0
+2022-04,Commercial Turkey Poult Supplier,1,0
+2022-04,Commercial Upland Gamebird Producer,2,0
+2022-04,WOAH Non-Poultry,45,0
+2022-04,WOAH Poultry,15,0
+2022-05,Commercial Duck Breeder,4,0
+2022-05,Commercial Duck Meat Bird,2,0
+2022-05,Commercial Table Egg Breeder,1,0
+2022-05,Commercial Table Egg Layer,2,0
+2022-05,Commercial Turkey Breeder Toms,1,0
+2022-05,Commercial Turkey Meat Bird,8,0
+2022-05,WOAH Non-Poultry,56,0
+2022-05,WOAH Poultry,15,0
+2022-06,Commercial Duck Meat Bird,1,0
+2022-06,Commercial Table Egg Layer,1,0
+2022-06,Commercial Table Egg Pullets,1,0
+2022-06,WOAH Non-Poultry,16,0
+2022-06,WOAH Poultry,3,0
+2022-07,Commercial Turkey Meat Bird,3,0
+2022-07,WOAH Non-Poultry,11,0
+2022-07,WOAH Poultry,6,0
+2022-08,Commercial Broiler Breeder,2,0
+2022-08,Commercial Turkey Meat Bird,6,0
+2022-08,WOAH Non-Poultry,12,0
+2022-08,WOAH Poultry,1,0
+2022-09,Commercial Broiler Breeder,3,0
+2022-09,Commercial Duck Meat Bird,1,0
+2022-09,Commercial Table Egg Layer,2,0
+2022-09,Commercial Turkey Breeder Hens,2,0
+2022-09,Commercial Turkey Meat Bird,24,0
+2022-09,Commercial Upland Gamebird Producer,1,0
+2022-09,WOAH Non-Poultry,29,0
+2022-09,WOAH Poultry,8,0
+2022-10,Commercial Breeder Operation,1,0
+2022-10,Commercial Broiler Breeder Pullets,1,0
+2022-10,Commercial Duck Breeder,1,0
+2022-10,Commercial Table Egg Layer,1,0
+2022-10,Commercial Turkey Meat Bird,15,0
+2022-10,Commercial Upland Gamebird Producer,4,0
+2022-10,WOAH Non-Poultry,54,0
+2022-10,WOAH Poultry,16,0
+2022-11,Commercial Broiler Breeder,2,0
+2022-11,Commercial Duck Breeder,1,0
+2022-11,Commercial Table Egg Breeder,1,0
+2022-11,Commercial Table Egg Layer,2,0
+2022-11,Commercial Turkey Breeder Hens,1,0
+2022-11,Commercial Turkey Breeder Toms,1,0
+2022-11,Commercial Turkey Meat Bird,18,0
+2022-11,Commercial Upland Gamebird Producer,2,0
+2022-11,Live Bird Market,1,0
+2022-11,WOAH Non-Poultry,33,0
+2022-11,WOAH Poultry,11,0
+2022-12,Commercial Broiler Breeder,2,0
+2022-12,Commercial Table Egg Layer,4,0
+2022-12,Commercial Turkey Meat Bird,17,0
+2022-12,Commercial Upland Gamebird Producer,2,0
+2022-12,WOAH Non-Poultry,32,0
+2022-12,WOAH Poultry,5,0
+2023-01,Commercial Broiler Production,1,0
+2023-01,Commercial Turkey Meat Bird,3,0
+2023-01,Commercial Upland Gamebird Producer,2,0
+2023-01,WOAH Non-Poultry,19,0
+2023-01,WOAH Poultry,3,0
+2023-02,Commercial Broiler Production,2,0
+2023-02,Commercial Duck Breeder,1,0
+2023-02,Commercial Duck Meat Bird,1,0
+2023-02,Commercial Turkey Meat Bird,1,0
+2023-02,Commercial Upland Gamebird Producer,1,0
+2023-02,Live Bird Market,2,0
+2023-02,WOAH Non-Poultry,13,0
+2023-02,WOAH Poultry,10,0
+2023-03,Commercial Duck Breeder,1,0
+2023-03,Commercial Turkey Meat Bird,3,0
+2023-03,Commercial Upland Gamebird Producer,1,0
+2023-03,Live Bird Market,2,0
+2023-03,WOAH Non-Poultry,14,0
+2023-03,WOAH Poultry,19,0
+2023-04,Commercial Turkey Meat Bird,2,0
+2023-04,Live Bird Market,2,0
+2023-04,WOAH Non-Poultry,9,0
+2023-04,WOAH Poultry,2,0
+2023-05,WOAH Non-Poultry,4,0
+2023-07,Live Bird Market,2,0
+2023-08,Live Bird Market,1,0
+2023-09,Live Bird Market,1,0
+2023-10,Commercial Breeder Operation,1,0
+2023-10,Commercial Broiler Breeder Pullets,1,0
+2023-10,Commercial Turkey Breeder Toms,1,0
+2023-10,Commercial Turkey Meat Bird,21,0
+2023-10,Commercial Upland Gamebird Producer,1,0
+2023-10,WOAH Non-Poultry,16,0
+2023-10,WOAH Poultry,3,0
+2023-11,Commercial Breeder (Multiple Bird Species),1,0
+2023-11,Commercial Breeder Operation,2,0
+2023-11,Commercial Broiler Breeder,1,0
+2023-11,Commercial Broiler Breeder Pullets,1,0
+2023-11,Commercial Broiler Production,4,0
+2023-11,Commercial Duck Breeder,3,0
+2023-11,Commercial Raised for Release Waterfowl,1,0
+2023-11,Commercial Table Egg Layer,5,0
+2023-11,Commercial Turkey Breeder Hens,6,0
+2023-11,Commercial Turkey Breeder Replacement Hens,2,0
+2023-11,Commercial Turkey Meat Bird,30,0
+2023-11,Commercial Upland Gamebird Producer,1,0
+2023-11,WOAH Non-Poultry,31,0
+2023-11,WOAH Poultry,10,0
+2023-12,Commercial Breeder Operation,1,0
+2023-12,Commercial Broiler Production,5,0
+2023-12,Commercial Duck Breeder,1,0
+2023-12,Commercial Duck Meat Bird,2,0
+2023-12,Commercial Raised for Release Upland Game Bird,1,0
+2023-12,Commercial Table Egg Layer,11,0
+2023-12,Commercial Table Egg Pullets,2,0
+2023-12,Commercial Turkey Breeder Hens,1,0
+2023-12,Commercial Turkey Meat Bird,17,0
+2023-12,Commercial Upland Gamebird Producer,4,0
+2023-12,WOAH Non-Poultry,25,0
+2023-12,WOAH Poultry,8,0
+2024-01,Commercial Broiler Production,2,0
+2024-01,Commercial Raised for Release Upland Game Bird,2,0
+2024-01,Commercial Table Egg Layer,1,0
+2024-01,Commercial Table Egg Pullets,2,0
+2024-01,Commercial Turkey Meat Bird,2,0
+2024-01,Commercial Upland Gamebird Producer,4,0
+2024-01,WOAH Non-Poultry,12,0
+2024-01,WOAH Poultry,1,0
+2024-02,Commercial Broiler Breeder,1,0
+2024-02,Commercial Broiler Production,1,0
+2024-02,Commercial Turkey Meat Bird,5,0
+2024-02,Live Bird Market,1,0
+2024-02,WOAH Non-Poultry,13,0
+2024-02,WOAH Poultry,1,0
+2024-03,Commercial Turkey Meat Bird,1,0
+2024-03,WOAH Non-Poultry,6,0
+2024-03,WOAH Poultry,1,0
+2024-04,Commercial Breeder (Multiple Bird Species),3,0
+2024-04,Commercial Table Egg Layer,4,0
+2024-04,Commercial Turkey Meat Bird,4,0
+2024-04,Live Bird Market,1,0
+2024-04,WOAH Non-Poultry,2,0
+2024-04,WOAH Poultry,1,0
+2024-05,Commercial Breeder Operation,1,0
+2024-05,Commercial Table Egg Layer,2,0
+2024-05,Commercial Turkey Breeder Hens,1,0
+2024-05,Commercial Turkey Meat Bird,6,0
+2024-05,Live Bird Market,1,0
+2024-05,WOAH Non-Poultry,4,0
+2024-05,WOAH Poultry,2,0
+2024-06,Commercial Turkey Meat Bird,8,0
+2024-06,WOAH Non-Poultry,4,0
+2024-07,Commercial Table Egg Layer,2,0
+2024-07,Commercial Table Egg Pullets,1,0
+2024-07,Commercial Turkey Breeder Hens,2,0
+2024-07,Commercial Turkey Breeder Toms,1,0
+2024-07,Live Bird Market,3,0
+2024-07,WOAH Non-Poultry,2,0
+2024-08,Live Bird Market,1,0
+2024-08,WOAH Poultry,1,0
+2024-09,Commercial Turkey Meat Bird,1,0
+2024-09,Live Bird Market,1,0
+2024-09,WOAH Poultry,1,0
+2024-10,Commercial Broiler Production,6,0
+2024-10,Commercial Table Egg Layer,3,0
+2024-10,Live Bird Sales  (non-slaughter),1,0
+2024-10,WOAH Non-Poultry,5,0
+2024-10,WOAH Poultry,1,0
+2024-11,Commercial Broiler Breeder,1,0
+2024-11,Commercial Broiler Production,7,0
+2024-11,Commercial Duck Breeder,2,0
+2024-11,Commercial Duck Meat Bird,2,0
+2024-11,Commercial Table Egg Layer,3,0
+2024-11,Commercial Table Egg Pullets,1,0
+2024-11,Commercial Turkey Meat Bird,19,0
+2024-11,WOAH Non-Poultry,24,0
+2024-11,WOAH Poultry,3,0
+2024-12,Commercial Broiler Breeder,2,0
+2024-12,Commercial Broiler Production,9,0
+2024-12,Commercial Duck Breeder,2,0
+2024-12,Commercial Duck Meat Bird,3,0
+2024-12,Commercial Raised for Release Upland Game Bird,2,0
+2024-12,Commercial Table Egg Layer,14,0
+2024-12,Commercial Table Egg Pullets,1,0
+2024-12,Commercial Turkey Breeder Hens,5,0
+2024-12,Commercial Turkey Meat Bird,31,0
+2024-12,Commercial Upland Gamebird Producer,1,0
+2024-12,WOAH Non-Poultry,42,0
+2024-12,WOAH Poultry,10,0
+2025-01,Commercial Broiler Breeder,3,0
+2025-01,Commercial Broiler Production,12,0
+2025-01,Commercial Duck Meat Bird,4,0
+2025-01,Commercial Raised for Release Upland Game Bird,1,0
+2025-01,Commercial Table Egg Layer,19,0
+2025-01,Commercial Table Egg Pullets,3,0
+2025-01,Commercial Turkey Breeder Hens,1,0
+2025-01,Commercial Turkey Breeder Replacement Hens,1,0
+2025-01,Commercial Turkey Meat Bird,41,0
+2025-01,Live Bird Market,2,0
+2025-01,Primary Broiler Breeder Pedigree Farm,1,0
+2025-01,WOAH Non-Poultry,39,0
+2025-01,WOAH Poultry,6,0
+2025-02,Commercial Broiler Production,6,0
+2025-02,Commercial Duck Breeder,2,0
+2025-02,Commercial Duck Meat Bird,3,0
+2025-02,Commercial Table Egg Layer,19,0
+2025-02,Commercial Table Egg Pullets,2,0
+2025-02,Commercial Turkey Breeder Hens,2,0
+2025-02,Commercial Turkey Breeder Replacement Hens,1,0
+2025-02,Commercial Turkey Meat Bird,24,0
+2025-02,Live Bird Market,8,0
+2025-02,WOAH Non-Poultry,38,0
+2025-02,WOAH Poultry,7,0
+2025-03,Commercial Broiler Breeder,1,0
+2025-03,Commercial Duck Breeder,2,0
+2025-03,Commercial Table Egg Layer,1,0
+2025-03,Commercial Table Egg Pullets,3,0
+2025-03,Commercial Turkey Meat Bird,5,0
+2025-03,Live Bird Market,15,0
+2025-03,WOAH Non-Poultry,23,0
+2025-03,WOAH Poultry,3,0
+2025-04,Commercial Table Egg Layer,2,0
+2025-04,Commercial Turkey Meat Bird,1,0
+2025-04,Live Bird Market,7,0
+2025-04,WOAH Non-Poultry,6,0
+2025-04,WOAH Poultry,3,0
+2025-05,Commercial Table Egg Layer,3,0
+2025-05,Commercial Turkey Meat Bird,1,0
+2025-05,Live Bird Market,3,0
+2025-05,WOAH Non-Poultry,3,0
+2025-05,WOAH Poultry,2,0
+2025-06,Commercial Table Egg Pullets,1,0
+2025-06,WOAH Non-Poultry,2,0
+2025-07,Commercial Raised for Release Upland Game Bird,1,0
+2025-08,Commercial Turkey Meat Bird,1,0
+2025-08,Live Bird Sales  (non-slaughter),1,0
+2025-08,WOAH Non-Poultry,1,0
+2025-09,Commercial Breeder Operation,2,0
+2025-09,Commercial Table Egg Layer,1,0
+2025-09,Commercial Turkey Breeder Hens,1,0
+2025-09,Commercial Turkey Meat Bird,17,0
+2025-09,WOAH Non-Poultry,6,0
+2025-09,WOAH Poultry,2,0
+2025-10,Commercial Breeder Operation,1,0
+2025-10,Commercial Broiler Production,1,0
+2025-10,Commercial Duck Breeder,4,0
+2025-10,Commercial Duck Meat Bird,2,0
+2025-10,Commercial Table Egg Layer,2,0
+2025-10,Commercial Table Egg Pullets,1,0
+2025-10,Commercial Turkey Breeder Hens,1,0
+2025-10,Commercial Turkey Meat Bird,18,0
+2025-10,WOAH Non-Poultry,26,0
+2025-10,WOAH Poultry,11,0
+2025-11,Commercial Broiler Production,2,0
+2025-11,Commercial Duck Breeder,9,0
+2025-11,Commercial Duck Meat Bird,17,0
+2025-11,Commercial Turkey Breeder Hens,5,0
+2025-11,Commercial Turkey Meat Bird,9,0
+2025-11,WOAH Non-Poultry,28,0
+2025-11,WOAH Poultry,26,0
+2025-12,Commercial Broiler Breeder,1,0
+2025-12,Commercial Broiler Breeder Pullets,1,0
+2025-12,Commercial Broiler Production,2,0
+2025-12,Commercial Duck Breeder,1,0
+2025-12,Commercial Duck Meat Bird,13,0
+2025-12,Commercial Raised for Release Upland Game Bird,1,0
+2025-12,Commercial Table Egg Layer,1,0
+2025-12,Commercial Turkey Breeder Replacement Hens,2,0
+2025-12,Commercial Turkey Meat Bird,4,0
+2025-12,Live Bird Market,3,0
+2025-12,WOAH Non-Poultry,37,0
+2025-12,WOAH Poultry,16,0
+2026-01,Commercial Broiler Breeder,2,0
+2026-01,Commercial Broiler Production,2,0
+2026-01,Commercial Duck Breeder,1,0
+2026-01,Commercial Duck Meat Bird,1,0
+2026-01,Commercial Raised for Release Upland Game Bird,3,0
+2026-01,Commercial Table Egg Layer,2,0
+2026-01,Commercial Table Egg Pullets,1,0
+2026-01,Commercial Turkey Breeder Hens,2,0
+2026-01,Commercial Turkey Meat Bird,4,0
+2026-01,Live Bird Market,4,0
+2026-01,WOAH Non-Poultry,29,0
+2026-01,WOAH Poultry,11,0
+2026-02,Commercial Broiler Breeder,1,0
+2026-02,Commercial Broiler Production,8,0
+2026-02,Commercial Duck Breeder,1,0
+2026-02,Commercial Duck Meat Bird,4,0
+2026-02,Commercial Raised for Release Upland Game Bird,1,0
+2026-02,Commercial Table Egg Breeder,1,0
+2026-02,Commercial Table Egg Layer,7,0
+2026-02,Commercial Table Egg Pullets,1,0
+2026-02,Commercial Turkey Breeder Hens,1,0
+2026-02,Commercial Turkey Meat Bird,9,0
+2026-02,Live Bird Market,4,0
+2026-02,WOAH Non-Poultry,16,0
+2026-02,WOAH Poultry,9,0
+2026-03,Commercial Broiler Production,2,0
+2026-03,Commercial Duck Breeder,2,0
+2026-03,Commercial Duck Meat Bird,12,0
+2026-03,Commercial Table Egg Layer,3,0
+2026-03,Commercial Table Egg Pullets,2,0
+2026-03,Commercial Turkey Meat Bird,6,0
+2026-03,Live Bird Market,8,0
+2026-03,WOAH Non-Poultry,11,0
+2026-03,WOAH Poultry,8,0
