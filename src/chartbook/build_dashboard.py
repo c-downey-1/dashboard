@@ -1301,6 +1301,47 @@ def build_broiler_hatchability(conn):
     }
 
 
+def build_sentiment_index(conn):
+    """Fundamentals Core Index: sentiment excluding price direction."""
+    rows = conn.execute("""
+        SELECT report_date, undertone, retail_demand, offerings, supplies,
+               market_activity, national_core_index
+        FROM narrative_sentiment
+        WHERE slug_id = 2843
+        ORDER BY report_date
+    """).fetchall()
+
+    WEIGHTS = {
+        "undertone": 0.40,
+        "retail_demand": 0.267,
+        "offerings": 0.133,
+        "supplies": 0.133,
+        "market_activity": 0.067,
+    }
+
+    dates, fundamentals, national = [], [], []
+    for report_date, ut, rd, off, sup, ma, nci in rows:
+        dates.append(report_date)
+        national.append(nci)
+        dims = {"undertone": ut, "retail_demand": rd, "offerings": off,
+                "supplies": sup, "market_activity": ma}
+        present = {k: v for k, v in dims.items() if v is not None}
+        if present:
+            total_w = sum(WEIGHTS[k] for k in present)
+            wavg = sum(v * WEIGHTS[k] / total_w for k, v in present.items())
+            fundamentals.append(round(((wavg + 3) / 6) * 100, 1))
+        else:
+            fundamentals.append(None)
+
+    return {
+        "dates": dates,
+        "series": {
+            "Fundamentals Core": fundamentals,
+            "National Core": national,
+        },
+    }
+
+
 def build_data_freshness(conn):
     """Data freshness summary from etl_log."""
     rows = conn.execute("""
@@ -1515,6 +1556,10 @@ def build_data_json(conn):
     print("    Broiler Hatchability ...", end=" ", flush=True)
     data["broiler_hatchability"] = build_broiler_hatchability(conn)
     print(f"{len(data['broiler_hatchability']['dates'])} dates")
+
+    print("    Sentiment Index ...", end=" ", flush=True)
+    data["sentiment_index"] = build_sentiment_index(conn)
+    print(f"{len(data['sentiment_index']['dates'])} dates")
 
     print("    Data Freshness ...", end=" ", flush=True)
     data["data_freshness"] = build_data_freshness(conn)

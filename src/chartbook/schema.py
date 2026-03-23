@@ -296,6 +296,31 @@ TABLES = {
             alert_threshold_hours INTEGER
         )
     """,
+
+    "narrative_sentiment": """
+        CREATE TABLE IF NOT EXISTS narrative_sentiment (
+            report_date              TEXT NOT NULL,
+            slug_id                  INTEGER NOT NULL,
+            price_direction          REAL,
+            undertone                REAL,
+            retail_demand            REAL,
+            loose_demand             REAL,
+            food_service_demand      REAL,
+            offerings                REAL,
+            supplies                 REAL,
+            market_activity          REAL,
+            price_confidence         REAL,
+            secondary_demand_score   REAL,
+            secondary_coverage       REAL,
+            national_core_index      REAL,
+            national_extended_index  REAL,
+            fundamentals_core_index     REAL,
+            fundamentals_extended_index REAL,
+            scored_at                TEXT DEFAULT (datetime('now')),
+            model_version            TEXT,
+            PRIMARY KEY (report_date, slug_id)
+        )
+    """,
 }
 
 VIEWS = {
@@ -401,6 +426,7 @@ INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_ers_trade_lookup ON ers_trade_totals(commodity, flow, product)",
     "CREATE INDEX IF NOT EXISTS idx_cme_feed_daily_trade_date ON cme_feed_daily(trade_date)",
     "CREATE INDEX IF NOT EXISTS idx_source_freshness ON source_freshness(source_name)",
+    "CREATE INDEX IF NOT EXISTS idx_narrative_sentiment_date ON narrative_sentiment(report_date)",
 ]
 
 

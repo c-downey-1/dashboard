@@ -54,6 +54,7 @@ function setChartSources() {
     chicksTrendChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     pipelineChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     wholesaleChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2843" target="_blank" rel="noreferrer">USDA AMS Daily National Shell Egg Index</a> and <a href="https://mymarketnews.ams.usda.gov/viewReport/3888" target="_blank" rel="noreferrer">USDA AMS Daily National Breaking Stock</a>',
+    sentIdxChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2843" target="_blank" rel="noreferrer">USDA AMS Daily National Shell Egg Index</a> commentary, scored via LLM based on <a href="rubric.md" target="_blank">this rubric</a>',
     eggPriceCompareChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a>',
     eggPriceSpreadChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a> and <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Prices_Received_and_Prices_Received_Indexes/" target="_blank" rel="noreferrer">USDA NASS Agricultural Prices</a>',
     feedIndexChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a>',
@@ -1254,6 +1255,65 @@ async function bootEggDashboard() {
     yearSel.addEventListener('change', onBaseChange);
     enforceMinMonth();
   })();
+
+  /* Egg Market Sentiment — Fundamentals Core Index (-50 to +50, zero-centered) */
+  if ((D.sentiment_index?.dates || []).length) {
+    registerRangeControl({
+      chartId: 'sentIdxChart',
+      options: ['3m', '6m', '1y', 'all'],
+      defaultRange: '1y',
+      renderer(range) {
+        const dates = D.sentiment_index.dates;
+        const raw = D.sentiment_index.series['Fundamentals Core'] || [];
+        const centered = raw.map(v => v != null ? Math.round((v - 50) * 10) / 10 : null);
+        const { start, end } = getRangeSlice(dates, range);
+        const ctx = document.getElementById('sentIdxChart');
+        if (!ctx) return;
+        destroyChart('sentIdxChart');
+        const opts = baseOptions('Index', {
+          chartId: 'sentIdxChart',
+          yMin: -50,
+          yMax: 50,
+          tooltip: {
+            callbacks: {
+              label(context) {
+                const v = context.parsed?.y;
+                if (v == null || !Number.isFinite(v)) return '';
+                const sign = v > 0 ? '+' : '';
+                return 'Sentiment & Demand: ' + sign + v.toFixed(1);
+              }
+            }
+          }
+        });
+        opts.scales.y.grid.color = function (context) {
+          return context.tick.value === 0
+            ? 'rgba(1, 48, 70, 0.22)'
+            : 'rgba(1, 48, 70, 0.045)';
+        };
+        charts['sentIdxChart'] = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: dates.slice(start, end),
+            datasets: [boostEggLineDataset(dataset(
+              'Egg Market Sentiment and Demand Conditions Index',
+              centered.slice(start, end),
+              DASH_COLORS.navy,
+              {
+                fill: {
+                  target: { value: 0 },
+                  above: 'rgba(22, 163, 74, 0.075)',
+                  below: 'rgba(220, 38, 38, 0.075)'
+                }
+              }
+            ))]
+          },
+          options: opts
+        });
+      }
+    });
+  } else {
+    showPlaceholder('sentIdxWrap', 'Sentiment scoring data is not yet available. Once USDA commentary is scored, this chart will populate.');
+  }
 
   registerRangeControl({
     chartId: 'eggPriceCompareChart',
