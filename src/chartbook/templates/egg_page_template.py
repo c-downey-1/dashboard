@@ -133,10 +133,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </label>
             <label class="dashboard-signup-checkbox">
               <input type="checkbox" name="layerResearch">
-              <span>Other Innovate Animal Ag Layer Research</span>
+              <span>Other Innovate Animal Ag Egg Industry Research</span>
             </label>
           </div>
-          <button class="dashboard-signup-button" type="submit">Submit Sign Up</button>
+          <button class="dashboard-signup-button" type="submit">Submit</button>
           <p class="dashboard-signup-status" id="eggDashboardSignupStatus" aria-live="polite"></p>
         </form>
       </article>
