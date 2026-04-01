@@ -748,12 +748,19 @@ def backfill_bls(conn, start_year=2006):
 
 
 def backfill_hpai(conn):
-    """Full backfill of HPAI flock detections."""
+    """Full backfill of HPAI flock detections.
+
+    Prefers local manual CSV (exact flock counts) over Tableau endpoint
+    (rounded to nearest 100K). Falls back to Tableau if local file missing.
+    """
     print(f"\n{'='*60}")
     print(f"  HPAI Flock Detections Backfill")
     print(f"{'='*60}")
 
-    csv_rows = hpai_client.fetch_flock_detections()
+    from . import paths
+    csv_rows = hpai_client.load_local_csv(paths.REPO_ROOT)
+    if not csv_rows:
+        csv_rows = hpai_client.fetch_flock_detections()
     if not csv_rows:
         print("  No HPAI data returned")
         return 0

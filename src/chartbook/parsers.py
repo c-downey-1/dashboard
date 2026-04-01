@@ -409,7 +409,8 @@ def parse_hpai_record(row):
     """Normalize a single HPAI CSV row → dict for hpai_detections table.
 
     Tableau CSV column names vary; this handles known variants.
-    Actual columns from Tableau: Confirmed, County Name, Production, State, Birds Affected
+    Actual columns from Tableau (as of Apr 2026):
+      Confirmed Diagnosis, County Name, Production, Special ID, State, Birds Affected
     """
     # Try multiple possible column name patterns
     def _find(row, *candidates):
@@ -419,8 +420,9 @@ def parse_hpai_record(row):
                     return row[key]
         return None
 
-    detection_date = _find(row, "Confirmed", "Confirmation Date",
-                           "confirmation_date", "Detection Date")
+    detection_date = _find(row, "Confirmed Diagnosis", "Confirmed",
+                           "Confirmation Date", "confirmation_date",
+                           "Detection Date")
     state = _find(row, "State", "state")
     county = _find(row, "County Name", "County", "county")
     flock_type = _find(row, "Production", "Flock Type", "flock_type")
