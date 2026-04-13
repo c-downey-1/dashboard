@@ -257,10 +257,14 @@ def build_egg_index(conn):
         by_date.setdefault(dt, {})["NY " + cls] = price
 
     # 3) Breaking Stock (slug 3888) — avg_price by egg_type
+    #    Fall back to wtd_avg_price or price_low when avg_price is NULL
+    #    (MARS sometimes publishes partial records, e.g. undergrades)
     rows = conn.execute("""
-        SELECT report_date, egg_type, avg_price
+        SELECT report_date, egg_type,
+               COALESCE(avg_price, wtd_avg_price, price_low) AS price
         FROM egg_prices
-        WHERE slug_id = 3888 AND avg_price IS NOT NULL
+        WHERE slug_id = 3888
+          AND COALESCE(avg_price, wtd_avg_price, price_low) IS NOT NULL
         ORDER BY report_date, egg_type
     """).fetchall()
     for dt, typ, price in rows:
