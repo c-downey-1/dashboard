@@ -567,3 +567,31 @@ report_date,egg_type,price_low,price_high,avg_price,avg_price_prev,price_unit
 2026-03-20,Undergrades,16.0,20.0,18.0,18.0,Cents Per Dozen
 2026-03-23,Breaking Stock,22.0,31.0,27.0,27.0,Cents Per Dozen
 2026-03-23,Undergrades,16.0,20.0,18.0,18.0,Cents Per Dozen
+2026-03-24,Breaking Stock,20.0,30.0,26.0,27.0,Cents Per Dozen
+2026-03-24,Undergrades,14.0,18.0,16.0,18.0,Cents Per Dozen
+2026-03-25,Breaking Stock,17.0,30.0,24.5,26.0,Cents Per Dozen
+2026-03-25,Undergrades,11.0,15.0,13.0,16.0,Cents Per Dozen
+2026-03-26,Breaking Stock,14.0,27.0,21.0,24.5,Cents Per Dozen
+2026-03-26,Undergrades,8.0,12.0,10.0,13.0,Cents Per Dozen
+2026-03-27,Breaking Stock,12.0,25.0,19.5,21.0,Cents Per Dozen
+2026-03-27,Undergrades,6.0,10.0,8.0,10.0,Cents Per Dozen
+2026-03-30,Breaking Stock,9.0,25.0,16.25,19.5,Cents Per Dozen
+2026-03-30,Undergrades,5.0,9.0,7.0,8.0,Cents Per Dozen
+2026-03-31,Breaking Stock,9.0,20.0,14.5,16.25,Cents Per Dozen
+2026-03-31,Undergrades,4.0,8.0,6.0,7.0,Cents Per Dozen
+2026-04-01,Breaking Stock,8.0,20.0,13.5,14.5,Cents Per Dozen
+2026-04-01,Undergrades,2.0,6.0,4.0,6.0,Cents Per Dozen
+2026-04-02,Breaking Stock,6.0,18.0,11.75,13.5,Cents Per Dozen
+2026-04-02,Undergrades,2.0,4.0,2.5,4.0,Cents Per Dozen
+2026-04-03,Breaking Stock,6.0,13.0,9.5,11.75,Cents Per Dozen
+2026-04-06,Breaking Stock,6.0,13.0,9.5,9.5,Cents Per Dozen
+2026-04-07,Breaking Stock,6.0,12.0,9.25,9.5,Cents Per Dozen
+2026-04-08,Breaking Stock,6.0,11.0,8.5,9.25,Cents Per Dozen
+2026-04-09,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen
+2026-04-10,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen
+2026-04-13,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen
+2026-04-14,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen
+2026-04-15,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen
+2026-04-16,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen
+2026-04-17,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen
+2026-04-20,Breaking Stock,6.0,11.0,8.5,8.5,Cents Per Dozen

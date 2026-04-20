@@ -317,11 +317,20 @@ month,flock_type,detections,commercial_birds
 2026-02,WOAH Non-Poultry,16,0
 2026-02,WOAH Poultry,9,0
 2026-03,Commercial Broiler Production,2,0
-2026-03,Commercial Duck Breeder,2,0
-2026-03,Commercial Duck Meat Bird,12,0
+2026-03,Commercial Duck Breeder,3,0
+2026-03,Commercial Duck Meat Bird,24,0
 2026-03,Commercial Table Egg Layer,3,0
 2026-03,Commercial Table Egg Pullets,2,0
+2026-03,Commercial Turkey Breeder Hens,1,0
 2026-03,Commercial Turkey Meat Bird,6,0
-2026-03,Live Bird Market,8,0
-2026-03,WOAH Non-Poultry,11,0
-2026-03,WOAH Poultry,8,0
+2026-03,Live Bird Market,10,0
+2026-03,WOAH Non-Poultry,14,0
+2026-03,WOAH Poultry,10,0
+2026-04,Commercial Broiler Production,1,0
+2026-04,Commercial Duck Breeder,1,0
+2026-04,Commercial Duck Meat Bird,1,0
+2026-04,Commercial Table Egg Pullets,1,0
+2026-04,Commercial Turkey Breeder Hens,1,0
+2026-04,Commercial Turkey Meat Bird,3,0
+2026-04,WOAH Non-Poultry,1,0
+2026-04,WOAH Poultry,2,0
