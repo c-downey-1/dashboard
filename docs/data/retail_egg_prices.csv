@@ -47602,3 +47602,514 @@ report_date,region,type,environment,package_size,quality_grade,price_avg,price_m
 2026-04-13,Southwest,Large White,Cage-Free,18,A,1.77,1.77,1.77,66,Per Carton
 2026-04-13,Southwest,Large White,Nutritionally Enhanced (Omega-3),18,A,6.06,5.99,6.99,382,Per Carton
 2026-04-13,Southwest,Liquid Egg,Cage-Free,32 oz,Ungraded/Other,6.99,6.99,6.99,17,Per Carton
+2026-04-20,Alaska,Large Brown,Cage-Free,18,AA,4.99,4.99,4.99,11,Per Carton
+2026-04-20,Alaska,Large Brown,Free Range,12,A,6.99,6.99,6.99,3,Per Carton
+2026-04-20,Alaska,Large Brown,Free Range,18,A,7.99,7.99,7.99,10,Per Carton
+2026-04-20,Alaska,Large Brown,"USDA Organic, Free Range",12,AA,6.49,6.49,6.49,11,Per Carton
+2026-04-20,Alaska,Large White,Conventional,12,A,1.75,1.75,1.75,14,Per Carton
+2026-04-20,Alaska,Large White,Nutritionally Enhanced (Omega-3),18,A,5.99,5.99,5.99,12,Per Carton
+2026-04-20,Hawaii,Large Brown,"USDA Organic, Pasture Raised",12,A,9.77,9.77,9.77,4,Per Carton
+2026-04-20,Hawaii,Large White,Nutritionally Enhanced (Omega-3),18,A,5.99,5.99,5.99,23,Per Carton
+2026-04-20,Midwest,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.49,3.49,3.49,1,Per Carton
+2026-04-20,Midwest,Large Brown,Cage-Free,18,A,3.99,3.99,3.99,727,Per Carton
+2026-04-20,Midwest,Large Brown,Free Range,12,A,4.19,3.99,4.29,24,Per Carton
+2026-04-20,Midwest,Large Brown,Nutritionally Enhanced (Omega-3),12,A,3.5,3.5,3.5,70,Per Carton
+2026-04-20,Midwest,Large Brown,Pasture Raised,12,A,5.16,3.99,7.99,346,Per Carton
+2026-04-20,Midwest,Large Brown,Pasture Raised,18,A,9.99,9.99,9.99,40,Per Carton
+2026-04-20,Midwest,Large Brown,USDA Organic,12,A,4.23,3.99,5.99,186,Per Carton
+2026-04-20,Midwest,Large Brown,"USDA Organic, Free Range",12,A,6.49,6.49,6.49,22,Per Carton
+2026-04-20,Midwest,Large Brown,"USDA Organic, Pasture Raised",12,A,9.77,9.77,9.77,66,Per Carton
+2026-04-20,Midwest,Large White,Conventional,12,A,1.24,0.88,1.99,175,Per Carton
+2026-04-20,Midwest,Large White,Conventional,18,A,1.38,0.99,1.44,160,Per Carton
+2026-04-20,Midwest,Large White,Nutritionally Enhanced (Omega-3),12,A,3.78,2.99,3.99,112,Per Carton
+2026-04-20,Midwest,Large White,Nutritionally Enhanced (Omega-3),18,A,5.02,4.99,5.99,264,Per Carton
+2026-04-20,Midwest,Medium Brown,USDA Organic,12,A,5.99,5.99,5.99,189,Per Carton
+2026-04-20,NATIONAL,Extra Large Brown,Free Range,12,,5.75,4.99,5.99,168,Per Carton
+2026-04-20,NATIONAL,Extra Large Brown,USDA Organic,6,,4.99,4.99,4.99,20,Per Carton
+2026-04-20,NATIONAL,Extra Large White,Conventional,12,,1.62,1.49,1.75,147,Per Carton
+2026-04-20,NATIONAL,Extra Large White,Nutritionally Enhanced (Omega-3),12,,3.5,3.49,3.5,100,Per Carton
+2026-04-20,NATIONAL,Large Brown,Cage-Free,12,,2.99,2.99,2.99,155,Per Carton
+2026-04-20,NATIONAL,Large Brown,Cage-Free,18,,4.04,3.99,4.99,2366,Per Carton
+2026-04-20,NATIONAL,Large Brown,Free Range,12,,4.15,2.48,7.99,1276,Per Carton
+2026-04-20,NATIONAL,Large Brown,Free Range,18,,7.04,6.99,7.99,210,Per Carton
+2026-04-20,NATIONAL,Large Brown,Nutritionally Enhanced (Omega-3),12,,3.8,3.49,3.99,414,Per Carton
+2026-04-20,NATIONAL,Large Brown,Pasture Raised,12,,6.36,3.99,7.99,1646,Per Carton
+2026-04-20,NATIONAL,Large Brown,Pasture Raised,18,,9.99,9.99,9.99,40,Per Carton
+2026-04-20,NATIONAL,Large Brown,USDA Organic,12,,5.28,3.99,6.99,1186,Per Carton
+2026-04-20,NATIONAL,Large Brown,USDA Organic,18,,6.99,6.99,6.99,32,Per Carton
+2026-04-20,NATIONAL,Large Brown,USDA Organic,6,,4.99,4.99,4.99,20,Per Carton
+2026-04-20,NATIONAL,Large Brown,"USDA Organic, Free Range",12,,5.85,4.49,6.49,1034,Per Carton
+2026-04-20,NATIONAL,Large Brown,"USDA Organic, Free Range",18,,7.84,7.49,9.99,180,Per Carton
+2026-04-20,NATIONAL,Large Brown,"USDA Organic, Pasture Raised",12,,8.89,6.99,9.77,1044,Per Carton
+2026-04-20,NATIONAL,Large Brown,Vegetarian-Fed,12,,3.2,2.74,3.5,410,Per Carton
+2026-04-20,NATIONAL,Large White,Cage-Free,12,,2.7,1.33,3.0,377,Per Carton
+2026-04-20,NATIONAL,Large White,Cage-Free,18,,2.07,1.49,2.5,261,Per Carton
+2026-04-20,NATIONAL,Large White,Cage-Free,20,,1.97,1.97,1.97,138,Per Carton
+2026-04-20,NATIONAL,Large White,Conventional,12,,1.37,0.88,1.99,337,Per Carton
+2026-04-20,NATIONAL,Large White,Conventional,18,,2.18,0.99,3.0,656,Per Carton
+2026-04-20,NATIONAL,Large White,Conventional,60,,7.99,7.99,7.99,211,Per Carton
+2026-04-20,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),12,,3.17,1.99,3.99,364,Per Carton
+2026-04-20,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),18,,5.64,4.99,5.99,1402,Per Carton
+2026-04-20,NATIONAL,Liquid Egg,Cage-Free,32 oz,,7.99,7.99,7.99,20,Per Carton
+2026-04-20,NATIONAL,Liquid Egg,Conventional,32 oz,,6.99,6.99,6.99,73,Per Carton
+2026-04-20,NATIONAL,Liquid Egg White,Cage-Free,16 oz,,3.99,3.99,3.99,20,Per Carton
+2026-04-20,NATIONAL,Liquid Egg White,Conventional,32 oz,,6.99,6.99,6.99,73,Per Carton
+2026-04-20,NATIONAL,Liquid Egg White,USDA Organic,16 oz,,5.99,5.99,5.99,38,Per Carton
+2026-04-20,NATIONAL,Medium Brown,USDA Organic,12,,5.99,5.99,5.99,189,Per Carton
+2026-04-20,NATIONAL,Medium White,Conventional,12,,1.0,1.0,1.0,37,Per Carton
+2026-04-20,Northeast,Extra Large Brown,Free Range,12,A,5.75,4.99,5.99,168,Per Carton
+2026-04-20,Northeast,Extra Large Brown,USDA Organic,6,A,4.99,4.99,4.99,20,Per Carton
+2026-04-20,Northeast,Extra Large White,Conventional,12,A,1.49,1.49,1.49,73,Per Carton
+2026-04-20,Northeast,Large Brown,Free Range,12,A,4.07,2.99,4.99,281,Per Carton
+2026-04-20,Northeast,Large Brown,Nutritionally Enhanced (Omega-3),12,A,3.66,3.49,3.99,63,Per Carton
+2026-04-20,Northeast,Large Brown,Pasture Raised,12,A,5.91,3.99,6.99,563,Per Carton
+2026-04-20,Northeast,Large Brown,USDA Organic,12,A,3.99,3.99,3.99,236,Per Carton
+2026-04-20,Northeast,Large Brown,USDA Organic,6,A,4.99,4.99,4.99,20,Per Carton
+2026-04-20,Northeast,Large Brown,"USDA Organic, Free Range",12,A,5.68,4.99,5.99,478,Per Carton
+2026-04-20,Northeast,Large Brown,"USDA Organic, Free Range",18,A,9.99,9.99,9.99,25,Per Carton
+2026-04-20,Northeast,Large Brown,"USDA Organic, Pasture Raised",12,A,9.53,7.99,9.77,169,Per Carton
+2026-04-20,Northeast,Large Brown,Vegetarian-Fed,12,A,3.16,2.74,3.5,352,Per Carton
+2026-04-20,Northeast,Large White,Cage-Free,12,A,2.79,2.5,3.0,346,Per Carton
+2026-04-20,Northeast,Large White,Conventional,12,AA,1.49,1.49,1.49,147,Per Carton
+2026-04-20,Northeast,Large White,Conventional,18,A,2.46,1.99,3.0,480,Per Carton
+2026-04-20,Northeast,Large White,Nutritionally Enhanced (Omega-3),12,A,2.61,1.99,3.5,104,Per Carton
+2026-04-20,Northeast,Large White,Nutritionally Enhanced (Omega-3),18,A,5.99,5.99,5.99,74,Per Carton
+2026-04-20,Northeast,Liquid Egg,Cage-Free,32 oz,Ungraded/Other,7.99,7.99,7.99,20,Per Carton
+2026-04-20,Northeast,Liquid Egg,Conventional,32 oz,Ungraded/Other,6.99,6.99,6.99,73,Per Carton
+2026-04-20,Northeast,Liquid Egg White,Cage-Free,16 oz,Ungraded/Other,3.99,3.99,3.99,20,Per Carton
+2026-04-20,Northeast,Liquid Egg White,Conventional,32 oz,Ungraded/Other,6.99,6.99,6.99,73,Per Carton
+2026-04-20,Northeast,Liquid Egg White,USDA Organic,16 oz,Ungraded/Other,5.99,5.99,5.99,38,Per Carton
+2026-04-20,Northeast,Medium White,Conventional,12,A,1.0,1.0,1.0,37,Per Carton
+2026-04-20,Northwest,Large Brown,Cage-Free,12,AA,2.99,2.99,2.99,2,Per Carton
+2026-04-20,Northwest,Large Brown,Cage-Free,18,AA,4.65,3.99,4.99,175,Per Carton
+2026-04-20,Northwest,Large Brown,Free Range,12,A,7.17,6.99,7.99,122,Per Carton
+2026-04-20,Northwest,Large Brown,Pasture Raised,12,A,7.99,7.99,7.99,108,Per Carton
+2026-04-20,Northwest,Large Brown,USDA Organic,12,A,5.99,5.99,5.99,108,Per Carton
+2026-04-20,Northwest,Large Brown,"USDA Organic, Free Range",12,AA,6.49,6.49,6.49,115,Per Carton
+2026-04-20,Northwest,Large Brown,"USDA Organic, Free Range",18,A,7.49,7.49,7.49,2,Per Carton
+2026-04-20,Northwest,Large Brown,"USDA Organic, Pasture Raised",12,A,8.57,6.99,9.77,43,Per Carton
+2026-04-20,Northwest,Large White,Cage-Free,12,AA,1.33,1.33,1.33,11,Per Carton
+2026-04-20,Northwest,Large White,Conventional,12,A,1.75,1.75,1.75,1,Per Carton
+2026-04-20,Northwest,Large White,Nutritionally Enhanced (Omega-3),18,A,5.99,5.99,5.99,307,Per Carton
+2026-04-20,Southcentral,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.49,3.49,3.49,15,Per Carton
+2026-04-20,Southcentral,Large Brown,Cage-Free,12,AA,2.99,2.99,2.99,152,Per Carton
+2026-04-20,Southcentral,Large Brown,Cage-Free,18,AA,3.99,3.99,3.99,152,Per Carton
+2026-04-20,Southcentral,Large Brown,Free Range,12,A,3.93,3.49,4.99,214,Per Carton
+2026-04-20,Southcentral,Large Brown,Pasture Raised,12,A,6.82,3.99,7.99,118,Per Carton
+2026-04-20,Southcentral,Large Brown,USDA Organic,12,A,5.91,3.99,5.99,71,Per Carton
+2026-04-20,Southcentral,Large Brown,"USDA Organic, Free Range",18,A,7.49,7.49,7.49,152,Per Carton
+2026-04-20,Southcentral,Large Brown,"USDA Organic, Pasture Raised",12,A,8.69,7.99,9.77,207,Per Carton
+2026-04-20,Southcentral,Large White,Cage-Free,18,A,2.5,2.5,2.5,2,Per Carton
+2026-04-20,Southcentral,Large White,Cage-Free,20,AA,1.97,1.97,1.97,3,Per Carton
+2026-04-20,Southcentral,Large White,Conventional,18,A,1.44,1.44,1.44,4,Per Carton
+2026-04-20,Southcentral,Large White,Conventional,60,A,7.99,7.99,7.99,211,Per Carton
+2026-04-20,Southcentral,Large White,Nutritionally Enhanced (Omega-3),12,A,3.39,3.39,3.39,51,Per Carton
+2026-04-20,Southcentral,Large White,Nutritionally Enhanced (Omega-3),18,A,5.63,4.99,5.99,148,Per Carton
+2026-04-20,Southeast,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.5,3.5,3.5,84,Per Carton
+2026-04-20,Southeast,Large Brown,Cage-Free,18,A,3.99,3.99,3.99,434,Per Carton
+2026-04-20,Southeast,Large Brown,Free Range,12,A,3.34,2.48,3.99,436,Per Carton
+2026-04-20,Southeast,Large Brown,Nutritionally Enhanced (Omega-3),12,A,3.91,3.49,3.99,281,Per Carton
+2026-04-20,Southeast,Large Brown,Pasture Raised,12,A,4.49,4.49,4.49,3,Per Carton
+2026-04-20,Southeast,Large Brown,USDA Organic,12,A,3.99,3.99,3.99,2,Per Carton
+2026-04-20,Southeast,Large Brown,USDA Organic,18,A,6.99,6.99,6.99,32,Per Carton
+2026-04-20,Southeast,Large Brown,"USDA Organic, Free Range",12,A,5.87,4.99,5.99,382,Per Carton
+2026-04-20,Southeast,Large Brown,"USDA Organic, Pasture Raised",12,A,8.84,7.99,9.77,198,Per Carton
+2026-04-20,Southeast,Large Brown,Vegetarian-Fed,12,A,3.49,3.49,3.49,58,Per Carton
+2026-04-20,Southeast,Large White,Conventional,18,A,1.99,1.99,1.99,12,Per Carton
+2026-04-20,Southeast,Large White,Nutritionally Enhanced (Omega-3),12,A,1.99,1.99,1.99,3,Per Carton
+2026-04-20,Southeast,Large White,Nutritionally Enhanced (Omega-3),18,A,5.16,4.99,5.99,219,Per Carton
+2026-04-20,Southwest,Extra Large White,Conventional,12,AA,1.75,1.75,1.75,74,Per Carton
+2026-04-20,Southwest,Large Brown,Cage-Free,12,AA,2.99,2.99,2.99,1,Per Carton
+2026-04-20,Southwest,Large Brown,Cage-Free,18,A,3.99,3.99,3.99,237,Per Carton
+2026-04-20,Southwest,Large Brown,Free Range,12,A,4.4,3.99,6.99,196,Per Carton
+2026-04-20,Southwest,Large Brown,Free Range,18,A,6.99,6.99,6.99,200,Per Carton
+2026-04-20,Southwest,Large Brown,Pasture Raised,12,A,7.22,3.99,7.99,508,Per Carton
+2026-04-20,Southwest,Large Brown,USDA Organic,12,A,5.94,3.99,6.99,583,Per Carton
+2026-04-20,Southwest,Large Brown,"USDA Organic, Free Range",18,A,7.49,7.49,7.49,1,Per Carton
+2026-04-20,Southwest,Large Brown,"USDA Organic, Pasture Raised",12,AA,8.99,8.99,8.99,17,Per Carton
+2026-04-20,Southwest,Large White,Cage-Free,12,AA,2.0,2.0,2.0,20,Per Carton
+2026-04-20,Southwest,Large White,Cage-Free,18,A,2.5,2.5,2.5,51,Per Carton
+2026-04-20,Southwest,Large White,Cage-Free,20,AA,1.97,1.97,1.97,66,Per Carton
+2026-04-20,Southwest,Large White,Nutritionally Enhanced (Omega-3),18,A,5.99,5.99,5.99,355,Per Carton
+2026-04-27,Alaska,Large Brown,Free Range,12,A,7.99,7.99,7.99,10,Per Carton
+2026-04-27,Alaska,Large Brown,Pasture Raised,12,A,6.99,6.99,6.99,12,Per Carton
+2026-04-27,Hawaii,Large Brown,Pasture Raised,12,A,6.99,6.99,6.99,23,Per Carton
+2026-04-27,Hawaii,Large Brown,"USDA Organic, Pasture Raised",12,A,9.15,9.15,9.15,4,Per Carton
+2026-04-27,Midwest,Extra Large White,Cage-Free,12,A,3.5,3.5,3.5,18,Per Carton
+2026-04-27,Midwest,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.79,3.79,3.79,13,Per Carton
+2026-04-27,Midwest,Large Brown,Cage-Free,12,A,3.49,3.49,3.49,22,Per Carton
+2026-04-27,Midwest,Large Brown,Free Range,12,A,7.7,4.29,7.99,205,Per Carton
+2026-04-27,Midwest,Large Brown,Pasture Raised,12,A,6.06,5.99,7.99,121,Per Carton
+2026-04-27,Midwest,Large Brown,Pasture Raised,18,A,9.99,9.99,9.99,61,Per Carton
+2026-04-27,Midwest,Large Brown,USDA Organic,12,A,4.34,3.99,5.99,40,Per Carton
+2026-04-27,Midwest,Large Brown,USDA Organic,18,A,5.99,5.99,5.99,21,Per Carton
+2026-04-27,Midwest,Large Brown,"USDA Organic, Free Range",12,A,6.49,6.49,6.49,22,Per Carton
+2026-04-27,Midwest,Large Brown,"USDA Organic, Pasture Raised",12,A,7.45,6.99,9.15,512,Per Carton
+2026-04-27,Midwest,Large White,Conventional,12,A,1.7,0.79,2.0,288,Per Carton
+2026-04-27,Midwest,Large White,Nutritionally Enhanced (Omega-3),12,A,3.49,3.49,3.49,31,Per Carton
+2026-04-27,Midwest,Large White,Vegetarian-Fed,12,A,0.99,0.99,0.99,1,Per Carton
+2026-04-27,Midwest,Large White,Vegetarian-Fed,18,A,1.49,1.49,1.49,13,Per Carton
+2026-04-27,Midwest,Liquid Egg,Conventional,16 oz,Ungraded/Other,2.69,2.69,2.69,15,Per Carton
+2026-04-27,Midwest,Liquid Egg White,Conventional,32 oz,Ungraded/Other,4.49,4.49,4.49,16,Per Carton
+2026-04-27,NATIONAL,Extra Large Brown,Free Range,12,,4.35,3.99,4.99,434,Per Carton
+2026-04-27,NATIONAL,Extra Large White,Cage-Free,12,,3.5,3.5,3.5,18,Per Carton
+2026-04-27,NATIONAL,Extra Large White,Cage-Free,18,,1.87,1.87,1.87,74,Per Carton
+2026-04-27,NATIONAL,Extra Large White,Nutritionally Enhanced (Omega-3),12,,3.07,2.47,3.79,33,Per Carton
+2026-04-27,NATIONAL,Jumbo Brown,"USDA Organic, Free Range",12,,5.99,5.99,5.99,127,Per Carton
+2026-04-27,NATIONAL,Large Brown,Cage-Free,12,,3.66,1.99,3.99,277,Per Carton
+2026-04-27,NATIONAL,Large Brown,Free Range,12,,5.08,3.49,7.99,913,Per Carton
+2026-04-27,NATIONAL,Large Brown,Free Range,18,,7.14,6.99,7.99,503,Per Carton
+2026-04-27,NATIONAL,Large Brown,Nutritionally Enhanced (Omega-3),12,,4.43,3.99,4.99,34,Per Carton
+2026-04-27,NATIONAL,Large Brown,Pasture Raised,12,,6.46,3.99,7.99,2276,Per Carton
+2026-04-27,NATIONAL,Large Brown,Pasture Raised,18,,10.43,9.99,10.99,412,Per Carton
+2026-04-27,NATIONAL,Large Brown,USDA Organic,12,,5.64,3.99,6.99,953,Per Carton
+2026-04-27,NATIONAL,Large Brown,USDA Organic,18,,5.99,5.99,5.99,21,Per Carton
+2026-04-27,NATIONAL,Large Brown,USDA Organic,6,,2.99,2.99,2.99,73,Per Carton
+2026-04-27,NATIONAL,Large Brown,"USDA Organic, Free Range",12,,5.25,4.49,6.49,708,Per Carton
+2026-04-27,NATIONAL,Large Brown,"USDA Organic, Free Range",18,,9.99,9.99,9.99,360,Per Carton
+2026-04-27,NATIONAL,Large Brown,"USDA Organic, Pasture Raised",12,,7.86,5.99,9.15,1417,Per Carton
+2026-04-27,NATIONAL,Large White,Cage-Free,12,,2.73,1.49,3.49,378,Per Carton
+2026-04-27,NATIONAL,Large White,Cage-Free,18,,1.75,1.47,2.5,320,Per Carton
+2026-04-27,NATIONAL,Large White,Cage-Free,30,,5.99,5.99,5.99,77,Per Carton
+2026-04-27,NATIONAL,Large White,Conventional,12,,1.56,0.79,2.0,359,Per Carton
+2026-04-27,NATIONAL,Large White,Conventional,18,,2.59,1.99,2.99,379,Per Carton
+2026-04-27,NATIONAL,Large White,Conventional,30,,3.99,3.99,3.99,157,Per Carton
+2026-04-27,NATIONAL,Large White,Conventional,60,,7.99,7.99,7.99,211,Per Carton
+2026-04-27,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),12,,3.49,3.49,3.49,60,Per Carton
+2026-04-27,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),18,,4.61,3.99,7.99,84,Per Carton
+2026-04-27,NATIONAL,Large White,Vegetarian-Fed,12,,0.99,0.99,0.99,72,Per Carton
+2026-04-27,NATIONAL,Large White,Vegetarian-Fed,18,,1.49,1.49,1.49,15,Per Carton
+2026-04-27,NATIONAL,Liquid Egg,Cage-Free,32 oz,,7.99,7.99,7.99,20,Per Carton
+2026-04-27,NATIONAL,Liquid Egg,Conventional,16 oz,,3.77,2.69,3.99,88,Per Carton
+2026-04-27,NATIONAL,Liquid Egg,Conventional,32 oz,,6.72,5.99,7.99,200,Per Carton
+2026-04-27,NATIONAL,Liquid Egg,USDA Organic,16 oz,,4.99,4.99,4.99,32,Per Carton
+2026-04-27,NATIONAL,Liquid Egg White,Cage-Free,16 oz,,3.99,3.99,3.99,20,Per Carton
+2026-04-27,NATIONAL,Liquid Egg White,Conventional,16 oz,,3.99,3.99,3.99,73,Per Carton
+2026-04-27,NATIONAL,Liquid Egg White,Conventional,32 oz,,6.55,4.49,7.99,216,Per Carton
+2026-04-27,NATIONAL,Liquid Egg White,USDA Organic,16 oz,,5.99,5.99,5.99,38,Per Carton
+2026-04-27,NATIONAL,Medium Brown,Free Range,18,,3.79,3.79,3.79,59,Per Carton
+2026-04-27,NATIONAL,Medium White,Conventional,12,,0.85,0.78,1.0,115,Per Carton
+2026-04-27,Northeast,Extra Large Brown,Free Range,12,A,4.35,3.99,4.99,434,Per Carton
+2026-04-27,Northeast,Jumbo Brown,"USDA Organic, Free Range",12,A,5.99,5.99,5.99,127,Per Carton
+2026-04-27,Northeast,Large Brown,Cage-Free,12,A,2.67,1.99,3.0,61,Per Carton
+2026-04-27,Northeast,Large Brown,Free Range,12,A,4.51,3.99,4.99,325,Per Carton
+2026-04-27,Northeast,Large Brown,Free Range,18,A,7.16,6.99,7.99,438,Per Carton
+2026-04-27,Northeast,Large Brown,Nutritionally Enhanced (Omega-3),12,A,3.99,3.99,3.99,19,Per Carton
+2026-04-27,Northeast,Large Brown,Pasture Raised,12,A,4.91,3.99,6.99,638,Per Carton
+2026-04-27,Northeast,Large Brown,Pasture Raised,18,A,9.99,9.99,9.99,22,Per Carton
+2026-04-27,Northeast,Large Brown,USDA Organic,12,A,5.09,4.49,5.49,181,Per Carton
+2026-04-27,Northeast,Large Brown,USDA Organic,6,A,2.99,2.99,2.99,73,Per Carton
+2026-04-27,Northeast,Large Brown,"USDA Organic, Free Range",12,A,5.31,4.99,5.99,528,Per Carton
+2026-04-27,Northeast,Large Brown,"USDA Organic, Free Range",18,A,9.99,9.99,9.99,360,Per Carton
+2026-04-27,Northeast,Large Brown,"USDA Organic, Pasture Raised",12,A,8.87,6.99,9.15,168,Per Carton
+2026-04-27,Northeast,Large White,Cage-Free,12,A,3.4,3.0,3.49,223,Per Carton
+2026-04-27,Northeast,Large White,Cage-Free,30,A,5.99,5.99,5.99,77,Per Carton
+2026-04-27,Northeast,Large White,Conventional,12,A,0.99,0.99,0.99,54,Per Carton
+2026-04-27,Northeast,Large White,Conventional,18,A,2.99,2.99,2.99,108,Per Carton
+2026-04-27,Northeast,Large White,Conventional,30,A,3.99,3.99,3.99,157,Per Carton
+2026-04-27,Northeast,Large White,Nutritionally Enhanced (Omega-3),18,A,3.99,3.99,3.99,68,Per Carton
+2026-04-27,Northeast,Large White,Vegetarian-Fed,12,A,0.99,0.99,0.99,54,Per Carton
+2026-04-27,Northeast,Liquid Egg,Cage-Free,32 oz,Ungraded/Other,7.99,7.99,7.99,20,Per Carton
+2026-04-27,Northeast,Liquid Egg,Conventional,16 oz,Ungraded/Other,3.99,3.99,3.99,73,Per Carton
+2026-04-27,Northeast,Liquid Egg,Conventional,32 oz,Ungraded/Other,6.72,5.99,7.99,200,Per Carton
+2026-04-27,Northeast,Liquid Egg White,Cage-Free,16 oz,Ungraded/Other,3.99,3.99,3.99,20,Per Carton
+2026-04-27,Northeast,Liquid Egg White,Conventional,16 oz,Ungraded/Other,3.99,3.99,3.99,73,Per Carton
+2026-04-27,Northeast,Liquid Egg White,Conventional,32 oz,Ungraded/Other,6.72,5.99,7.99,200,Per Carton
+2026-04-27,Northeast,Liquid Egg White,USDA Organic,16 oz,Ungraded/Other,5.99,5.99,5.99,38,Per Carton
+2026-04-27,Northeast,Medium White,Conventional,12,A,1.0,1.0,1.0,37,Per Carton
+2026-04-27,Northwest,Large Brown,Free Range,12,AA,3.89,3.79,3.99,8,Per Carton
+2026-04-27,Northwest,Large Brown,Nutritionally Enhanced (Omega-3),12,A,4.99,4.99,4.99,15,Per Carton
+2026-04-27,Northwest,Large Brown,Pasture Raised,12,A,7.24,6.99,7.99,431,Per Carton
+2026-04-27,Northwest,Large Brown,USDA Organic,12,A,5.82,4.99,5.99,130,Per Carton
+2026-04-27,Northwest,Large Brown,"USDA Organic, Free Range",12,A,5.99,5.99,5.99,10,Per Carton
+2026-04-27,Northwest,Large Brown,"USDA Organic, Pasture Raised",12,A,9.15,9.15,9.15,23,Per Carton
+2026-04-27,Southcentral,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,2.47,2.47,2.47,18,Per Carton
+2026-04-27,Southcentral,Large Brown,Cage-Free,12,A,3.99,3.99,3.99,12,Per Carton
+2026-04-27,Southcentral,Large Brown,Free Range,12,AA,3.89,3.79,3.99,16,Per Carton
+2026-04-27,Southcentral,Large Brown,Pasture Raised,12,A,7.35,3.99,7.99,166,Per Carton
+2026-04-27,Southcentral,Large Brown,Pasture Raised,18,A,9.99,9.99,9.99,26,Per Carton
+2026-04-27,Southcentral,Large Brown,USDA Organic,12,A,5.86,3.99,5.99,79,Per Carton
+2026-04-27,Southcentral,Large Brown,"USDA Organic, Pasture Raised",12,A,8.42,6.99,9.15,122,Per Carton
+2026-04-27,Southcentral,Large White,Cage-Free,18,A,1.88,1.47,2.5,5,Per Carton
+2026-04-27,Southcentral,Large White,Conventional,18,A,2.27,1.99,2.5,213,Per Carton
+2026-04-27,Southcentral,Large White,Conventional,60,A,7.99,7.99,7.99,211,Per Carton
+2026-04-27,Southcentral,Large White,Nutritionally Enhanced (Omega-3),12,A,3.49,3.49,3.49,29,Per Carton
+2026-04-27,Southcentral,Medium Brown,Free Range,18,A,3.79,3.79,3.79,59,Per Carton
+2026-04-27,Southeast,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.79,3.79,3.79,2,Per Carton
+2026-04-27,Southeast,Large Brown,Cage-Free,12,A,3.99,3.99,3.99,182,Per Carton
+2026-04-27,Southeast,Large Brown,Pasture Raised,12,A,5.6,4.49,6.99,86,Per Carton
+2026-04-27,Southeast,Large Brown,Pasture Raised,18,A,9.99,9.99,9.99,121,Per Carton
+2026-04-27,Southeast,Large Brown,USDA Organic,12,A,5.49,5.49,5.49,14,Per Carton
+2026-04-27,Southeast,Large Brown,"USDA Organic, Free Range",12,A,4.83,4.49,4.99,148,Per Carton
+2026-04-27,Southeast,Large Brown,"USDA Organic, Pasture Raised",12,A,7.38,5.99,9.15,445,Per Carton
+2026-04-27,Southeast,Large White,Cage-Free,12,A,3.49,3.49,3.49,17,Per Carton
+2026-04-27,Southeast,Large White,Conventional,12,A,0.99,0.99,0.99,17,Per Carton
+2026-04-27,Southeast,Large White,Conventional,18,A,2.99,2.99,2.99,58,Per Carton
+2026-04-27,Southeast,Large White,Nutritionally Enhanced (Omega-3),18,A,3.99,3.99,3.99,3,Per Carton
+2026-04-27,Southeast,Large White,Vegetarian-Fed,12,A,0.99,0.99,0.99,17,Per Carton
+2026-04-27,Southeast,Large White,Vegetarian-Fed,18,A,1.49,1.49,1.49,2,Per Carton
+2026-04-27,Southeast,Liquid Egg,USDA Organic,16 oz,Ungraded/Other,4.99,4.99,4.99,32,Per Carton
+2026-04-27,Southeast,Medium White,Conventional,12,A,0.78,0.78,0.78,78,Per Carton
+2026-04-27,Southwest,Extra Large White,Cage-Free,18,AA,1.87,1.87,1.87,74,Per Carton
+2026-04-27,Southwest,Large Brown,Free Range,12,A,3.49,3.49,3.49,13,Per Carton
+2026-04-27,Southwest,Large Brown,Free Range,18,A,6.99,6.99,6.99,65,Per Carton
+2026-04-27,Southwest,Large Brown,Pasture Raised,12,A,7.22,3.99,7.99,799,Per Carton
+2026-04-27,Southwest,Large Brown,Pasture Raised,18,A,10.99,10.99,10.99,182,Per Carton
+2026-04-27,Southwest,Large Brown,USDA Organic,12,A,5.86,3.99,6.99,509,Per Carton
+2026-04-27,Southwest,Large Brown,"USDA Organic, Pasture Raised",12,A,8.9,7.99,9.15,143,Per Carton
+2026-04-27,Southwest,Large White,Cage-Free,12,AA,1.56,1.49,2.0,138,Per Carton
+2026-04-27,Southwest,Large White,Cage-Free,18,A,1.92,1.47,2.5,117,Per Carton
+2026-04-27,Southwest,Large White,Nutritionally Enhanced (Omega-3),18,A,7.99,7.99,7.99,13,Per Carton
+2026-05-04,Alaska,Large Brown,Free Range,12,A,5.49,5.49,5.49,11,Per Carton
+2026-05-04,Alaska,Large Brown,USDA Organic,12,A,5.99,5.99,5.99,3,Per Carton
+2026-05-04,Alaska,Large White,Conventional,18,A,2.49,2.49,2.49,12,Per Carton
+2026-05-04,Alaska,Large White,Nutritionally Enhanced (Omega-3),18,A,7.11,7.11,7.11,10,Per Carton
+2026-05-04,Hawaii,Large Brown,"USDA Organic, Pasture Raised",12,A,9.15,9.15,9.15,4,Per Carton
+2026-05-04,Hawaii,Large White,Conventional,18,A,2.49,2.49,2.49,23,Per Carton
+2026-05-04,Midwest,Extra Large White,Nutritionally Enhanced (Omega-3),18,A,3.99,3.99,3.99,16,Per Carton
+2026-05-04,Midwest,Large Brown,Cage-Free,12,A,3.51,2.99,4.99,81,Per Carton
+2026-05-04,Midwest,Large Brown,Free Range,18,A,5.99,5.99,5.99,20,Per Carton
+2026-05-04,Midwest,Large Brown,Pasture Raised,12,A,5.59,3.99,5.99,141,Per Carton
+2026-05-04,Midwest,Large Brown,USDA Organic,12,A,5.64,3.99,5.99,231,Per Carton
+2026-05-04,Midwest,Large Brown,"USDA Organic, Free Range",12,A,5.85,5.49,5.99,29,Per Carton
+2026-05-04,Midwest,Large Brown,"USDA Organic, Free Range",18,A,6.99,6.99,6.99,57,Per Carton
+2026-05-04,Midwest,Large Brown,"USDA Organic, Pasture Raised",12,A,9.15,9.15,9.15,66,Per Carton
+2026-05-04,Midwest,Large White,Cage-Free,12,A,2.99,2.99,2.99,84,Per Carton
+2026-05-04,Midwest,Large White,Cage-Free,18,AA,3.49,3.49,3.49,11,Per Carton
+2026-05-04,Midwest,Large White,Conventional,12,A,0.92,0.71,0.99,157,Per Carton
+2026-05-04,Midwest,Large White,Conventional,18,AA,2.49,2.49,2.49,11,Per Carton
+2026-05-04,Midwest,Large White,Nutritionally Enhanced (Omega-3),12,A,3.49,3.49,3.69,88,Per Carton
+2026-05-04,Midwest,Large White,Nutritionally Enhanced (Omega-3),18,A,4.49,4.49,4.49,18,Per Carton
+2026-05-04,Midwest,Large White,Vegetarian-Fed,12,A,0.71,0.71,0.71,9,Per Carton
+2026-05-04,Midwest,Liquid Egg White,Conventional,32 oz,Ungraded/Other,5.49,5.49,5.49,20,Per Carton
+2026-05-04,Midwest,Liquid Egg White,USDA Organic,16 oz,Ungraded/Other,5.99,5.99,5.99,2,Per Carton
+2026-05-04,Midwest,Medium Brown,USDA Organic,18,A,4.49,4.49,4.49,20,Per Carton
+2026-05-04,NATIONAL,Extra Large Brown,Nutritionally Enhanced (Omega-3),12,,4.99,4.99,4.99,20,Per Carton
+2026-05-04,NATIONAL,Extra Large Brown,USDA Organic,12,,5.99,5.99,5.99,77,Per Carton
+2026-05-04,NATIONAL,Extra Large Brown,"USDA Organic, Free Range",12,,5.99,5.99,5.99,19,Per Carton
+2026-05-04,NATIONAL,Extra Large White,Cage-Free,18,,1.49,1.49,1.49,74,Per Carton
+2026-05-04,NATIONAL,Extra Large White,Conventional,12,,2.47,2.47,2.47,75,Per Carton
+2026-05-04,NATIONAL,Extra Large White,Nutritionally Enhanced (Omega-3),12,,3.49,3.49,3.49,44,Per Carton
+2026-05-04,NATIONAL,Extra Large White,Nutritionally Enhanced (Omega-3),18,,3.99,3.99,3.99,16,Per Carton
+2026-05-04,NATIONAL,Jumbo Brown,"USDA Organic, Free Range",12,,5.99,5.99,5.99,41,Per Carton
+2026-05-04,NATIONAL,Jumbo White,Conventional,12,,2.99,2.99,2.99,197,Per Carton
+2026-05-04,NATIONAL,Large Brown,Cage-Free,12,,3.71,2.99,4.99,174,Per Carton
+2026-05-04,NATIONAL,Large Brown,Free Range,12,,5.34,4.99,5.49,196,Per Carton
+2026-05-04,NATIONAL,Large Brown,Free Range,18,,6.9,5.99,6.99,212,Per Carton
+2026-05-04,NATIONAL,Large Brown,Nutritionally Enhanced (Omega-3),12,,4.58,3.99,5.99,788,Per Carton
+2026-05-04,NATIONAL,Large Brown,Pasture Raised,12,,5.38,3.98,7.99,839,Per Carton
+2026-05-04,NATIONAL,Large Brown,Pasture Raised,18,,7.29,7.29,7.29,484,Per Carton
+2026-05-04,NATIONAL,Large Brown,USDA Organic,12,,5.32,3.99,6.99,901,Per Carton
+2026-05-04,NATIONAL,Large Brown,USDA Organic,6,,2.99,2.99,2.99,73,Per Carton
+2026-05-04,NATIONAL,Large Brown,"USDA Organic, Free Range",12,,5.53,4.99,7.99,770,Per Carton
+2026-05-04,NATIONAL,Large Brown,"USDA Organic, Free Range",18,,6.99,6.99,6.99,184,Per Carton
+2026-05-04,NATIONAL,Large Brown,"USDA Organic, Pasture Raised",12,,8.0,5.0,9.99,868,Per Carton
+2026-05-04,NATIONAL,Large Brown,Vegetarian-Fed,12,,2.5,2.5,2.5,52,Per Carton
+2026-05-04,NATIONAL,Large White,Cage-Free,12,,1.37,0.68,2.99,974,Per Carton
+2026-05-04,NATIONAL,Large White,Cage-Free,18,,2.71,0.99,3.49,799,Per Carton
+2026-05-04,NATIONAL,Large White,Cage-Free,60,,4.97,4.97,4.99,183,Per Carton
+2026-05-04,NATIONAL,Large White,Conventional,12,,1.2,0.67,1.5,446,Per Carton
+2026-05-04,NATIONAL,Large White,Conventional,18,,2.43,1.69,3.99,3189,Per Carton
+2026-05-04,NATIONAL,Large White,Conventional,20,,1.49,1.49,1.49,26,Per Carton
+2026-05-04,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),12,,3.4,2.99,3.99,812,Per Carton
+2026-05-04,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),18,,3.94,2.99,7.11,296,Per Carton
+2026-05-04,NATIONAL,Large White,Vegetarian-Fed,12,,0.71,0.71,0.71,11,Per Carton
+2026-05-04,NATIONAL,Liquid Egg,Conventional,32 oz,,5.99,5.99,5.99,41,Per Carton
+2026-05-04,NATIONAL,Liquid Egg White,Conventional,16 oz,,3.0,3.0,3.0,194,Per Carton
+2026-05-04,NATIONAL,Liquid Egg White,Conventional,32 oz,,5.83,5.49,5.99,61,Per Carton
+2026-05-04,NATIONAL,Liquid Egg White,USDA Organic,16 oz,,5.58,4.99,5.99,46,Per Carton
+2026-05-04,NATIONAL,Medium Brown,USDA Organic,18,,4.49,4.49,4.49,20,Per Carton
+2026-05-04,NATIONAL,Medium White,Cage-Free,60,,3.99,3.99,3.99,12,Per Carton
+2026-05-04,NATIONAL,Medium White,Conventional,12,,1.0,1.0,1.0,37,Per Carton
+2026-05-04,Northeast,Extra Large Brown,Nutritionally Enhanced (Omega-3),12,A,4.99,4.99,4.99,20,Per Carton
+2026-05-04,Northeast,Extra Large Brown,USDA Organic,12,A,5.99,5.99,5.99,77,Per Carton
+2026-05-04,Northeast,Extra Large Brown,"USDA Organic, Free Range",12,A,5.99,5.99,5.99,19,Per Carton
+2026-05-04,Northeast,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.49,3.49,3.49,44,Per Carton
+2026-05-04,Northeast,Jumbo Brown,"USDA Organic, Free Range",12,A,5.99,5.99,5.99,41,Per Carton
+2026-05-04,Northeast,Jumbo White,Conventional,12,A,2.99,2.99,2.99,104,Per Carton
+2026-05-04,Northeast,Large Brown,Cage-Free,12,A,2.99,2.99,2.99,3,Per Carton
+2026-05-04,Northeast,Large Brown,Free Range,18,A,6.99,6.99,6.99,127,Per Carton
+2026-05-04,Northeast,Large Brown,Nutritionally Enhanced (Omega-3),12,A,4.5,3.99,4.99,740,Per Carton
+2026-05-04,Northeast,Large Brown,Pasture Raised,12,A,6.12,5.49,7.99,162,Per Carton
+2026-05-04,Northeast,Large Brown,Pasture Raised,18,A,7.29,7.29,7.29,23,Per Carton
+2026-05-04,Northeast,Large Brown,USDA Organic,12,A,4.99,4.49,5.49,163,Per Carton
+2026-05-04,Northeast,Large Brown,USDA Organic,6,A,2.99,2.99,2.99,73,Per Carton
+2026-05-04,Northeast,Large Brown,"USDA Organic, Free Range",12,A,5.81,4.99,5.99,216,Per Carton
+2026-05-04,Northeast,Large Brown,"USDA Organic, Free Range",18,A,6.99,6.99,6.99,127,Per Carton
+2026-05-04,Northeast,Large Brown,"USDA Organic, Pasture Raised",12,A,7.0,5.0,9.15,411,Per Carton
+2026-05-04,Northeast,Large Brown,Vegetarian-Fed,12,A,2.5,2.5,2.5,49,Per Carton
+2026-05-04,Northeast,Large White,Cage-Free,12,A,1.76,1.49,2.99,198,Per Carton
+2026-05-04,Northeast,Large White,Conventional,12,A,1.38,0.67,1.5,127,Per Carton
+2026-05-04,Northeast,Large White,Conventional,18,A,1.98,1.69,2.49,397,Per Carton
+2026-05-04,Northeast,Large White,Nutritionally Enhanced (Omega-3),12,A,3.1,2.99,3.5,254,Per Carton
+2026-05-04,Northeast,Large White,Nutritionally Enhanced (Omega-3),18,A,3.99,3.99,3.99,127,Per Carton
+2026-05-04,Northeast,Liquid Egg,Conventional,32 oz,Ungraded/Other,5.99,5.99,5.99,41,Per Carton
+2026-05-04,Northeast,Liquid Egg White,Conventional,32 oz,Ungraded/Other,5.99,5.99,5.99,41,Per Carton
+2026-05-04,Northeast,Liquid Egg White,USDA Organic,16 oz,Ungraded/Other,4.99,4.99,4.99,19,Per Carton
+2026-05-04,Northeast,Medium White,Conventional,12,A,1.0,1.0,1.0,37,Per Carton
+2026-05-04,Northwest,Large Brown,Free Range,12,A,5.49,5.49,5.49,127,Per Carton
+2026-05-04,Northwest,Large Brown,Nutritionally Enhanced (Omega-3),12,A,5.58,4.99,5.99,37,Per Carton
+2026-05-04,Northwest,Large Brown,Pasture Raised,12,A,6.94,5.99,6.99,40,Per Carton
+2026-05-04,Northwest,Large Brown,Pasture Raised,18,A,7.29,7.29,7.29,4,Per Carton
+2026-05-04,Northwest,Large Brown,USDA Organic,12,A,5.99,5.99,5.99,124,Per Carton
+2026-05-04,Northwest,Large Brown,"USDA Organic, Pasture Raised",12,A,9.15,9.15,9.15,23,Per Carton
+2026-05-04,Northwest,Large White,Cage-Free,12,AA,1.14,0.68,1.49,205,Per Carton
+2026-05-04,Northwest,Large White,Cage-Free,18,AA,2.11,1.25,2.49,95,Per Carton
+2026-05-04,Northwest,Large White,Conventional,18,A,2.49,2.49,2.49,307,Per Carton
+2026-05-04,Southcentral,Extra Large White,Conventional,12,A,2.47,2.47,2.47,75,Per Carton
+2026-05-04,Southcentral,Large Brown,Cage-Free,12,A,2.99,2.99,2.99,6,Per Carton
+2026-05-04,Southcentral,Large Brown,Free Range,12,A,4.99,4.99,4.99,29,Per Carton
+2026-05-04,Southcentral,Large Brown,Pasture Raised,12,A,5.95,3.99,5.99,155,Per Carton
+2026-05-04,Southcentral,Large Brown,Pasture Raised,18,A,7.29,7.29,7.29,126,Per Carton
+2026-05-04,Southcentral,Large Brown,USDA Organic,12,A,5.39,3.99,5.99,40,Per Carton
+2026-05-04,Southcentral,Large Brown,"USDA Organic, Free Range",12,A,5.74,5.49,5.99,16,Per Carton
+2026-05-04,Southcentral,Large Brown,"USDA Organic, Pasture Raised",12,A,9.3,9.15,9.99,99,Per Carton
+2026-05-04,Southcentral,Large White,Cage-Free,12,AA,0.99,0.99,0.99,68,Per Carton
+2026-05-04,Southcentral,Large White,Cage-Free,18,AA,2.19,2.19,2.19,152,Per Carton
+2026-05-04,Southcentral,Large White,Cage-Free,60,AA,4.97,4.97,4.97,3,Per Carton
+2026-05-04,Southcentral,Large White,Conventional,12,A,1.24,0.99,1.49,102,Per Carton
+2026-05-04,Southcentral,Large White,Conventional,18,AA,2.49,2.49,2.49,93,Per Carton
+2026-05-04,Southcentral,Large White,Nutritionally Enhanced (Omega-3),12,A,3.45,3.0,3.78,351,Per Carton
+2026-05-04,Southcentral,Large White,Nutritionally Enhanced (Omega-3),18,A,2.99,2.99,2.99,94,Per Carton
+2026-05-04,Southcentral,Liquid Egg White,Conventional,16 oz,Ungraded/Other,3.0,3.0,3.0,12,Per Carton
+2026-05-04,Southcentral,Liquid Egg White,USDA Organic,16 oz,Ungraded/Other,5.99,5.99,5.99,25,Per Carton
+2026-05-04,Southeast,Jumbo White,Conventional,12,A,2.99,2.99,2.99,93,Per Carton
+2026-05-04,Southeast,Large Brown,Cage-Free,12,A,3.99,3.99,3.99,84,Per Carton
+2026-05-04,Southeast,Large Brown,Free Range,12,A,4.99,4.99,4.99,29,Per Carton
+2026-05-04,Southeast,Large Brown,Pasture Raised,12,A,4.61,3.98,5.99,274,Per Carton
+2026-05-04,Southeast,Large Brown,Pasture Raised,18,A,7.29,7.29,7.29,103,Per Carton
+2026-05-04,Southeast,Large Brown,USDA Organic,12,A,4.49,4.49,4.49,182,Per Carton
+2026-05-04,Southeast,Large Brown,"USDA Organic, Free Range",12,A,5.29,4.99,5.99,428,Per Carton
+2026-05-04,Southeast,Large Brown,"USDA Organic, Pasture Raised",12,A,8.33,6.99,9.15,153,Per Carton
+2026-05-04,Southeast,Large Brown,Vegetarian-Fed,12,A,2.5,2.5,2.5,3,Per Carton
+2026-05-04,Southeast,Large White,Cage-Free,12,A,2.5,2.5,2.5,3,Per Carton
+2026-05-04,Southeast,Large White,Conventional,12,A,1.47,0.71,1.5,60,Per Carton
+2026-05-04,Southeast,Large White,Conventional,18,A,2.48,1.99,2.49,483,Per Carton
+2026-05-04,Southeast,Large White,Conventional,20,A,1.49,1.49,1.49,26,Per Carton
+2026-05-04,Southeast,Large White,Nutritionally Enhanced (Omega-3),12,A,3.5,3.49,3.5,45,Per Carton
+2026-05-04,Southeast,Large White,Nutritionally Enhanced (Omega-3),18,A,4.79,4.79,4.79,47,Per Carton
+2026-05-04,Southeast,Large White,Vegetarian-Fed,12,A,0.71,0.71,0.71,2,Per Carton
+2026-05-04,Southeast,Liquid Egg White,Conventional,16 oz,Ungraded/Other,3.0,3.0,3.0,182,Per Carton
+2026-05-04,Southwest,Extra Large White,Cage-Free,18,AA,1.49,1.49,1.49,74,Per Carton
+2026-05-04,Southwest,Large Brown,Free Range,18,A,6.99,6.99,6.99,65,Per Carton
+2026-05-04,Southwest,Large Brown,Nutritionally Enhanced (Omega-3),12,A,5.99,5.99,5.99,11,Per Carton
+2026-05-04,Southwest,Large Brown,Pasture Raised,12,A,4.02,3.99,5.99,67,Per Carton
+2026-05-04,Southwest,Large Brown,Pasture Raised,18,A,7.29,7.29,7.29,228,Per Carton
+2026-05-04,Southwest,Large Brown,USDA Organic,12,A,5.57,3.99,6.99,158,Per Carton
+2026-05-04,Southwest,Large Brown,"USDA Organic, Free Range",12,A,5.39,5.39,5.39,64,Per Carton
+2026-05-04,Southwest,Large Brown,"USDA Organic, Pasture Raised",12,A,9.15,9.15,9.15,112,Per Carton
+2026-05-04,Southwest,Large White,Cage-Free,12,AA,0.99,0.99,0.99,409,Per Carton
+2026-05-04,Southwest,Large White,Cage-Free,18,AA,2.94,0.99,3.49,488,Per Carton
+2026-05-04,Southwest,Large White,Cage-Free,60,A,4.98,4.97,4.99,111,Per Carton
+2026-05-04,Southwest,Large White,Conventional,18,AA,2.49,2.49,2.49,106,Per Carton
+2026-05-04,Southwest,Large White,Nutritionally Enhanced (Omega-3),12,AA,3.99,3.99,3.99,74,Per Carton
+2026-05-04,Southwest,Medium White,Cage-Free,60,AA,3.99,3.99,3.99,12,Per Carton
+2026-05-11,Alaska,Large Brown,Nutritionally Enhanced (Omega-3),12,AA,5.99,5.99,5.99,11,Per Carton
+2026-05-11,Alaska,Large Brown,Pasture Raised,12,A,6.99,6.99,6.99,11,Per Carton
+2026-05-11,Alaska,Large Brown,USDA Organic,12,A,3.99,3.99,3.99,12,Per Carton
+2026-05-11,Alaska,Large Brown,"USDA Organic, Free Range",12,A,3.99,3.99,3.99,12,Per Carton
+2026-05-11,Alaska,Large White,Cage-Free,12,A,3.0,3.0,3.0,10,Per Carton
+2026-05-11,Alaska,Large White,Cage-Free,18,A,3.99,3.99,3.99,12,Per Carton
+2026-05-11,Hawaii,Large Brown,USDA Organic,12,A,3.99,3.99,3.99,23,Per Carton
+2026-05-11,Hawaii,Large Brown,"USDA Organic, Free Range",12,A,3.99,3.99,3.99,23,Per Carton
+2026-05-11,Hawaii,Large White,Cage-Free,18,A,3.99,3.99,3.99,23,Per Carton
+2026-05-11,Hawaii,Large White,Conventional,12,A,5.99,5.99,5.99,7,Per Carton
+2026-05-11,Midwest,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.0,3.0,3.0,61,Per Carton
+2026-05-11,Midwest,Jumbo White,Conventional,12,A,0.49,0.49,0.49,20,Per Carton
+2026-05-11,Midwest,Large Brown,Cage-Free,12,A,3.0,3.0,3.0,51,Per Carton
+2026-05-11,Midwest,Large Brown,Free Range,12,A,4.95,3.99,4.99,197,Per Carton
+2026-05-11,Midwest,Large Brown,Pasture Raised,12,A,5.93,5.0,6.29,776,Per Carton
+2026-05-11,Midwest,Large Brown,USDA Organic,12,A,5.26,3.99,5.99,331,Per Carton
+2026-05-11,Midwest,Large Brown,"USDA Organic, Free Range",12,A,5.51,3.99,5.99,29,Per Carton
+2026-05-11,Midwest,Large White,Cage-Free,18,A,3.99,3.99,3.99,7,Per Carton
+2026-05-11,Midwest,Large White,Conventional,12,A,0.97,0.39,1.69,431,Per Carton
+2026-05-11,Midwest,Large White,Nutritionally Enhanced (Omega-3),12,A,3.17,3.0,3.49,94,Per Carton
+2026-05-11,Midwest,Large White,Vegetarian-Fed,12,A,0.79,0.79,0.79,1,Per Carton
+2026-05-11,Midwest,Liquid Egg White,Conventional,32 oz,Ungraded/Other,5.72,5.49,5.99,687,Per Carton
+2026-05-11,Midwest,Medium White,Cage-Free,60,AA,7.99,7.99,7.99,11,Per Carton
+2026-05-11,NATIONAL,Extra Large Brown,USDA Organic,12,,5.99,5.99,5.99,146,Per Carton
+2026-05-11,NATIONAL,Extra Large Brown,"USDA Organic, Free Range",12,,4.99,4.99,4.99,131,Per Carton
+2026-05-11,NATIONAL,Extra Large White,Cage-Free,18,,1.49,1.49,1.49,74,Per Carton
+2026-05-11,NATIONAL,Extra Large White,Nutritionally Enhanced (Omega-3),12,,3.21,3.0,3.49,105,Per Carton
+2026-05-11,NATIONAL,Jumbo White,Conventional,12,,0.91,0.49,0.99,121,Per Carton
+2026-05-11,NATIONAL,Large Brown,Cage-Free,12,,3.29,3.0,3.49,128,Per Carton
+2026-05-11,NATIONAL,Large Brown,Free Range,12,,4.52,3.99,4.99,685,Per Carton
+2026-05-11,NATIONAL,Large Brown,Free Range,18,,6.82,4.99,7.99,739,Per Carton
+2026-05-11,NATIONAL,Large Brown,Nutritionally Enhanced (Omega-3),12,,5.73,3.99,5.99,145,Per Carton
+2026-05-11,NATIONAL,Large Brown,Pasture Raised,12,,6.22,5.0,8.99,2325,Per Carton
+2026-05-11,NATIONAL,Large Brown,USDA Organic,12,,4.9,3.99,5.99,2846,Per Carton
+2026-05-11,NATIONAL,Large Brown,USDA Organic,6,,2.99,2.99,2.99,73,Per Carton
+2026-05-11,NATIONAL,Large Brown,"USDA Organic, Free Range",12,,4.43,3.98,6.99,1578,Per Carton
+2026-05-11,NATIONAL,Large Brown,"USDA Organic, Free Range",18,,6.99,6.99,6.99,41,Per Carton
+2026-05-11,NATIONAL,Large Brown,"USDA Organic, Pasture Raised",12,,7.3,6.99,7.99,294,Per Carton
+2026-05-11,NATIONAL,Large White,Cage-Free,12,,1.2,0.99,3.0,382,Per Carton
+2026-05-11,NATIONAL,Large White,Cage-Free,18,,3.38,1.47,3.99,1259,Per Carton
+2026-05-11,NATIONAL,Large White,Conventional,12,,1.01,0.39,5.99,835,Per Carton
+2026-05-11,NATIONAL,Large White,Free Range,12,,4.79,4.79,4.79,12,Per Carton
+2026-05-11,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),12,,2.93,2.5,3.59,733,Per Carton
+2026-05-11,NATIONAL,Large White,Nutritionally Enhanced (Omega-3),18,,4.29,3.99,4.99,141,Per Carton
+2026-05-11,NATIONAL,Large White,Vegetarian-Fed,12,,0.79,0.79,0.79,72,Per Carton
+2026-05-11,NATIONAL,Liquid Egg White,Conventional,16 oz,,3.49,3.49,3.49,127,Per Carton
+2026-05-11,NATIONAL,Liquid Egg White,Conventional,32 oz,,5.63,5.49,5.99,1161,Per Carton
+2026-05-11,NATIONAL,Liquid Egg White,USDA Organic,16 oz,,5.99,5.99,5.99,38,Per Carton
+2026-05-11,NATIONAL,Medium White,Cage-Free,60,,6.71,4.99,7.99,174,Per Carton
+2026-05-11,Northeast,Extra Large Brown,USDA Organic,12,A,5.99,5.99,5.99,146,Per Carton
+2026-05-11,Northeast,Extra Large Brown,"USDA Organic, Free Range",12,A,4.99,4.99,4.99,131,Per Carton
+2026-05-11,Northeast,Extra Large White,Nutritionally Enhanced (Omega-3),12,A,3.49,3.49,3.49,44,Per Carton
+2026-05-11,Northeast,Large Brown,Cage-Free,12,A,3.49,3.49,3.49,77,Per Carton
+2026-05-11,Northeast,Large Brown,Free Range,12,A,3.99,3.99,3.99,35,Per Carton
+2026-05-11,Northeast,Large Brown,Free Range,18,A,7.13,6.99,7.99,523,Per Carton
+2026-05-11,Northeast,Large Brown,Nutritionally Enhanced (Omega-3),12,A,3.99,3.99,3.99,19,Per Carton
+2026-05-11,Northeast,Large Brown,Pasture Raised,12,A,7.59,5.0,8.99,233,Per Carton
+2026-05-11,Northeast,Large Brown,USDA Organic,12,A,4.95,3.99,5.99,939,Per Carton
+2026-05-11,Northeast,Large Brown,USDA Organic,6,A,2.99,2.99,2.99,73,Per Carton
+2026-05-11,Northeast,Large Brown,"USDA Organic, Free Range",12,A,5.01,3.99,6.99,428,Per Carton
+2026-05-11,Northeast,Large Brown,"USDA Organic, Free Range",18,A,6.99,6.99,6.99,41,Per Carton
+2026-05-11,Northeast,Large Brown,"USDA Organic, Pasture Raised",12,A,7.28,6.99,7.99,265,Per Carton
+2026-05-11,Northeast,Large White,Cage-Free,18,A,3.99,3.99,3.99,74,Per Carton
+2026-05-11,Northeast,Large White,Conventional,12,A,0.85,0.79,0.99,76,Per Carton
+2026-05-11,Northeast,Large White,Nutritionally Enhanced (Omega-3),12,A,2.78,2.5,3.5,498,Per Carton
+2026-05-11,Northeast,Large White,Nutritionally Enhanced (Omega-3),18,A,4.18,3.99,4.49,97,Per Carton
+2026-05-11,Northeast,Large White,Vegetarian-Fed,12,A,0.79,0.79,0.79,54,Per Carton
+2026-05-11,Northeast,Liquid Egg White,Conventional,16 oz,Ungraded/Other,3.49,3.49,3.49,127,Per Carton
+2026-05-11,Northeast,Liquid Egg White,USDA Organic,16 oz,Ungraded/Other,5.99,5.99,5.99,38,Per Carton
+2026-05-11,Northwest,Large Brown,Free Range,12,A,4.99,4.99,4.99,58,Per Carton
+2026-05-11,Northwest,Large Brown,Nutritionally Enhanced (Omega-3),12,AA,5.99,5.99,5.99,115,Per Carton
+2026-05-11,Northwest,Large Brown,Pasture Raised,12,A,6.89,5.99,6.99,153,Per Carton
+2026-05-11,Northwest,Large Brown,USDA Organic,12,A,4.51,3.99,5.99,415,Per Carton
+2026-05-11,Northwest,Large Brown,"USDA Organic, Free Range",12,A,3.99,3.99,3.99,307,Per Carton
+2026-05-11,Northwest,Large Brown,"USDA Organic, Pasture Raised",12,A,6.99,6.99,6.99,16,Per Carton
+2026-05-11,Northwest,Large White,Cage-Free,18,A,3.99,3.99,3.99,307,Per Carton
+2026-05-11,Northwest,Large White,Free Range,12,A,4.79,4.79,4.79,12,Per Carton
+2026-05-11,Northwest,Large White,Nutritionally Enhanced (Omega-3),18,A,4.99,4.99,4.99,24,Per Carton
+2026-05-11,Southcentral,Large Brown,Free Range,12,A,3.99,3.99,3.99,20,Per Carton
+2026-05-11,Southcentral,Large Brown,Pasture Raised,12,A,5.98,5.0,5.99,422,Per Carton
+2026-05-11,Southcentral,Large Brown,USDA Organic,12,A,4.82,3.99,5.99,163,Per Carton
+2026-05-11,Southcentral,Large Brown,"USDA Organic, Free Range",12,A,3.99,3.99,3.99,95,Per Carton
+2026-05-11,Southcentral,Large White,Cage-Free,18,A,3.91,1.47,3.99,98,Per Carton
+2026-05-11,Southcentral,Large White,Conventional,12,A,1.0,1.0,1.0,63,Per Carton
+2026-05-11,Southcentral,Large White,Nutritionally Enhanced (Omega-3),12,A,3.55,2.99,3.59,31,Per Carton
+2026-05-11,Southcentral,Liquid Egg White,Conventional,32 oz,Ungraded/Other,5.49,5.49,5.49,69,Per Carton
+2026-05-11,Southeast,Jumbo White,Conventional,12,A,0.99,0.99,0.99,101,Per Carton
+2026-05-11,Southeast,Large Brown,Free Range,12,A,4.29,3.99,4.99,280,Per Carton
+2026-05-11,Southeast,Large Brown,Free Range,18,A,6.52,5.49,6.99,151,Per Carton
+2026-05-11,Southeast,Large Brown,Pasture Raised,12,A,6.09,5.99,6.99,481,Per Carton
+2026-05-11,Southeast,Large Brown,USDA Organic,12,A,4.68,3.99,4.99,230,Per Carton
+2026-05-11,Southeast,Large Brown,"USDA Organic, Free Range",12,A,4.62,3.98,5.99,329,Per Carton
+2026-05-11,Southeast,Large White,Cage-Free,18,A,3.99,3.99,3.99,37,Per Carton
+2026-05-11,Southeast,Large White,Conventional,12,A,0.98,0.79,1.0,258,Per Carton
+2026-05-11,Southeast,Large White,Nutritionally Enhanced (Omega-3),12,A,3.5,3.49,3.5,59,Per Carton
+2026-05-11,Southeast,Large White,Vegetarian-Fed,12,A,0.79,0.79,0.79,17,Per Carton
+2026-05-11,Southeast,Liquid Egg White,Conventional,32 oz,Ungraded/Other,5.49,5.49,5.49,405,Per Carton
+2026-05-11,Southwest,Extra Large White,Cage-Free,18,AA,1.49,1.49,1.49,74,Per Carton
+2026-05-11,Southwest,Large Brown,Free Range,12,A,4.32,3.99,4.99,95,Per Carton
+2026-05-11,Southwest,Large Brown,Free Range,18,A,4.99,4.99,4.99,65,Per Carton
+2026-05-11,Southwest,Large Brown,Pasture Raised,12,A,6.03,5.99,6.99,249,Per Carton
+2026-05-11,Southwest,Large Brown,USDA Organic,12,A,5.02,3.99,5.99,733,Per Carton
+2026-05-11,Southwest,Large Brown,"USDA Organic, Free Range",12,A,3.99,3.99,3.99,355,Per Carton
+2026-05-11,Southwest,Large Brown,"USDA Organic, Pasture Raised",12,A,7.99,7.99,7.99,13,Per Carton
+2026-05-11,Southwest,Large White,Cage-Free,12,AA,1.15,0.99,1.49,372,Per Carton
+2026-05-11,Southwest,Large White,Cage-Free,18,AA,1.86,1.47,1.99,266,Per Carton
+2026-05-11,Southwest,Large White,Nutritionally Enhanced (Omega-3),12,A,2.99,2.99,2.99,51,Per Carton
+2026-05-11,Southwest,Large White,Nutritionally Enhanced (Omega-3),18,A,3.99,3.99,3.99,20,Per Carton
+2026-05-11,Southwest,Medium White,Cage-Free,60,A,4.99,4.99,4.99,74,Per Carton
