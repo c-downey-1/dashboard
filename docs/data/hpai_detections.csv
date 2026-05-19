@@ -2009,7 +2009,7 @@ confirmation_date,state,county,flock_type,species,flock_size
 2026-01-08,Colorado,Larimer,WOAH Non-Poultry,,20
 2026-01-08,Oklahoma,Wagoner,WOAH Non-Poultry,,50
 2026-01-08,Pennsylvania,Lehigh,Live Bird Market,,600
-2026-01-08,Texas,Carson,WOAH Non-Poultry,,20
+2026-01-08,Texas,Carson,WOAH Non-Poultry,,10
 2026-01-09,Kentucky,Clinton,WOAH Non-Poultry,,120
 2026-01-09,New York,Bronx,Live Bird Market,,370
 2026-01-09,Pennsylvania,Philadelphia,Live Bird Market,,2100
@@ -2196,3 +2196,18 @@ confirmation_date,state,county,flock_type,species,flock_size
 2026-04-10,Arkansas,Clay,Commercial Broiler Production,,191200
 2026-04-13,South Dakota,Edmunds,Commercial Turkey Breeder Hens,,13800
 2026-04-14,South Dakota,Charles Mix,Commercial Turkey Meat Bird,,46300
+2026-04-17,Georgia,Pierce,WOAH Non-Poultry,,70
+2026-04-17,Minnesota,Big Stone,Commercial Turkey Meat Bird,,63000
+2026-04-21,North Dakota,Lamoure,Commercial Turkey Meat Bird,,25500
+2026-04-21,South Dakota,Edmunds,Commercial Turkey Breeder Hens,,31600
+2026-04-23,North Dakota,Dickey,WOAH Non-Poultry,,30
+2026-04-27,South Dakota,Meade,WOAH Non-Poultry,,60
+2026-05-01,North Dakota,Dickey,WOAH Poultry,,110
+2026-05-06,Indiana,Lagrange,Commercial Duck Meat Bird,,5200
+2026-05-08,Florida,Lee,WOAH Non-Poultry,,10
+2026-05-08,Indiana,Lagrange,Commercial Duck Breeder,,4600
+2026-05-11,Indiana,Lagrange,WOAH Poultry,,19700
+2026-05-12,Indiana,Elkhart,Commercial Duck Meat Bird,,29800
+2026-05-12,Minnesota,Becker,Commercial Breeder Operation,,19200
+2026-05-15,Minnesota,Becker,Commercial Turkey Breeder Replacement Hens,,17300
+2026-05-15,Minnesota,Becker,Commercial Breeder Operation,,22700

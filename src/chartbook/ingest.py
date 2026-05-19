@@ -758,8 +758,13 @@ def backfill_hpai(conn):
     print(f"{'='*60}")
 
     from . import paths
-    csv_rows = hpai_client.load_local_csv(paths.REPO_ROOT)
+    # Prefer the hpai-dashboard sibling project (most current, flat format with exact bird counts)
+    csv_rows = hpai_client.load_hpai_dashboard_csv()
     if not csv_rows:
+        # Fall back to manual Tableau crosstab at repo root
+        csv_rows = hpai_client.load_local_csv(paths.REPO_ROOT)
+    if not csv_rows:
+        # Last resort: live APHIS Tableau endpoint (rounds flock counts)
         csv_rows = hpai_client.fetch_flock_detections()
     if not csv_rows:
         print("  No HPAI data returned")

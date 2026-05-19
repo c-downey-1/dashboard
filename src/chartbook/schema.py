@@ -373,7 +373,7 @@ VIEWS = {
         SELECT strftime('%Y-%m', confirmation_date) AS month,
                flock_type,
                COUNT(*) AS detections,
-               SUM(CASE WHEN flock_type = 'Commercial' THEN flock_size ELSE 0 END) AS commercial_birds
+               SUM(COALESCE(flock_size, 0)) AS commercial_birds
         FROM hpai_detections
         WHERE confirmation_date IS NOT NULL
         GROUP BY month, flock_type

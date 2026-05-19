@@ -2,8 +2,10 @@
 hpai_client.py — APHIS HPAI CSV downloader.
 
 Downloads commercial/backyard flock detection data from APHIS.
-Prefers a local manual CSV ("A Table by Confirmation Date.csv") for exact
-flock counts; falls back to the Tableau direct endpoint if not found.
+Source priority (highest to lowest):
+  1. hpai-dashboard/data/poultry_detections.csv (sibling project, most current)
+  2. Local manual Tableau crosstab "A Table by Confirmation Date.csv"
+  3. Live APHIS Tableau endpoint (rounded flock counts)
 Adapted from hpai-dashboard/download_data.py but uses stdlib only.
 """
 
@@ -20,6 +22,9 @@ FLOCK_DETECTIONS_URL = (
     "VS_Avian_HPAIConfirmedDetections2022/HPAI2022ConfirmedDetections.csv"
 )
 
+# Relative path from chartbook repo root to the hpai-dashboard sibling project
+HPAI_DASHBOARD_POULTRY_CSV = Path(__file__).resolve().parents[4] / "hpai-dashboard" / "data" / "poultry_detections.csv"
+
 
 def _download_csv(url, timeout=120):
     """Download a CSV from URL, return text content."""
@@ -34,6 +39,39 @@ def _download_csv(url, timeout=120):
         except (UnicodeDecodeError, UnicodeError):
             continue
     return raw.decode("utf-8", errors="replace")
+
+
+def load_hpai_dashboard_csv(path=None):
+    """Load the flat poultry_detections.csv from the hpai-dashboard sibling project.
+
+    Columns: Date, State, County, Operation Type, Birds Impacted
+    Normalizes to the field names expected by parsers.parse_hpai_record.
+    Returns list of row dicts, or empty list if not found/parseable.
+    """
+    target = Path(path) if path else HPAI_DASHBOARD_POULTRY_CSV
+    if not target.exists():
+        return []
+
+    print(f"  [HPAI] Loading hpai-dashboard CSV: {target.name} ...", end=" ", flush=True)
+    try:
+        with open(target, newline="", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+    except Exception as e:
+        print(f"WARN: {e}")
+        return []
+
+    # Normalize to field names parsers.parse_hpai_record understands
+    normalized = []
+    for r in rows:
+        normalized.append({
+            "Confirmed Diagnosis": r.get("Date", ""),
+            "State": r.get("State", ""),
+            "County Name": r.get("County", ""),
+            "Production": r.get("Operation Type", ""),
+            "Birds Affected": r.get("Birds Impacted", "0"),
+        })
+    print(f"{len(normalized)} rows (hpai-dashboard flat)")
+    return normalized
 
 
 LOCAL_CSV_NAME = "A Table by Confirmation Date.csv"
