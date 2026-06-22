@@ -507,7 +507,7 @@ function baseOptions(yLabel, extra = {}) {
   const options = {
     responsive: true,
     maintainAspectRatio: true,
-    aspectRatio: mobileAspectRatio(extra.aspect || 1.7),
+    aspectRatio: window.EGG_PDF_MODE ? (extra.aspect || 2.22) : mobileAspectRatio(extra.aspect || 1.7),
     interaction: { mode: 'index', intersect: false },
     layout: { padding: isMobileWidth() ? { top: 2, right: 2, bottom: 8, left: 2 } : { top: 4, right: 8, bottom: 14, left: 8 } },
     plugins: {
@@ -732,6 +732,52 @@ document.addEventListener('click', event => {
   chartRanges[chartId] = range;
   insertRangeControls(chartId, button.parentElement ? Array.from(button.parentElement.querySelectorAll('.range-btn')).map(node => node.dataset.range) : [range]);
   chartRenderers[chartId](range);
+});
+
+/* Secondary view-mode toggle (e.g. "By product" / "By country") on a chart. */
+const modeHandlers = {};
+
+function insertModeToggle(chartId, options, defaultMode, onChange) {
+  const canvas = document.getElementById(chartId);
+  if (!canvas) return;
+  const card = canvas.closest('.card');
+  if (!card) return;
+  const toolbar = card.querySelector(`.chart-toolbar[data-chart="${chartId}"]`);
+  if (!toolbar) return;
+  modeHandlers[chartId] = { onChange, current: defaultMode };
+  let host = toolbar.querySelector(`.mode-controls[data-chart="${chartId}"]`);
+  if (!host) {
+    host = document.createElement('div');
+    host.className = 'mode-controls';
+    host.dataset.chart = chartId;
+    const rangeControls = toolbar.querySelector(`.range-controls[data-chart="${chartId}"]`);
+    if (rangeControls) {
+      rangeControls.insertAdjacentElement('afterend', host);
+    } else {
+      toolbar.insertBefore(host, toolbar.firstChild);
+    }
+  }
+  host.innerHTML = options.map(option => {
+    const active = defaultMode === option.mode ? ' active' : '';
+    return `<button class="mode-btn${active}" type="button" data-chart="${chartId}" data-mode="${option.mode}">${option.label}</button>`;
+  }).join('');
+}
+
+document.addEventListener('click', event => {
+  const button = event.target.closest('.mode-btn');
+  if (!button) return;
+  const chartId = button.dataset.chart;
+  const mode = button.dataset.mode;
+  const handler = modeHandlers[chartId];
+  if (!handler) return;
+  handler.current = mode;
+  const host = button.parentElement;
+  if (host) {
+    host.querySelectorAll('.mode-btn').forEach(node => {
+      node.classList.toggle('active', node.dataset.mode === mode);
+    });
+  }
+  handler.onChange(mode);
 });
 
 /* Re-render charts on resize/orientation change for mobile aspect ratios */

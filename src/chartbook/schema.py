@@ -270,6 +270,22 @@ TABLES = {
         )
     """,
 
+    "ers_trade_country": """
+        CREATE TABLE IF NOT EXISTS ers_trade_country (
+            report_month        TEXT NOT NULL,
+            commodity           TEXT NOT NULL,
+            flow                TEXT NOT NULL,
+            product             TEXT NOT NULL,
+            geography_code      TEXT NOT NULL,
+            geography_name      TEXT NOT NULL,
+            value               REAL,
+            unit                TEXT NOT NULL,
+            source_url          TEXT,
+            fetched_at          TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (report_month, commodity, flow, product, geography_code)
+        )
+    """,
+
     "cme_feed_daily": """
         CREATE TABLE IF NOT EXISTS cme_feed_daily (
             trade_date          TEXT PRIMARY KEY,
@@ -424,6 +440,8 @@ INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_cage_free_month ON cage_free_flock_composition(report_month)",
     "CREATE INDEX IF NOT EXISTS idx_ers_trade_month ON ers_trade_totals(report_month)",
     "CREATE INDEX IF NOT EXISTS idx_ers_trade_lookup ON ers_trade_totals(commodity, flow, product)",
+    "CREATE INDEX IF NOT EXISTS idx_ers_trade_country_month ON ers_trade_country(report_month)",
+    "CREATE INDEX IF NOT EXISTS idx_ers_trade_country_lookup ON ers_trade_country(commodity, flow, product)",
     "CREATE INDEX IF NOT EXISTS idx_cme_feed_daily_trade_date ON cme_feed_daily(trade_date)",
     "CREATE INDEX IF NOT EXISTS idx_source_freshness ON source_freshness(source_name)",
     "CREATE INDEX IF NOT EXISTS idx_narrative_sentiment_date ON narrative_sentiment(report_date)",

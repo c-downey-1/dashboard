@@ -44,6 +44,7 @@ function setChartSources() {
     eggInventoryChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/1427" target="_blank" rel="noreferrer">USDA AMS National Weekly Shell Egg Inventory</a>',
     eggsProcessedMixChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/1665" target="_blank" rel="noreferrer">USDA AMS Weekly Shell Eggs Processed Under Federal Inspection</a>',
     tableLayersChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
+    eggInventoryChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/1427" target="_blank" rel="noreferrer">USDA AMS National Weekly Shell Egg Inventory</a>',
     tableLayersTrendChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     turnoverChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     turnoverRateChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
@@ -54,7 +55,6 @@ function setChartSources() {
     chicksTrendChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     pipelineChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     wholesaleChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2843" target="_blank" rel="noreferrer">USDA AMS Daily National Shell Egg Index</a> and <a href="https://mymarketnews.ams.usda.gov/viewReport/3888" target="_blank" rel="noreferrer">USDA AMS Daily National Breaking Stock</a>',
-    sentIdxChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2843" target="_blank" rel="noreferrer">USDA AMS Daily National Shell Egg Index</a> commentary, scored via LLM based on <a href="rubric.md" target="_blank">this rubric</a>',
     eggPriceCompareChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a>',
     eggPriceSpreadChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a> and <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Prices_Received_and_Prices_Received_Indexes/" target="_blank" rel="noreferrer">USDA NASS Agricultural Prices</a>',
     feedIndexChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a>',
@@ -735,6 +735,93 @@ async function bootEggDashboard() {
     );
   }
 
+  insertRangeControls('eggInventoryChart', []);
+  if ((D.egg_inventory?.dates || []).length && D.egg_inventory.series?.['6-Area']) {
+    const invDates = D.egg_inventory.dates;
+    const invValues = D.egg_inventory.series['6-Area'];
+    const WEEK_SLOTS = 53;
+
+    // Bucket each weekly reading into a week-of-year slot (0..52), per calendar year.
+    const invByYear = {};
+    invDates.forEach((dt, i) => {
+      const v = invValues[i];
+      if (v == null) return;
+      const parsed = parseAxisDate(dt);
+      if (!parsed) return;
+      const dayOfYear = Math.floor((parsed.date - Date.UTC(parsed.year, 0, 1)) / 86400000) + 1;
+      const slot = Math.min(WEEK_SLOTS - 1, Math.max(0, Math.floor((dayOfYear - 1) / 7)));
+      if (!invByYear[parsed.year]) invByYear[parsed.year] = {};
+      invByYear[parsed.year][slot] = v; // last reading in the slot wins
+    });
+    const weeksForYear = year => Array.from({ length: WEEK_SLOTS }, (_, slot) => invByYear[year]?.[slot] ?? null);
+
+    // Month-aligned x labels + per-slot tooltip titles, from a reference (non-leap) year.
+    const invLabels = [];
+    const invWeekTitles = [];
+    let lastMonth = -1;
+    for (let slot = 0; slot < WEEK_SLOTS; slot += 1) {
+      const ref = new Date(Date.UTC(2023, 0, 1 + slot * 7));
+      const month = ref.getUTCMonth();
+      invLabels.push(month !== lastMonth ? MON_SHORT[month] : '');
+      invWeekTitles.push(`Wk of ${MON_SHORT[month]} ${ref.getUTCDate()}`);
+      lastMonth = month;
+    }
+
+    const invHistoryYears = [2020, 2021, 2022, 2023, 2024].filter(year => invByYear[year]);
+    const invSets = [
+      ...invHistoryYears.map(year =>
+        dataset(String(year), weeksForYear(year), 'rgba(154, 163, 171, 0.52)', {
+          borderWidth: 1.2,
+          backgroundColor: 'rgba(154, 163, 171, 0.52)',
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          order: 10,
+          legendKey: 'history-egg-inventory',
+          legendLabel: invHistoryYears.length
+            ? `${invHistoryYears[0]}-${invHistoryYears[invHistoryYears.length - 1]}`
+            : 'History'
+        })
+      ),
+      ...(invByYear[2025] ? [dataset('2025', weeksForYear(2025), DASH_COLORS.orange, {
+        borderWidth: 2.8,
+        order: 0
+      })] : []),
+      ...(invByYear[2026] ? [dataset('2026', weeksForYear(2026), DASH_COLORS.gold, {
+        borderWidth: 2.8,
+        order: 0
+      })] : [])
+    ];
+
+    const invCtx = document.getElementById('eggInventoryChart');
+    if (invSets.length && invCtx) {
+      destroyChart('eggInventoryChart');
+      const invOpts = baseOptions('Thousand cases', {
+        chartId: 'eggInventoryChart',
+        maxTicks: 12,
+        tooltip: {
+          filter: item => item.raw != null && !item.dataset.legendKey,
+          callbacks: { title: items => (items && items[0]) ? invWeekTitles[items[0].dataIndex] : '' }
+        }
+      });
+      // Weekly category axis: render a tick only at the first slot of each month.
+      invOpts.scales.x.afterBuildTicks = scale => {
+        scale.ticks = scale.getLabels().reduce((out, label, index) => {
+          if (label) out.push({ value: index });
+          return out;
+        }, []);
+      };
+      charts['eggInventoryChart'] = new Chart(invCtx, {
+        type: 'line',
+        data: { labels: invLabels, datasets: invSets.map(boostEggLineDataset) },
+        options: invOpts
+      });
+    } else {
+      showPlaceholder('eggInventoryWrap', 'Weekly shell egg inventory data is not loaded in this environment yet.');
+    }
+  } else {
+    showPlaceholder('eggInventoryWrap', 'Weekly shell egg inventory data is not loaded in this environment yet.');
+  }
+
   registerRangeControl({
     chartId: 'tableLayersTrendChart',
     options: ['1y', '3y', '5y', '10y', 'all'],
@@ -1256,65 +1343,6 @@ async function bootEggDashboard() {
     enforceMinMonth();
   })();
 
-  /* Egg Market Sentiment — Fundamentals Core Index (-50 to +50, zero-centered) */
-  if ((D.sentiment_index?.dates || []).length) {
-    registerRangeControl({
-      chartId: 'sentIdxChart',
-      options: ['3m', '6m', '1y', 'all'],
-      defaultRange: '1y',
-      renderer(range) {
-        const dates = D.sentiment_index.dates;
-        const raw = D.sentiment_index.series['Fundamentals Core'] || [];
-        const centered = raw.map(v => v != null ? Math.round((v - 50) * 10) / 10 : null);
-        const { start, end } = getRangeSlice(dates, range);
-        const ctx = document.getElementById('sentIdxChart');
-        if (!ctx) return;
-        destroyChart('sentIdxChart');
-        const opts = baseOptions('Index', {
-          chartId: 'sentIdxChart',
-          yMin: -50,
-          yMax: 50,
-          tooltip: {
-            callbacks: {
-              label(context) {
-                const v = context.parsed?.y;
-                if (v == null || !Number.isFinite(v)) return '';
-                const sign = v > 0 ? '+' : '';
-                return 'Sentiment & Demand: ' + sign + v.toFixed(1);
-              }
-            }
-          }
-        });
-        opts.scales.y.grid.color = function (context) {
-          return context.tick.value === 0
-            ? 'rgba(1, 48, 70, 0.22)'
-            : 'rgba(1, 48, 70, 0.045)';
-        };
-        charts['sentIdxChart'] = new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: dates.slice(start, end),
-            datasets: [boostEggLineDataset(dataset(
-              'Egg Market Sentiment and Demand Conditions Index',
-              centered.slice(start, end),
-              DASH_COLORS.navy,
-              {
-                fill: {
-                  target: { value: 0 },
-                  above: 'rgba(22, 163, 74, 0.075)',
-                  below: 'rgba(220, 38, 38, 0.075)'
-                }
-              }
-            ))]
-          },
-          options: opts
-        });
-      }
-    });
-  } else {
-    showPlaceholder('sentIdxWrap', 'Sentiment scoring data is not yet available. Once USDA commentary is scored, this chart will populate.');
-  }
-
   registerRangeControl({
     chartId: 'eggPriceCompareChart',
     options: ['3y', '5y', '10y', 'all'],
@@ -1628,38 +1656,118 @@ async function bootEggDashboard() {
       }
     });
 
+    const exportCountryData = D.ers_trade_egg.export_by_country || { dates: [], countries: {}, other: [] };
+    const exportCountryNames = Object.keys(exportCountryData.countries || {});
+    const hasExportCountryBreakdown = exportCountryNames.length > 0;
+    const EXPORT_COUNTRY_COLORS = ['#013046', '#1F9EBC', '#F6851F', '#FDB714', '#8FCAE6'];
+    const EXPORT_OTHER_COLOR = '#C7CDD1';
+    let eggExportViewMode = 'product';
+
+    function renderEggExports(range) {
+      const dates = D.ers_trade_egg.dates;
+      const { start, end } = getRangeSlice(dates, range);
+
+      if (eggExportViewMode === 'country' && hasExportCountryBreakdown) {
+        // Rank candidate partners by combined exports over the visible range,
+        // keep the top 5, and fold every other partner into "Other".
+        const ranked = exportCountryNames.map(name => {
+          const series = exportCountryData.countries[name];
+          let total = 0;
+          for (let i = start; i < end; i++) {
+            const v = series[i];
+            if (v != null) total += v;
+          }
+          return { name, total };
+        }).sort((a, b) => b.total - a.total);
+
+        const topNames = ranked.slice(0, 5).map(r => r.name);
+        const topSet = new Set(topNames);
+
+        const otherSeries = dates.map((_, i) => {
+          const baseOther = exportCountryData.other ? exportCountryData.other[i] : null;
+          let sum = baseOther != null ? baseOther : 0;
+          let seen = baseOther != null;
+          exportCountryNames.forEach(name => {
+            if (topSet.has(name)) return;
+            const v = exportCountryData.countries[name][i];
+            if (v != null) { sum += v; seen = true; }
+          });
+          return seen ? sum : null;
+        });
+
+        const datasets = topNames.map((name, idx) => {
+          const color = EXPORT_COUNTRY_COLORS[idx % EXPORT_COUNTRY_COLORS.length];
+          return dataset(name, exportCountryData.countries[name].slice(start, end), color, {
+            backgroundColor: color,
+            borderWidth: 1
+          });
+        });
+        datasets.push(dataset('Other', otherSeries.slice(start, end), EXPORT_OTHER_COLOR, {
+          backgroundColor: EXPORT_OTHER_COLOR,
+          borderWidth: 1
+        }));
+
+        renderBarChart('eggExportsTradeChart', dates.slice(start, end), datasets, '1,000 dozen', { stacked: true });
+        return;
+      }
+
+      renderBarChart(
+        'eggExportsTradeChart',
+        dates.slice(start, end),
+        [
+          dataset('Shell-egg exports', D.ers_trade_egg.export_shell_egg.slice(start, end), DASH_COLORS.navy, {
+            backgroundColor: '#013046',
+            borderWidth: 1
+          }),
+          dataset('Egg product exports', D.ers_trade_egg.export_egg_product.slice(start, end), DASH_COLORS.sky, {
+            backgroundColor: DASH_COLORS.sky,
+            borderWidth: 1
+          })
+        ],
+        '1,000 dozen',
+        { stacked: true }
+      );
+    }
+
     registerRangeControl({
       chartId: 'eggExportsTradeChart',
       options: ['3y', '5y', '10y', 'all'],
       defaultRange: '3y',
-      renderer(range) {
-        const dates = D.ers_trade_egg.dates;
-        const { start, end } = getRangeSlice(dates, range);
-        renderBarChart(
-          'eggExportsTradeChart',
-          dates.slice(start, end),
-          [
-            dataset('Shell-egg exports', D.ers_trade_egg.export_shell_egg.slice(start, end), DASH_COLORS.navy, {
-              backgroundColor: '#013046',
-              borderWidth: 1
-            }),
-            dataset('Egg product exports', D.ers_trade_egg.export_egg_product.slice(start, end), DASH_COLORS.sky, {
-              backgroundColor: DASH_COLORS.sky,
-              borderWidth: 1
-            })
-          ],
-          '1,000 dozen',
-          { stacked: true }
-        );
-      }
+      renderer: renderEggExports
     });
+
+    if (hasExportCountryBreakdown) {
+      insertModeToggle(
+        'eggExportsTradeChart',
+        [
+          { mode: 'product', label: 'By product' },
+          { mode: 'country', label: 'By country' }
+        ],
+        'product',
+        mode => {
+          eggExportViewMode = mode;
+          renderEggExports(chartRanges['eggExportsTradeChart'] || '3y');
+        }
+      );
+    }
   } else {
     showPlaceholder('importsWrap', 'ERS egg trade totals are not loaded in this environment yet. Run the ERS trade ingest and this chart will populate.');
     showPlaceholder('exportsWrap', 'ERS egg trade totals are not loaded in this environment yet. Run the ERS trade ingest and this chart will populate.');
   }
 }
 
-bootEggDashboard().catch(error => {
-  console.error(error);
-  showPlaceholder('retailFeatureWrap', `Error loading egg dashboard: ${error.message}`);
-});
+const eggDashboardFontReady = window.EGG_PDF_MODE && document.fonts
+  ? document.fonts.ready.catch(() => {})
+  : Promise.resolve();
+
+eggDashboardFontReady.then(() => bootEggDashboard())
+  .then(() => {
+    window.__EGG_DASHBOARD_READY__ = true;
+    window.dispatchEvent(new CustomEvent('egg-dashboard-ready'));
+  })
+  .catch(error => {
+    console.error(error);
+    window.__EGG_DASHBOARD_ERROR__ = error && error.message ? error.message : String(error);
+    showPlaceholder('retailFeatureWrap', `Error loading egg dashboard: ${window.__EGG_DASHBOARD_ERROR__}`);
+    window.dispatchEvent(new CustomEvent('egg-dashboard-error', { detail: window.__EGG_DASHBOARD_ERROR__ }));
+  });

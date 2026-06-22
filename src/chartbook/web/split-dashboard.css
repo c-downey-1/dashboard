@@ -730,6 +730,40 @@ a{color:inherit}
   box-shadow:0 10px 18px rgba(1,48,70,.16);
 }
 
+.mode-controls{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  flex:0 0 auto;
+  margin-left:6px;
+  padding-left:12px;
+  border-left:1px solid rgba(1,48,70,.12);
+}
+
+.mode-btn{
+  padding:6px 11px;
+  border:1px solid rgba(1,48,70,.14);
+  background:rgba(255,255,255,.5);
+  color:#607583;
+  font-size:.78rem;
+  font-weight:700;
+  cursor:pointer;
+  transition:all .15s ease;
+}
+
+.mode-btn:hover{
+  color:var(--navy);
+  border-color:rgba(246,133,31,.45);
+  background:#fffaf2;
+}
+
+.mode-btn.active{
+  color:#fff;
+  background:#F6851F;
+  border-color:#F6851F;
+  box-shadow:0 10px 18px rgba(246,133,31,.18);
+}
+
 .base-month-control{
   display:flex;
   align-items:center;
@@ -917,6 +951,7 @@ a{color:inherit}
   .chart-toolbar{flex-direction:column;align-items:flex-start}
   .chart-legend{width:100%;justify-content:flex-start}
   .chart-legend-list{justify-content:flex-start}
+  .mode-controls{margin-left:0;padding-left:0;border-left:none}
   .hero{padding:30px 22px 24px}
   .hero h1{max-width:none;font-size:clamp(2.1rem,11vw,3.1rem)}
   .section,.overview-band{padding:26px 0}
@@ -942,6 +977,7 @@ a{color:inherit}
 
   .chart-toolbar{gap:6px;margin:-2px 4px 8px}
   .range-btn{padding:4px 8px;font-size:.7rem}
+  .mode-btn{padding:4px 8px;font-size:.7rem}
 
   .chart-legend-label{font-size:.68rem}
   .chart-legend-swatch{width:8px;height:8px}

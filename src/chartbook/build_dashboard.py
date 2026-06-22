@@ -435,11 +435,77 @@ def _ers_trade_series(conn, commodity, product_order):
     return payload
 
 
+def _ers_egg_export_by_country(conn, dates):
+    """Combined (shell-egg + egg product) egg exports by partner country.
+
+    Each country's value for a month is the sum of its shell-egg exports and its
+    egg product exports (both in 1,000 dozen, shell-egg equivalent), so the
+    per-country series add up to total egg exports. Returns a candidate set of
+    the largest partners as individual monthly series aligned to ``dates`` plus
+    an ``other`` long-tail series. The dashboard recomputes the visible top-5
+    per selected range from these candidates and folds the remainder into Other.
+    """
+    empty = {"dates": dates, "countries": {}, "other": [None] * len(dates)}
+    try:
+        rows = conn.execute("""
+            SELECT report_month, geography_name, SUM(value) AS v
+            FROM ers_trade_country
+            WHERE commodity = 'egg' AND flow = 'export'
+              AND product IN ('shell_egg', 'egg_product')
+            GROUP BY report_month, geography_name
+        """).fetchall()
+    except Exception:
+        return empty
+    if not rows or not dates:
+        return empty
+
+    combined = {}
+    alltime_total = {}
+    for report_month, name, value in rows:
+        if value is None or not name:
+            continue
+        combined.setdefault(name, {})[report_month] = value
+        alltime_total[name] = alltime_total.get(name, 0.0) + value
+
+    # Candidate set: large partners both all-time and over the recent window, so
+    # the front end can recompute a correct top-5 for any selected range.
+    recent_set = set(dates[-60:]) if len(dates) > 60 else set(dates)
+    recent_total = {
+        name: sum(v for m, v in months.items() if m in recent_set)
+        for name, months in combined.items()
+    }
+    by_alltime = sorted(alltime_total, key=lambda n: alltime_total[n], reverse=True)
+    by_recent = sorted(recent_total, key=lambda n: recent_total[n], reverse=True)
+    candidates = []
+    for name in by_alltime[:20] + by_recent[:10]:
+        if name not in candidates:
+            candidates.append(name)
+    candidate_set = set(candidates)
+
+    countries = {name: [combined[name].get(d) for d in dates] for name in candidates}
+
+    other = []
+    for d in dates:
+        running = 0.0
+        seen = False
+        for name, months in combined.items():
+            if name in candidate_set:
+                continue
+            val = months.get(d)
+            if val is not None:
+                running += val
+                seen = True
+        other.append(running if seen else None)
+
+    return {"dates": dates, "countries": countries, "other": other}
+
+
 def build_ers_trade_egg(conn):
     """ERS monthly egg trade totals and component sections."""
     data = _ers_trade_series(conn, "egg", ["total", "shell_egg", "egg_product"])
     data["unit_total"] = "1,000 dozen (shell-egg equivalent)"
     data["unit_shell_egg"] = "1,000 dozen"
+    data["export_by_country"] = _ers_egg_export_by_country(conn, data.get("dates", []))
     return data
 
 

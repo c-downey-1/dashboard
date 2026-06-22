@@ -2819,10 +2819,15 @@ observation_date,series_id,series_label,value
 2026-02-01,WPU0141,PPI: Slaughter Chickens,332.914
 2026-02-01,WPU014102,PPI: Broilers & Meat-Type Chickens,337.547
 2026-02-01,WPU0171,PPI: Chicken Eggs,176.628
-2026-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.3969851407138
+2026-03-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.3283941095526
 2026-03-01,WPU0141,PPI: Slaughter Chickens,333.372
 2026-03-01,WPU014102,PPI: Broilers & Meat-Type Chickens,338.011
 2026-03-01,WPU0171,PPI: Chicken Eggs,154.618
+2026-04-01,PPOULTUSDM,Global Price of Poultry ($/kg),168.3437659523704
 2026-04-01,WPU0141,PPI: Slaughter Chickens,337.045
 2026-04-01,WPU014102,PPI: Broilers & Meat-Type Chickens,341.735
 2026-04-01,WPU0171,PPI: Chicken Eggs,77.699
+2026-05-01,PPOULTUSDM,Global Price of Poultry ($/kg),167.8010944184803
+2026-05-01,WPU0141,PPI: Slaughter Chickens,348.439
+2026-05-01,WPU014102,PPI: Broilers & Meat-Type Chickens,353.287
+2026-05-01,WPU0171,PPI: Chicken Eggs,80.91

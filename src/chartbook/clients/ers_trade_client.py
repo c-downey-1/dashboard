@@ -196,9 +196,16 @@ def _sheet_rows(workbook, sheet_path, shared_strings):
         yield values
 
 
-def parse_workbook_bytes(workbook_bytes, source_url):
-    """Parse ERS workbook bytes into normalized monthly section totals."""
-    rows = []
+def _parse_workbook(workbook_bytes, source_url):
+    """Parse ERS workbook bytes into monthly section totals AND per-country rows.
+
+    Each section (e.g. "Shell-egg exports") lists one row per partner country
+    followed by a "Total" row. The section-header row itself also carries the
+    first country's data, so it is processed as a country row after the section
+    is identified. Returns ``(total_rows, country_rows)``.
+    """
+    total_rows = []
+    country_rows = []
     with zipfile.ZipFile(io.BytesIO(workbook_bytes)) as workbook:
         shared_strings = _shared_strings(workbook)
 
@@ -217,34 +224,76 @@ def parse_workbook_bytes(workbook_bytes, source_url):
                     continue
 
                 if row_header in SECTION_CONFIG:
+                    # Start a new section. Do NOT skip the row — the header row
+                    # also carries the first partner country in columns B/C.
                     current_section = SECTION_CONFIG[row_header]
-                    continue
 
                 if not current_section:
                     continue
 
-                if _normalize_label(row.get("C")) != "total":
+                geo_label = _normalize_label(row.get("C"))
+                if not geo_label:
                     continue
 
+                if geo_label == "total":
+                    for column, report_month in header_months.items():
+                        value = row.get(column)
+                        if value in (None, ""):
+                            continue
+                        total_rows.append({
+                            "report_month": report_month,
+                            "commodity": current_section["commodity"],
+                            "flow": current_section["flow"],
+                            "product": current_section["product"],
+                            "section_label": current_section["section_label"],
+                            "value": float(value),
+                            "unit": current_section["unit"],
+                            "source_url": source_url,
+                        })
+                    current_section = None
+                    continue
+
+                geo_code = (row.get("B") or "").strip()
+                geo_name = (row.get("C") or "").strip()
+                if not geo_code or not geo_name:
+                    continue
                 for column, report_month in header_months.items():
                     value = row.get(column)
                     if value in (None, ""):
                         continue
-                    rows.append({
+                    country_rows.append({
                         "report_month": report_month,
                         "commodity": current_section["commodity"],
                         "flow": current_section["flow"],
                         "product": current_section["product"],
-                        "section_label": current_section["section_label"],
+                        "geography_code": geo_code,
+                        "geography_name": geo_name,
                         "value": float(value),
                         "unit": current_section["unit"],
                         "source_url": source_url,
                     })
-                current_section = None
-    return rows
+    return total_rows, country_rows
+
+
+def parse_workbook_bytes(workbook_bytes, source_url):
+    """Parse ERS workbook bytes into normalized monthly section totals."""
+    total_rows, _ = _parse_workbook(workbook_bytes, source_url)
+    return total_rows
+
+
+def parse_workbook_country_rows(workbook_bytes, source_url):
+    """Parse ERS workbook bytes into normalized monthly per-country rows."""
+    _, country_rows = _parse_workbook(workbook_bytes, source_url)
+    return country_rows
 
 
 def fetch_trade_rows():
-    """Fetch and parse the current ERS workbook."""
+    """Fetch and parse the current ERS workbook (section totals only)."""
     workbook_url, workbook_bytes = fetch_workbook_bytes()
     return parse_workbook_bytes(workbook_bytes, workbook_url)
+
+
+def fetch_trade_rows_all():
+    """Fetch the current ERS workbook once; return (total_rows, country_rows)."""
+    workbook_url, workbook_bytes = fetch_workbook_bytes()
+    return _parse_workbook(workbook_bytes, workbook_url)

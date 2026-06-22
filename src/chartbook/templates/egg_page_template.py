@@ -57,6 +57,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <article class="card"><h3>Historical Table Egg Production</h3><div class="sub">Trailing 3-month table egg production</div><canvas id="trailingProdChart"></canvas></article>
       <article class="card"><h3>Rate of Lay</h3><div class="sub">Table eggs per 100 layers per day</div><canvas id="rolChart"></canvas></article>
       <article class="card"><h3>Eggs Delivered to Breakers</h3><div class="sub">Broken shell eggs and share of total production</div><canvas id="breakersChart"></canvas></article>
+      <article class="card" id="eggInventoryWrap"><h3>Shell Egg Inventory Comparison</h3><div class="sub">National (6-area) weekly shell egg inventory, by year</div><canvas id="eggInventoryChart"></canvas></article>
     </div>
   </section>
 
@@ -64,7 +65,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <div class="section-head"><div><h2>Prices</h2><p>Wholesale, retail feature activity, and retail-farmgate price context.</p></div></div>
     <div class="grid">
       <article class="card"><h3>Wholesale Prices</h3><div class="sub">Large Eggs, Conventional, 5-Day Rolling Average</div><canvas id="wholesaleChart"></canvas></article>
-      <article class="card" id="sentIdxWrap"><h3>Sentiment and Demand Conditions Index</h3><div class="sub">Weighted composite of market undertone, retail demand, offerings, supplies, and trading activity from USDA commentary</div><canvas id="sentIdxChart"></canvas></article>
       <article class="card"><h3>Retail Egg Price</h3><div class="sub">Grade A Large eggs, U.S. city average</div><canvas id="eggPriceCompareChart"></canvas></article>
       <article class="card"><h3>Retail Prices vs Farmgate Price Received Spread Estimate</h3><div class="sub">Grade A Large eggs, U.S. city average minus USDA NASS all-eggs price received (prior month average)</div><canvas id="eggPriceSpreadChart"></canvas></article>
       <article class="card" id="retailFeatureWrap"><h3>Egg Retail Feature Rates</h3><div class="sub">% of retailers discounting eggs</div><canvas id="retailFeatureChart"></canvas></article>

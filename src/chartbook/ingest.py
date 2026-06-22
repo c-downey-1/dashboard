@@ -454,13 +454,16 @@ def ingest_cage_free_composition(conn):
 
 
 def ingest_ers_trade_totals(conn):
-    """Fetch the ERS workbook and store monthly chicken and egg trade totals."""
-    rows = ers_trade_client.fetch_trade_rows()
+    """Fetch the ERS workbook once and store monthly section totals + per-country rows."""
+    rows, country_rows = ers_trade_client.fetch_trade_rows_all()
     if not rows:
         print("  No ERS trade rows parsed")
         return 0
 
     count = db.upsert_rows(conn, "ers_trade_totals", rows)
+    country_count = db.upsert_rows(conn, "ers_trade_country", country_rows) if country_rows else 0
+    if country_count:
+        print(f"  → {country_count:,} per-country rows → ers_trade_country")
     db.log_fetch(
         conn,
         "ers_trade",
