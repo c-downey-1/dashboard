@@ -57,6 +57,21 @@ Build the dashboards:
 python3 build_dashboard.py
 ```
 
+Build the monthly egg chartbook PDF:
+
+```bash
+python3 build_egg_pdf.py --month 2026-05
+```
+
+The PDF exporter is optional and uses Playwright. Install it only if you need PDF output:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-pdf.txt
+PLAYWRIGHT_BROWSERS_PATH=.venv/playwright-browsers .venv/bin/python -m playwright install chromium
+.venv/bin/python build_egg_pdf.py --month 2026-05
+```
+
 Export CSV snapshots and rebuild everything:
 
 ```bash

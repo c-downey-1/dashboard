@@ -42,9 +42,9 @@ function setChartSources() {
     rolChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     breakersChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     eggInventoryChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/1427" target="_blank" rel="noreferrer">USDA AMS National Weekly Shell Egg Inventory</a>',
+    eggInventoryYoYChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/1427" target="_blank" rel="noreferrer">USDA AMS National Weekly Shell Egg Inventory</a>',
     eggsProcessedMixChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/1665" target="_blank" rel="noreferrer">USDA AMS Weekly Shell Eggs Processed Under Federal Inspection</a>',
     tableLayersChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
-    eggInventoryChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/1427" target="_blank" rel="noreferrer">USDA AMS National Weekly Shell Egg Inventory</a>',
     tableLayersTrendChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     turnoverChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
     turnoverRateChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chickens_and_Eggs/index.php" target="_blank" rel="noreferrer">USDA NASS Chickens and Eggs</a>',
@@ -818,8 +818,62 @@ async function bootEggDashboard() {
     } else {
       showPlaceholder('eggInventoryWrap', 'Weekly shell egg inventory data is not loaded in this environment yet.');
     }
+
+    // Companion chart: trailing-4-week-average inventory vs. the same weeks a
+    // year earlier (% Y/Y), over calendar time. Green above prior year, red below.
+    const invYoYByDate = invDates.map(dt => {
+      const parsed = parseAxisDate(dt);
+      if (!parsed) return null;
+      const dayOfYear = Math.floor((parsed.date - Date.UTC(parsed.year, 0, 1)) / 86400000) + 1;
+      const s = Math.min(WEEK_SLOTS - 1, Math.max(0, Math.floor((dayOfYear - 1) / 7)));
+      const cur = invByYear[parsed.year];
+      const prev = invByYear[parsed.year - 1];
+      if (!cur || !prev || s < 3) return null;
+      let cs = 0;
+      let ps = 0;
+      for (let k = s - 3; k <= s; k += 1) {
+        if (cur[k] == null || prev[k] == null) return null;
+        cs += cur[k];
+        ps += prev[k];
+      }
+      return ps ? (cs / ps - 1) * 100 : null;
+    });
+    if (document.getElementById('eggInventoryYoYChart') && invYoYByDate.some(v => v != null)) {
+      registerRangeControl({
+        chartId: 'eggInventoryYoYChart',
+        options: ['1y', '2y', '3y', '5y', 'all'],
+        defaultRange: '3y',
+        renderer(range) {
+          const { start, end } = getRangeSlice(invDates, range);
+          renderBarChart(
+            'eggInventoryYoYChart',
+            invDates.slice(start, end),
+            [dataset('4-wk avg Y/Y', invYoYByDate.slice(start, end), '#16a34a', {
+              backgroundColor: ctx => (ctx.raw != null && ctx.raw < 0) ? '#dc2626' : '#16a34a'
+            })],
+            'Y/Y change',
+            {
+              maxTicks: 8,
+              yTickCallback: value => `${value > 0 ? '+' : ''}${fmtNum(value, 0)}%`,
+              tooltip: {
+                callbacks: {
+                  label(context) {
+                    const v = context.parsed?.y;
+                    if (v == null || !Number.isFinite(v)) return '';
+                    return `${v > 0 ? '+' : ''}${fmtNum(v, 1)}% vs. prior year`;
+                  }
+                }
+              }
+            }
+          );
+        }
+      });
+    } else {
+      showPlaceholder('eggInventoryYoYWrap', 'Weekly shell egg inventory data is not loaded in this environment yet.');
+    }
   } else {
     showPlaceholder('eggInventoryWrap', 'Weekly shell egg inventory data is not loaded in this environment yet.');
+    showPlaceholder('eggInventoryYoYWrap', 'Weekly shell egg inventory data is not loaded in this environment yet.');
   }
 
   registerRangeControl({
