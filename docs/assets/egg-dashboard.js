@@ -883,11 +883,15 @@ async function bootEggDashboard() {
     renderer(range) {
       const dates = D.nass_layers.dates_table;
       const values = D.nass_layers.table.map(v => v != null ? v : null);
+      const estimate = (D.nass_layers.estimate || []).map(v => v != null ? v : null);
       const { start, end } = getRangeSlice(dates, range);
       renderEggLineChart(
         'tableLayersTrendChart',
         dates.slice(start, end),
-        [dataset('Table-egg layers', values.slice(start, end), '#a23508', { fill: true, backgroundColor: 'rgba(162,53,8,0.075)' })],
+        [
+          dataset('Table-egg layers (USDA)', values.slice(start, end), '#a23508', { fill: false }),
+          dataset('IAA Model Prediction', estimate.slice(start, end), DASH_COLORS.navy, { borderDash: [12, 7], borderWidth: 3.2, fill: false })
+        ],
         'Hens',
         { yTickCallback: value => fmtMillionsAxis(value) }
       );

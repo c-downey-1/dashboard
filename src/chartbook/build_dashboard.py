@@ -322,11 +322,88 @@ def build_narratives(conn):
     return [{"date": r[0], "text": r[1]} for r in rows]
 
 
+def _add_months(ym, k):
+    """Shift a 'YYYY-MM' string by k months."""
+    y, m = int(ym[:4]), int(ym[5:7])
+    idx = y * 12 + (m - 1) + k
+    return f"{idx // 12:04d}-{idx % 12 + 1:02d}"
+
+
+def flock_reconstruction(conn, dates_table, table_vals, anchor="2022-12", hatch_lag=5):
+    """Single-anchor table-egg flock reconstruction (hatch inflow + actual turnover).
+
+    Rebuilds the flock as a running balance from one pinned month, with no
+    re-anchoring:  Flock[t+1] = Flock[t] + inflow[t] - outflow[t], where
+      outflow[t] = layers sold for slaughter + loss/death/rendered  (observed),
+      inflow[t]  = a + b * egg-type chicks hatched[t - hatch_lag]     (modeled).
+    (a, b) are fit by OLS on the implied gross inflow over months up to the anchor.
+    Values stay in head (matching the reported series). Returns a list aligned to
+    dates_table, populated from the anchor forward and None elsewhere.
+    Full methodology: analysis/flock_proxy/METHODOLOGY.md.
+    """
+    tbl = {d: v for d, v in zip(dates_table, table_vals) if v is not None}
+    hd, hv = nass_monthly_series(conn, "CHICKENS, CHICKS, EGG TYPE - HATCHED, MEASURED IN HEAD")
+    hatched = {d: v for d, v in zip(hd, hv) if v is not None}
+    sd, sv = nass_monthly_series(conn, "CHICKENS, LAYERS - SALES FOR SLAUGHTER, MEASURED IN HEAD")
+    ld, lv = nass_monthly_series(conn, "CHICKENS, LAYERS - LOSS, DEATH & RENDERED, MEASURED IN HEAD")
+    slaughter = {d: v for d, v in zip(sd, sv) if v is not None}
+    loss = {d: v for d, v in zip(ld, lv) if v is not None}
+
+    def outflow(m):
+        s, l = slaughter.get(m), loss.get(m)
+        return None if s is None or l is None else s + l
+
+    def hatch_lagged(m):
+        return hatched.get(_add_months(m, -hatch_lag))
+
+    if anchor not in tbl:
+        return [None] * len(dates_table)
+
+    # Calibrate inflow = a + b * hatch[t-lag] on implied gross inflow, months <= anchor.
+    xs, ys = [], []
+    for m in sorted(tbl):
+        if m > anchor:
+            break
+        nxt = _add_months(m, 1)
+        of, hl = outflow(m), hatch_lagged(m)
+        if of is None or hl is None or nxt not in tbl:
+            continue
+        xs.append(hl)
+        ys.append(tbl[nxt] - tbl[m] + of)
+    if len(xs) < 12:
+        return [None] * len(dates_table)
+    n = len(xs)
+    sx, sy = sum(xs), sum(ys)
+    sxx = sum(x * x for x in xs)
+    sxy = sum(x * y for x, y in zip(xs, ys))
+    denom = n * sxx - sx * sx
+    if denom == 0:
+        return [None] * len(dates_table)
+    b = (n * sxy - sx * sy) / denom
+    a = (sy - b * sx) / n
+
+    # Roll forward from the anchor with modeled inflow + actual outflow, no re-anchoring.
+    last_date = dates_table[-1]
+    est = {anchor: tbl[anchor]}
+    m = anchor
+    while m < last_date:
+        of, hl = outflow(m), hatch_lagged(m)
+        if of is None or hl is None:
+            break
+        nxt = _add_months(m, 1)
+        est[nxt] = est[m] + (a + b * hl) - of
+        m = nxt
+
+    return [est.get(d) for d in dates_table]
+
+
 def build_nass_layers(conn):
-    """NASS layer inventory: total + table layers, national."""
+    """NASS layer inventory: total + table layers, national, plus the IAA
+    hatch-and-turnover flock reconstruction anchored at Dec 2022."""
     d1, v1 = nass_monthly_series(conn, "CHICKENS, LAYERS - INVENTORY")
     d2, v2 = nass_monthly_series(conn, "CHICKENS, LAYERS, TABLE - INVENTORY")
-    return {"dates": d1, "total": v1, "dates_table": d2, "table": v2}
+    estimate = flock_reconstruction(conn, d2, v2)
+    return {"dates": d1, "total": v1, "dates_table": d2, "table": v2, "estimate": estimate}
 
 
 def build_cage_free_composition(conn):
