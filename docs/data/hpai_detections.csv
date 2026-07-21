@@ -460,7 +460,7 @@ confirmation_date,state,county,flock_type,species,flock_size
 2022-09-20,South Dakota,Clark,Commercial Turkey Meat Bird,,23900
 2022-09-20,Utah,Sanpete,Commercial Turkey Meat Bird,,73200
 2022-09-21,Colorado,Weld,Commercial Table Egg Layer,,1150000
-2022-09-21,Idaho,Gooding,Commercial Upland Gamebird Producer,,9000
+2022-09-21,Idaho,Gooding,WOAH Poultry,,9000
 2022-09-21,Minnesota,Otter Tail,Commercial Turkey Meat Bird,,5900
 2022-09-21,Minnesota,Roseau,Commercial Turkey Meat Bird,,116000
 2022-09-21,Utah,Sanpete,Commercial Turkey Meat Bird,,11100
@@ -2208,7 +2208,7 @@ confirmation_date,state,county,flock_type,species,flock_size
 2026-05-08,Indiana,Lagrange,Commercial Duck Breeder,,4600
 2026-05-11,Indiana,Lagrange,WOAH Poultry,,19700
 2026-05-12,Indiana,Elkhart,Commercial Duck Meat Bird,,29800
-2026-05-12,Minnesota,Becker,Commercial Breeder Operation,,19200
+2026-05-12,Minnesota,Becker,Commercial Breeder Operation,,18700
 2026-05-15,Minnesota,Becker,Commercial Turkey Breeder Replacement Hens,,19900
 2026-05-15,Minnesota,Becker,Commercial Breeder Operation,,23000
 2026-05-18,Indiana,Elkhart,Commercial Duck Meat Bird,,7300
@@ -2217,7 +2217,7 @@ confirmation_date,state,county,flock_type,species,flock_size
 2026-05-19,Indiana,Lagrange,Commercial Duck Breeder,,4400
 2026-05-20,Indiana,Elkhart,Commercial Duck Meat Bird,,13600
 2026-05-20,Indiana,Lagrange,Commercial Duck Meat Bird,,7700
-2026-05-20,Minnesota,Becker,Commercial Breeder Operation,,4300
+2026-05-20,Minnesota,Becker,Commercial Breeder Operation,,4100
 2026-05-22,Indiana,Elkhart,Commercial Duck Meat Bird,,11600
 2026-05-22,Pennsylvania,Susquehanna,WOAH Non-Poultry,,60
 2026-05-28,Indiana,Elkhart,Commercial Duck Meat Bird,,7500
@@ -2229,3 +2229,9 @@ confirmation_date,state,county,flock_type,species,flock_size
 2026-06-08,Indiana,Elkhart,WOAH Poultry,,19200
 2026-06-08,New Jersey,Passaic,Live Bird Market,,670
 2026-06-10,Idaho,Canyon,WOAH Non-Poultry,,20
+2026-06-12,Rhode Island,Providence,Live Bird Market,,450
+2026-06-18,Indiana,Lagrange,WOAH Non-Poultry,,20
+2026-06-23,Idaho,Canyon,WOAH Poultry,,3000
+2026-06-26,Pennsylvania,Delaware,Live Bird Market,,80
+2026-07-06,Utah,Cache,Commercial Table Egg Layer,,1216000
+2026-07-13,Utah,Cache,Commercial Table Egg Pullets,,275100

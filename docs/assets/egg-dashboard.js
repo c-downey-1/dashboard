@@ -879,7 +879,7 @@ async function bootEggDashboard() {
   registerRangeControl({
     chartId: 'tableLayersTrendChart',
     options: ['1y', '3y', '5y', '10y', 'all'],
-    defaultRange: '10y',
+    defaultRange: '5y',
     renderer(range) {
       const dates = D.nass_layers.dates_table;
       const values = D.nass_layers.table.map(v => v != null ? v : null);

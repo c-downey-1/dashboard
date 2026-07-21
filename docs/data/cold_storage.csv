@@ -1133,3 +1133,15 @@ report_date,category,commodity,holdings_lbs,holdings_1st_lbs,change_lbs,change_p
 2026-06-15,Chicken,Processed Other Poultry,63082000.0,62993000.0,89000.0,0.0
 2026-06-15,Eggs,Frozen Eggs,2326000.0,2328000.0,-2000.0,0.0
 2026-06-15,Turkey,Processed Turkeys,66339000.0,66384000.0,-45000.0,0.0
+2026-06-22,Chicken,Processed Other Poultry,63267000.0,62993000.0,274000.0,0.0
+2026-06-22,Eggs,Frozen Eggs,2320000.0,2328000.0,-8000.0,0.0
+2026-06-22,Turkey,Processed Turkeys,66244000.0,66384000.0,-140000.0,0.0
+2026-06-29,Chicken,Processed Other Poultry,63507000.0,62993000.0,514000.0,1.0
+2026-06-29,Eggs,Frozen Eggs,2343000.0,2328000.0,15000.0,1.0
+2026-06-29,Turkey,Processed Turkeys,66358000.0,66384000.0,-26000.0,0.0
+2026-07-06,Chicken,Processed Other Poultry,63785000.0,63618000.0,167000.0,0.0
+2026-07-06,Eggs,Frozen Eggs,2343000.0,2343000.0,0.0,0.0
+2026-07-06,Turkey,Processed Turkeys,66225000.0,66305000.0,-80000.0,0.0
+2026-07-13,Chicken,Processed Other Poultry,63592000.0,63618000.0,-26000.0,0.0
+2026-07-13,Eggs,Frozen Eggs,2343000.0,2343000.0,0.0,0.0
+2026-07-13,Turkey,Processed Turkeys,65173000.0,66305000.0,-1132000.0,-2.0

@@ -51,9 +51,8 @@ month,flock_type,detections,commercial_birds
 2022-09,Commercial Table Egg Layer,2,4898500
 2022-09,Commercial Turkey Breeder Hens,2,25000
 2022-09,Commercial Turkey Meat Bird,24,1133800
-2022-09,Commercial Upland Gamebird Producer,1,9000
 2022-09,WOAH Non-Poultry,29,2352
-2022-09,WOAH Poultry,8,5440
+2022-09,WOAH Poultry,9,14440
 2022-10,Commercial Breeder Operation,1,3600
 2022-10,Commercial Broiler Breeder Pullets,1,56000
 2022-10,Commercial Duck Breeder,1,15100
@@ -334,13 +333,15 @@ month,flock_type,detections,commercial_birds
 2026-04,Commercial Turkey Meat Bird,5,247000
 2026-04,WOAH Non-Poultry,4,190
 2026-04,WOAH Poultry,2,20160
-2026-05,Commercial Breeder Operation,3,46500
+2026-05,Commercial Breeder Operation,3,45800
 2026-05,Commercial Duck Breeder,2,9000
 2026-05,Commercial Duck Meat Bird,9,94000
 2026-05,Commercial Turkey Breeder Replacement Hens,1,19900
 2026-05,WOAH Non-Poultry,3,75
 2026-05,WOAH Poultry,5,79010
 2026-06,Commercial Duck Meat Bird,1,3100
-2026-06,Live Bird Market,1,670
-2026-06,WOAH Non-Poultry,1,20
-2026-06,WOAH Poultry,1,19200
+2026-06,Live Bird Market,3,1200
+2026-06,WOAH Non-Poultry,2,40
+2026-06,WOAH Poultry,2,22200
+2026-07,Commercial Table Egg Layer,1,1216000
+2026-07,Commercial Table Egg Pullets,1,275100
