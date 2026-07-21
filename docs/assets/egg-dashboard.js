@@ -702,6 +702,7 @@ async function bootEggDashboard() {
   insertRangeControls('tableLayersChart', []);
   {
     const map = buildYearMonthMap(D.nass_layers.dates_table, D.nass_layers.table);
+    const estimateMap = buildYearMonthMap(D.nass_layers.dates_table, D.nass_layers.estimate || []);
     const historyYears = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024].filter(year => map[year]);
     const highlightedYears = [2025, 2026].filter(year => map[year]);
     const layerSets = [
@@ -722,6 +723,12 @@ async function bootEggDashboard() {
       })] : []),
       ...(map[2026] ? [dataset('2026', monthsForYear(map, 2026), DASH_COLORS.gold, {
         borderWidth: 4.4,
+        order: 0
+      })] : []),
+      ...(estimateMap[2026] ? [dataset('2026 IAA Model Prediction', monthsForYear(estimateMap, 2026), DASH_COLORS.navy, {
+        borderDash: [12, 7],
+        borderWidth: 3.2,
+        fill: false,
         order: 0
       })] : [])
     ];
