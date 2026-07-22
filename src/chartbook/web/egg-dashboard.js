@@ -62,7 +62,7 @@ function setChartSources() {
     regionalEggChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2848" target="_blank" rel="noreferrer">USDA AMS Weekly Combined Regional Shell Egg Report</a>',
     eggImportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
     eggExportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
-    euPenetrationChart: 'Chart: Innovate Animal Ag • Source: <a href="https://innovateanimalag.org/market-penetration-forecast-2026" target="_blank" rel="noreferrer">2026 In-Ovo Sexing Market Penetration Report</a> &bull; Backyard flocks (&lt;350 hens) are excluded from EU harmonized reporting'
+    euPenetrationChart: 'Chart: Innovate Animal Ag • Source: <a href="https://innovateanimalag.org/market-penetration-forecast" target="_blank" rel="noreferrer">2026 In-Ovo Sexing Market Penetration Report</a> &bull; Backyard flocks (&lt;350 hens) are excluded from EU harmonized reporting'
   };
 
   Object.entries(sourceMap).forEach(([chartId, html]) => {
