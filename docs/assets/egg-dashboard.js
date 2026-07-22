@@ -61,7 +61,8 @@ function setChartSources() {
     dieselChart: 'Chart: Innovate Animal Ag • Sources: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a> · <a href="https://fred.stlouisfed.org/series/GASDESW" target="_blank" rel="noreferrer">FRED GASDESW</a> · <a href="https://fred.stlouisfed.org/series/PCU322219322219" target="_blank" rel="noreferrer">FRED PCU322219322219</a> · <a href="https://fred.stlouisfed.org/series/APU000072610" target="_blank" rel="noreferrer">FRED APU000072610</a>',
     regionalEggChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2848" target="_blank" rel="noreferrer">USDA AMS Weekly Combined Regional Shell Egg Report</a>',
     eggImportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
-    eggExportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>'
+    eggExportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
+    euPenetrationChart: 'Chart: Innovate Animal Ag • Source: <a href="https://innovateanimalag.org/market-penetration-forecast-2026" target="_blank" rel="noreferrer">2026 In-Ovo Sexing Market Penetration Report</a> &bull; Backyard flocks (&lt;350 hens) are excluded from EU harmonized reporting'
   };
 
   Object.entries(sourceMap).forEach(([chartId, html]) => {
@@ -341,6 +342,143 @@ function renderMixedChart(id, labels, datasets, yLabel, y2Label, extra = {}) {
     data: { labels, datasets: normalizedDatasets },
     options: baseOptions(yLabel, Object.assign({ chartId: id, y2: y2Label, maxTicks: 12 }, extra))
   });
+}
+
+function renderEuPenetrationChart() {
+  const canvas = document.getElementById('euPenetrationChart');
+  if (!canvas || !window.Chart) return;
+
+  // Static forecast data from the 2026 In-Ovo Sexing Market Penetration Report.
+  // x = fractional year (e.g. 2026.42 ≈ June 1, 2026); base = point estimate, band = [x, low, high].
+  const COMMERCIAL = {
+    base: [[2019, 0.1], [2020, 0.5], [2021, 1.0], [2022, 1.7], [2023, 7.0], [2024.25, 23.0], [2025.25, 33.6], [2026.42, 39.9]],
+    band: [[2023, 7.0, 7.0], [2024.25, 20.0, 27.0], [2025.25, 30.2, 36.6], [2026.42, 36.2, 43.3]]
+  };
+  const ALL_HENS = {
+    base: [[2019, 0.1], [2020, 0.5], [2021, 1.0], [2022, 1.7], [2023, 7.0], [2024.25, 21.0], [2025.25, 29.2], [2026.42, 35.4]],
+    band: [[2023, 7.0, 7.0], [2024.25, 18.0, 23.0], [2025.25, 26.3, 31.7], [2026.42, 32.2, 38.3]]
+  };
+  const X_MIN = 2019, X_MAX = 2026.65, Y_MAX = 50;
+  const C = { navy: DASH_COLORS.navy, orange: DASH_COLORS.orange, band: 'rgba(147, 149, 152, 0.16)' };
+
+  const toggle = document.getElementById('euPenetrationToggle');
+  const subtitle = document.getElementById('euPenetrationSub');
+  let includeBackyard = toggle ? toggle.checked : false;
+  let isMobile = isMobileWidth();
+
+  const activeSeries = () => includeBackyard ? ALL_HENS : COMMERCIAL;
+  const activeLabel = () => includeBackyard ? 'Including Backyard Flocks' : 'Commercial Scale Production';
+  const activeColor = () => includeBackyard ? C.navy : C.orange;
+
+  function dateForX(x) {
+    if (Math.abs(x - 2024.25) < 0.01) return 'April 1, 2024';
+    if (Math.abs(x - 2025.25) < 0.01) return 'April 1, 2025';
+    if (Math.abs(x - 2026.42) < 0.01) return 'June 1, 2026';
+    if (Math.abs(x - Math.round(x)) < 0.01) return 'January 1, ' + Math.round(x);
+    return String(x);
+  }
+  function nearestBand(series, x) {
+    for (let i = 0; i < series.band.length; i += 1) {
+      if (Math.abs(series.band[i][0] - x) < 0.01) return series.band[i];
+    }
+    return null;
+  }
+
+  const directLabels = {
+    id: 'euPenetrationLabels',
+    afterDatasetsDraw(chart) {
+      const series = activeSeries(), color = activeColor(), meta = chart.getDatasetMeta(2), ctx = chart.ctx;
+      const firstLabelIndex = series.base.length - 3;
+      ctx.save();
+      for (let dataIndex = firstLabelIndex; dataIndex < series.base.length; dataIndex += 1) {
+        const point = meta.data[dataIndex];
+        if (!point) continue;
+        const isEnd = dataIndex === series.base.length - 1;
+        const isFirst = dataIndex === firstLabelIndex;
+        const xOffset = isEnd ? -10 : (isFirst ? -8 : 0);
+        ctx.textAlign = isEnd ? 'right' : 'center';
+        ctx.fillStyle = color;
+        ctx.font = '700 ' + (isMobile ? 13 : 16) + 'px Lexend, sans-serif';
+        ctx.fillText(Math.round(series.base[dataIndex][1]) + '%', point.x + xOffset, point.y - (isMobile ? 13 : 17));
+      }
+      ctx.restore();
+    }
+  };
+
+  function draw() {
+    isMobile = isMobileWidth();
+    const existing = Chart.getChart(canvas);
+    if (existing) existing.destroy();
+    if (subtitle) {
+      subtitle.textContent = includeBackyard
+        ? 'Share of EU layer hens sexed in-ovo (including backyard production), as of June 1, 2026'
+        : 'Share of EU commercial layer hens sexed in-ovo, as of June 1, 2026';
+    }
+    const series = activeSeries(), color = activeColor();
+    const bandEdge = { borderColor: 'transparent', borderWidth: 0, pointRadius: 0, pointHoverRadius: 0, tension: 0.12, order: 10 };
+    charts.euPenetrationChart = new Chart(canvas, {
+      type: 'line',
+      data: {
+        datasets: [
+          Object.assign({ label: '__low', data: series.band.map(b => ({ x: b[0], y: b[1] })), backgroundColor: 'transparent', fill: false }, bandEdge),
+          Object.assign({ label: '__high', data: series.band.map(b => ({ x: b[0], y: b[2] })), backgroundColor: C.band, fill: '-1' }, bandEdge),
+          {
+            label: activeLabel(), order: 0,
+            data: series.base.map(p => ({ x: p[0], y: p[1] })),
+            borderColor: color, backgroundColor: color, borderWidth: isMobile ? 3 : 4, tension: 0.12, fill: false,
+            pointStyle: 'circle',
+            pointRadius: c => c.dataIndex >= series.base.length - 3 ? (isMobile ? 4 : 5) : 0,
+            pointHoverRadius: 6, pointBorderColor: '#fff', pointBorderWidth: 3
+          }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: true, aspectRatio: mobileAspectRatio(1.7),
+        layout: { padding: { top: 12, right: isMobile ? 60 : 92, bottom: 2, left: 4 } },
+        interaction: { mode: 'nearest', axis: 'xy', intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: 'nearest', intersect: false,
+            filter: item => item.dataset.label.indexOf('__') !== 0,
+            callbacks: {
+              title: items => items && items[0] ? dateForX(items[0].parsed.x) : '',
+              label(ctx) {
+                const band = nearestBand(series, ctx.parsed.x);
+                let line = activeLabel() + ': ' + ctx.parsed.y.toFixed(1) + '%';
+                if (band) line += ' (' + band[1].toFixed(1) + '–' + band[2].toFixed(1) + '% range)';
+                return line;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            type: 'linear', min: X_MIN, max: X_MAX,
+            afterBuildTicks(scale) {
+              const ticks = [];
+              for (let year = Math.ceil(X_MIN); year <= Math.floor(X_MAX); year += 1) ticks.push({ value: year });
+              scale.ticks = ticks;
+            },
+            ticks: { color: '#627684', maxRotation: 0, minRotation: 0, padding: isMobile ? 6 : 10, autoSkip: false, font: { size: isMobile ? 10 : 13 }, callback: v => Math.round(v) },
+            border: { display: true, color: 'rgba(1, 48, 70, 0.12)' }, grid: { drawOnChartArea: false, drawTicks: true, tickLength: 6 }
+          },
+          y: {
+            min: 0, max: Y_MAX,
+            ticks: { color: '#627684', padding: isMobile ? 6 : 10, stepSize: 10, font: { size: isMobile ? 10 : 13 }, callback: v => v + '%' },
+            border: { display: false }, grid: { color: 'rgba(1, 48, 70, 0.045)' }
+          }
+        }
+      },
+      plugins: [directLabels]
+    });
+  }
+
+  if (toggle && !toggle.dataset.euBound) {
+    toggle.dataset.euBound = '1';
+    toggle.addEventListener('change', () => { includeBackyard = toggle.checked; draw(); });
+  }
+  draw();
 }
 
 async function bootEggDashboard() {
@@ -1819,6 +1957,8 @@ async function bootEggDashboard() {
     showPlaceholder('importsWrap', 'ERS egg trade totals are not loaded in this environment yet. Run the ERS trade ingest and this chart will populate.');
     showPlaceholder('exportsWrap', 'ERS egg trade totals are not loaded in this environment yet. Run the ERS trade ingest and this chart will populate.');
   }
+
+  renderEuPenetrationChart();
 }
 
 const eggDashboardFontReady = window.EGG_PDF_MODE && document.fonts

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20260702d">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20260721a">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","vzbyd9vlgw");</script>
 </head>
@@ -100,10 +100,22 @@
   </section>
 
   <section class="section" id="international">
-    <div class="section-head"><div><h2>International Trade</h2><p>USDA ERS monthly trade totals for eggs and egg products.</p></div></div>
+    <div class="section-head"><div><h2>International</h2><p>Egg trade flows and global in-ovo sexing adoption.</p></div></div>
     <div class="grid">
       <article class="card" id="importsWrap"><h3>Egg Imports</h3><div class="sub">Total, shell-egg, and egg product imports</div><canvas id="eggImportsTradeChart"></canvas></article>
       <article class="card" id="exportsWrap"><h3>Egg Exports</h3><div class="sub">Total, shell-egg, and egg product exports</div><canvas id="eggExportsTradeChart"></canvas></article>
+      <article class="card" id="euPenetrationWrap">
+        <h3>EU In-Ovo Sexing Market Penetration</h3>
+        <div class="sub" id="euPenetrationSub">Share of EU commercial layer hens sexed in-ovo, as of June 1, 2026</div>
+        <div class="eu-toggle-bar">
+          <label class="eu-penetration-toggle" for="euPenetrationToggle">
+            <span>Include Backyard Flocks</span>
+            <input type="checkbox" id="euPenetrationToggle">
+            <i aria-hidden="true"></i>
+          </label>
+        </div>
+        <canvas id="euPenetrationChart" role="img" aria-label="Line chart of EU in-ovo sexing market penetration with uncertainty ranges and labeled estimates for 2024 through 2026."></canvas>
+      </article>
     </div>
   </section>
 
@@ -144,11 +156,11 @@
     </div>
   </section>
 
-  <div class="footer">Egg dashboard updated July 21, 2026. Sources in this build include USDA MARS, USDA NASS, USDA ERS, and USDA APHIS.</div>
+  <div class="footer">Egg dashboard updated July 22, 2026. Sources in this build include USDA MARS, USDA NASS, USDA ERS, and USDA APHIS.</div>
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20260702d"></script>
-<script src="assets/egg-dashboard.js?v=20260702d"></script>
+<script src="assets/dashboard-common.js?v=20260721a"></script>
+<script src="assets/egg-dashboard.js?v=20260721a"></script>
 </body>
 </html>
