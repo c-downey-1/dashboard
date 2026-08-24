@@ -575,3 +575,49 @@ report_date,section,egg_type,environment,avg_price,wtd_avg_price,volume,avg_pric
 2026-07-13,Report Detail Weighted,Liquid Whole,Caged,,14.67,1296000,,6.03,cents per pound,Pounds
 2026-07-13,Report Detail Weighted,Liquid Yolk,Caged,,50.0,336000,,48.6,cents per pound,Pounds
 2026-07-13,Report Detail Weighted,Liquid Yolk,Caged,,50.0,336000,,48.6,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Whites,Cage-Free,,,,,26.0,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Whites,Cage-Free,,,,,26.0,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Whites,Caged,,20.63,912000,,,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Whites,Caged,,20.63,912000,,,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Whole,Caged,,22.0,624000,,14.67,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Whole,Caged,,22.0,624000,,14.67,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Yolk,Caged,,55.79,576000,,50.0,cents per pound,Pounds
+2026-07-20,Report Detail Weighted,Liquid Yolk,Caged,,55.79,576000,,50.0,cents per pound,Pounds
+2026-07-27,Report Detail Weighted,Liquid Whites,Caged,,,,,20.63,cents per pound,Pounds
+2026-07-27,Report Detail Weighted,Liquid Whites,Caged,,,,,20.63,cents per pound,Pounds
+2026-07-27,Report Detail Weighted,Liquid Whole,Caged,,23.73,720000,,22.0,cents per pound,Pounds
+2026-07-27,Report Detail Weighted,Liquid Whole,Caged,,23.73,720000,,22.0,cents per pound,Pounds
+2026-07-27,Report Detail Weighted,Liquid Yolk,Caged,,64.0,384000,,55.79,cents per pound,Pounds
+2026-07-27,Report Detail Weighted,Liquid Yolk,Caged,,64.0,384000,,55.79,cents per pound,Pounds
+2026-08-03,Report Detail Simple,Frozen Salted Yolk,Caged,107.5,,,,,cents per pound,
+2026-08-03,Report Detail Simple,Frozen Salted Yolk,Caged,107.5,,,,,cents per pound,
+2026-08-03,Report Detail Simple,Frozen Whites,Caged,47.5,,,,,cents per pound,
+2026-08-03,Report Detail Simple,Frozen Whites,Caged,47.5,,,,,cents per pound,
+2026-08-03,Report Detail Simple,Frozen Whole,Caged,64.33,,,,,cents per pound,
+2026-08-03,Report Detail Simple,Frozen Whole,Caged,64.33,,,,,cents per pound,
+2026-08-03,Report Detail Weighted,Liquid Whites,Cage-Free,,26.0,48000,,,cents per pound,Pounds
+2026-08-03,Report Detail Weighted,Liquid Whites,Cage-Free,,26.0,48000,,,cents per pound,Pounds
+2026-08-03,Report Detail Weighted,Liquid Whole,Caged,,23.67,432000,,23.73,cents per pound,Pounds
+2026-08-03,Report Detail Weighted,Liquid Whole,Caged,,23.67,432000,,23.73,cents per pound,Pounds
+2026-08-03,Report Detail Weighted,Liquid Yolk,Caged,,79.5,192000,,64.0,cents per pound,Pounds
+2026-08-03,Report Detail Weighted,Liquid Yolk,Caged,,79.5,192000,,64.0,cents per pound,Pounds
+2026-08-10,Report Detail Simple,Frozen Salted Yolk,Caged,,,,107.5,,cents per pound,
+2026-08-10,Report Detail Simple,Frozen Salted Yolk,Caged,,,,107.5,,cents per pound,
+2026-08-10,Report Detail Simple,Frozen Whites,Caged,,,,47.5,,cents per pound,
+2026-08-10,Report Detail Simple,Frozen Whites,Caged,,,,47.5,,cents per pound,
+2026-08-10,Report Detail Simple,Frozen Whole,Caged,,,,64.33,,cents per pound,
+2026-08-10,Report Detail Simple,Frozen Whole,Caged,,,,64.33,,cents per pound,
+2026-08-10,Report Detail Weighted,Liquid Whites,Cage-Free,,16.0,48000,,26.0,cents per pound,Pounds
+2026-08-10,Report Detail Weighted,Liquid Whites,Cage-Free,,16.0,48000,,26.0,cents per pound,Pounds
+2026-08-10,Report Detail Weighted,Liquid Whole,Caged,,19.57,448000,,23.67,cents per pound,Pounds
+2026-08-10,Report Detail Weighted,Liquid Whole,Caged,,19.57,448000,,23.67,cents per pound,Pounds
+2026-08-10,Report Detail Weighted,Liquid Yolk,Caged,,76.38,192000,,79.5,cents per pound,Pounds
+2026-08-10,Report Detail Weighted,Liquid Yolk,Caged,,76.38,192000,,79.5,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Whites,Cage-Free,,16.0,48000,,16.0,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Whites,Cage-Free,,16.0,48000,,16.0,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Whites,Caged,,10.67,288000,,,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Whites,Caged,,10.67,288000,,,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Whole,Caged,,18.0,672000,,19.57,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Whole,Caged,,18.0,672000,,19.57,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Yolk,Caged,,83.0,192000,,76.38,cents per pound,Pounds
+2026-08-17,Report Detail Weighted,Liquid Yolk,Caged,,83.0,192000,,76.38,cents per pound,Pounds

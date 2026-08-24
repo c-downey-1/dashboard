@@ -35339,11 +35339,11 @@ report_date,region,class,type,volume,pct_chg
 2026-07-20,6-Area,,Specialty,25.6,-10.2%
 2026-07-20,6-Area,Extra Large,,119.8,-8.0%
 2026-07-20,6-Area,Jumbo,,37.0,-9.0%
-2026-07-20,6-Area,Large,,586.1,-8.5%
+2026-07-20,6-Area,Large,,615.6,-3.8%
 2026-07-20,6-Area,Medium,,177.1,2.9%
 2026-07-20,6-Area,Misc,,83.1,-2.2%
 2026-07-20,6-Area,Small,,15.6,-37.7%
-2026-07-20,6-Area,Total,,1380.4,-3.0%
+2026-07-20,6-Area,Total,,1409.9,-1.0%
 2026-07-20,6-Area,Ungraded,,361.7,9.4%
 2026-07-20,Midwest (MW),,Cage-Free,203.6,-8.1%
 2026-07-20,Midwest (MW),,Organic,29.9,1.4%
@@ -35394,11 +35394,11 @@ report_date,region,class,type,volume,pct_chg
 2026-07-20,Southeast (SE),,Specialty,7.8,-18.9%
 2026-07-20,Southeast (SE),Extra Large,,20.2,-20.4%
 2026-07-20,Southeast (SE),Jumbo,,4.5,-25.0%
-2026-07-20,Southeast (SE),Large,,116.9,-15.4%
+2026-07-20,Southeast (SE),Large,,146.4,6.0%
 2026-07-20,Southeast (SE),Medium,,16.3,14.7%
 2026-07-20,Southeast (SE),Misc,,8.5,16.3%
 2026-07-20,Southeast (SE),Small,,0.1,-94.5%
-2026-07-20,Southeast (SE),Total,,211.9,-7.7%
+2026-07-20,Southeast (SE),Total,,241.4,5.1%
 2026-07-20,Southeast (SE),Ungraded,,45.4,23.1%
 2026-07-20,Southwest (SW),,Cage-Free,113.1,8.4%
 2026-07-20,Southwest (SW),,Organic,22.6,-27.0%
@@ -35411,3 +35411,393 @@ report_date,region,class,type,volume,pct_chg
 2026-07-20,Southwest (SW),Small,,1.6,-57.1%
 2026-07-20,Southwest (SW),Total,,150.8,2.8%
 2026-07-20,Southwest (SW),Ungraded,,35.9,-4.6%
+2026-07-27,,Breaking Stock,,337.9,4.2%
+2026-07-27,6-Area,,Cage-Free,389.4,-0.5%
+2026-07-27,6-Area,,Organic,91.2,1.1%
+2026-07-27,6-Area,,Specialty,24.4,-4.5%
+2026-07-27,6-Area,Extra Large,,124.7,4.1%
+2026-07-27,6-Area,Jumbo,,36.1,-2.5%
+2026-07-27,6-Area,Large,,632.2,2.7%
+2026-07-27,6-Area,Medium,,184.8,4.3%
+2026-07-27,6-Area,Misc,,90.2,8.5%
+2026-07-27,6-Area,Small,,15.7,0.9%
+2026-07-27,6-Area,Total,,1430.1,1.4%
+2026-07-27,6-Area,Ungraded,,346.4,-4.2%
+2026-07-27,Midwest (MW),,Cage-Free,207.3,1.8%
+2026-07-27,Midwest (MW),,Organic,29.9,-0.1%
+2026-07-27,Midwest (MW),,Specialty,0.0,
+2026-07-27,Midwest (MW),Extra Large,,28.1,28.5%
+2026-07-27,Midwest (MW),Jumbo,,10.4,10.2%
+2026-07-27,Midwest (MW),Large,,174.6,6.0%
+2026-07-27,Midwest (MW),Medium,,54.6,-6.9%
+2026-07-27,Midwest (MW),Misc,,32.9,6.9%
+2026-07-27,Midwest (MW),Small,,1.5,51.8%
+2026-07-27,Midwest (MW),Total,,535.4,2.3%
+2026-07-27,Midwest (MW),Ungraded,,233.2,-1.7%
+2026-07-27,Northeast (NE),,Cage-Free,5.5,-13.4%
+2026-07-27,Northeast (NE),,Organic,16.8,-11.2%
+2026-07-27,Northeast (NE),,Specialty,9.5,2.1%
+2026-07-27,Northeast (NE),Extra Large,,29.1,8.3%
+2026-07-27,Northeast (NE),Jumbo,,8.6,-5.9%
+2026-07-27,Northeast (NE),Large,,78.6,-3.1%
+2026-07-27,Northeast (NE),Medium,,33.7,6.6%
+2026-07-27,Northeast (NE),Misc,,22.3,10.3%
+2026-07-27,Northeast (NE),Small,,10.2,-5.9%
+2026-07-27,Northeast (NE),Total,,205.0,1.7%
+2026-07-27,Northeast (NE),Ungraded,,22.6,3.1%
+2026-07-27,Northwest (NW),,Cage-Free,38.3,2.8%
+2026-07-27,Northwest (NW),,Organic,0.2,
+2026-07-27,Northwest (NW),,Specialty,1.1,-3.2%
+2026-07-27,Northwest (NW),Extra Large,,3.4,1.5%
+2026-07-27,Northwest (NW),Jumbo,,1.5,2.3%
+2026-07-27,Northwest (NW),Large,,31.6,8.3%
+2026-07-27,Northwest (NW),Medium,,11.1,5.7%
+2026-07-27,Northwest (NW),Misc,,2.5,-1.3%
+2026-07-27,Northwest (NW),Small,,1.4,-1.0%
+2026-07-27,Northwest (NW),Total,,53.2,4.4%
+2026-07-27,Northwest (NW),Ungraded,,1.8,-32.5%
+2026-07-27,South Central (SC),,Cage-Free,16.6,-2.9%
+2026-07-27,South Central (SC),,Organic,7.1,-1.4%
+2026-07-27,South Central (SC),,Specialty,0.6,17.6%
+2026-07-27,South Central (SC),Extra Large,,28.8,-9.9%
+2026-07-27,South Central (SC),Jumbo,,8.4,-8.9%
+2026-07-27,South Central (SC),Large,,141.0,0.5%
+2026-07-27,South Central (SC),Medium,,26.5,8.9%
+2026-07-27,South Central (SC),Misc,,19.3,18.6%
+2026-07-27,South Central (SC),Small,,1.0,73.3%
+2026-07-27,South Central (SC),Total,,243.5,0.8%
+2026-07-27,South Central (SC),Ungraded,,18.4,-2.0%
+2026-07-27,Southeast (SE),,Cage-Free,16.3,15.7%
+2026-07-27,Southeast (SE),,Organic,12.5,8.4%
+2026-07-27,Southeast (SE),,Specialty,6.7,-13.6%
+2026-07-27,Southeast (SE),Extra Large,,21.4,5.9%
+2026-07-27,Southeast (SE),Jumbo,,4.2,-7.4%
+2026-07-27,Southeast (SE),Large,,150.1,2.5%
+2026-07-27,Southeast (SE),Medium,,22.1,35.9%
+2026-07-27,Southeast (SE),Misc,,8.4,-1.6%
+2026-07-27,Southeast (SE),Small,,0.0,-93.0%
+2026-07-27,Southeast (SE),Total,,249.1,3.2%
+2026-07-27,Southeast (SE),Ungraded,,43.0,-5.4%
+2026-07-27,Southwest (SW),,Cage-Free,105.4,-6.8%
+2026-07-27,Southwest (SW),,Organic,24.7,9.4%
+2026-07-27,Southwest (SW),,Specialty,6.6,-5.0%
+2026-07-27,Southwest (SW),Extra Large,,13.8,-10.8%
+2026-07-27,Southwest (SW),Jumbo,,3.1,-12.6%
+2026-07-27,Southwest (SW),Large,,56.2,4.5%
+2026-07-27,Southwest (SW),Medium,,36.8,2.7%
+2026-07-27,Southwest (SW),Misc,,4.8,0.0%
+2026-07-27,Southwest (SW),Small,,1.6,1.9%
+2026-07-27,Southwest (SW),Total,,143.9,-4.6%
+2026-07-27,Southwest (SW),Ungraded,,27.6,-23.2%
+2026-08-03,,Breaking Stock,,315.2,-6.7%
+2026-08-03,6-Area,,Cage-Free,409.3,5.1%
+2026-08-03,6-Area,,Organic,94.2,3.3%
+2026-08-03,6-Area,,Specialty,25.7,5.3%
+2026-08-03,6-Area,Extra Large,,129.7,4.0%
+2026-08-03,6-Area,Jumbo,,42.4,17.4%
+2026-08-03,6-Area,Large,,674.7,6.7%
+2026-08-03,6-Area,Medium,,170.4,-7.8%
+2026-08-03,6-Area,Misc,,85.3,-5.5%
+2026-08-03,6-Area,Small,,13.0,-17.0%
+2026-08-03,6-Area,Total,,1454.0,1.7%
+2026-08-03,6-Area,Ungraded,,338.6,-2.3%
+2026-08-03,Midwest (MW),,Cage-Free,211.9,2.2%
+2026-08-03,Midwest (MW),,Organic,29.9,0.1%
+2026-08-03,Midwest (MW),,Specialty,0.0,
+2026-08-03,Midwest (MW),Extra Large,,30.3,8.0%
+2026-08-03,Midwest (MW),Jumbo,,14.7,41.4%
+2026-08-03,Midwest (MW),Large,,187.0,7.1%
+2026-08-03,Midwest (MW),Medium,,50.1,-8.2%
+2026-08-03,Midwest (MW),Misc,,26.8,-18.7%
+2026-08-03,Midwest (MW),Small,,1.6,4.1%
+2026-08-03,Midwest (MW),Total,,532.2,-0.6%
+2026-08-03,Midwest (MW),Ungraded,,221.7,-4.9%
+2026-08-03,Northeast (NE),,Cage-Free,5.7,4.2%
+2026-08-03,Northeast (NE),,Organic,20.4,21.7%
+2026-08-03,Northeast (NE),,Specialty,10.9,14.4%
+2026-08-03,Northeast (NE),Extra Large,,27.5,-5.4%
+2026-08-03,Northeast (NE),Jumbo,,7.6,-12.2%
+2026-08-03,Northeast (NE),Large,,101.5,29.2%
+2026-08-03,Northeast (NE),Medium,,26.9,-20.2%
+2026-08-03,Northeast (NE),Misc,,24.0,7.6%
+2026-08-03,Northeast (NE),Small,,9.7,-5.4%
+2026-08-03,Northeast (NE),Total,,223.3,8.9%
+2026-08-03,Northeast (NE),Ungraded,,26.1,15.5%
+2026-08-03,Northwest (NW),,Cage-Free,43.9,14.6%
+2026-08-03,Northwest (NW),,Organic,0.2,24.5%
+2026-08-03,Northwest (NW),,Specialty,1.1,-3.2%
+2026-08-03,Northwest (NW),Extra Large,,4.2,23.9%
+2026-08-03,Northwest (NW),Jumbo,,1.5,1.5%
+2026-08-03,Northwest (NW),Large,,37.5,18.7%
+2026-08-03,Northwest (NW),Medium,,15.5,39.5%
+2026-08-03,Northwest (NW),Misc,,2.2,-11.8%
+2026-08-03,Northwest (NW),Small,,0.0,-100.0%
+2026-08-03,Northwest (NW),Total,,62.7,17.8%
+2026-08-03,Northwest (NW),Ungraded,,1.8,-2.4%
+2026-08-03,South Central (SC),,Cage-Free,18.3,10.0%
+2026-08-03,South Central (SC),,Organic,8.1,14.1%
+2026-08-03,South Central (SC),,Specialty,0.5,-14.7%
+2026-08-03,South Central (SC),Extra Large,,28.5,-0.9%
+2026-08-03,South Central (SC),Jumbo,,9.1,7.9%
+2026-08-03,South Central (SC),Large,,144.3,2.3%
+2026-08-03,South Central (SC),Medium,,25.9,-2.4%
+2026-08-03,South Central (SC),Misc,,19.8,2.6%
+2026-08-03,South Central (SC),Small,,0.7,-26.0%
+2026-08-03,South Central (SC),Total,,247.3,1.6%
+2026-08-03,South Central (SC),Ungraded,,19.1,3.5%
+2026-08-03,Southeast (SE),,Cage-Free,15.6,-4.1%
+2026-08-03,Southeast (SE),,Organic,14.2,13.3%
+2026-08-03,Southeast (SE),,Specialty,6.5,-3.1%
+2026-08-03,Southeast (SE),Extra Large,,21.0,-2.0%
+2026-08-03,Southeast (SE),Jumbo,,5.7,36.2%
+2026-08-03,Southeast (SE),Large,,141.3,-5.9%
+2026-08-03,Southeast (SE),Medium,,20.3,-8.1%
+2026-08-03,Southeast (SE),Misc,,7.9,-6.3%
+2026-08-03,Southeast (SE),Small,,0.0,
+2026-08-03,Southeast (SE),Total,,240.6,-3.4%
+2026-08-03,Southeast (SE),Ungraded,,44.4,3.3%
+2026-08-03,Southwest (SW),,Cage-Free,113.9,8.0%
+2026-08-03,Southwest (SW),,Organic,21.3,-13.7%
+2026-08-03,Southwest (SW),,Specialty,6.8,2.4%
+2026-08-03,Southwest (SW),Extra Large,,18.1,31.2%
+2026-08-03,Southwest (SW),Jumbo,,3.8,23.0%
+2026-08-03,Southwest (SW),Large,,63.1,12.2%
+2026-08-03,Southwest (SW),Medium,,31.7,-13.9%
+2026-08-03,Southwest (SW),Misc,,4.7,-3.0%
+2026-08-03,Southwest (SW),Small,,1.1,-33.3%
+2026-08-03,Southwest (SW),Total,,148.0,2.8%
+2026-08-03,Southwest (SW),Ungraded,,25.5,-7.5%
+2026-08-10,,Breaking Stock,,326.6,3.6%
+2026-08-10,6-Area,,Cage-Free,425.9,4.1%
+2026-08-10,6-Area,,Organic,95.1,0.9%
+2026-08-10,6-Area,,Specialty,27.2,5.9%
+2026-08-10,6-Area,Extra Large,,158.6,22.3%
+2026-08-10,6-Area,Jumbo,,42.1,-0.8%
+2026-08-10,6-Area,Large,,707.3,4.8%
+2026-08-10,6-Area,Medium,,150.3,-11.8%
+2026-08-10,6-Area,Misc,,93.7,9.8%
+2026-08-10,6-Area,Small,,12.5,-4.1%
+2026-08-10,6-Area,Total,,1485.9,2.2%
+2026-08-10,6-Area,Ungraded,,321.5,-5.1%
+2026-08-10,Midwest (MW),,Cage-Free,221.7,4.6%
+2026-08-10,Midwest (MW),,Organic,29.7,-0.7%
+2026-08-10,Midwest (MW),,Specialty,0.0,
+2026-08-10,Midwest (MW),Extra Large,,42.0,38.5%
+2026-08-10,Midwest (MW),Jumbo,,12.1,-17.8%
+2026-08-10,Midwest (MW),Large,,196.2,4.9%
+2026-08-10,Midwest (MW),Medium,,42.8,-14.5%
+2026-08-10,Midwest (MW),Misc,,33.2,23.9%
+2026-08-10,Midwest (MW),Small,,1.3,-17.0%
+2026-08-10,Midwest (MW),Total,,545.6,2.5%
+2026-08-10,Midwest (MW),Ungraded,,218.0,-1.7%
+2026-08-10,Northeast (NE),,Cage-Free,6.8,19.1%
+2026-08-10,Northeast (NE),,Organic,20.5,0.6%
+2026-08-10,Northeast (NE),,Specialty,10.8,-1.0%
+2026-08-10,Northeast (NE),Extra Large,,32.0,16.4%
+2026-08-10,Northeast (NE),Jumbo,,10.2,34.1%
+2026-08-10,Northeast (NE),Large,,93.9,-7.5%
+2026-08-10,Northeast (NE),Medium,,24.4,-9.5%
+2026-08-10,Northeast (NE),Misc,,24.2,1.0%
+2026-08-10,Northeast (NE),Small,,8.5,-12.1%
+2026-08-10,Northeast (NE),Total,,215.9,-3.3%
+2026-08-10,Northeast (NE),Ungraded,,22.6,-13.4%
+2026-08-10,Northwest (NW),,Cage-Free,49.8,13.5%
+2026-08-10,Northwest (NW),,Organic,0.4,97.0%
+2026-08-10,Northwest (NW),,Specialty,1.0,-8.1%
+2026-08-10,Northwest (NW),Extra Large,,5.7,35.8%
+2026-08-10,Northwest (NW),Jumbo,,1.5,-2.8%
+2026-08-10,Northwest (NW),Large,,47.9,27.8%
+2026-08-10,Northwest (NW),Medium,,13.2,-15.0%
+2026-08-10,Northwest (NW),Misc,,3.1,41.7%
+2026-08-10,Northwest (NW),Small,,0.0,
+2026-08-10,Northwest (NW),Total,,73.0,16.5%
+2026-08-10,Northwest (NW),Ungraded,,1.6,-8.6%
+2026-08-10,South Central (SC),,Cage-Free,24.4,33.6%
+2026-08-10,South Central (SC),,Organic,8.1,0.0%
+2026-08-10,South Central (SC),,Specialty,1.3,161.8%
+2026-08-10,South Central (SC),Extra Large,,34.3,20.3%
+2026-08-10,South Central (SC),Jumbo,,9.6,5.0%
+2026-08-10,South Central (SC),Large,,156.0,8.1%
+2026-08-10,South Central (SC),Medium,,26.8,3.4%
+2026-08-10,South Central (SC),Misc,,19.6,-0.9%
+2026-08-10,South Central (SC),Small,,0.2,-71.4%
+2026-08-10,South Central (SC),Total,,258.5,4.5%
+2026-08-10,South Central (SC),Ungraded,,12.1,-36.5%
+2026-08-10,Southeast (SE),,Cage-Free,14.6,-6.7%
+2026-08-10,Southeast (SE),,Organic,13.8,-2.6%
+2026-08-10,Southeast (SE),,Specialty,7.3,11.8%
+2026-08-10,Southeast (SE),Extra Large,,27.3,29.8%
+2026-08-10,Southeast (SE),Jumbo,,5.2,-9.3%
+2026-08-10,Southeast (SE),Large,,149.0,5.4%
+2026-08-10,Southeast (SE),Medium,,16.6,-18.4%
+2026-08-10,Southeast (SE),Misc,,8.1,2.1%
+2026-08-10,Southeast (SE),Small,,0.1,
+2026-08-10,Southeast (SE),Total,,249.7,3.8%
+2026-08-10,Southeast (SE),Ungraded,,43.6,-1.9%
+2026-08-10,Southwest (SW),,Cage-Free,108.6,-4.6%
+2026-08-10,Southwest (SW),,Organic,22.5,5.7%
+2026-08-10,Southwest (SW),,Specialty,6.8,0.6%
+2026-08-10,Southwest (SW),Extra Large,,17.4,-3.8%
+2026-08-10,Southwest (SW),Jumbo,,3.6,-5.5%
+2026-08-10,Southwest (SW),Large,,64.3,1.9%
+2026-08-10,Southwest (SW),Medium,,26.6,-16.2%
+2026-08-10,Southwest (SW),Misc,,5.4,14.7%
+2026-08-10,Southwest (SW),Small,,2.3,111.6%
+2026-08-10,Southwest (SW),Total,,143.1,-3.3%
+2026-08-10,Southwest (SW),Ungraded,,23.6,-7.6%
+2026-08-17,,Breaking Stock,,318.4,-2.5%
+2026-08-17,6-Area,,Cage-Free,452.2,6.2%
+2026-08-17,6-Area,,Organic,93.2,-2.0%
+2026-08-17,6-Area,,Specialty,27.9,2.5%
+2026-08-17,6-Area,Extra Large,,155.5,-2.0%
+2026-08-17,6-Area,Jumbo,,41.0,-2.7%
+2026-08-17,6-Area,Large,,717.2,1.4%
+2026-08-17,6-Area,Medium,,139.3,-7.3%
+2026-08-17,6-Area,Misc,,97.2,3.8%
+2026-08-17,6-Area,Small,,11.4,-8.8%
+2026-08-17,6-Area,Total,,1469.8,-1.1%
+2026-08-17,6-Area,Ungraded,,308.2,-4.1%
+2026-08-17,Midwest (MW),,Cage-Free,240.9,8.6%
+2026-08-17,Midwest (MW),,Organic,29.0,-2.4%
+2026-08-17,Midwest (MW),,Specialty,0.0,
+2026-08-17,Midwest (MW),Extra Large,,38.4,-8.5%
+2026-08-17,Midwest (MW),Jumbo,,13.5,11.9%
+2026-08-17,Midwest (MW),Large,,198.7,1.3%
+2026-08-17,Midwest (MW),Medium,,37.4,-12.6%
+2026-08-17,Midwest (MW),Misc,,37.7,13.4%
+2026-08-17,Midwest (MW),Small,,0.5,-61.4%
+2026-08-17,Midwest (MW),Total,,530.9,-2.7%
+2026-08-17,Midwest (MW),Ungraded,,204.7,-6.1%
+2026-08-17,Northeast (NE),,Cage-Free,6.7,-1.2%
+2026-08-17,Northeast (NE),,Organic,18.6,-9.2%
+2026-08-17,Northeast (NE),,Specialty,11.5,6.2%
+2026-08-17,Northeast (NE),Extra Large,,27.0,-15.7%
+2026-08-17,Northeast (NE),Jumbo,,8.0,-21.5%
+2026-08-17,Northeast (NE),Large,,93.3,-0.6%
+2026-08-17,Northeast (NE),Medium,,24.8,1.8%
+2026-08-17,Northeast (NE),Misc,,24.7,2.3%
+2026-08-17,Northeast (NE),Small,,8.0,-6.3%
+2026-08-17,Northeast (NE),Total,,206.5,-4.4%
+2026-08-17,Northeast (NE),Ungraded,,20.7,-8.6%
+2026-08-17,Northwest (NW),,Cage-Free,43.3,-13.0%
+2026-08-17,Northwest (NW),,Organic,0.3,-18.8%
+2026-08-17,Northwest (NW),,Specialty,0.9,-10.4%
+2026-08-17,Northwest (NW),Extra Large,,5.3,-6.7%
+2026-08-17,Northwest (NW),Jumbo,,1.7,10.8%
+2026-08-17,Northwest (NW),Large,,37.8,-21.1%
+2026-08-17,Northwest (NW),Medium,,10.2,-22.5%
+2026-08-17,Northwest (NW),Misc,,1.9,-38.1%
+2026-08-17,Northwest (NW),Small,,0.0,
+2026-08-17,Northwest (NW),Total,,58.4,-20.0%
+2026-08-17,Northwest (NW),Ungraded,,1.5,-6.4%
+2026-08-17,South Central (SC),,Cage-Free,35.2,44.2%
+2026-08-17,South Central (SC),,Organic,8.4,4.0%
+2026-08-17,South Central (SC),,Specialty,1.8,38.8%
+2026-08-17,South Central (SC),Extra Large,,37.2,8.6%
+2026-08-17,South Central (SC),Jumbo,,8.1,-15.6%
+2026-08-17,South Central (SC),Large,,165.7,6.2%
+2026-08-17,South Central (SC),Medium,,27.6,3.1%
+2026-08-17,South Central (SC),Misc,,19.2,-1.9%
+2026-08-17,South Central (SC),Small,,0.3,50.0%
+2026-08-17,South Central (SC),Total,,272.5,5.4%
+2026-08-17,South Central (SC),Ungraded,,14.3,18.3%
+2026-08-17,Southeast (SE),,Cage-Free,18.4,26.2%
+2026-08-17,Southeast (SE),,Organic,12.6,-8.5%
+2026-08-17,Southeast (SE),,Specialty,7.1,-2.2%
+2026-08-17,Southeast (SE),Extra Large,,26.7,-2.4%
+2026-08-17,Southeast (SE),Jumbo,,5.8,12.5%
+2026-08-17,Southeast (SE),Large,,162.1,8.8%
+2026-08-17,Southeast (SE),Medium,,12.2,-26.4%
+2026-08-17,Southeast (SE),Misc,,7.7,-5.4%
+2026-08-17,Southeast (SE),Small,,0.0,-93.0%
+2026-08-17,Southeast (SE),Total,,257.7,3.2%
+2026-08-17,Southeast (SE),Ungraded,,43.2,-0.8%
+2026-08-17,Southwest (SW),,Cage-Free,107.7,-0.8%
+2026-08-17,Southwest (SW),,Organic,24.2,7.7%
+2026-08-17,Southwest (SW),,Specialty,6.6,-3.4%
+2026-08-17,Southwest (SW),Extra Large,,20.8,19.7%
+2026-08-17,Southwest (SW),Jumbo,,3.8,6.0%
+2026-08-17,Southwest (SW),Large,,59.6,-7.3%
+2026-08-17,Southwest (SW),Medium,,27.0,1.4%
+2026-08-17,Southwest (SW),Misc,,6.0,11.6%
+2026-08-17,Southwest (SW),Small,,2.6,14.2%
+2026-08-17,Southwest (SW),Total,,143.7,0.4%
+2026-08-17,Southwest (SW),Ungraded,,23.9,1.1%
+2026-08-24,,Breaking Stock,,326.7,2.6%
+2026-08-24,6-Area,,Cage-Free,435.7,-3.7%
+2026-08-24,6-Area,,Organic,93.9,0.7%
+2026-08-24,6-Area,,Specialty,30.0,7.5%
+2026-08-24,6-Area,Extra Large,,147.5,-5.2%
+2026-08-24,6-Area,Jumbo,,43.0,4.9%
+2026-08-24,6-Area,Large,,735.9,2.6%
+2026-08-24,6-Area,Medium,,140.8,1.1%
+2026-08-24,6-Area,Misc,,95.4,-1.9%
+2026-08-24,6-Area,Small,,12.9,13.0%
+2026-08-24,6-Area,Total,,1494.0,1.7%
+2026-08-24,6-Area,Ungraded,,318.6,3.4%
+2026-08-24,Midwest (MW),,Cage-Free,243.6,1.1%
+2026-08-24,Midwest (MW),,Organic,29.5,1.8%
+2026-08-24,Midwest (MW),,Specialty,0.0,
+2026-08-24,Midwest (MW),Extra Large,,39.0,1.5%
+2026-08-24,Midwest (MW),Jumbo,,15.6,15.4%
+2026-08-24,Midwest (MW),Large,,216.2,8.8%
+2026-08-24,Midwest (MW),Medium,,38.4,2.7%
+2026-08-24,Midwest (MW),Misc,,37.7,0.1%
+2026-08-24,Midwest (MW),Small,,1.7,234.8%
+2026-08-24,Midwest (MW),Total,,561.8,5.8%
+2026-08-24,Midwest (MW),Ungraded,,213.2,4.2%
+2026-08-24,Northeast (NE),,Cage-Free,4.5,-33.1%
+2026-08-24,Northeast (NE),,Organic,17.5,-6.1%
+2026-08-24,Northeast (NE),,Specialty,11.8,2.9%
+2026-08-24,Northeast (NE),Extra Large,,27.9,3.2%
+2026-08-24,Northeast (NE),Jumbo,,8.1,1.0%
+2026-08-24,Northeast (NE),Large,,90.1,-3.4%
+2026-08-24,Northeast (NE),Medium,,25.0,0.7%
+2026-08-24,Northeast (NE),Misc,,24.7,-0.1%
+2026-08-24,Northeast (NE),Small,,7.5,-5.9%
+2026-08-24,Northeast (NE),Total,,201.6,-2.4%
+2026-08-24,Northeast (NE),Ungraded,,18.3,-11.4%
+2026-08-24,Northwest (NW),,Cage-Free,32.2,-25.6%
+2026-08-24,Northwest (NW),,Organic,0.7,148.0%
+2026-08-24,Northwest (NW),,Specialty,1.1,25.3%
+2026-08-24,Northwest (NW),Extra Large,,3.6,-32.7%
+2026-08-24,Northwest (NW),Jumbo,,1.7,-0.8%
+2026-08-24,Northwest (NW),Large,,30.3,-19.9%
+2026-08-24,Northwest (NW),Medium,,6.7,-34.0%
+2026-08-24,Northwest (NW),Misc,,1.9,2.0%
+2026-08-24,Northwest (NW),Small,,0.8,
+2026-08-24,Northwest (NW),Total,,46.7,-20.0%
+2026-08-24,Northwest (NW),Ungraded,,1.8,18.1%
+2026-08-24,South Central (SC),,Cage-Free,31.3,-10.9%
+2026-08-24,South Central (SC),,Organic,8.2,-2.9%
+2026-08-24,South Central (SC),,Specialty,1.6,-9.9%
+2026-08-24,South Central (SC),Extra Large,,34.4,-7.5%
+2026-08-24,South Central (SC),Jumbo,,9.4,15.5%
+2026-08-24,South Central (SC),Large,,176.8,6.7%
+2026-08-24,South Central (SC),Medium,,28.9,4.8%
+2026-08-24,South Central (SC),Misc,,16.9,-12.1%
+2026-08-24,South Central (SC),Small,,0.1,-66.7%
+2026-08-24,South Central (SC),Total,,282.8,3.8%
+2026-08-24,South Central (SC),Ungraded,,16.3,13.8%
+2026-08-24,Southeast (SE),,Cage-Free,16.2,-12.1%
+2026-08-24,Southeast (SE),,Organic,14.3,13.6%
+2026-08-24,Southeast (SE),,Specialty,8.6,21.4%
+2026-08-24,Southeast (SE),Extra Large,,23.9,-10.6%
+2026-08-24,Southeast (SE),Jumbo,,4.3,-26.2%
+2026-08-24,Southeast (SE),Large,,160.5,-1.0%
+2026-08-24,Southeast (SE),Medium,,16.6,36.1%
+2026-08-24,Southeast (SE),Misc,,7.1,-7.5%
+2026-08-24,Southeast (SE),Small,,0.0,
+2026-08-24,Southeast (SE),Total,,258.2,0.2%
+2026-08-24,Southeast (SE),Ungraded,,45.8,6.0%
+2026-08-24,Southwest (SW),,Cage-Free,107.8,0.1%
+2026-08-24,Southwest (SW),,Organic,23.7,-2.1%
+2026-08-24,Southwest (SW),,Specialty,6.8,2.7%
+2026-08-24,Southwest (SW),Extra Large,,18.7,-9.9%
+2026-08-24,Southwest (SW),Jumbo,,4.0,5.7%
+2026-08-24,Southwest (SW),Large,,62.0,4.0%
+2026-08-24,Southwest (SW),Medium,,25.2,-6.8%
+2026-08-24,Southwest (SW),Misc,,7.0,16.7%
+2026-08-24,Southwest (SW),Small,,2.8,6.8%
+2026-08-24,Southwest (SW),Total,,142.8,-0.6%
+2026-08-24,Southwest (SW),Ungraded,,23.2,-3.1%
