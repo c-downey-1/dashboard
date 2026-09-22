@@ -3655,3 +3655,76 @@ report_date,item,low_price,high_price,wtd_avg_price,volume,wtd_avg_price_prev,vo
 2026-08-17,Thighs - Bone-in,64.0,88.0,81.25,6,82.3,4,-1.05,Cents Per Lb,Pounds
 2026-08-17,WOG,109.0,149.0,138.13,2265,137.96,2505,0.17,Cents Per Lb,Pounds
 2026-08-17,Wings - Whole,112.0,148.0,123.35,497,124.18,472,-0.83,Cents Per Lb,Pounds
+2026-08-24,ALL Items,76.0,149.0,116.41,7971,116.78,8027,-0.37,Cents Per Lb,Pounds
+2026-08-24,All Items,109.0,149.0,138.01,2325,138.19,2385,-0.18,Cents Per Lb,Pounds
+2026-08-24,Backs and Necks Stripped,8.0,13.0,10.71,1975,10.67,1872,0.04,Cents Per Lb,Pounds
+2026-08-24,Breast - B/S,98.0,142.0,120.9,1831,121.8,1644,-0.9,Cents Per Lb,Pounds
+2026-08-24,Breast - Line Run,77.0,118.0,109.9,96,113.54,87,-3.64,Cents Per Lb,Pounds
+2026-08-24,Drumsticks,43.0,67.0,54.98,2100,56.02,605,-1.04,Cents Per Lb,Pounds
+2026-08-24,Frames,8.5,11.5,10.26,710,10.25,747,0.01,Cents Per Lb,Pounds
+2026-08-24,Gizzards and Hearts,78.0,91.0,83.23,149,84.97,119,-1.74,Cents Per Lb,Pounds
+2026-08-24,Leg quarters - Bulk,49.0,66.0,52.87,1467,53.04,1341,-0.17,Cents Per Lb,Pounds
+2026-08-24,Legs - Bone-in,64.0,83.0,71.22,638,72.91,462,-1.69,Cents Per Lb,Pounds
+2026-08-24,Livers,64.0,82.0,75.78,100,72.98,78,2.8,Cents Per Lb,Pounds
+2026-08-24,"MSC, 15-20% Fat Content",24.0,29.0,25.02,963,25.0,983,0.02,Cents Per Lb,Pounds
+2026-08-24,RTC Broiler/Fryer,120.0,140.0,126.26,913,127.24,808,-0.98,Cents Per Lb,Pounds
+2026-08-24,Tenderloins,97.0,185.0,113.65,919,116.91,903,-3.26,Cents Per Lb,Pounds
+2026-08-24,Thighs - B/S,120.0,165.0,148.3,564,148.54,594,-0.24,Cents Per Lb,Pounds
+2026-08-24,Thighs - Bone-in,64.0,88.0,71.65,6,81.25,6,-9.6,Cents Per Lb,Pounds
+2026-08-24,WOG,109.0,149.0,138.0,2205,138.13,2265,-0.13,Cents Per Lb,Pounds
+2026-08-24,Wings - Whole,103.0,143.0,117.4,560,123.35,497,-5.95,Cents Per Lb,Pounds
+2026-08-31,ALL Items,72.0,149.0,116.4,8046,116.41,7971,-0.01,Cents Per Lb,Pounds
+2026-08-31,All Items,106.0,149.0,137.44,2360,138.01,2325,-0.57,Cents Per Lb,Pounds
+2026-08-31,Backs and Necks Stripped,8.0,14.0,10.53,2101,10.71,1975,-0.18,Cents Per Lb,Pounds
+2026-08-31,Breast - B/S,101.0,144.0,122.18,2316,120.9,1831,1.28,Cents Per Lb,Pounds
+2026-08-31,Breast - Line Run,84.0,115.0,110.29,82,109.9,96,0.39,Cents Per Lb,Pounds
+2026-08-31,Drumsticks,42.0,73.0,56.03,1435,54.98,2100,1.05,Cents Per Lb,Pounds
+2026-08-31,Frames,8.5,11.5,10.23,645,10.26,710,-0.03,Cents Per Lb,Pounds
+2026-08-31,Gizzards and Hearts,82.0,91.0,87.44,145,83.23,149,4.21,Cents Per Lb,Pounds
+2026-08-31,Leg quarters - Bulk,46.0,68.0,53.36,1552,52.87,1467,0.49,Cents Per Lb,Pounds
+2026-08-31,Legs - Bone-in,62.0,82.0,71.05,713,71.22,638,-0.17,Cents Per Lb,Pounds
+2026-08-31,Livers,78.0,82.0,80.32,122,75.78,100,4.54,Cents Per Lb,Pounds
+2026-08-31,"MSC, 15-20% Fat Content",24.0,29.0,25.07,900,25.02,963,0.05,Cents Per Lb,Pounds
+2026-08-31,RTC Broiler/Fryer,120.0,140.0,125.38,760,126.26,913,-0.88,Cents Per Lb,Pounds
+2026-08-31,Tenderloins,97.0,156.0,113.47,939,113.65,919,-0.18,Cents Per Lb,Pounds
+2026-08-31,Thighs - B/S,129.0,165.0,147.53,590,148.3,564,-0.77,Cents Per Lb,Pounds
+2026-08-31,Thighs - Bone-in,60.0,92.0,72.26,7,71.65,6,0.61,Cents Per Lb,Pounds
+2026-08-31,WOG,106.0,149.0,137.34,2245,138.0,2205,-0.66,Cents Per Lb,Pounds
+2026-08-31,Wings - Whole,99.0,140.0,112.37,517,117.4,560,-5.03,Cents Per Lb,Pounds
+2026-09-07,ALL Items,79.0,149.0,116.08,8107,116.4,8046,-0.32,Cents Per Lb,Pounds
+2026-09-07,All Items,105.0,149.0,138.09,2220,137.44,2360,0.65,Cents Per Lb,Pounds
+2026-09-07,Backs and Necks Stripped,8.0,13.0,10.91,1780,10.53,2101,0.38,Cents Per Lb,Pounds
+2026-09-07,Breast - B/S,98.0,146.0,121.35,2101,122.18,2316,-0.83,Cents Per Lb,Pounds
+2026-09-07,Breast - Line Run,82.0,118.0,106.38,83,110.29,82,-3.91,Cents Per Lb,Pounds
+2026-09-07,Drumsticks,43.0,64.0,55.35,1653,56.03,1435,-0.68,Cents Per Lb,Pounds
+2026-09-07,Frames,6.0,11.5,9.66,585,10.23,645,-0.57,Cents Per Lb,Pounds
+2026-09-07,Gizzards and Hearts,78.0,92.0,85.67,159,87.44,145,-1.77,Cents Per Lb,Pounds
+2026-09-07,Leg quarters - Bulk,51.0,74.0,52.76,1603,53.36,1552,-0.6,Cents Per Lb,Pounds
+2026-09-07,Legs - Bone-in,60.0,81.0,71.12,897,71.05,713,0.07,Cents Per Lb,Pounds
+2026-09-07,Livers,78.0,80.0,79.15,128,80.32,122,-1.17,Cents Per Lb,Pounds
+2026-09-07,"MSC, 15-20% Fat Content",24.0,29.0,25.17,722,25.07,900,0.1,Cents Per Lb,Pounds
+2026-09-07,RTC Broiler/Fryer,120.0,139.0,125.21,760,125.38,760,-0.17,Cents Per Lb,Pounds
+2026-09-07,Tenderloins,91.0,185.0,113.5,1003,113.47,939,0.03,Cents Per Lb,Pounds
+2026-09-07,Thighs - B/S,1.57,165.0,148.48,656,147.53,590,0.95,Cents Per Lb,Pounds
+2026-09-07,Thighs - Bone-in,62.0,95.0,72.89,6,72.26,7,0.63,Cents Per Lb,Pounds
+2026-09-07,WOG,105.0,149.0,138.08,2105,137.34,2245,0.74,Cents Per Lb,Pounds
+2026-09-07,Wings - Whole,82.0,136.0,110.02,507,112.37,517,-2.35,Cents Per Lb,Pounds
+2026-09-14,ALL Items,81.0,149.0,116.81,7306,116.08,8107,0.73,Cents Per Lb,Pounds
+2026-09-14,All Items,108.0,149.0,138.74,2040,138.09,2220,0.65,Cents Per Lb,Pounds
+2026-09-14,Backs and Necks Stripped,8.0,13.0,10.72,1770,10.91,1780,-0.19,Cents Per Lb,Pounds
+2026-09-14,Breast - B/S,101.0,145.0,121.6,1703,121.35,2101,0.25,Cents Per Lb,Pounds
+2026-09-14,Breast - Line Run,74.0,142.0,104.95,152,106.38,83,-1.43,Cents Per Lb,Pounds
+2026-09-14,Breast With Ribs,73.0,140.0,109.41,31,,,,Cents Per Lb,Pounds
+2026-09-14,Drumsticks,44.0,64.0,54.26,1034,55.35,1653,-1.09,Cents Per Lb,Pounds
+2026-09-14,Frames,5.0,8.0,7.59,553,9.66,585,-2.07,Cents Per Lb,Pounds
+2026-09-14,Gizzards and Hearts,80.0,93.0,86.29,134,85.67,159,0.62,Cents Per Lb,Pounds
+2026-09-14,Leg quarters - Bulk,49.0,71.0,54.57,2392,52.76,1603,1.81,Cents Per Lb,Pounds
+2026-09-14,Legs - Bone-in,58.0,81.0,71.74,954,71.12,897,0.62,Cents Per Lb,Pounds
+2026-09-14,Livers,78.0,81.0,78.99,118,79.15,128,-0.16,Cents Per Lb,Pounds
+2026-09-14,"MSC, 15-20% Fat Content",24.0,122.0,49.36,963,25.17,722,24.19,Cents Per Lb,Pounds
+2026-09-14,RTC Broiler/Fryer,120.0,140.0,125.71,680,125.21,760,0.5,Cents Per Lb,Pounds
+2026-09-14,Tenderloins,97.0,185.0,114.21,1022,113.5,1003,0.71,Cents Per Lb,Pounds
+2026-09-14,Thighs - B/S,133.0,169.0,154.1,587,148.48,656,5.62,Cents Per Lb,Pounds
+2026-09-14,Thighs - Bone-in,65.0,94.0,76.55,5,72.89,6,3.66,Cents Per Lb,Pounds
+2026-09-14,WOG,108.0,149.0,138.69,1965,138.08,2105,0.61,Cents Per Lb,Pounds
+2026-09-14,Wings - Whole,90.0,137.0,110.57,548,110.02,507,0.55,Cents Per Lb,Pounds

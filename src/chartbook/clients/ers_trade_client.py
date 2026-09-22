@@ -94,6 +94,15 @@ SECTION_CONFIG = {
     },
 }
 
+# ERS switched to explicit commodity/flow/geography columns in September 2026.
+COMMODITY_COLUMNS = {
+    "broiler": ("chicken", "broiler"),
+    "other chicken": ("chicken", "other_chicken"),
+    "egg, total including products (shell-egg equivalent)": ("egg", "total"),
+    "shell-egg": ("egg", "shell_egg"),
+    "egg product (shell-egg equivalent)": ("egg", "egg_product"),
+}
+
 XLSX_LINK_RE = re.compile(
     r'href="([^"]*chickens-turkeys-and-eggs-monthly[^"]*\.xlsx[^"]*)"',
     re.I,
@@ -212,10 +221,20 @@ def _parse_workbook(workbook_bytes, source_url):
         for sheet_path in _workbook_sheet_targets(workbook):
             header_months = {}
             current_section = None
+            column_layout = False
 
             for row in _sheet_rows(workbook, sheet_path, shared_strings):
                 row_header = _normalize_label(row.get("A"))
+                if row_header == "commodity description":
+                    column_layout = True
+                    header_months = {
+                        column: _parse_month_label(value)
+                        for column, value in row.items()
+                        if column not in {"A", "B", "C", "D", "E"} and value
+                    }
+                    continue
                 if row_header.startswith("import/export, geography code and name"):
+                    column_layout = False
                     header_months = {
                         column: _parse_month_label(value)
                         for column, value in row.items()
@@ -223,7 +242,21 @@ def _parse_workbook(workbook_bytes, source_url):
                     }
                     continue
 
-                if row_header in SECTION_CONFIG:
+                if column_layout:
+                    commodity_product = COMMODITY_COLUMNS.get(row_header)
+                    flow = {"imports": "import", "exports": "export"}.get(
+                        _normalize_label(row.get("B"))
+                    )
+                    current_section = next((
+                        config for config in SECTION_CONFIG.values()
+                        if (config["commodity"], config["product"]) == commodity_product
+                        and config["flow"] == flow
+                    ), None)
+                    if current_section:
+                        expected_unit = current_section["unit"].split(" (")[0]
+                        if _normalize_label(row.get("C")) != expected_unit:
+                            raise ValueError(f"Unexpected ERS trade unit: {row.get('C')!r}")
+                elif row_header in SECTION_CONFIG:
                     # Start a new section. Do NOT skip the row — the header row
                     # also carries the first partner country in columns B/C.
                     current_section = SECTION_CONFIG[row_header]
@@ -231,11 +264,12 @@ def _parse_workbook(workbook_bytes, source_url):
                 if not current_section:
                     continue
 
-                geo_label = _normalize_label(row.get("C"))
+                code_column, name_column = ("D", "E") if column_layout else ("B", "C")
+                geo_label = _normalize_label(row.get(name_column))
                 if not geo_label:
                     continue
 
-                if geo_label == "total":
+                if geo_label in {"total", "world total"}:
                     for column, report_month in header_months.items():
                         value = row.get(column)
                         if value in (None, ""):
@@ -253,8 +287,8 @@ def _parse_workbook(workbook_bytes, source_url):
                     current_section = None
                     continue
 
-                geo_code = (row.get("B") or "").strip()
-                geo_name = (row.get("C") or "").strip()
+                geo_code = (row.get(code_column) or "").strip()
+                geo_name = (row.get(name_column) or "").strip()
                 if not geo_code or not geo_name:
                     continue
                 for column, report_month in header_months.items():
@@ -272,6 +306,8 @@ def _parse_workbook(workbook_bytes, source_url):
                         "unit": current_section["unit"],
                         "source_url": source_url,
                     })
+    if not total_rows:
+        raise ValueError("No ERS trade totals parsed; check the workbook layout")
     return total_rows, country_rows
 
 
