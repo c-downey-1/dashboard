@@ -1642,7 +1642,7 @@ async function bootEggDashboard() {
 
   if ((D.input_indices?.dates || []).length) {
     const iiDates = D.input_indices.dates;
-    const iiBasePicker = { month: '2023-01' };
+    const iiBasePicker = { month: '2026-01' };
 
     function rebaseAsChange(seriesValues, dates, baseMonth) {
       var baseVal = null;
