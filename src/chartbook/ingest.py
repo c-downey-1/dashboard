@@ -3,7 +3,7 @@
 ingest.py — CLI for fetching MARS, NASS, FRED, BLS, HPAI, and ERS data into SQLite.
 
 Usage:
-    python ingest.py --backfill-mars              # All 12 MARS reports
+    python ingest.py --backfill-mars              # All 13 MARS reports
     python ingest.py --backfill-mars --report 1427 # Single report
     python ingest.py --backfill-nass              # All NASS data series
     python ingest.py --backfill-fred              # All FRED series
@@ -139,6 +139,14 @@ MARS_REPORTS = {
         "earliest": "2010-01-01",
         "freq": "weekly",
     },
+    3195: {
+        "title": "Illinois Production Cost Report",
+        "table": "farm_input_prices",
+        "parser": parsers.parse_farm_input_prices,
+        # MARS returns price detail only from the 2024-04-15 report onward.
+        "earliest": "2024-04-01",
+        "freq": "biweekly",
+    },
 }
 
 # ── NASS Data Series Configuration ───────────────────────────────────────
@@ -208,6 +216,7 @@ FRED_SERIES = {
     "APU0000708111": "Eggs, Grade A, Large (per dozen)",
     "GASDESW":     "US Diesel Sales Price ($/gallon)",
     "APU000072610": "Avg Price: Electricity per kWh",
+    "WPU0652":     "PPI: Fertilizer Materials",
 }
 
 # ── BLS Series Configuration ──────────────────────────────────────────────
@@ -272,7 +281,8 @@ def ingest_mars_report(conn, slug_id, start_date, end_date):
     # Primary parser
     parser = config["parser"]
     if parser in (parsers.parse_egg_prices, parsers.parse_chicken_wholesale,
-                  parsers.parse_retail_prices, parsers.parse_retail_metrics):
+                  parsers.parse_retail_prices, parsers.parse_retail_metrics,
+                  parsers.parse_farm_input_prices):
         rows = parser(slug_id, sections)
     else:
         rows = parser(sections)

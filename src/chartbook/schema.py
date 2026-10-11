@@ -165,6 +165,21 @@ TABLES = {
         )
     """,
 
+    "farm_input_prices": """
+        CREATE TABLE IF NOT EXISTS farm_input_prices (
+            report_date    TEXT NOT NULL,
+            slug_id        INTEGER NOT NULL,
+            commodity      TEXT,
+            item           TEXT NOT NULL,
+            price_min      REAL,
+            price_max      REAL,
+            price_avg      REAL,
+            price_change   REAL,
+            price_unit     TEXT,
+            PRIMARY KEY (report_date, slug_id, item)
+        )
+    """,
+
     "nass_data": """
         CREATE TABLE IF NOT EXISTS nass_data (
             year               INTEGER NOT NULL,
@@ -424,6 +439,7 @@ INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_chicken_wholesale_date ON chicken_wholesale(report_date)",
     "CREATE INDEX IF NOT EXISTS idx_retail_prices_date ON retail_prices(report_date)",
     "CREATE INDEX IF NOT EXISTS idx_retail_prices_type ON retail_prices(type)",
+    "CREATE INDEX IF NOT EXISTS idx_farm_input_prices_item ON farm_input_prices(item, report_date)",
     "CREATE INDEX IF NOT EXISTS idx_nass_commodity ON nass_data(commodity)",
     "CREATE INDEX IF NOT EXISTS idx_nass_item ON nass_data(data_item)",
     "CREATE INDEX IF NOT EXISTS idx_nass_year ON nass_data(year)",

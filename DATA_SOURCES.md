@@ -20,6 +20,7 @@ Quick reference for all data feeds, their update frequencies, and which dashboar
 | **3649** | Monthly National Chicken Report | `chicken_wholesale` | Monthly | Chicken Wholesale Prices |
 | **2756** | Weekly Retail Chicken Feature Activity | `retail_prices` | Weekly | Retail Chicken Prices/Features |
 | **2757** | Weekly Retail Egg Feature Activity | `retail_prices` | Weekly | Retail Egg Prices/Features |
+| **3195** | Illinois Production Cost Report | `farm_input_prices` | Bi-weekly | **Input Cost Price Changes** (Anhydrous ammonia, Urea) |
 
 ### Wholesale Prices Chart (egg-dashboard)
 The "Wholesale Prices" chart on the egg dashboard combines three MARS reports:
@@ -57,6 +58,12 @@ Built by `build_egg_index()` in `build_dashboard.py`.
 | WPU0141 | PPI: Slaughter Chickens | PPI chart |
 | APU0000708111 | Retail Egg Price (Grade A, Large) | FRED Retail Egg |
 | GASDESW | US Diesel Price | FRED Diesel |
+| WPU0652 | PPI: Fertilizer Materials | Input Cost Price Changes (fallback) |
+
+### Input Cost Price Changes chart (egg-dashboard)
+Built by `build_input_indices()` in `build_dashboard.py`. Fertilizer has two sources:
+- **Anhydrous ammonia** and **Urea**: Illinois farm-gate `price_avg` ($/ton) from MARS slug 3195. MARS only returns price detail from the 2024-04-15 report onward.
+- **Fertilizer (PPI)**: FRED `WPU0652`, monthly. The chart shows this line *instead of* ammonia/urea whenever the index date is before April 2024 (`input_indices.fertilizer.detail_start` in `data.json`).
 
 ---
 

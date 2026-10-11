@@ -1011,7 +1011,7 @@ def build_fred_diesel(conn):
 
 
 def build_input_indices(conn):
-    """Feed, diesel, and packaging indices rebased to Jan 2025 = 100."""
+    """Feed, diesel, packaging, electricity, and fertilizer indices rebased to Jan 2025 = 100."""
     base_month = "2025-01"
     base_start = "2025-01-01"
 
@@ -1112,18 +1112,46 @@ def build_input_indices(conn):
     except Exception:
         electricity_rows = []
 
+    def ams_fertilizer_rows(item):
+        try:
+            return conn.execute("""
+                SELECT report_date, price_avg
+                FROM farm_input_prices
+                WHERE slug_id = 3195
+                  AND item = ?
+                  AND price_avg IS NOT NULL
+                ORDER BY report_date
+            """, (item,)).fetchall()
+        except Exception:
+            return []
+
+    try:
+        fertilizer_ppi_rows = conn.execute("""
+            SELECT substr(observation_date, 1, 7) AS month, AVG(value) AS avg_fertilizer
+            FROM fred_series
+            WHERE series_id = 'WPU0652'
+              AND value IS NOT NULL
+            GROUP BY substr(observation_date, 1, 7)
+            ORDER BY month
+        """).fetchall()
+    except Exception:
+        fertilizer_ppi_rows = []
+
     series_maps = {
         "Layer feed": rebase(feed_rows, base_floor=base_start),
         "Diesel": rebase(diesel_rows, base_floor=base_start),
         "Paperboard packaging": rebase(packaging_rows, base_prefix=base_month),
         "Electricity": rebase(electricity_rows, base_prefix=base_month),
+        "Anhydrous ammonia": rebase(ams_fertilizer_rows("Anhydrous Ammonia"), base_floor=base_start),
+        "Urea": rebase(ams_fertilizer_rows("Urea (46-0-0)"), base_floor=base_start),
+        "Fertilizer (PPI)": rebase(fertilizer_ppi_rows, base_prefix=base_month),
     }
     active_series = {label: values for label, values in series_maps.items() if values}
     if not active_series:
         return {"dates": [], "series": {}, "base_month": base_month}
 
     dates = sorted({month for values in active_series.values() for month in values})
-    return {
+    payload = {
         "dates": dates,
         "series": {
             label: [values.get(month) for month in dates]
@@ -1131,6 +1159,17 @@ def build_input_indices(conn):
         },
         "base_month": base_month,
     }
+
+    # AMS fertilizer prices only start in Apr 2024, so the chart swaps them
+    # for the fertilizer PPI when the index date falls before detail_start.
+    fertilizer_detail = [label for label in ("Anhydrous ammonia", "Urea") if label in active_series]
+    if fertilizer_detail:
+        payload["fertilizer"] = {
+            "detail": fertilizer_detail,
+            "detail_start": min(min(active_series[label]) for label in fertilizer_detail)[:7],
+            "fallback": "Fertilizer (PPI)" if "Fertilizer (PPI)" in active_series else None,
+        }
+    return payload
 
 
 def build_bls_retail(conn):

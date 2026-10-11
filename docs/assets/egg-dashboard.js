@@ -58,7 +58,7 @@ function setChartSources() {
     eggPriceCompareChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a>',
     eggPriceSpreadChart: 'Chart: Innovate Animal Ag • Source: <a href="https://fred.stlouisfed.org/series/APU0000708111" target="_blank" rel="noreferrer">FRED APU0000708111</a> and <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Prices_Received_and_Prices_Received_Indexes/" target="_blank" rel="noreferrer">USDA NASS Agricultural Prices</a>',
     feedIndexChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a>',
-    dieselChart: 'Chart: Innovate Animal Ag • Sources: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a> · <a href="https://fred.stlouisfed.org/series/GASDESW" target="_blank" rel="noreferrer">FRED GASDESW</a> · <a href="https://fred.stlouisfed.org/series/PCU322219322219" target="_blank" rel="noreferrer">FRED PCU322219322219</a> · <a href="https://fred.stlouisfed.org/series/APU000072610" target="_blank" rel="noreferrer">FRED APU000072610</a>',
+    dieselChart: 'Chart: Innovate Animal Ag • Sources: <a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a> · <a href="https://fred.stlouisfed.org/series/GASDESW" target="_blank" rel="noreferrer">FRED GASDESW</a> · <a href="https://fred.stlouisfed.org/series/PCU322219322219" target="_blank" rel="noreferrer">FRED PCU322219322219</a> · <a href="https://fred.stlouisfed.org/series/APU000072610" target="_blank" rel="noreferrer">FRED APU000072610</a> · <a href="https://mymarketnews.ams.usda.gov/viewReport/3195" target="_blank" rel="noreferrer">USDA AMS Illinois Production Cost Report</a> (ammonia, urea; from Apr 2024) · <a href="https://fred.stlouisfed.org/series/WPU0652" target="_blank" rel="noreferrer">FRED WPU0652</a> (fertilizer PPI, shown for index dates before Apr 2024)',
     regionalEggChart: 'Chart: Innovate Animal Ag • Source: <a href="https://mymarketnews.ams.usda.gov/viewReport/2848" target="_blank" rel="noreferrer">USDA AMS Weekly Combined Regional Shell Egg Report</a>',
     eggImportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
     eggExportsTradeChart: 'Chart: Innovate Animal Ag • Source: <a href="https://www.ers.usda.gov/data-products/livestock-and-meat-international-trade-data" target="_blank" rel="noreferrer">USDA ERS Livestock and Meat International Trade Data</a>',
@@ -1729,12 +1729,27 @@ async function bootEggDashboard() {
         'Layer feed': DASH_COLORS.orange,
         Diesel: DASH_COLORS.navy,
         'Paperboard packaging': DASH_COLORS.teal,
-        Electricity: DASH_COLORS.gold
+        Electricity: DASH_COLORS.gold,
+        'Anhydrous ammonia': DASH_COLORS.red,
+        Urea: DASH_COLORS.slate,
+        'Fertilizer (PPI)': DASH_COLORS.red
       };
+      /* AMS ammonia/urea prices start Apr 2024; earlier index dates show the fertilizer PPI instead */
+      const fert = D.input_indices.fertilizer;
+      const hiddenLabels = {};
+      if (fert) {
+        if (baseMonth < fert.detail_start) {
+          fert.detail.forEach(function (label) { hiddenLabels[label] = true; });
+        } else if (fert.fallback) {
+          hiddenLabels[fert.fallback] = true;
+        }
+      }
       const ctx = document.getElementById('dieselChart');
       if (!ctx) return;
       destroyChart('dieselChart');
-      const ds = Object.keys(D.input_indices.series).map(function (label) {
+      const ds = Object.keys(D.input_indices.series).filter(function (label) {
+        return !hiddenLabels[label];
+      }).map(function (label) {
         const raw = D.input_indices.series[label].slice(startIdx);
         const rebased = rebaseAsChange(raw, slicedDates, baseMonth);
         return boostEggLineDataset(dataset(label, rebased, colorByLabel[label] || DASH_COLORS.slate));

@@ -1,7 +1,7 @@
 """
 parsers.py — Transform raw API JSON into normalized row dicts for SQLite.
 
-MARS: 8 parser functions for 12 reports (similar reports share parsers).
+MARS: 9 parser functions for 13 reports (similar reports share parsers).
 NASS: 1 universal parser for all QuickStats records.
 """
 
@@ -291,6 +291,35 @@ def parse_narratives(slug_id, sections):
                 "report_date": date,
                 "slug_id": slug_id,
                 "narrative": narrative,
+            })
+    return rows
+
+
+def parse_farm_input_prices(slug_id, sections):
+    """Parse production cost reports (slug 3195) → farm_input_prices table.
+
+    One row per input per report, e.g. Fertilizer / "Anhydrous Ammonia" or
+    Fuels / "No. 2 Diesel (Farm)".
+    """
+    rows = []
+    for sec in sections:
+        if sec.get("reportSection") != "Report Details - Prices":
+            continue
+        for r in sec.get("results", []):
+            date = normalize_date(r.get("report_date") or r.get("report_begin_date"))
+            item = _get(r, "class")
+            if not date or not item:
+                continue
+            rows.append({
+                "report_date": date,
+                "slug_id": slug_id,
+                "commodity": _get(r, "commod"),
+                "item": item,
+                "price_min": _safe_float(r.get("price_min")),
+                "price_max": _safe_float(r.get("price_max")),
+                "price_avg": _safe_float(r.get("price_avg")),
+                "price_change": _safe_float(r.get("price_change")),
+                "price_unit": _get(r, "price_unit"),
             })
     return rows
 
