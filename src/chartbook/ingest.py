@@ -635,9 +635,12 @@ def update_mars(conn, report_filter=None):
         config = MARS_REPORTS[slug_id]
         last = db.get_last_fetched(conn, "mars", slug_id=slug_id)
         if last:
-            # Overlap by 7 days to catch revisions
+            # Overlap by 7 days to catch revisions. Monthly reports are keyed
+            # to the 1st of the month and published ~a month later, so they
+            # need a window that always reaches back to the prior month's 1st.
+            overlap = 62 if config.get("freq") == "monthly" else 7
             start = max(
-                date.fromisoformat(last) - timedelta(days=7),
+                date.fromisoformat(last) - timedelta(days=overlap),
                 date.fromisoformat(config["earliest"]),
             )
         else:
