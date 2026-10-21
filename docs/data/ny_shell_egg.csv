@@ -1232,3 +1232,63 @@ report_date,class,price_low,price_high,avg_price,avg_price_prev,price_unit
 2026-09-21,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
 2026-09-21,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
 2026-09-21,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-09-22,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-09-22,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-09-22,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-09-23,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-09-23,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-09-23,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-09-24,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-09-24,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-09-24,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-09-25,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-09-25,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-09-25,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-09-28,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-09-28,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-09-28,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-09-29,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-09-29,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-09-29,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-09-30,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-09-30,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-09-30,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-10-01,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-10-01,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-10-01,Medium,60.0,64.0,62.0,62.0,Cents Per Dozen
+2026-10-02,Extra Large,83.0,87.0,85.0,84.0,Cents Per Dozen
+2026-10-02,Large,81.0,85.0,83.0,82.0,Cents Per Dozen
+2026-10-02,Medium,61.0,65.0,63.0,62.0,Cents Per Dozen
+2026-10-05,Extra Large,83.0,87.0,85.0,85.0,Cents Per Dozen
+2026-10-05,Large,81.0,85.0,83.0,83.0,Cents Per Dozen
+2026-10-05,Medium,61.0,65.0,63.0,63.0,Cents Per Dozen
+2026-10-06,Extra Large,83.0,87.0,85.0,85.0,Cents Per Dozen
+2026-10-06,Large,81.0,85.0,83.0,83.0,Cents Per Dozen
+2026-10-06,Medium,61.0,65.0,63.0,63.0,Cents Per Dozen
+2026-10-07,Extra Large,82.0,86.0,84.0,85.0,Cents Per Dozen
+2026-10-07,Large,80.0,84.0,82.0,83.0,Cents Per Dozen
+2026-10-07,Medium,61.0,65.0,63.0,63.0,Cents Per Dozen
+2026-10-08,Extra Large,82.0,86.0,84.0,84.0,Cents Per Dozen
+2026-10-08,Large,80.0,84.0,82.0,82.0,Cents Per Dozen
+2026-10-08,Medium,61.0,65.0,63.0,63.0,Cents Per Dozen
+2026-10-09,Extra Large,80.0,84.0,82.0,84.0,Cents Per Dozen
+2026-10-09,Large,78.0,82.0,80.0,82.0,Cents Per Dozen
+2026-10-09,Medium,61.0,65.0,63.0,63.0,Cents Per Dozen
+2026-10-13,Extra Large,78.0,82.0,80.0,82.0,Cents Per Dozen
+2026-10-13,Large,76.0,80.0,78.0,80.0,Cents Per Dozen
+2026-10-13,Medium,61.0,65.0,63.0,63.0,Cents Per Dozen
+2026-10-14,Extra Large,76.0,80.0,78.0,80.0,Cents Per Dozen
+2026-10-14,Large,74.0,78.0,76.0,78.0,Cents Per Dozen
+2026-10-14,Medium,61.0,65.0,63.0,63.0,Cents Per Dozen
+2026-10-15,Extra Large,74.0,78.0,76.0,78.0,Cents Per Dozen
+2026-10-15,Large,72.0,76.0,74.0,76.0,Cents Per Dozen
+2026-10-15,Medium,59.0,63.0,61.0,63.0,Cents Per Dozen
+2026-10-16,Extra Large,72.0,76.0,74.0,76.0,Cents Per Dozen
+2026-10-16,Large,70.0,74.0,72.0,74.0,Cents Per Dozen
+2026-10-16,Medium,57.0,61.0,59.0,61.0,Cents Per Dozen
+2026-10-19,Extra Large,72.0,76.0,74.0,74.0,Cents Per Dozen
+2026-10-19,Large,70.0,74.0,72.0,72.0,Cents Per Dozen
+2026-10-19,Medium,57.0,61.0,59.0,59.0,Cents Per Dozen
+2026-10-20,Extra Large,72.0,76.0,74.0,74.0,Cents Per Dozen
+2026-10-20,Large,70.0,74.0,72.0,72.0,Cents Per Dozen
+2026-10-20,Medium,57.0,61.0,59.0,59.0,Cents Per Dozen
