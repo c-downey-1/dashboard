@@ -607,7 +607,7 @@ async function bootEggDashboard() {
                 if (!items.length) return '';
                 const item = items[0];
                 const totalBirds = item.parsed?.y || 0;
-                return [item.label, `Total: ${fmtBirdCount(totalBirds)}`];
+                return [fmtTooltipDate(item.label), `Total: ${fmtBirdCount(totalBirds)}`];
               },
               label(context) {
                 const breakdown = context.dataset.categoryBreakdown || [];
