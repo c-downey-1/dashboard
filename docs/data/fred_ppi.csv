@@ -2842,3 +2842,6 @@ observation_date,series_id,series_label,value
 2026-08-01,WPU0141,PPI: Slaughter Chickens,330.406
 2026-08-01,WPU014102,PPI: Broilers & Meat-Type Chickens,335.004
 2026-08-01,WPU0171,PPI: Chicken Eggs,149.016
+2026-09-01,WPU0141,PPI: Slaughter Chickens,311.036
+2026-09-01,WPU014102,PPI: Broilers & Meat-Type Chickens,315.364
+2026-09-01,WPU0171,PPI: Chicken Eggs,89.914
