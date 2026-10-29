@@ -265,12 +265,27 @@ function initEggDashboardSignup() {
     if (submitBtn) submitBtn.disabled = true;
     setStatus('Submitting…');
 
-    fetch('https://script.google.com/macros/s/AKfycbx9JZ0nE9lMeJFL9atk8tgTvbc-KgVyJCX3eutpBkf9kuKMUWL0JkTPU6Yut7RP6sS0Bw/exec', {
-      method: 'POST',
-      body: JSON.stringify({ firstName, lastName, email, interests })
-    })
-      .then(response => {
-        if (!response.ok) throw new Error('Network error');
+    // Brevo (through the IAA website) adds them to the Egg Chartbook list, and to
+    // the main newsletter list if they ticked the research box. The Google
+    // Sheet keeps its copy as a backup.
+    const brevoBody = new FormData();
+    brevoBody.append('firstName', firstName);
+    brevoBody.append('lastName', lastName);
+    brevoBody.append('email', email);
+    if (form.elements.layerResearch?.checked) brevoBody.append('layerResearch', '1');
+
+    const ok = response => {
+      if (!response.ok) throw new Error('Network error');
+    };
+    Promise.allSettled([
+      fetch('https://innovateanimalag.org/api/egg-chartbook-signup', { method: 'POST', body: brevoBody }).then(ok),
+      fetch('https://script.google.com/macros/s/AKfycbx9JZ0nE9lMeJFL9atk8tgTvbc-KgVyJCX3eutpBkf9kuKMUWL0JkTPU6Yut7RP6sS0Bw/exec', {
+        method: 'POST',
+        body: JSON.stringify({ firstName, lastName, email, interests })
+      }).then(ok)
+    ])
+      .then(results => {
+        if (!results.some(result => result.status === 'fulfilled')) throw new Error('Network error');
         setStatus('Thank you! You have been signed up.');
         form.reset();
       })
