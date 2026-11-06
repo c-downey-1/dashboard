@@ -10,7 +10,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/split-dashboard.css?v=20261021a">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","vzbyd9vlgw");</script>
+<!-- Microsoft Clarity: the same project as innovateanimalag.org (z2ge5ap319), so
+     visits to the chartbook and to the site are in one place. It runs only on
+     innovateanimalag.org hosts, so local previews aren't recorded. Custom tags:
+     "chartbook" says which chartbook; "embedded" is "yes" when it was viewed inside
+     innovateanimalag.org/egg-chartbook and "no" on its own subdomain. -->
+<script>
+(function(){
+  var host=location.hostname;
+  if(host!=='innovateanimalag.org'&&!host.endsWith('.innovateanimalag.org'))return;
+  window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};
+  var s=document.createElement('script');s.async=true;s.src='https://www.clarity.ms/tag/z2ge5ap319';
+  document.head.appendChild(s);
+  window.clarity('set','chartbook','egg');
+  window.clarity('set','embedded',window.self!==window.top?'yes':'no');
+})();
+</script>
+<!-- When framed by innovateanimalag.org/egg-chartbook or /pork-chartbook, the
+     site's own header already shows the IAA logo, so hide the chartbook's. -->
+<script>if(window.self!==window.top)document.documentElement.classList.add('is-framed');</script>
+<style>.is-framed .iaa-brand,.is-framed .sidebar-brand{display:none}.is-framed .iaa-header-title{text-align:left}</style>
 </head>
 <body>
 <div class="shell">
