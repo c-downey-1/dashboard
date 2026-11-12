@@ -461,13 +461,45 @@ async function bootBroilerDashboard() {
     renderer(range) {
       const { start, end } = getRangeSlice(BR.dates, range);
       const hens = BR.hens.slice(start, end).map(v => v != null ? v / 1e6 : null);
-      renderBroilerMixed('breederHensChart', BR.dates.slice(start, end), [
-        dataset('Hatching hens', hens, DASH_COLORS.navy, { type: 'line', borderWidth: 2.8 }),
-        dataset('Change vs year ago', BR.hens_yoy.slice(start, end), DASH_COLORS.orange, { type: 'line', yAxisID: 'y2' })
-      ], 'Million hens', '% vs year ago', Object.assign({
-        y2TickCallback: tickFmt({ suffix: '%', sign: true }),
-        yTickCallback: tickFmt({ suffix: 'M' })
-      }, niceBounds(hens, 0.4)));
+      const ctx = document.getElementById('breederHensChart');
+      destroyChart('breederHensChart');
+      const options = baseOptions('Million hens', Object.assign({
+        chartId: 'breederHensChart',
+        maxTicks: 12,
+        aspect: 1.35,
+        yTickCallback: tickFmt({ suffix: 'M' }),
+        tooltip: { callbacks: { label(c) {
+          const v = c.parsed?.y;
+          if (v == null) return '';
+          return c.dataset.yAxisID === 'yChange' ? `${c.dataset.label}: ${signed(v)}` : `${c.dataset.label}: ${fmtNum(v, 1)}M`;
+        } } }
+      }, niceBounds(hens, 0.15)));
+      // Two panels on one time axis: the flock on top, its change underneath.
+      options.scales.y.stack = 'panels';
+      options.scales.y.stackWeight = 2;
+      options.scales.yChange = {
+        position: 'left',
+        stack: 'panels',
+        stackWeight: 1,
+        offset: true,
+        title: { display: true, text: '% vs year ago', color: '#5f7180', font: { size: isMobileWidth() ? 10 : 13, weight: '600' } },
+        ticks: { color: '#627684', padding: isMobileWidth() ? 6 : 10, maxTicksLimit: 5, font: { size: isMobileWidth() ? 10 : 13 }, callback: tickFmt({ suffix: '%', sign: true }) },
+        border: { display: false },
+        grid: { color: c => (c.tick && c.tick.value === 0 ? 'rgba(1,48,70,0.35)' : 'rgba(1,48,70,0.045)') }
+      };
+      // Chart.js stacks axes bottom-up in definition order: change first, hens last (on top).
+      options.scales = { x: options.scales.x, yChange: options.scales.yChange, y: options.scales.y };
+      charts.breederHensChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: BR.dates.slice(start, end),
+          datasets: [
+            dataset('Hatching hens', hens, DASH_COLORS.navy, { type: 'line', borderWidth: 2.8, yAxisID: 'y', order: 0 }),
+            Object.assign(yoyBars('Change vs year ago', BR.hens_yoy.slice(start, end)), { type: 'bar', yAxisID: 'yChange', borderWidth: 0, order: 10 })
+          ]
+        },
+        options
+      });
     }
   });
 
@@ -562,12 +594,12 @@ async function bootBroilerDashboard() {
     renderer(range) {
       const { start, end } = getRangeSlice(PD.dates, range);
       const vals = PD.rtc_12m.slice(start, end).map(v => v != null ? v / 1e9 : null);
-      renderBroilerMixed('productionChart', PD.dates.slice(start, end), [
-        dataset('12-month total', vals, DASH_COLORS.navy, { type: 'line' }),
-        dataset('Change vs year ago', PD.rtc_12m_yoy.slice(start, end), DASH_COLORS.orange, { type: 'line', yAxisID: 'y2', borderWidth: 2.2 })
-      ], 'Billion lb, trailing 12 months', '% vs year ago', Object.assign({
+      renderLineChart('productionChart', PD.dates.slice(start, end), [
+        dataset('12-month total', vals, DASH_COLORS.navy)
+      ], 'Billion lb, trailing 12 months', Object.assign({
+        legend: false,
         yTickCallback: tickFmt({ suffix: 'B' }),
-        y2TickCallback: tickFmt({ suffix: '%', sign: true })
+        tooltip: { callbacks: { label: c => (c.parsed?.y == null ? '' : `12-month total: ${fmtNum(c.parsed.y, 2)}B lb`) } }
       }, niceBounds(vals, 0.1)));
     }
   });
@@ -744,12 +776,15 @@ async function bootBroilerDashboard() {
   };
   const CUT_COLORS = ['#F6851F', '#FDB714', '#1F9EBC', '#013046', '#8FCAE6', '#939598', '#7c2d12'];
   let cutMode = 'price';
+  let cutSet = 'main';
+  const MAIN_CUTS = ['Breast - B/S', 'Wings - Whole', 'Leg quarters - Bulk', 'WOG'];
   const renderCuts = range => {
     const { start, end } = getRangeSlice(W.dates, range);
-    const cuts = Object.keys(W.series);
+    const allCuts = Object.keys(W.series);
+    const cuts = cutSet === 'main' ? allCuts.filter(c => MAIN_CUTS.includes(c)) : allCuts;
     const src = cutMode === 'price' ? W.series : W.yoy;
     renderLineChart('wholesaleCutsChart', W.dates.slice(start, end),
-      cuts.map((cut, i) => dataset(CUT_LABELS[cut] || cut, src[cut].slice(start, end), CUT_COLORS[i % CUT_COLORS.length], { borderWidth: 2.6 })),
+      cuts.map(cut => dataset(CUT_LABELS[cut] || cut, src[cut].slice(start, end), CUT_COLORS[allCuts.indexOf(cut) % CUT_COLORS.length], { borderWidth: 2.6 })),
       cutMode === 'price' ? '¢ / lb' : '% vs year ago',
       cutMode === 'price' ? {} : { yTickCallback: tickFmt({ suffix: '%', sign: true }), tooltip: pctTooltip });
   };
@@ -758,6 +793,16 @@ async function bootBroilerDashboard() {
     { mode: 'price', label: 'Price' },
     { mode: 'yoy', label: '% vs year ago' }
   ], 'price', mode => { cutMode = mode; renderCuts(chartRanges.wholesaleCutsChart || '1y'); });
+  {
+    // Second toggle: the four headline cuts, or all seven.
+    const toolbar = document.getElementById('wholesaleCutsChart').closest('.card').querySelector('.chart-toolbar');
+    const host = document.createElement('div');
+    host.className = 'mode-controls';
+    host.innerHTML = '<button class="mode-btn active" type="button" data-chart="wholesaleCutSet" data-mode="main">Main cuts</button>' +
+      '<button class="mode-btn" type="button" data-chart="wholesaleCutSet" data-mode="all">All 7</button>';
+    toolbar.querySelector('.mode-controls').insertAdjacentElement('afterend', host);
+    modeHandlers.wholesaleCutSet = { current: 'main', onChange: mode => { cutSet = mode; renderCuts(chartRanges.wholesaleCutsChart || '1y'); } };
+  }
 
   const R = B.retail;
   const RETAIL_LABELS = {
@@ -789,10 +834,14 @@ async function bootBroilerDashboard() {
     defaultRange: '5y',
     renderer(range) {
       const { start, end } = getRangeSlice(PR.dates, range);
-      renderBroilerMixed('pricesReceivedChart', PR.dates.slice(start, end), [
-        dataset('Price received', PR.values.slice(start, end), DASH_COLORS.navy, { type: 'bar', backgroundColor: DASH_COLORS.navy }),
-        dataset('12-month average', pr12.slice(start, end), DASH_COLORS.orange, { type: 'line' })
-      ], '$ / lb live weight', undefined, { yTickCallback: tickFmt({ prefix: '$' }) });
+      const monthly = PR.values.slice(start, end);
+      renderLineChart('pricesReceivedChart', PR.dates.slice(start, end), [
+        dataset('Monthly', monthly, 'rgba(246,133,31,0.55)', { borderWidth: 1.8, order: 5 }),
+        dataset('12-month average', pr12.slice(start, end), DASH_COLORS.navy, { order: 0 })
+      ], '$ / lb live weight', Object.assign({
+        yTickCallback: tickFmt({ prefix: '$' }),
+        tooltip: { callbacks: { label: c => (c.parsed?.y == null ? '' : `${c.dataset.label}: $${fmtNum(c.parsed.y, 3)}`) } }
+      }, niceBounds(monthly, 0.1)));
     }
   });
 

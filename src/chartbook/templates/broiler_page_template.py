@@ -8,7 +8,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112h">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112i">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <!-- Microsoft Clarity: same project as innovateanimalag.org (z2ge5ap319); runs only
      on innovateanimalag.org hosts. Tag "chartbook" = broiler. -->
@@ -73,7 +73,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <div class="grid">
       <article class="card wide"><h3>Wholesale Chicken Prices</h3><div class="sub">National weekly negotiated prices for domestic fresh product: major parts (FOB plant) and whole bird without giblets (WOG, delivered, all sizes)</div><canvas id="wholesaleCutsChart"></canvas></article>
       <article class="card"><h3>Retail Chicken Feature Prices</h3><div class="sub">National average advertised price, fresh, conventional, regular pack, 8-week average</div><canvas id="retailChickenChart"></canvas></article>
-      <article class="card"><h3>Broiler Price Received</h3><div class="sub">Monthly live-weight price received, with the 12-month average</div><canvas id="pricesReceivedChart"></canvas></article>
+      <article class="card"><h3>Broiler Price Received</h3><div class="sub">Monthly live-weight price received by producers, with the 12-month average</div><canvas id="pricesReceivedChart"></canvas></article>
     </div>
   </section>
 
@@ -89,7 +89,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <section class="section" id="breeder-flock">
     <div class="section-head"><div><h2>Breeder Flock</h2><p>Broiler-type hatching hens, their productivity, and the pullet pipeline behind them.</p></div></div>
     <div class="grid">
-      <article class="card"><h3>Broiler Breeder Flock</h3><div class="sub">Broiler-type hatching layers on hand (first of month) and change vs a year earlier</div><canvas id="breederHensChart"></canvas></article>
+      <article class="card"><h3>Broiler Breeder Flock</h3><div class="sub">Broiler-type hatching layers on hand (first of month), with the change from a year earlier underneath</div><canvas id="breederHensChart"></canvas></article>
       <article class="card"><h3>Breeder Productivity</h3><div class="sub">Hatching eggs produced and chicks hatched per breeder hen per month, 12-month averages</div><canvas id="breederProductivityChart"></canvas></article>
       <article class="card"><h3>Breeder Pullet Pipeline</h3><div class="sub">Broiler-type hatching hens on hand vs the potential flock from U.S. pullet chicks placed 7–15 months earlier (USDA's measure; known up to 7 months ahead)</div><canvas id="pulletPipelineChart"></canvas></article>
     </div>
@@ -131,8 +131,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20261112h"></script>
-<script src="assets/broiler-dashboard.js?v=20261112h"></script>
+<script src="assets/dashboard-common.js?v=20261112i"></script>
+<script src="assets/broiler-dashboard.js?v=20261112i"></script>
 </body>
 </html>
 """
