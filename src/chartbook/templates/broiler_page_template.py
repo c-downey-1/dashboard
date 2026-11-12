@@ -8,7 +8,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112c">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112d">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <!-- Microsoft Clarity: same project as innovateanimalag.org (z2ge5ap319); runs only
      on innovateanimalag.org hosts. Tag "chartbook" = broiler. -->
@@ -29,8 +29,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 .broiler-kpis{margin:6px 0 10px}
 .kpi .delta-up{color:#15803d;font-weight:700}
 .kpi .delta-down{color:#b91c1c;font-weight:700}
-.chartbook-switch{font-size:.82rem;font-weight:600;color:#1F9EBC;text-decoration:none;white-space:nowrap}
-.chartbook-switch:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -40,17 +38,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <img class="iaa-brand-logo" src="assets/iaa-logo-with-navy-font-full-color.png" alt="Innovate Animal Ag">
     </a>
     <strong class="iaa-header-title">Broiler Industry Executive Chartbook</strong>
-    <a class="chartbook-switch" id="eggChartbookLink" href="egg-dashboard.html">Egg chartbook &rarr;</a>
   </header>
-  <script>
-  // Framed on innovateanimalag.org/broiler-chartbook: open the site's egg page
-  // in the whole window rather than swapping the chartbook inside the frame.
-  if (window.self !== window.top) {
-    var eggLink = document.getElementById('eggChartbookLink');
-    eggLink.href = 'https://innovateanimalag.org/egg-chartbook';
-    eggLink.target = '_top';
-  }
-  </script>
 
   <nav class="mobile-section-nav" id="mobileSectionNav" aria-label="Jump to section">
     <select class="mobile-section-select" id="mobileSectionSelect">
@@ -151,8 +139,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20261112c"></script>
-<script src="assets/broiler-dashboard.js?v=20261112c"></script>
+<script src="assets/dashboard-common.js?v=20261112d"></script>
+<script src="assets/broiler-dashboard.js?v=20261112d"></script>
 </body>
 </html>
 """
