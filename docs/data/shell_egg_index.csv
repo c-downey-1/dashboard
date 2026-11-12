@@ -8567,3 +8567,339 @@ report_date,environment,class,color,egg_type,origin,destination,freight,wtd_avg_
 2026-10-21,Caged,Small,White,Graded Loose,National,National,FOB,,,,49.85,Cents Per Dozen,30-Dozen Cases
 2026-10-21,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,275.0,Cents Per Dozen,30-Dozen Cases
 2026-10-21,USDA Organic,Large,Brown,Graded Loose,California,California,Delivered,,,,325.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,47.5,1560,47.5,,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,52.79,5158,50.97,165.92,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,26.74,2280,26.74,,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,85.0,1076,85.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Jumbo,White,Graded Loose,National,National,FOB,88.0,538,88.0,112.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Large,White,Graded Loose,California,California,Delivered,49.48,10560,48.89,161.23,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Large,White,Graded Loose,National,National,FOB,38.18,2400,38.18,145.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,148.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,47.86,2580,43.87,150.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Medium,White,Graded Loose,National,National,FOB,,,,124.93,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Medium,Brown,Graded Loose,California,California,Delivered,,,,124.33,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,123.25,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,110.4,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Caged,Extra Large,White,Graded Loose,National,National,FOB,30.43,22290,30.45,136.52,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Caged,Jumbo,White,Graded Loose,National,National,FOB,40.0,499,40.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Caged,Large,White,Graded Loose,National,National,FOB,27.23,30186,26.36,125.6,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Caged,Medium,White,Graded Loose,National,National,FOB,23.86,5667,24.4,113.19,Cents Per Dozen,30-Dozen Cases
+2026-10-22,Caged,Small,White,Graded Loose,National,National,FOB,,,,50.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,275.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,USDA Organic,Large,Brown,Graded Loose,California,California,Delivered,,,,325.0,Cents Per Dozen,30-Dozen Cases
+2026-10-22,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,165.0,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,45.0,780,47.5,,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,55.46,4436,52.79,165.92,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,26.74,2280,26.74,,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,68.0,390,,,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,85.0,1076,85.0,180.0,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Jumbo,White,Graded Loose,National,National,FOB,88.0,538,88.0,112.0,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Large,White,Graded Loose,California,California,Delivered,50.76,11730,49.48,164.14,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Large,White,Graded Loose,National,National,FOB,38.18,2400,38.18,145.0,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,154.52,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,780,,,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,49.12,3420,47.86,146.4,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Medium,White,Graded Loose,National,National,FOB,,,,124.93,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Medium,Brown,Graded Loose,California,California,Delivered,,,,133.33,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,121.75,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,110.4,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Caged,Extra Large,White,Graded Loose,National,National,FOB,29.7,22665,30.43,147.04,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Caged,Jumbo,White,Graded Loose,National,National,FOB,40.0,499,40.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Caged,Large,White,Graded Loose,National,National,FOB,27.56,23946,27.23,132.57,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Caged,Medium,White,Graded Loose,National,National,FOB,28.24,3795,23.86,114.21,Cents Per Dozen,30-Dozen Cases
+2026-10-23,Caged,Small,White,Graded Loose,National,National,FOB,,,,50.0,Cents Per Dozen,30-Dozen Cases
+2026-10-23,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,275.0,Cents Per Dozen,30-Dozen Cases
+2026-10-23,USDA Organic,Large,Brown,Graded Loose,California,California,Delivered,,,,325.0,Cents Per Dozen,30-Dozen Cases
+2026-10-23,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,165.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,45.0,780,45.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,57.0,6206,55.46,169.08,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,28.0,1560,26.74,,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,68.0,390,68.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,88.67,1614,85.0,180.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Jumbo,White,Graded Loose,National,National,FOB,88.0,538,88.0,112.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Large,White,Graded Loose,California,California,Delivered,51.74,12240,50.76,165.2,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Large,White,Graded Loose,National,National,FOB,38.18,2400,38.18,145.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,154.64,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,780,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,47.4,5970,49.12,146.4,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Medium,White,Graded Loose,National,National,FOB,,,,126.38,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Medium,Brown,Graded Loose,California,California,Delivered,,,,133.33,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,121.75,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Cage-Free,Small,White,Graded Loose,National,National,FOB,,,,45.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,116.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Caged,Extra Large,White,Graded Loose,National,National,FOB,29.39,30465,29.7,152.86,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Caged,Jumbo,White,Graded Loose,National,National,FOB,45.19,1037,40.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Caged,Large,White,Graded Loose,National,National,FOB,28.82,24024,27.56,135.86,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Caged,Medium,White,Graded Loose,National,National,FOB,20.56,2928,28.24,115.15,Cents Per Dozen,30-Dozen Cases
+2026-10-26,Caged,Small,White,Graded Loose,National,National,FOB,,,,50.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,275.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,165.0,Cents Per Dozen,30-Dozen Cases
+2026-10-26,USDA Organic Free-Range,Large,Brown,Graded Loose,California,California,Delivered,201.0,810,,,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,45.0,780,45.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,54.49,9326,57.0,171.18,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,31.0,720,28.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,68.0,390,68.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,91.0,2152,88.67,180.0,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Jumbo,White,Graded Loose,National,National,FOB,88.0,538,88.0,112.0,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Large,White,Graded Loose,California,California,Delivered,52.78,10560,51.74,170.84,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Large,White,Graded Loose,National,National,FOB,40.69,2310,38.18,145.0,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,154.64,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,780,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,47.4,5970,47.4,147.14,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Medium,White,Graded Loose,National,National,FOB,27.0,180,,127.1,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Medium,Brown,Graded Loose,California,California,Delivered,,,,133.33,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,121.75,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Cage-Free,Small,White,Graded Loose,National,National,FOB,,,,45.0,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,116.0,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Caged,Extra Large,White,Graded Loose,National,National,FOB,29.72,28905,29.39,158.76,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Caged,Jumbo,White,Graded Loose,National,National,FOB,45.19,1037,45.19,,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Caged,Large,White,Graded Loose,National,National,FOB,31.13,24738,28.82,144.48,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Caged,Medium,White,Graded Loose,National,National,FOB,22.23,1992,20.56,119.23,Cents Per Dozen,30-Dozen Cases
+2026-10-27,Caged,Small,White,Graded Loose,National,National,FOB,,,,55.5,Cents Per Dozen,30-Dozen Cases
+2026-10-27,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,281.39,Cents Per Dozen,30-Dozen Cases
+2026-10-27,USDA Organic,2,Brown,Gradeable Nest Run,National,National,FOB,,,,265.0,Cents Per Dozen,30-Dozen Cases
+2026-10-27,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,165.0,Cents Per Dozen,30-Dozen Cases
+2026-10-27,USDA Organic Free-Range,Large,Brown,Graded Loose,California,California,Delivered,201.0,810,201.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,,,45.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,10.0,780,,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,57.58,10886,54.49,176.0,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,31.0,720,31.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,68.0,390,68.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,97.0,1076,91.0,180.0,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Jumbo,White,Graded Loose,National,National,FOB,,,88.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Large,White,Graded Loose,California,California,Delivered,55.77,16230,52.78,181.82,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Large,White,Graded Loose,National,National,FOB,41.78,1530,40.69,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,156.83,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,1500,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,47.6,5910,47.4,146.0,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Medium,White,Graded Loose,National,National,FOB,47.59,1020,27.0,129.43,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Medium,Brown,Graded Loose,California,California,Delivered,,,,150.0,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Cage-Free,Small,White,Graded Loose,National,National,FOB,,,,45.0,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,133.33,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Caged,Extra Large,White,Graded Loose,National,National,FOB,30.27,25785,29.72,164.31,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Caged,Jumbo,White,Graded Loose,National,National,FOB,50.0,538,45.19,,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Caged,Large,White,Graded Loose,National,National,FOB,33.12,30678,31.13,149.44,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Caged,Medium,White,Graded Loose,National,National,FOB,22.43,1056,22.23,124.98,Cents Per Dozen,30-Dozen Cases
+2026-10-28,Caged,Small,White,Graded Loose,National,National,FOB,,,,55.5,Cents Per Dozen,30-Dozen Cases
+2026-10-28,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-10-28,USDA Organic,2,Brown,Gradeable Nest Run,National,National,FOB,,,,265.0,Cents Per Dozen,30-Dozen Cases
+2026-10-28,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,167.5,Cents Per Dozen,30-Dozen Cases
+2026-10-28,USDA Organic Free-Range,Large,Brown,Graded Loose,California,California,Delivered,201.0,810,201.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,65.0,780,,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,10.0,780,10.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,57.26,10438,57.58,178.67,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,31.0,720,31.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,68.0,390,68.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,97.0,1076,97.0,180.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Large,White,Graded Loose,California,California,Delivered,56.02,15420,55.77,192.34,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Large,White,Graded Loose,National,National,FOB,40.17,2310,41.78,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,161.33,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,2340,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,46.65,4230,47.6,146.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Medium,White,Graded Loose,National,National,FOB,47.59,1020,47.59,131.29,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Medium,Brown,Graded Loose,California,California,Delivered,,,,150.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Cage-Free,Small,White,Graded Loose,National,National,FOB,,,,45.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,137.4,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Caged,Extra Large,White,Graded Loose,National,National,FOB,30.64,24945,30.27,168.67,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Caged,Jumbo,White,Graded Loose,National,National,FOB,50.0,538,50.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Caged,Large,White,Graded Loose,National,National,FOB,34.54,34464,33.12,152.95,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Caged,Medium,White,Graded Loose,National,National,FOB,23.0,936,22.43,134.41,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Caged,Small,White,Graded Loose,National,National,FOB,,,,55.5,Cents Per Dozen,30-Dozen Cases
+2026-10-29,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,USDA Organic,2,Brown,Gradeable Nest Run,National,National,FOB,,,,265.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,170.0,Cents Per Dozen,30-Dozen Cases
+2026-10-29,USDA Organic Free-Range,Large,Brown,Graded Loose,California,California,Delivered,201.0,810,201.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,65.0,780,65.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,10.0,780,10.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,58.98,10380,57.26,178.67,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,31.0,720,31.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,,,68.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,97.0,1076,97.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Large,White,Graded Loose,California,California,Delivered,59.83,15840,56.02,197.16,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Large,White,Graded Loose,National,National,FOB,40.17,2310,40.17,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,165.0,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,1560,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,49.03,4230,46.65,149.0,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Medium,White,Graded Loose,National,National,FOB,47.59,1020,47.59,140.6,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Cage-Free,Small,White,Graded Loose,National,National,FOB,,,,45.0,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,138.67,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Caged,Extra Large,White,Graded Loose,National,National,FOB,30.94,21060,30.64,174.76,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Caged,Jumbo,White,Graded Loose,National,National,FOB,50.0,538,50.0,,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Caged,Large,White,Graded Loose,National,National,FOB,34.9,32022,34.54,160.63,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Caged,Medium,White,Graded Loose,National,National,FOB,23.0,936,23.0,134.41,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Caged,Small,White,Graded Loose,National,National,FOB,,,,55.5,Cents Per Dozen,30-Dozen Cases
+2026-10-30,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-10-30,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-10-30,USDA Organic,2,Brown,Gradeable Nest Run,National,National,FOB,,,,265.0,Cents Per Dozen,30-Dozen Cases
+2026-10-30,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,170.0,Cents Per Dozen,30-Dozen Cases
+2026-10-30,USDA Organic Free-Range,Large,Brown,Graded Loose,California,California,Delivered,201.0,810,201.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,1,White,Gradeable Nest Run,California,California,Delivered,35.0,1560,,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,65.0,780,65.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,10.0,780,10.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,61.45,9390,58.98,178.0,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,31.0,720,31.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,109.0,1076,97.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Large,White,Graded Loose,California,California,Delivered,65.27,14520,59.83,197.16,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Large,White,Graded Loose,National,National,FOB,44.17,3090,40.17,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,175.0,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,1560,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,58.33,2520,49.03,149.0,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Cage-Free,Medium,White,Graded Loose,National,National,FOB,47.59,1020,47.59,143.8,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,140.4,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Caged,Extra Large,White,Graded Loose,National,National,FOB,34.95,14340,30.94,174.66,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Caged,Jumbo,White,Graded Loose,National,National,FOB,,,50.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Caged,Large,White,Graded Loose,National,National,FOB,35.42,25728,34.9,163.78,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Caged,Medium,White,Graded Loose,National,National,FOB,,,23.0,134.28,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Caged,Small,White,Graded Loose,National,National,FOB,,,,55.5,Cents Per Dozen,30-Dozen Cases
+2026-11-02,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-11-02,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-11-02,USDA Organic,2,Brown,Gradeable Nest Run,National,National,FOB,,,,265.0,Cents Per Dozen,30-Dozen Cases
+2026-11-02,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,170.0,Cents Per Dozen,30-Dozen Cases
+2026-11-02,USDA Organic Free-Range,Large,Brown,Graded Loose,California,California,Delivered,,,201.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,1,White,Gradeable Nest Run,California,California,Delivered,35.0,1560,35.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,65.0,780,65.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,10.0,780,10.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,78.73,12120,61.45,210.0,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,60.0,420,31.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,101.75,2152,109.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Large,White,Graded Loose,California,California,Delivered,69.06,13320,65.27,202.92,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Large,White,Graded Loose,National,National,FOB,48.02,2670,44.17,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,,175.0,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,1560,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,59.0,5136,58.33,,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Medium,White,Graded Loose,National,National,FOB,52.0,990,47.59,146.17,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,148.0,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,147.83,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Caged,Extra Large,White,Graded Loose,National,National,FOB,41.27,15120,34.95,173.98,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Caged,Large,White,Graded Loose,National,National,FOB,39.36,36000,35.42,175.32,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Caged,Medium,White,Graded Loose,National,National,FOB,,,,134.2,Cents Per Dozen,30-Dozen Cases
+2026-11-03,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-11-03,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-11-03,USDA Organic,Medium,Brown,Graded Loose,National,National,FOB,,,,170.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,1,White,Gradeable Nest Run,California,California,Delivered,35.0,1560,35.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,65.0,780,65.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,20.0,840,10.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,85.52,11310,78.73,210.81,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,67.8,1200,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,115.0,180,,,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,101.75,2152,101.75,,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Large,White,Graded Loose,California,California,Delivered,79.14,6900,69.06,203.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Large,White,Graded Loose,National,National,FOB,52.57,1890,48.02,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,115.0,600,,175.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,840,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,60.27,5976,59.0,153.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Medium,White,Graded Loose,National,National,FOB,52.0,150,52.0,147.72,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,148.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,149.33,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Caged,Extra Large,White,Graded Loose,National,National,FOB,46.26,19020,41.27,175.64,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Caged,Large,White,Graded Loose,National,National,FOB,40.17,25614,39.36,180.33,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Caged,Medium,White,Graded Loose,National,National,FOB,50.0,936,,134.7,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Caged,Small,White,Graded Loose,National,National,FOB,,,,65.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-11-04,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,1,White,Gradeable Nest Run,California,California,Delivered,35.0,1560,35.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,62.0,780,65.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,20.0,840,20.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,85.52,11310,85.52,211.63,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,67.8,1200,67.8,,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,115.0,180,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Extra Large,Brown,Graded Loose,National,National,FOB,,,,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,101.75,2152,101.75,224.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Large,White,Graded Loose,California,California,Delivered,85.49,9300,79.14,206.27,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Large,White,Graded Loose,National,National,FOB,50.16,1110,52.57,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,115.0,600,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,,,60.0,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,62.26,6912,60.27,153.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Medium,White,Graded Loose,National,National,FOB,52.0,150,52.0,147.72,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,148.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,165.89,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Caged,Extra Large,White,Graded Loose,National,National,FOB,48.05,23700,46.26,178.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Caged,Large,White,Graded Loose,National,National,FOB,41.65,21564,40.17,184.03,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Caged,Medium,White,Graded Loose,National,National,FOB,50.0,936,50.0,133.69,Cents Per Dozen,30-Dozen Cases
+2026-11-05,Caged,Small,White,Graded Loose,National,National,FOB,,,,65.0,Cents Per Dozen,30-Dozen Cases
+2026-11-05,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,1,White,Gradeable Nest Run,California,California,Delivered,35.0,1560,35.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,1,White,Gradeable Nest Run,National,National,FOB,,,,160.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,62.0,780,62.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,20.0,840,20.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,89.08,14430,85.52,211.63,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,67.0,1680,67.8,,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,115.0,180,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Extra Large,Brown,Graded Loose,National,National,FOB,,,,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,107.0,3228,101.75,224.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Large,White,Graded Loose,California,California,Delivered,88.93,10200,85.49,207.18,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Large,White,Graded Loose,National,National,FOB,51.53,1290,50.16,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,115.0,600,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,,,,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,61.89,6072,62.26,153.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Medium,White,Graded Loose,National,National,FOB,52.0,300,52.0,147.53,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,148.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,169.64,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Caged,Extra Large,White,Graded Loose,National,National,FOB,49.72,25350,48.05,182.74,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Caged,Large,White,Graded Loose,National,National,FOB,45.97,26394,41.65,186.49,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Caged,Medium,White,Graded Loose,National,National,FOB,50.0,936,50.0,135.19,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Caged,Small,White,Graded Loose,National,National,FOB,,,,65.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-11-06,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,1,White,Gradeable Nest Run,California,California,Delivered,,,35.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,1,White,Gradeable Nest Run,National,National,FOB,,,,160.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,61.0,1560,62.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,20.0,840,20.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,88.86,13650,89.08,211.63,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,67.0,1680,67.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,115.0,180,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Extra Large,Brown,Graded Loose,National,National,FOB,,,,178.71,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,104.4,2690,107.0,224.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Large,White,Graded Loose,California,California,Delivered,87.4,8580,88.93,207.18,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Large,White,Graded Loose,National,National,FOB,51.53,1290,51.53,185.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,115.0,600,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,840,,179.12,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,61.39,5232,61.89,149.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Medium,White,Graded Loose,National,National,FOB,52.0,300,52.0,149.87,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Cage-Free,Medium,Brown,Graded Loose,National,National,FOB,,,,148.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,176.06,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Caged,Extra Large,White,Graded Loose,National,National,FOB,52.23,25290,49.72,193.19,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Caged,Large,White,Graded Loose,National,National,FOB,51.92,35346,45.97,193.35,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Caged,Large,Brown,Graded Loose,National,National,FOB,,,,172.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Caged,Medium,White,Graded Loose,National,National,FOB,50.0,936,50.0,135.18,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Caged,Small,White,Graded Loose,National,National,FOB,,,,65.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-11-09,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,61.0,1560,61.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,20.0,840,20.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,90.5,7800,88.86,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,69.33,1260,67.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,115.0,180,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,117.5,1076,104.4,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Large,White,Graded Loose,California,California,Delivered,87.99,7410,87.4,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Large,White,Graded Loose,National,National,FOB,60.0,180,51.53,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,115.0,600,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,60.0,840,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,64.79,3456,61.39,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Cage-Free,Medium,White,Graded Loose,National,National,FOB,52.0,150,52.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Caged,Extra Large,White,Graded Loose,National,National,FOB,55.93,22170,52.23,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Caged,Large,White,Graded Loose,National,National,FOB,62.72,29106,51.92,,Cents Per Dozen,30-Dozen Cases
+2026-11-10,Caged,Medium,White,Graded Loose,National,National,FOB,50.0,936,50.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,1,White,Gradeable Nest Run,National,National,FOB,,,,160.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,1,Brown,Gradeable Nest Run,National,National,FOB,60.0,780,61.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,2,White,Gradeable Nest Run,National,National,FOB,,,20.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Extra Large,White,Graded Loose,California,California,Delivered,97.54,6270,90.5,236.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Extra Large,White,Graded Loose,National,National,FOB,65.0,1350,69.33,,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Extra Large,Brown,Graded Loose,California,California,Delivered,,,115.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Extra Large,Brown,Graded Loose,National,National,FOB,,,,174.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Jumbo,White,Graded Loose,California,California,Delivered,117.5,1076,117.5,,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Large,White,Graded Loose,California,California,Delivered,92.01,4140,87.99,233.19,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Large,White,Graded Loose,National,National,FOB,60.0,750,60.0,,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Large,Brown,Graded Loose,California,California,Delivered,,,115.0,186.32,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Large,Brown,Graded Loose,National,National,FOB,76.85,1620,60.0,168.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Medium,White,Graded Loose,California,California,Delivered,68.0,1260,64.79,152.5,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Cage-Free,Medium,White,Graded Loose,National,National,FOB,48.75,2016,52.0,155.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Caged,1,White,Gradeable Nest Run,National,National,FOB,,,,181.4,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Caged,Extra Large,White,Graded Loose,National,National,FOB,66.09,14370,55.93,207.8,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Caged,Jumbo,White,Graded Loose,National,National,FOB,,,,183.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Caged,Large,White,Graded Loose,National,National,FOB,69.16,39744,62.72,203.67,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Caged,Large,Brown,Graded Loose,National,National,FOB,,,,172.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Caged,Medium,White,Graded Loose,National,National,FOB,53.75,1200,50.0,155.73,Cents Per Dozen,30-Dozen Cases
+2026-11-12,Free-Range,1,Brown,Gradeable Nest Run,National,National,FOB,,,,145.0,Cents Per Dozen,30-Dozen Cases
+2026-11-12,USDA Organic,1,Brown,Gradeable Nest Run,National,National,FOB,,,,285.0,Cents Per Dozen,30-Dozen Cases

@@ -1889,3 +1889,66 @@ report_date,region,class,price_low,price_high,avg_price,avg_price_prev,price_uni
 2026-10-12,Southeast,Extra Large,76.5,84.0,80.25,90.25,Cents Per Dozen
 2026-10-12,Southeast,Large,67.0,74.0,70.5,78.5,Cents Per Dozen
 2026-10-12,Southeast,Medium,56.5,64.0,60.25,62.25,Cents Per Dozen
+2026-10-19,Midwest,Extra Large,57.0,65.0,61.0,63.0,Cents Per Dozen
+2026-10-19,Midwest,Extra Large,50.0,59.0,54.5,56.5,Cents Per Dozen
+2026-10-19,Midwest,Large,55.0,63.0,59.0,61.0,Cents Per Dozen
+2026-10-19,Midwest,Large,31.0,41.0,36.0,38.0,Cents Per Dozen
+2026-10-19,Midwest,Large,49.0,58.0,53.5,55.5,Cents Per Dozen
+2026-10-19,Midwest,Medium,47.0,55.0,51.0,53.0,Cents Per Dozen
+2026-10-19,Midwest,Medium,23.0,27.0,25.0,27.0,Cents Per Dozen
+2026-10-19,Midwest,Medium,41.0,50.0,45.5,47.5,Cents Per Dozen
+2026-10-19,Midwest,Small,10.0,16.0,13.0,13.0,Cents Per Dozen
+2026-10-19,National,Extra Large,50.0,81.0,70.25,72.88,Cents Per Dozen
+2026-10-19,National,Large,49.0,74.0,64.19,66.19,Cents Per Dozen
+2026-10-19,National,Medium,41.0,65.0,54.0,56.0,Cents Per Dozen
+2026-10-19,Northeast,Extra Large,64.0,81.0,72.5,75.0,Cents Per Dozen
+2026-10-19,Northeast,Large,58.0,72.0,65.0,67.0,Cents Per Dozen
+2026-10-19,Northeast,Medium,45.0,58.0,51.5,53.5,Cents Per Dozen
+2026-10-19,South Central,Extra Large,72.5,81.0,76.75,79.75,Cents Per Dozen
+2026-10-19,South Central,Large,65.5,74.0,69.75,71.75,Cents Per Dozen
+2026-10-19,South Central,Medium,56.5,65.0,60.75,62.75,Cents Per Dozen
+2026-10-19,Southeast,Extra Large,73.5,81.0,77.25,80.25,Cents Per Dozen
+2026-10-19,Southeast,Large,65.0,72.0,68.5,70.5,Cents Per Dozen
+2026-10-19,Southeast,Medium,54.5,62.0,58.25,60.25,Cents Per Dozen
+2026-10-26,Midwest,Extra Large,57.0,65.0,61.0,61.0,Cents Per Dozen
+2026-10-26,Midwest,Extra Large,50.0,59.0,54.5,54.5,Cents Per Dozen
+2026-10-26,Midwest,Large,55.0,63.0,59.0,59.0,Cents Per Dozen
+2026-10-26,Midwest,Large,31.0,41.0,36.0,36.0,Cents Per Dozen
+2026-10-26,Midwest,Large,49.0,58.0,53.5,53.5,Cents Per Dozen
+2026-10-26,Midwest,Medium,47.0,55.0,51.0,51.0,Cents Per Dozen
+2026-10-26,Midwest,Medium,23.0,27.0,25.0,25.0,Cents Per Dozen
+2026-10-26,Midwest,Medium,41.0,50.0,45.5,45.5,Cents Per Dozen
+2026-10-26,Midwest,Small,10.0,16.0,13.0,13.0,Cents Per Dozen
+2026-10-26,National,Extra Large,50.0,81.0,70.25,70.25,Cents Per Dozen
+2026-10-26,National,Large,49.0,74.0,64.19,64.19,Cents Per Dozen
+2026-10-26,National,Medium,41.0,65.0,54.0,54.0,Cents Per Dozen
+2026-10-26,Northeast,Extra Large,64.0,81.0,72.5,72.5,Cents Per Dozen
+2026-10-26,Northeast,Large,58.0,72.0,65.0,65.0,Cents Per Dozen
+2026-10-26,Northeast,Medium,45.0,58.0,51.5,51.5,Cents Per Dozen
+2026-10-26,South Central,Extra Large,72.5,81.0,76.75,76.75,Cents Per Dozen
+2026-10-26,South Central,Large,65.5,74.0,69.75,69.75,Cents Per Dozen
+2026-10-26,South Central,Medium,56.5,65.0,60.75,60.75,Cents Per Dozen
+2026-10-26,Southeast,Extra Large,73.5,81.0,77.25,77.25,Cents Per Dozen
+2026-10-26,Southeast,Large,65.0,72.0,68.5,68.5,Cents Per Dozen
+2026-10-26,Southeast,Medium,54.5,62.0,58.25,58.25,Cents Per Dozen
+2026-11-02,Midwest,Extra Large,73.0,81.0,77.0,61.0,Cents Per Dozen
+2026-11-02,Midwest,Extra Large,66.0,75.0,70.5,54.5,Cents Per Dozen
+2026-11-02,Midwest,Large,71.0,79.0,75.0,59.0,Cents Per Dozen
+2026-11-02,Midwest,Large,47.0,57.0,52.0,36.0,Cents Per Dozen
+2026-11-02,Midwest,Large,65.0,74.0,69.5,53.5,Cents Per Dozen
+2026-11-02,Midwest,Medium,54.0,62.0,58.0,51.0,Cents Per Dozen
+2026-11-02,Midwest,Medium,30.0,34.0,32.0,25.0,Cents Per Dozen
+2026-11-02,Midwest,Medium,48.0,57.0,52.5,45.5,Cents Per Dozen
+2026-11-02,Midwest,Small,10.0,16.0,13.0,13.0,Cents Per Dozen
+2026-11-02,National,Extra Large,66.0,97.0,86.25,70.25,Cents Per Dozen
+2026-11-02,National,Large,65.0,90.0,80.19,64.19,Cents Per Dozen
+2026-11-02,National,Medium,48.0,72.0,61.0,54.0,Cents Per Dozen
+2026-11-02,Northeast,Extra Large,80.0,97.0,88.5,72.5,Cents Per Dozen
+2026-11-02,Northeast,Large,74.0,88.0,81.0,65.0,Cents Per Dozen
+2026-11-02,Northeast,Medium,52.0,65.0,58.5,51.5,Cents Per Dozen
+2026-11-02,South Central,Extra Large,88.5,97.0,92.75,76.75,Cents Per Dozen
+2026-11-02,South Central,Large,81.5,90.0,85.75,69.75,Cents Per Dozen
+2026-11-02,South Central,Medium,63.5,72.0,67.75,60.75,Cents Per Dozen
+2026-11-02,Southeast,Extra Large,89.5,97.0,93.25,77.25,Cents Per Dozen
+2026-11-02,Southeast,Large,81.0,88.0,84.5,68.5,Cents Per Dozen
+2026-11-02,Southeast,Medium,61.5,69.0,65.25,58.25,Cents Per Dozen
