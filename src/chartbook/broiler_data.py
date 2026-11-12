@@ -48,6 +48,8 @@ HPAI_BROILER_GROUPS = {
     ),
     "Breeder pullets": ("Commercial Broiler Breeder Pullets",),
 }
+# Shown separately in grey: APHIS does not state the species for these.
+HPAI_UNCLASSIFIED_GROUP = {"Breeders, species not stated": ("Commercial Breeder Operation",)}
 
 MONTHS = {
     "JAN": 1, "FEB": 2, "MAR": 3, "APR": 4, "MAY": 5, "JUN": 6,
@@ -404,7 +406,12 @@ def _exports(conn):
             key=lambda c: sum(v for m, v in by_country[c].items() if m in months),
             reverse=True,
         )
-        top_by_range[key] = ranked[:8]
+        top = ranked[:8]
+        # China is always named (it matters to dark-meat and paw markets even
+        # when it falls outside the top eight for a period).
+        if "China" in by_country and "China" not in top:
+            top.append("China")
+        top_by_range[key] = top
     keep = []
     for key in ("all", "10y", "5y", "3y"):
         keep += [c for c in top_by_range[key] if c not in keep]
@@ -420,8 +427,10 @@ def _exports(conn):
 
 
 def _hpai(conn):
-    types = [t for group in HPAI_BROILER_GROUPS.values() for t in group]
-    assert set(types) <= set(HPAI_CATEGORY_GROUPS["Commercial Broiler"])
+    broiler_types = [t for group in HPAI_BROILER_GROUPS.values() for t in group]
+    assert set(broiler_types) <= set(HPAI_CATEGORY_GROUPS["Commercial Broiler"])
+    groups = {**HPAI_BROILER_GROUPS, **HPAI_UNCLASSIFIED_GROUP}
+    types = [t for group in groups.values() for t in group]
     rows = conn.execute(
         f"""SELECT strftime('%Y-%m', confirmation_date), flock_type, COUNT(*),
                    SUM(COALESCE(flock_size, 0))
@@ -444,8 +453,8 @@ def _hpai(conn):
             m += 1
             if m > 12:
                 y, m = y + 1, 1
-    group_of = {t: g for g, ts in HPAI_BROILER_GROUPS.items() for t in ts}
-    birds = {g: [0] * len(dates) for g in HPAI_BROILER_GROUPS}
+    group_of = {t: g for g, ts in groups.items() for t in ts}
+    birds = {g: [0] * len(dates) for g in groups}
     detections = [0] * len(dates)
     idx = {d: i for i, d in enumerate(dates)}
     for month, ftype, n, b in rows:
@@ -455,8 +464,16 @@ def _hpai(conn):
     last_detection = conn.execute(
         "SELECT MAX(confirmation_date) FROM hpai_detections"
     ).fetchone()[0]
+    last_broiler = conn.execute(
+        f"""SELECT confirmation_date, state, county FROM hpai_detections
+            WHERE flock_type IN ({",".join("?" * len(broiler_types))})
+            ORDER BY confirmation_date DESC LIMIT 1""",
+        broiler_types,
+    ).fetchone()
     return {"dates": dates, "birds": birds, "detections": detections,
-            "data_through": last_detection}
+            "data_through": last_detection,
+            "last_broiler": {"date": last_broiler[0], "state": last_broiler[1],
+                             "county": last_broiler[2]} if last_broiler else None}
 
 
 YOUNG = "CHICKENS, YOUNG, SLAUGHTER, FI"

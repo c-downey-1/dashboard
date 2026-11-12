@@ -8,7 +8,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112e">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112f">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <!-- Microsoft Clarity: same project as innovateanimalag.org (z2ge5ap319); runs only
      on innovateanimalag.org hosts. Tag "chartbook" = broiler. -->
@@ -118,9 +118,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </section>
 
   <section class="section" id="avian-influenza">
-    <div class="section-head"><div><h2>Avian Influenza</h2><p>HPAI detections in flocks APHIS classifies as commercial broiler, broiler breeder or broiler breeder pullet.</p></div></div>
+    <div class="section-head"><div><h2>Avian Influenza</h2><p>HPAI detections in flocks APHIS classifies as commercial broiler, broiler breeder or broiler breeder pullet. Same data as IAA's HPAI dashboard.</p></div></div>
     <div class="grid">
-      <article class="card wide"><h3>Broiler Birds Affected by HPAI</h3><div class="sub">Birds in confirmed commercial broiler, broiler breeder and breeder pullet flocks, by month, with the number of flocks detected</div><canvas id="hpaiBroilerChart"></canvas></article>
+      <article class="card wide"><h3>Broiler Birds Affected by HPAI</h3><div class="sub">Birds in confirmed commercial broiler, broiler breeder and breeder pullet flocks, by month, with the number of flocks detected. Breeder flocks of unstated species are shown in grey</div><canvas id="hpaiBroilerChart"></canvas></article>
     </div>
   </section>
 
@@ -128,8 +128,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20261112e"></script>
-<script src="assets/broiler-dashboard.js?v=20261112e"></script>
+<script src="assets/dashboard-common.js?v=20261112f"></script>
+<script src="assets/broiler-dashboard.js?v=20261112f"></script>
 </body>
 </html>
 """

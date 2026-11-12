@@ -778,12 +778,13 @@ async function bootBroilerDashboard() {
     const EXPORT_COLORS = ['#013046', '#1F9EBC', '#F6851F', '#FDB714', '#8FCAE6', '#7c2d12', '#0a4561', '#E5700A',
       '#5B8C2A', '#9B4F96', '#B8860B', '#2F6F73', '#C0504D', '#6B7A8F', '#D99694', '#4B3B2B'];
     const countryColor = Object.fromEntries(Object.keys(X.countries).map((n, i) => [n, EXPORT_COLORS[i % EXPORT_COLORS.length]]));
+    countryColor.China = '#C0504D';
     const renderExports = range => {
       const { start, end } = getRangeSlice(X.dates, range);
       const labels = X.dates.slice(start, end);
       const toM = arr => arr.slice(start, end).map(v => v != null ? v / 1000 : null);
       if (exportMode === 'country') {
-        // Top 8 destinations ranked over the selected range among all countries.
+        // Top 8 destinations ranked over the selected range among all countries, plus China.
         const top = X.top_by_range[range] || X.top_by_range.all;
         const other = X.total.map((t, i) => (t == null ? null : Math.max(t - top.reduce((a, n) => a + (X.countries[n][i] || 0), 0), 0)));
         const sets = top.map(n => dataset(n, toM(X.countries[n]), countryColor[n], { backgroundColor: countryColor[n] }));
@@ -811,10 +812,13 @@ async function bootBroilerDashboard() {
     const lastMonth = HP.dates[HP.dates.length - 1];
     const node = document.getElementById('hpaiBroilerChart')?.closest('.card')?.querySelector('.card-source');
     if (node && HP.data_through && lastMonth && HP.data_through.slice(0, 7) === lastMonth) {
-      node.insertAdjacentText('beforeend', ` • ${fmtYM(lastMonth)} is month to date (detections through ${fmtDate(HP.data_through)}). Generic "Commercial Breeder Operation" detections (species not stated) are excluded`);
+      node.insertAdjacentText('beforeend', ` • ${fmtYM(lastMonth)} is month to date (all poultry detections through ${fmtDate(HP.data_through)})`);
+    }
+    if (node && HP.last_broiler) {
+      node.insertAdjacentText('beforeend', ` • Most recent broiler flock: ${fmtDate(HP.last_broiler.date)}, ${HP.last_broiler.county} County, ${HP.last_broiler.state} • Grey: "Commercial Breeder Operation" flocks, for which APHIS does not state the species`);
     }
   }
-  const HPAI_COLORS = { 'Broiler production': DASH_COLORS.red, 'Broiler breeders': DASH_COLORS.orange, 'Breeder pullets': DASH_COLORS.gold };
+  const HPAI_COLORS = { 'Broiler production': DASH_COLORS.red, 'Broiler breeders': DASH_COLORS.orange, 'Breeder pullets': DASH_COLORS.gold, 'Breeders, species not stated': '#B9C2C8' };
   registerRangeControl({
     chartId: 'hpaiBroilerChart',
     options: ['1y', '3y', 'all'],
