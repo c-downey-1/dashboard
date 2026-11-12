@@ -8,7 +8,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112f">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112g">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <!-- Microsoft Clarity: same project as innovateanimalag.org (z2ge5ap319); runs only
      on innovateanimalag.org hosts. Tag "chartbook" = broiler. -->
@@ -57,9 +57,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <section class="section" id="production">
     <div class="section-head"><div><h2>Production</h2><p>How much chicken the industry produces, whether growth comes from more birds or heavier birds, and where it is grown.</p></div></div>
     <div class="grid">
-      <article class="card wide"><h3>Chicken Production</h3><div class="sub" id="productionSub">Ready-to-cook young chicken certified at federally inspected plants, total for the trailing 12 months</div><canvas id="productionChart"></canvas></article>
+      <article class="card wide"><h3>Chicken Production</h3><div class="sub" id="productionSub">Ready-to-cook broiler meat certified at federally inspected plants, total for the trailing 12 months</div><canvas id="productionChart"></canvas></article>
       <article class="card"><h3>More Birds or Heavier Birds</h3><div class="sub">Trailing 12-month change vs a year earlier in birds slaughtered and in average live weight; together they give the change in live pounds</div><canvas id="productionDriversChart"></canvas></article>
-      <article class="card"><h3>Average Live Weight</h3><div class="sub">Average live weight of young chickens at slaughter, monthly and 12-month average</div><canvas id="liveWeightChart"></canvas></article>
+      <article class="card"><h3>Average Live Weight</h3><div class="sub">Average live weight of broilers at slaughter, monthly and 12-month average</div><canvas id="liveWeightChart"></canvas></article>
       <article class="card"><h3>Condemnations at Slaughter</h3><div class="sub">Share lost at federal inspection, 12-month averages: birds condemned before slaughter (mostly dead on arrival) and carcass weight condemned after slaughter</div><canvas id="condemnChart"></canvas></article>
       <article class="card"><h3>Top Broiler States</h3><div class="sub" id="stateProductionSub">Annual broiler production by state, live weight</div><canvas id="stateProductionChart"></canvas></article>
     </div>
@@ -128,8 +128,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20261112f"></script>
-<script src="assets/broiler-dashboard.js?v=20261112f"></script>
+<script src="assets/dashboard-common.js?v=20261112g"></script>
+<script src="assets/broiler-dashboard.js?v=20261112g"></script>
 </body>
 </html>
 """

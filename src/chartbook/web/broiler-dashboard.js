@@ -41,7 +41,7 @@ function setChartSources() {
     placementsYoYChart: `${SRC.hatch} • 4 weeks to date vs the 4 weeks ending 364 days earlier`,
     placementsWeeklyChart: SRC.hatch,
     chicksHatchedChart: SRC.hatchery,
-    productionChart: `${SRC.slaughter} • Young chickens are broilers; federally inspected plants handle nearly all U.S. production`,
+    productionChart: `${SRC.slaughter} • USDA reports broilers as "young chickens"; federally inspected plants handle nearly all U.S. production`,
     productionDriversChart: `${SRC.slaughter} • IAA calculation`,
     liveWeightChart: SRC.slaughter,
     condemnChart: `${SRC.slaughter} • Rates also reflect inspection and plant practices, not only flock health`,
@@ -558,7 +558,7 @@ async function bootBroilerDashboard() {
       const sets = seasonalDatasets(PD.dates, PD.rtc.map(v => v / 1e9), range === 'all' ? '10y' : range, 2001);
       renderBroilerMixed('productionChart', MON_SHORT, sets, 'Billion lb', undefined,
         Object.assign({ yTickCallback: tickFmt({ suffix: 'B' }) }, niceBounds(sets.flatMap(s => s.data), 0.2)));
-      broilerText('productionSub', 'Ready-to-cook young chicken certified at federally inspected plants, by month: this year, last year and the multi-year average');
+      broilerText('productionSub', 'Ready-to-cook broiler meat certified at federally inspected plants, by month: this year, last year and the multi-year average');
       return;
     }
     const { start, end } = getRangeSlice(PD.dates, range);
@@ -570,7 +570,7 @@ async function bootBroilerDashboard() {
       yTickCallback: tickFmt({ suffix: 'B' }),
       y2TickCallback: tickFmt({ suffix: '%', sign: true })
     }, niceBounds(vals, 0.1)));
-    broilerText('productionSub', 'Ready-to-cook young chicken certified at federally inspected plants, total for the trailing 12 months');
+    broilerText('productionSub', 'Ready-to-cook broiler meat certified at federally inspected plants, total for the trailing 12 months');
   };
   registerRangeControl({ chartId: 'productionChart', options: ['5y', '10y', 'all'], defaultRange: '10y', renderer: renderProduction });
   insertModeToggle('productionChart', [
