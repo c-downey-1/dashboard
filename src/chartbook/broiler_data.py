@@ -459,6 +459,103 @@ def _hpai(conn):
             "data_through": last_detection}
 
 
+YOUNG = "CHICKENS, YOUNG, SLAUGHTER, FI"
+
+
+def _trailing(series, n=12):
+    """{'YYYY-MM': v} → {'YYYY-MM': sum of the n months ending there}, only
+    where all n months are present."""
+    out = {}
+    for m in series:
+        t = int(m[:4]) * 12 + int(m[5:]) - 1
+        win = [series.get(f"{(t - k) // 12}-{(t - k) % 12 + 1:02d}") for k in range(n)]
+        if None not in win:
+            out[m] = sum(win)
+    return out
+
+
+def _yoy(series):
+    out = {}
+    for m, v in series.items():
+        prev = series.get(f"{int(m[:4]) - 1}{m[4:]}")
+        out[m] = _r((v / prev - 1) * 100, 2) if prev else None
+    return out
+
+
+def _production(conn):
+    """Federally inspected young-chicken (broiler) slaughter, from NASS Poultry
+    Slaughter, plus annual production by state from Poultry Production and Value."""
+    head = _nass_monthly(conn, f"{YOUNG} - SLAUGHTERED, MEASURED IN HEAD")
+    live = _nass_monthly(conn, f"{YOUNG} - SLAUGHTERED, MEASURED IN LB, LIVE BASIS")
+    weight = _nass_monthly(conn, f"{YOUNG} - SLAUGHTERED, MEASURED IN LB / HEAD, LIVE BASIS")
+    rtc = _nass_monthly(conn, f"{YOUNG}, CERTIFIED, CHILLED & FROZEN - PRODUCTION, MEASURED IN LB")
+    ante = _nass_monthly(conn, f"{YOUNG} - CONDEMNED, ANTE-MORTEM, MEASURED IN PCT OF SLAUGHTER")
+    post = _nass_monthly(
+        conn,
+        f"{YOUNG}, CARCASS & PARTS - CONDEMNED, POST-MORTEM, "
+        "MEASURED IN PCT OF LB CERTIFIED & POST-MORTEM CONDEMNED",
+    )
+    dates = list(rtc)
+    rtc12, head12, live12 = _trailing(rtc), _trailing(head), _trailing(live)
+    # 12-month average weight is pounds over birds, not a mean of monthly means.
+    weight12 = {m: live12[m] / head12[m] for m in live12 if head12.get(m)}
+    rtc12_yoy, head12_yoy = _yoy(rtc12), _yoy(head12)
+    weight12_yoy, live12_yoy = _yoy(weight12), _yoy(live12)
+
+    # Annual production by state (pounds live weight produced, Dec–Nov year).
+    item = "CHICKENS, BROILERS - PRODUCTION, MEASURED IN LB"
+    latest = conn.execute(
+        "SELECT MAX(year) FROM nass_data WHERE data_item = ? AND agg_level = 'STATE' AND value IS NOT NULL",
+        (item,),
+    ).fetchone()[0]
+    states = {}
+    if latest:
+        base_year = latest - 10
+        rows = conn.execute(
+            """SELECT year, state_alpha, state_name, value FROM nass_data
+               WHERE data_item = ? AND agg_level = 'STATE' AND value IS NOT NULL
+                 AND reference_period = 'YEAR' AND year IN (?, ?)""",
+            (item, latest, base_year),
+        ).fetchall()
+        cur = {a: (n, v) for y, a, n, v in rows if y == latest and a != "OT"}
+        base = {a: v for y, a, n, v in rows if y == base_year}
+        national = conn.execute(
+            """SELECT value FROM nass_data WHERE data_item = ? AND agg_level = 'NATIONAL'
+               AND reference_period = 'YEAR' AND year = ?""",
+            (item, latest),
+        ).fetchone()
+        top = sorted(cur, key=lambda a: cur[a][1], reverse=True)[:10]
+        states = {
+            "year": latest,
+            "base_year": base_year,
+            "national": national[0] if national else None,
+            "abbr": top,
+            "names": [cur[a][0].title() for a in top],
+            "values": [cur[a][1] for a in top],
+            "base_values": [base.get(a) for a in top],
+        }
+
+    def col(series):
+        return [_r(series.get(d), 4) if series.get(d) is not None else None for d in dates]
+
+    return {
+        "dates": dates,
+        "rtc": [rtc[d] for d in dates],
+        "rtc_12m": col(rtc12),
+        "rtc_12m_yoy": col(rtc12_yoy),
+        "head": col(head),
+        "head_12m": col(head12),
+        "weight": col(weight),
+        "weight_12m": col(weight12),
+        "head_12m_yoy": col(head12_yoy),
+        "weight_12m_yoy": col(weight12_yoy),
+        "live_12m_yoy": col(live12_yoy),
+        "ante_pct": col(ante),
+        "post_pct": col(post),
+        "states": states,
+    }
+
+
 def build_broiler(conn):
     """Everything the broiler page needs, in one block."""
     placements = _weekly_block(_nass_weekly(conn, "CHICKENS, BROILERS - PLACEMENTS, MEASURED IN HEAD"))
@@ -473,6 +570,7 @@ def build_broiler(conn):
         "placements": placements,
         "eggs_set": eggs_set,
         "chicks_hatched": chicks,
+        "production": _production(conn),
         "cold_storage": cold,
         "wholesale": _wholesale(conn),
         "retail": _retail(conn),

@@ -7,6 +7,8 @@ const SRC = {
   hatchery: '<a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Hatchery_Production/index.php" target="_blank" rel="noreferrer">USDA NASS Hatchery Production</a>',
   wholesale: '<a href="https://mymarketnews.ams.usda.gov/viewReport/3646" target="_blank" rel="noreferrer">USDA AMS Weekly National Chicken Report</a>',
   retail: '<a href="https://mymarketnews.ams.usda.gov/viewReport/2756" target="_blank" rel="noreferrer">USDA AMS National Retail Chicken Report</a>',
+  slaughter: '<a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Poultry_Slaughter/index.php" target="_blank" rel="noreferrer">USDA NASS Poultry Slaughter</a>',
+  ppv: '<a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Poultry_Production_and_Value/index.php" target="_blank" rel="noreferrer">USDA NASS Poultry Production and Value</a>',
   prices: '<a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Prices_Received_and_Prices_Received_Indexes/" target="_blank" rel="noreferrer">USDA NASS Agricultural Prices</a>',
   cme: '<a href="https://www.cmegroup.com/market-data/browse-data/delayed-quotes.html" target="_blank" rel="noreferrer">CME Group delayed quotes</a>',
   cold: '<a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Cold_Storage/index.php" target="_blank" rel="noreferrer">USDA NASS Cold Storage</a>',
@@ -49,6 +51,11 @@ function setChartSources() {
     placementsYoYChart: `${SRC.hatch} • 4 weeks to date vs the 4 weeks ending 364 days earlier`,
     placementsWeeklyChart: SRC.hatch,
     chicksHatchedChart: SRC.hatchery,
+    productionChart: `${SRC.slaughter} • Young chickens are broilers; federally inspected plants handle nearly all U.S. production`,
+    productionDriversChart: `${SRC.slaughter} • IAA calculation`,
+    liveWeightChart: SRC.slaughter,
+    condemnChart: `${SRC.slaughter} • Rates also reflect inspection and plant practices, not only flock health`,
+    stateProductionChart: `${SRC.ppv} • Production year runs December to November; states USDA does not publish separately are not shown`,
     wholesaleCutsChart: `${SRC.wholesale} • National, domestic, fresh; parts FOB plant, WOG delivered, all sizes`,
     retailChickenChart: `${SRC.retail} • Fresh, conventional, regular pack. Party wings start Sept 2024 (AMS renamed its retail items then)`,
     pricesReceivedChart: SRC.prices,
@@ -379,6 +386,13 @@ async function bootBroilerDashboard() {
     broilerHTML(subId, `Wholesale ¢/lb · ${fmtDate(latest.date)}<br>${deltaSpan(yoy, signed(yoy))} vs year ago`);
   };
   kpiCut('Breast - B/S', 'kpiBreast', 'kpiBreastSub');
+
+  const PD = B.production;
+  {
+    const i = PD.dates.length - 1;
+    broilerText('kpiProd', `${fmtNum(PD.rtc[i] / 1e9, 2)}B lb`);
+    broilerHTML('kpiProdSub', `Ready-to-cook · ${fmtYM(PD.dates[i])}<br>12-mo total ${deltaSpan(PD.rtc_12m_yoy[i], signed(PD.rtc_12m_yoy[i]))} vs year ago`);
+  }
   kpiCut('Leg quarters - Bulk', 'kpiLegQ', 'kpiLegQSub');
 
   /* ── Hatchery performance ─────────────────────────────── */
@@ -557,6 +571,112 @@ async function bootBroilerDashboard() {
         Object.assign({ yTickCallback: tickFmt({ suffix: 'M' }) }, niceBounds(sets.flatMap(s => s.data), 0.5)));
     }
   });
+
+  /* ── Production ────────────────────────────────────────── */
+  let prodMode = 'total';
+  const renderProduction = range => {
+    if (prodMode === 'seasonal') {
+      const sets = seasonalDatasets(PD.dates, PD.rtc.map(v => v / 1e9), range === 'all' ? '10y' : range, 2001);
+      renderBroilerMixed('productionChart', MON_SHORT, sets, 'Billion lb', undefined,
+        Object.assign({ yTickCallback: tickFmt({ suffix: 'B' }) }, niceBounds(sets.flatMap(s => s.data), 0.2)));
+      broilerText('productionSub', 'Ready-to-cook young chicken certified at federally inspected plants, by month: this year, last year and the multi-year average');
+      return;
+    }
+    const { start, end } = getRangeSlice(PD.dates, range);
+    const vals = PD.rtc_12m.slice(start, end).map(v => v != null ? v / 1e9 : null);
+    renderBroilerMixed('productionChart', PD.dates.slice(start, end), [
+      dataset('12-month total', vals, DASH_COLORS.navy, { type: 'line' }),
+      dataset('Change vs year ago', PD.rtc_12m_yoy.slice(start, end), DASH_COLORS.orange, { type: 'line', yAxisID: 'y2', borderWidth: 2.2 })
+    ], 'Billion lb, trailing 12 months', '% vs year ago', Object.assign({
+      yTickCallback: tickFmt({ suffix: 'B' }),
+      y2TickCallback: tickFmt({ suffix: '%', sign: true })
+    }, niceBounds(vals, 0.1)));
+    broilerText('productionSub', 'Ready-to-cook young chicken certified at federally inspected plants, total for the trailing 12 months');
+  };
+  registerRangeControl({ chartId: 'productionChart', options: ['5y', '10y', 'all'], defaultRange: '10y', renderer: renderProduction });
+  insertModeToggle('productionChart', [
+    { mode: 'total', label: '12-month total' },
+    { mode: 'seasonal', label: 'By month' }
+  ], 'total', mode => { prodMode = mode; renderProduction(chartRanges.productionChart || '10y'); });
+
+  registerRangeControl({
+    chartId: 'productionDriversChart',
+    options: ['5y', '10y', 'all'],
+    defaultRange: '10y',
+    renderer(range) {
+      const { start, end } = getRangeSlice(PD.dates, range);
+      const birds = PD.head_12m_yoy.slice(start, end);
+      const weight = PD.weight_12m_yoy.slice(start, end);
+      const live = PD.live_12m_yoy.slice(start, end);
+      renderBroilerMixed('productionDriversChart', PD.dates.slice(start, end), [
+        dataset('Birds slaughtered', birds, DASH_COLORS.navy, { type: 'bar', backgroundColor: DASH_COLORS.navy, stack: 'parts' }),
+        dataset('Average live weight', weight, DASH_COLORS.gold, { type: 'bar', backgroundColor: DASH_COLORS.gold, stack: 'parts' }),
+        dataset('Live pounds', live, '#1F9EBC', { type: 'line', stack: 'total', borderWidth: 2.8 })
+      ], '% vs year ago, trailing 12 months', undefined, {
+        stacked: true,
+        yTickCallback: tickFmt({ suffix: '%', sign: true }),
+        tooltip: pctTooltip
+      });
+    }
+  });
+
+  registerRangeControl({
+    chartId: 'liveWeightChart',
+    options: ['5y', '10y', 'all'],
+    defaultRange: 'all',
+    renderer(range) {
+      const { start, end } = getRangeSlice(PD.dates, range);
+      const monthly = PD.weight.slice(start, end);
+      renderLineChart('liveWeightChart', PD.dates.slice(start, end), [
+        dataset('Monthly', monthly, 'rgba(246,133,31,0.4)', { borderWidth: 1.6, order: 5 }),
+        dataset('12-month average', PD.weight_12m.slice(start, end), DASH_COLORS.navy, { order: 0 })
+      ], 'lb per bird, live', Object.assign({
+        yTickCallback: tickFmt(),
+        tooltip: { callbacks: { label: c => (c.parsed?.y == null ? '' : `${c.dataset.label}: ${fmtNum(c.parsed.y, 2)} lb`) } }
+      }, niceBounds(monthly, 0.08)));
+    }
+  });
+
+  const ante12 = fullRollingAverage(PD.ante_pct, 12);
+  const post12 = fullRollingAverage(PD.post_pct, 12);
+  registerRangeControl({
+    chartId: 'condemnChart',
+    options: ['5y', '10y', 'all'],
+    defaultRange: 'all',
+    renderer(range) {
+      const { start, end } = getRangeSlice(PD.dates, range);
+      renderLineChart('condemnChart', PD.dates.slice(start, end), [
+        dataset('After slaughter, % of carcass weight', post12.slice(start, end), DASH_COLORS.navy),
+        dataset('Before slaughter, % of birds', ante12.slice(start, end), DASH_COLORS.orange)
+      ], '% condemned', {
+        yMin: 0,
+        yTickCallback: tickFmt({ suffix: '%' }),
+        tooltip: { callbacks: { label: c => (c.parsed?.y == null ? '' : `${c.dataset.label}: ${fmtNum(c.parsed.y, 2)}%`) } }
+      });
+    }
+  });
+
+  const ST = PD.states;
+  if (ST && (ST.abbr || []).length) {
+    broilerText('stateProductionSub', `Annual broiler production by state, live weight: ${ST.year} vs ${ST.base_year}. The ten largest states produced ${fmtNum(ST.values.reduce((a, b) => a + b, 0) / ST.national * 100, 0)}% of the U.S. total in ${ST.year}`);
+    registerRangeControl({
+      chartId: 'stateProductionChart',
+      options: [],
+      defaultRange: 'all',
+      renderer() {
+        renderBarChart('stateProductionChart', ST.abbr, [
+          dataset(String(ST.base_year), ST.base_values.map(v => v != null ? v / 1e9 : null), DASH_COLORS.slate, { backgroundColor: '#B9C2C8' }),
+          dataset(String(ST.year), ST.values.map(v => v / 1e9), DASH_COLORS.navy, { backgroundColor: DASH_COLORS.navy })
+        ], 'Billion lb, live weight', {
+          yTickCallback: tickFmt({ suffix: 'B' }),
+          tooltip: { callbacks: {
+            title: items => (items && items[0]) ? ST.names[items[0].dataIndex] : '',
+            label: c => (c.parsed?.y == null ? '' : `${c.dataset.label}: ${fmtNum(c.parsed.y, 2)}B lb`)
+          } }
+        });
+      }
+    });
+  }
 
   /* ── Prices ────────────────────────────────────────────── */
   const CUT_LABELS = {
@@ -748,6 +868,9 @@ function setAllLatest(B) {
   setLatest('placementsYoYChart', `week ending ${latestDay(lastDateOf(B.placements.dates, B.placements.values))}`);
   setLatest('placementsWeeklyChart', `week ending ${latestDay(lastDateOf(B.placements.dates, B.placements.values))}`);
   setLatest('chicksHatchedChart', latestMonth(lastDateOf(B.chicks_hatched.dates, B.chicks_hatched.values)));
+  const PDL = latestMonth(B.production.dates[B.production.dates.length - 1]);
+  ['productionChart', 'productionDriversChart', 'liveWeightChart', 'condemnChart'].forEach(id => setLatest(id, PDL));
+  if (B.production.states && B.production.states.year) setLatest('stateProductionChart', String(B.production.states.year));
   const W = B.wholesale;
   setLatest('wholesaleCutsChart', `week of ${latestDay(W.dates[W.dates.length - 1])}`);
   setLatest('retailChickenChart', `week of ${latestDay(B.retail.dates[B.retail.dates.length - 1])}`);

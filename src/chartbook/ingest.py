@@ -204,6 +204,14 @@ NASS_SERIES = [
     # Additional series (Phase 2 — verify with get_counts before running)
     # Broiler production
     {"short_desc": "CHICKENS, BROILERS - PRODUCTION, MEASURED IN HEAD", "label": "Broiler Production"},
+    {"short_desc": "CHICKENS, BROILERS - PRODUCTION, MEASURED IN LB", "label": "Broiler Production (lb)"},
+    # Poultry Slaughter (monthly, federally inspected young chickens = broilers)
+    {"short_desc": "CHICKENS, YOUNG, SLAUGHTER, FI - SLAUGHTERED, MEASURED IN HEAD", "label": "Young Chickens Slaughtered"},
+    {"short_desc": "CHICKENS, YOUNG, SLAUGHTER, FI - SLAUGHTERED, MEASURED IN LB, LIVE BASIS", "label": "Young Chicken Live Weight"},
+    {"short_desc": "CHICKENS, YOUNG, SLAUGHTER, FI - SLAUGHTERED, MEASURED IN LB / HEAD, LIVE BASIS", "label": "Young Chicken Avg Live Weight"},
+    {"short_desc": "CHICKENS, YOUNG, SLAUGHTER, FI, CERTIFIED, CHILLED & FROZEN - PRODUCTION, MEASURED IN LB", "label": "Young Chicken RTC Production"},
+    {"short_desc": "CHICKENS, YOUNG, SLAUGHTER, FI - CONDEMNED, ANTE-MORTEM, MEASURED IN PCT OF SLAUGHTER", "label": "Young Chicken Ante-Mortem Condemned %"},
+    {"short_desc": "CHICKENS, YOUNG, SLAUGHTER, FI, CARCASS & PARTS - CONDEMNED, POST-MORTEM, MEASURED IN PCT OF LB CERTIFIED & POST-MORTEM CONDEMNED", "label": "Young Chicken Post-Mortem Condemned %"},
     # Edible egg product detail
     {"short_desc": "EGGS, EDIBLE PRODUCT, WHOLE - PRODUCTION, MEASURED IN LB", "label": "Edible Egg Product (Whole)"},
     {"short_desc": "EGGS, EDIBLE PRODUCT, WHITE - PRODUCTION, MEASURED IN LB", "label": "Edible Egg Product (White)"},
