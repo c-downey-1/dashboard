@@ -24,19 +24,9 @@ function broilerText(id, text) {
   if (node) node.textContent = text;
 }
 
-function broilerHTML(id, html) {
-  const node = document.getElementById(id);
-  if (node) node.innerHTML = html;
-}
-
 function signed(value, digits = 1, suffix = '%') {
   if (value == null || !Number.isFinite(value)) return '—';
   return `${value > 0 ? '+' : ''}${fmtNum(value, digits)}${suffix}`;
-}
-
-function deltaSpan(value, text) {
-  if (value == null || !Number.isFinite(value)) return '';
-  return `<span class="${value >= 0 ? 'delta-up' : 'delta-down'}">${text}</span>`;
 }
 
 function setChartSources() {
@@ -362,44 +352,17 @@ async function bootBroilerDashboard() {
   document.title = `Broiler Industry Dashboard — ${D.updated}`;
   setAllLatest(B);
 
-  /* ── KPI tiles ─────────────────────────────────────────── */
   const H = B.hatchability;
-  const hatchLatest = latestNonNull(H.dates, H.values);
   const hatch52 = H.avg52;
-  const hatch52Latest = latestNonNull(H.dates, hatch52).value;
-  broilerText('kpiHatch', hatchLatest.value != null ? `${fmtNum(hatchLatest.value, 1)}%` : '—');
-  broilerHTML('kpiHatchSub', `Week ending ${fmtDate(hatchLatest.date)}<br>52-wk avg ${fmtNum(hatch52Latest, 1)}% · ${
-    deltaSpan(hatch52Latest - H.baseline, `${signed(hatch52Latest - H.baseline, 1, ' pts')}`)} vs ${H.baseline_label}`);
-
   const P = B.placements;
-  const pIdx = P.values.length - 1;
-  broilerText('kpiPlacement', P.values[pIdx] != null ? fmtM(P.values[pIdx]) : '—');
-  broilerHTML('kpiPlacementSub', `Week ending ${fmtDate(P.dates[pIdx])}<br>4-wk ${deltaSpan(P.yoy_4wk[pIdx], signed(P.yoy_4wk[pIdx]))} vs year ago`);
-
   const W = B.wholesale;
-  const kpiCut = (cut, valueId, subId) => {
-    const vals = W.series[cut] || [];
-    const latest = latestNonNull(W.dates, vals);
-    const idx = W.dates.indexOf(latest.date);
-    const yoy = idx >= 0 ? W.yoy[cut][idx] : null;
-    broilerText(valueId, latest.value != null ? `${fmtNum(latest.value, 1)}¢` : '—');
-    broilerHTML(subId, `Wholesale ¢/lb · ${fmtDate(latest.date)}<br>${deltaSpan(yoy, signed(yoy))} vs year ago`);
-  };
-  kpiCut('Breast - B/S', 'kpiBreast', 'kpiBreastSub');
-
   const PD = B.production;
-  {
-    const i = PD.dates.length - 1;
-    broilerText('kpiProd', `${fmtNum(PD.rtc[i] / 1e9, 2)}B lb`);
-    broilerHTML('kpiProdSub', `Ready-to-cook · ${fmtYM(PD.dates[i])}<br>12-mo total ${deltaSpan(PD.rtc_12m_yoy[i], signed(PD.rtc_12m_yoy[i]))} vs year ago`);
-  }
-  kpiCut('Leg quarters - Bulk', 'kpiLegQ', 'kpiLegQSub');
 
   /* ── Hatchery performance ─────────────────────────────── */
   const baselineLine = H.dates.map(() => H.baseline);
   registerRangeControl({
     chartId: 'hatchabilityChart',
-    options: ['1y', '3y', '5y', '10y', 'all'],
+    options: ['6m', '1y', '3y', '5y', '10y', 'all'],
     defaultRange: 'all',
     renderer(range) {
       // Weekly coverage before 2010 is patchy (7–38 weeks a year), so the long view starts in 2010.
@@ -408,11 +371,27 @@ async function bootBroilerDashboard() {
       const start = Math.max(slice.start, firstGood);
       const end = slice.end;
       const weekly = H.values.slice(start, end);
-      renderLineChart('hatchabilityChart', H.dates.slice(start, end), [
+      const avg = hatch52.slice(start, end);
+      // Short views are about the week-to-week reading: make the weekly line the
+      // subject and leave the far-off 2012–2019 baseline (which would flatten it)
+      // to the long views; the subtitle states it instead.
+      const short = range === '6m' || range === '1y';
+      const sets = short ? [
+        dataset('Weekly hatchability', weekly, DASH_COLORS.orange, { borderWidth: 2.4, pointRadius: range === '6m' ? 3 : 0, order: 0, spanGaps: false }),
+        dataset('52-week average', avg, DASH_COLORS.navy, { borderWidth: 2.4, order: 1, spanGaps: false })
+      ] : [
         dataset('Weekly hatchability', weekly, 'rgba(246,133,31,0.35)', { borderWidth: 1.6, order: 5, spanGaps: false }),
-        dataset('52-week average', hatch52.slice(start, end), DASH_COLORS.navy, { order: 0, spanGaps: false }),
+        dataset('52-week average', avg, DASH_COLORS.navy, { order: 0, spanGaps: false }),
         dataset(H.baseline_label, baselineLine.slice(start, end), DASH_COLORS.slate, { borderDash: [6, 5], borderWidth: 2.2, order: 1 })
-      ], '% of eggs set that hatched', Object.assign({ yTickCallback: tickFmt({ suffix: '%' }) }, niceBounds(weekly.concat([H.baseline]), 0.05)));
+      ];
+      renderLineChart('hatchabilityChart', H.dates.slice(start, end), sets, '% of eggs set that hatched',
+        Object.assign({
+          yTickCallback: tickFmt({ suffix: '%' }),
+          tooltip: { callbacks: { label: c => (c.parsed?.y == null ? '' : `${c.dataset.label}: ${fmtNum(c.parsed.y, 1)}%`) } }
+        }, niceBounds(short ? weekly.concat(avg) : weekly.concat([H.baseline]), short ? 0.15 : 0.05)));
+      broilerText('hatchabilitySub', short
+        ? `Weekly share of broiler-type eggs set that hatched, and the average of reports in the trailing 52 weeks. The 2012–2019 average was ${fmtNum(H.baseline, 1)}%`
+        : 'Weekly share of broiler-type eggs set that hatched, the average of reports in the trailing 52 weeks, and the 2012–2019 average of available reports');
     }
   });
 
@@ -533,7 +512,7 @@ async function bootBroilerDashboard() {
   const esMap = Object.fromEntries(ES.dates.map((d, i) => [d, ES.yoy_4wk[i]]));
   registerRangeControl({
     chartId: 'placementsYoYChart',
-    options: ['1y', '2y', '3y', '5y', 'all'],
+    options: ['3m', '6m', '1y', '2y', '3y', '5y', 'all'],
     defaultRange: '2y',
     renderer(range) {
       const { start, end } = getRangeSlice(P.dates, range);
@@ -699,7 +678,7 @@ async function bootBroilerDashboard() {
       cutMode === 'price' ? '¢ / lb' : '% vs year ago',
       cutMode === 'price' ? {} : { yTickCallback: tickFmt({ suffix: '%', sign: true }), tooltip: pctTooltip });
   };
-  registerRangeControl({ chartId: 'wholesaleCutsChart', options: ['6m', '1y', '2y', 'all'], defaultRange: '1y', renderer: renderCuts });
+  registerRangeControl({ chartId: 'wholesaleCutsChart', options: ['3m', '6m', '1y', '2y', 'all'], defaultRange: '1y', renderer: renderCuts });
   insertModeToggle('wholesaleCutsChart', [
     { mode: 'price', label: 'Price' },
     { mode: 'yoy', label: '% vs year ago' }
@@ -717,7 +696,7 @@ async function bootBroilerDashboard() {
   const retailSmooth = Object.fromEntries(Object.entries(R.series).map(([k, v]) => [k, rollingAverage(v, 8)]));
   registerRangeControl({
     chartId: 'retailChickenChart',
-    options: ['1y', '2y', '3y', 'all'],
+    options: ['6m', '1y', '2y', '3y', 'all'],
     defaultRange: '2y',
     renderer(range) {
       const { start, end } = getRangeSlice(R.dates, range);
@@ -746,7 +725,7 @@ async function bootBroilerDashboard() {
   const F = B.feed;
   registerRangeControl({
     chartId: 'feedCostChart',
-    options: ['1y', '2y', 'all'],
+    options: ['3m', '6m', '1y', '2y', 'all'],
     defaultRange: 'all',
     renderer(range) {
       const { start, end } = getRangeSlice(F.dates, range);

@@ -8,7 +8,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112d">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112e">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <!-- Microsoft Clarity: same project as innovateanimalag.org (z2ge5ap319); runs only
      on innovateanimalag.org hosts. Tag "chartbook" = broiler. -->
@@ -26,9 +26,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <script>if(window.self!==window.top)document.documentElement.classList.add('is-framed');</script>
 <style>
 .is-framed .iaa-brand,.is-framed .sidebar-brand{display:none}.is-framed .iaa-header-title{text-align:left}
-.broiler-kpis{margin:6px 0 10px}
-.kpi .delta-up{color:#15803d;font-weight:700}
-.kpi .delta-down{color:#b91c1c;font-weight:700}
 </style>
 </head>
 <body>
@@ -57,13 +54,25 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </a>
 
     <main class="dashboard-content">
-  <div class="kpi-row broiler-kpis">
-    <article class="kpi"><div class="label">Hatchability</div><div class="value" id="kpiHatch">—</div><div class="sub" id="kpiHatchSub"></div></article>
-    <article class="kpi"><div class="label">Chicks Placed</div><div class="value" id="kpiPlacement">—</div><div class="sub" id="kpiPlacementSub"></div></article>
-    <article class="kpi"><div class="label">Chicken Produced</div><div class="value" id="kpiProd">—</div><div class="sub" id="kpiProdSub"></div></article>
-    <article class="kpi"><div class="label">Breast B/S</div><div class="value" id="kpiBreast">—</div><div class="sub" id="kpiBreastSub"></div></article>
-    <article class="kpi"><div class="label">Leg Quarters</div><div class="value" id="kpiLegQ">—</div><div class="sub" id="kpiLegQSub"></div></article>
-  </div>
+  <section class="section" id="production">
+    <div class="section-head"><div><h2>Production</h2><p>How much chicken the industry produces, whether growth comes from more birds or heavier birds, and where it is grown.</p></div></div>
+    <div class="grid">
+      <article class="card wide"><h3>Chicken Production</h3><div class="sub" id="productionSub">Ready-to-cook young chicken certified at federally inspected plants, total for the trailing 12 months</div><canvas id="productionChart"></canvas></article>
+      <article class="card"><h3>More Birds or Heavier Birds</h3><div class="sub">Trailing 12-month change vs a year earlier in birds slaughtered and in average live weight; together they give the change in live pounds</div><canvas id="productionDriversChart"></canvas></article>
+      <article class="card"><h3>Average Live Weight</h3><div class="sub">Average live weight of young chickens at slaughter, monthly and 12-month average</div><canvas id="liveWeightChart"></canvas></article>
+      <article class="card"><h3>Condemnations at Slaughter</h3><div class="sub">Share lost at federal inspection, 12-month averages: birds condemned before slaughter (mostly dead on arrival) and carcass weight condemned after slaughter</div><canvas id="condemnChart"></canvas></article>
+      <article class="card"><h3>Top Broiler States</h3><div class="sub" id="stateProductionSub">Annual broiler production by state, live weight</div><canvas id="stateProductionChart"></canvas></article>
+    </div>
+  </section>
+
+  <section class="section" id="prices">
+    <div class="section-head"><div><h2>Prices</h2><p>Wholesale parts, retail feature prices and the live price received by growers' integrators.</p></div></div>
+    <div class="grid">
+      <article class="card wide"><h3>Wholesale Chicken Prices</h3><div class="sub">National weekly negotiated prices for domestic fresh product: major parts (FOB plant) and whole bird without giblets (WOG, delivered, all sizes)</div><canvas id="wholesaleCutsChart"></canvas></article>
+      <article class="card"><h3>Retail Chicken Feature Prices</h3><div class="sub">National average advertised price, fresh, conventional, regular pack, 8-week average</div><canvas id="retailChickenChart"></canvas></article>
+      <article class="card"><h3>Broiler Price Received</h3><div class="sub">Monthly live-weight price received, with the 12-month average</div><canvas id="pricesReceivedChart"></canvas></article>
+    </div>
+  </section>
 
   <section class="section" id="hatchery-performance">
     <div class="section-head"><div><h2>Hatchery Performance</h2><p>Broiler hatchability: the long decline in the share of eggs set that hatch.</p></div></div>
@@ -89,26 +98,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <article class="card" id="placementsYoYWrap"><h3>Chicks Placed and Eggs Set vs Prior Year</h3><div class="sub">Trailing 4-week total, % change vs the same weeks a year earlier</div><canvas id="placementsYoYChart"></canvas></article>
       <article class="card"><h3 id="placementsWeeklyTitle">Weekly Chick Placements by Year</h3><div class="sub" id="placementsWeeklySub">Broiler chicks placed for meat production, by USDA reporting week</div><canvas id="placementsWeeklyChart"></canvas></article>
       <article class="card"><h3>Broiler-Type Chicks Hatched</h3><div class="sub">Monthly broiler-type chicks hatched: this year, last year and the multi-year average</div><canvas id="chicksHatchedChart"></canvas></article>
-    </div>
-  </section>
-
-  <section class="section" id="production">
-    <div class="section-head"><div><h2>Production</h2><p>How much chicken the industry produces, whether growth comes from more birds or heavier birds, and where it is grown.</p></div></div>
-    <div class="grid">
-      <article class="card wide"><h3>Chicken Production</h3><div class="sub" id="productionSub">Ready-to-cook young chicken certified at federally inspected plants, total for the trailing 12 months</div><canvas id="productionChart"></canvas></article>
-      <article class="card"><h3>More Birds or Heavier Birds</h3><div class="sub">Trailing 12-month change vs a year earlier in birds slaughtered and in average live weight; together they give the change in live pounds</div><canvas id="productionDriversChart"></canvas></article>
-      <article class="card"><h3>Average Live Weight</h3><div class="sub">Average live weight of young chickens at slaughter, monthly and 12-month average</div><canvas id="liveWeightChart"></canvas></article>
-      <article class="card"><h3>Condemnations at Slaughter</h3><div class="sub">Share lost at federal inspection, 12-month averages: birds condemned before slaughter (mostly dead on arrival) and carcass weight condemned after slaughter</div><canvas id="condemnChart"></canvas></article>
-      <article class="card"><h3>Top Broiler States</h3><div class="sub" id="stateProductionSub">Annual broiler production by state, live weight</div><canvas id="stateProductionChart"></canvas></article>
-    </div>
-  </section>
-
-  <section class="section" id="prices">
-    <div class="section-head"><div><h2>Prices</h2><p>Wholesale parts, retail feature prices and the live price received by growers' integrators.</p></div></div>
-    <div class="grid">
-      <article class="card wide"><h3>Wholesale Chicken Prices</h3><div class="sub">National weekly negotiated prices for domestic fresh product: major parts (FOB plant) and whole bird without giblets (WOG, delivered, all sizes)</div><canvas id="wholesaleCutsChart"></canvas></article>
-      <article class="card"><h3>Retail Chicken Feature Prices</h3><div class="sub">National average advertised price, fresh, conventional, regular pack, 8-week average</div><canvas id="retailChickenChart"></canvas></article>
-      <article class="card"><h3>Broiler Price Received</h3><div class="sub">Monthly live-weight price received, with the 12-month average</div><canvas id="pricesReceivedChart"></canvas></article>
     </div>
   </section>
 
@@ -139,8 +128,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20261112d"></script>
-<script src="assets/broiler-dashboard.js?v=20261112d"></script>
+<script src="assets/dashboard-common.js?v=20261112e"></script>
+<script src="assets/broiler-dashboard.js?v=20261112e"></script>
 </body>
 </html>
 """
