@@ -37,7 +37,8 @@ function setChartSources() {
     hatchSeasonalChart: `${SRC.hatch} • Oct 2025 missing: no reports during the federal shutdown`,
     breederHensChart: SRC.chickens,
     breederProductivityChart: `${SRC.chickens} and ${SRC.hatchery}`,
-    pulletPipelineChart: `${SRC.chickens} • Potential flock = U.S. pullet chicks placed 7–15 months earlier, as USDA defines it`,
+    pulletPlacementsChart: `${SRC.chickens} • Intended placements for U.S. hatchery supply flocks`,
+    hensPerPulletChart: `${SRC.chickens} • IAA calculation; reflects rearing and laying losses, culling and how long flocks are kept`,
     placementsYoYChart: `${SRC.hatch} • 4 weeks to date vs the 4 weeks ending 364 days earlier`,
     placementsWeeklyChart: SRC.hatch,
     chicksHatchedChart: SRC.hatchery,
@@ -340,12 +341,6 @@ function fullRollingAverage(values, windowSize) {
   });
 }
 
-function shiftMonths(ym, k) {
-  const [y, m] = ym.split('-').map(Number);
-  const t = y * 12 + (m - 1) + k;
-  return `${Math.floor(t / 12)}-${String((t % 12) + 1).padStart(2, '0')}`;
-}
-
 async function bootBroilerDashboard() {
   initBroilerSidebarNav();
   setChartSources();
@@ -520,25 +515,49 @@ async function bootBroilerDashboard() {
     }
   });
 
+  // Trailing 12-month total of U.S. breeder pullet chicks placed (full windows only).
+  const pullets12 = BR.pullets.map((_, i) => {
+    if (i < 11) return null;
+    const win = BR.pullets.slice(i - 11, i + 1);
+    return win.some(v => v == null) ? null : win.reduce((sum, v) => sum + v, 0) / 1e6;
+  });
   registerRangeControl({
-    chartId: 'pulletPipelineChart',
+    chartId: 'pulletPlacementsChart',
     options: ['5y', '10y', 'all'],
     defaultRange: 'all',
     renderer(range) {
-      const potMap = Object.fromEntries(BR.potential_dates.map((d, i) => [d, BR.potential[i]]));
-      const henMap = Object.fromEntries(BR.dates.map((d, i) => [d, BR.hens[i]]));
-      const all = Array.from(new Set(BR.potential_dates.concat(BR.dates))).sort();
-      const { start, end } = getRangeSlice(all, range);
-      const labels = all.slice(start, end);
-      const lastHen = BR.dates[BR.dates.length - 1];
-      const pot = labels.map(d => potMap[d] != null && d <= lastHen ? potMap[d] / 1e6 : null);
-      const potAhead = labels.map((d, i) => potMap[d] != null && d >= lastHen ? potMap[d] / 1e6 : null);
-      const hens = labels.map(d => henMap[d] != null ? henMap[d] / 1e6 : null);
-      renderLineChart('pulletPipelineChart', labels, [
-        dataset('Hatching hens on hand', hens, DASH_COLORS.navy),
-        dataset('Potential flock from pullets placed 7–15 months earlier', pot, DASH_COLORS.orange),
-        dataset('Potential flock, months ahead (pullets already placed)', potAhead, DASH_COLORS.orange, { borderDash: [7, 4] })
-      ], 'Million birds', Object.assign({ yTickCallback: tickFmt({ suffix: 'M' }) }, niceBounds(hens.concat(pot, potAhead), 0.1)));
+      const { start, end } = getRangeSlice(BR.pullet_dates, range);
+      const vals = pullets12.slice(start, end);
+      renderLineChart('pulletPlacementsChart', BR.pullet_dates.slice(start, end), [
+        dataset('Pullet chicks placed, 12-month total', vals, DASH_COLORS.navy)
+      ], 'Million chicks, trailing 12 months', Object.assign({
+        legend: false,
+        yTickCallback: tickFmt({ suffix: 'M' }),
+        tooltip: { callbacks: { label: c => (c.parsed?.y == null ? '' : `12-month total: ${fmtNum(c.parsed.y, 1)}M`) } }
+      }, niceBounds(vals, 0.12)));
+    }
+  });
+
+  // Hens on hand for every 100 pullet chicks placed 7–15 months earlier.
+  const henMap = Object.fromEntries(BR.dates.map((d, i) => [d, BR.hens[i]]));
+  const perPulletDates = BR.potential_dates.filter(d => henMap[d] != null);
+  const potMap = Object.fromEntries(BR.potential_dates.map((d, i) => [d, BR.potential[i]]));
+  const perPullet = perPulletDates.map(d => henMap[d] / potMap[d] * 100);
+  const perPullet12 = fullRollingAverage(perPullet, 12);
+  registerRangeControl({
+    chartId: 'hensPerPulletChart',
+    options: ['5y', '10y', 'all'],
+    defaultRange: 'all',
+    renderer(range) {
+      const { start, end } = getRangeSlice(perPulletDates, range);
+      const monthly = perPullet.slice(start, end);
+      renderLineChart('hensPerPulletChart', perPulletDates.slice(start, end), [
+        dataset('Monthly', monthly, 'rgba(246,133,31,0.5)', { borderWidth: 1.8, order: 5 }),
+        dataset('12-month average', perPullet12.slice(start, end), DASH_COLORS.navy, { order: 0 })
+      ], 'Hens per 100 pullets placed', Object.assign({
+        yTickCallback: tickFmt(),
+        tooltip: { callbacks: { label: c => (c.parsed?.y == null ? '' : `${c.dataset.label}: ${fmtNum(c.parsed.y, 1)}`) } }
+      }, niceBounds(monthly, 0.12)));
     }
   });
 
@@ -971,7 +990,8 @@ function setAllLatest(B) {
   const BR = B.breeder;
   setLatest('breederHensChart', latestMonth(lastDateOf(BR.dates, BR.hens)));
   setLatest('breederProductivityChart', latestMonth(lastDateOf(BR.dates, BR.chicks_per_hen)));
-  setLatest('pulletPipelineChart', `hens ${latestMonth(lastDateOf(BR.dates, BR.hens))}; pullets placed ${latestMonth(BR.pullet_dates[BR.pullet_dates.length - 1])}`);
+  setLatest('pulletPlacementsChart', latestMonth(BR.pullet_dates[BR.pullet_dates.length - 1]));
+  setLatest('hensPerPulletChart', latestMonth(lastDateOf(BR.dates, BR.hens)));
   setLatest('placementsYoYChart', `week ending ${latestDay(lastDateOf(B.placements.dates, B.placements.values))}`);
   setLatest('placementsWeeklyChart', `week ending ${latestDay(lastDateOf(B.placements.dates, B.placements.values))}`);
   setLatest('chicksHatchedChart', latestMonth(lastDateOf(B.chicks_hatched.dates, B.chicks_hatched.values)));
