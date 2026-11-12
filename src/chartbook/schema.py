@@ -116,6 +116,31 @@ TABLES = {
         )
     """,
 
+    # Slug 3646 with every source dimension kept. chicken_wholesale keys only on
+    # (date, item), so regional / size / export rows overwrite one another there.
+    "chicken_wholesale_detail": """
+        CREATE TABLE IF NOT EXISTS chicken_wholesale_detail (
+            report_date     TEXT NOT NULL,
+            slug_id         INTEGER NOT NULL,
+            item            TEXT NOT NULL,
+            region          TEXT NOT NULL DEFAULT '',
+            trade_status    TEXT NOT NULL DEFAULT '',
+            condition       TEXT NOT NULL DEFAULT '',
+            size            TEXT NOT NULL DEFAULT '',
+            grade           TEXT NOT NULL DEFAULT '',
+            environment     TEXT NOT NULL DEFAULT '',
+            freight         TEXT NOT NULL DEFAULT '',
+            offer           TEXT NOT NULL DEFAULT '',
+            low_price       REAL,
+            high_price      REAL,
+            wtd_avg_price   REAL,
+            volume          INTEGER,
+            price_unit      TEXT,
+            PRIMARY KEY (report_date, slug_id, item, region, trade_status,
+                         condition, size, grade, environment, freight, offer)
+        )
+    """,
+
     "retail_metrics": """
         CREATE TABLE IF NOT EXISTS retail_metrics (
             report_date        TEXT NOT NULL,
@@ -153,6 +178,29 @@ TABLES = {
             price_unit     TEXT,
             PRIMARY KEY (report_date, slug_id, region, type,
                          environment, package_size)
+        )
+    """,
+
+    # Retail feature prices with condition (fresh/frozen) and grade in the key;
+    # retail_prices drops them from its key, so frozen rows can replace fresh ones.
+    "retail_prices_detail": """
+        CREATE TABLE IF NOT EXISTS retail_prices_detail (
+            report_date    TEXT NOT NULL,
+            slug_id        INTEGER NOT NULL,
+            region         TEXT NOT NULL,
+            section        TEXT NOT NULL DEFAULT '',
+            type           TEXT NOT NULL,
+            condition      TEXT NOT NULL DEFAULT '',
+            environment    TEXT NOT NULL DEFAULT '',
+            package_size   TEXT NOT NULL DEFAULT '',
+            quality_grade  TEXT NOT NULL DEFAULT '',
+            price_avg      REAL,
+            price_min      REAL,
+            price_max      REAL,
+            store_count    INTEGER,
+            price_unit     TEXT,
+            PRIMARY KEY (report_date, slug_id, region, section, type, condition,
+                         environment, package_size, quality_grade)
         )
     """,
 
@@ -478,6 +526,10 @@ def create_all(conn):
         cur.execute("DROP TABLE hpai_detections")
     for ddl in TABLES.values():
         cur.execute(ddl)
+    # Added Nov 2026: USDA's own week-ending date for weekly NASS series.
+    cols = {r[1] for r in cur.execute("PRAGMA table_info(nass_data)")}
+    if "week_ending" not in cols:
+        cur.execute("ALTER TABLE nass_data ADD COLUMN week_ending TEXT")
     for ddl in VIEWS.values():
         cur.execute(ddl)
     for ddl in INDEXES:

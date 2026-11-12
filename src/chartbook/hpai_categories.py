@@ -14,7 +14,6 @@ HPAI_CATEGORY_GROUPS = {
         "Commercial Broiler Breeder",
         "Commercial Broiler Breeder Pullets",
         "Primary Broiler Breeder Pedigree Farm",
-        "Commercial Breeder Operation",
     ),
     "Commercial Turkey": (
         "Commercial Turkey Meat Bird",
@@ -29,6 +28,8 @@ HPAI_CATEGORY_GROUPS = {
     ),
     "Commercial Other": (
         "Commercial Breeder (Multiple Bird Species)",
+        # Species not stated; APHIS epi reports place at least one under turkey.
+        "Commercial Breeder Operation",
         "Commercial Upland Gamebird Producer",
         "Commercial Raised for Release Upland Game Bird",
         "Commercial Raised for Release Waterfowl",

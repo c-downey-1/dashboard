@@ -212,6 +212,70 @@ def parse_chicken_wholesale(slug_id, sections):
     return rows
 
 
+def parse_chicken_wholesale_detail(slug_id, sections):
+    """Parse slug 3646 → chicken_wholesale_detail, keeping region, trade status,
+    condition, size, grade, environment, freight and offer in the key."""
+    rows = []
+    for sec in sections:
+        if sec.get("reportSection") != "Report Detail":
+            continue
+        for r in sec.get("results", []):
+            date = normalize_date(r.get("report_date") or r.get("report_begin_date"))
+            item = _get(r, "item")
+            if not date or not item:
+                continue
+            rows.append({
+                "report_date": date,
+                "slug_id": slug_id,
+                "item": item,
+                "region": _get(r, "region", "") or "",
+                "trade_status": _get(r, "trade_status", "") or "",
+                "condition": _get(r, "condition", "") or "",
+                "size": _get(r, "size", "") or "",
+                "grade": _get(r, "grade", "") or "",
+                "environment": _get(r, "environment", "") or "",
+                "freight": _get(r, "freight", "") or "",
+                "offer": _get(r, "offer", "") or "",
+                "low_price": _safe_float(r.get("low_price")),
+                "high_price": _safe_float(r.get("high_price")),
+                "wtd_avg_price": _safe_float(r.get("wtd_avg_price")),
+                "volume": _safe_int(r.get("volume")),
+                "price_unit": _get(r, "price_unit"),
+            })
+    return rows
+
+
+def parse_retail_prices_detail(slug_id, sections):
+    """Parse slug 2756 Report Details → retail_prices_detail (condition and
+    grade kept in the key)."""
+    rows = []
+    for sec in sections:
+        if sec.get("reportSection") != "Report Details":
+            continue
+        for r in sec.get("results", []):
+            date = normalize_date(r.get("report_date") or r.get("report_begin_date"))
+            typ = _get(r, "type")
+            if not date or not typ:
+                continue
+            rows.append({
+                "report_date": date,
+                "slug_id": slug_id,
+                "region": _get(r, "region", "") or "",
+                "section": _get(r, "section", "") or "",
+                "type": typ,
+                "condition": _get(r, "condition", "") or "",
+                "environment": _get(r, "environment", "") or "",
+                "package_size": _get(r, "package_size", "") or "",
+                "quality_grade": _get(r, "quality_grade", "") or "",
+                "price_avg": _safe_float(r.get("price_avg")),
+                "price_min": _safe_float(r.get("price_min")),
+                "price_max": _safe_float(r.get("price_max")),
+                "store_count": _safe_int(r.get("store_count")),
+                "price_unit": _get(r, "price_unit"),
+            })
+    return rows
+
+
 def parse_retail_metrics(slug_id, sections):
     """Parse slugs 2756/2757 Report Metrics → retail_metrics table."""
     rows = []
@@ -363,6 +427,7 @@ def parse_nass_record(record):
         "state_name": record.get("state_name") if record.get("agg_level_desc") == "STATE" else None,
         "cv_pct": cv_pct,
         "load_time": record.get("load_time"),
+        "week_ending": (record.get("week_ending") or "")[:10] or None,
     }
 
 

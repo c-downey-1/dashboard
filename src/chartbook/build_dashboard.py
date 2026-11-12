@@ -17,6 +17,7 @@ from datetime import date, datetime, timedelta
 
 from . import db
 from .hpai_categories import ALL_POULTRY_PRODUCTION_TYPES
+from .broiler_data import build_broiler
 from .hpai_categories import COMMERCIAL_LAYER_TYPES
 from .paths import ASSETS_ROOT
 from .paths import DOCS_ROOT
@@ -192,7 +193,7 @@ def build_kpi(conn):
     # Latest chicken breast B/S price (from chicken_wholesale slug 3646)
     row = conn.execute("""
         SELECT report_date, wtd_avg_price FROM chicken_wholesale
-        WHERE slug_id = 3646 AND item LIKE '%Breast%Boneless%'
+        WHERE slug_id = 3646 AND item = 'Breast - B/S'
           AND wtd_avg_price IS NOT NULL
         ORDER BY report_date DESC LIMIT 1
     """).fetchone()
@@ -808,9 +809,6 @@ def build_nass_placements(conn):
             jan1 = date(year, 1, 1)
             d = jan1 + timedelta(weeks=week_num - 1)
             dates.append(d.isoformat())
-            values.append(val)
-        elif ref == "YEAR":
-            dates.append(f"{year}")
             values.append(val)
     return {"dates": dates, "values": values}
 
@@ -1701,6 +1699,10 @@ def build_data_json(conn):
     print("    Broiler Hatchability ...", end=" ", flush=True)
     data["broiler_hatchability"] = build_broiler_hatchability(conn)
     print(f"{len(data['broiler_hatchability']['dates'])} dates")
+
+    print("    Broiler page block ...", end=" ", flush=True)
+    data["broiler"] = build_broiler(conn)
+    print(f"{len(data['broiler']['placements']['dates'])} placement weeks")
 
     print("    Data Freshness ...", end=" ", flush=True)
     data["data_freshness"] = build_data_freshness(conn)

@@ -4,91 +4,142 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Broiler Industry Dashboard</title>
+<title>Broiler Industry Executive Chartbook</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20260320bs">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112b">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<!-- Microsoft Clarity: same project as innovateanimalag.org (z2ge5ap319); runs only
+     on innovateanimalag.org hosts. Tag "chartbook" = broiler. -->
+<script>
+(function(){
+  var host=location.hostname;
+  if(host!=='innovateanimalag.org'&&!host.endsWith('.innovateanimalag.org'))return;
+  window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};
+  var s=document.createElement('script');s.async=true;s.src='https://www.clarity.ms/tag/z2ge5ap319';
+  document.head.appendChild(s);
+  window.clarity('set','chartbook','broiler');
+  window.clarity('set','embedded',window.self!==window.top?'yes':'no');
+})();
+</script>
+<script>if(window.self!==window.top)document.documentElement.classList.add('is-framed');</script>
+<style>
+.is-framed .iaa-brand,.is-framed .sidebar-brand{display:none}.is-framed .iaa-header-title{text-align:left}
+.broiler-kpis{margin:6px 0 10px}
+.kpi .delta-up{color:#15803d;font-weight:700}
+.kpi .delta-down{color:#b91c1c;font-weight:700}
+.chartbook-switch{font-size:.82rem;font-weight:600;color:#1F9EBC;text-decoration:none;white-space:nowrap}
+.chartbook-switch:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 <div class="shell">
-  <header class="hero">
-    <div>
-      <div class="hero-rule"></div>
-      <div class="hero-tag">Broiler Industry Dashboard</div>
-      <h1>Executive broiler market briefing</h1>
-      <p class="hero-lead">A dedicated broiler readout organized more like a published market story, covering wholesale, hatchery flow, retail, and disease risk in one sequence.</p>
-      <p class="hero-note">The structure mirrors an editorial briefing while the charts remain fully driven by the shared live dataset.</p>
-    </div>
-    <div class="hero-meta">
-      <div class="meta-card"><span>Updated</span><strong id="updatedStamp">November 12, 2026</strong></div>
-      <div class="meta-card"><span>Coverage</span><strong id="coverageStamp">Loading…</strong></div>
-      <div class="meta-card"><span>Status</span><strong id="statusStamp">Loading…</strong></div>
-    </div>
+  <header class="iaa-bar">
+    <a class="iaa-brand" id="topHeaderBrand" href="https://innovateanimalag.org/" target="_blank" rel="noreferrer">
+      <img class="iaa-brand-logo" src="assets/iaa-logo-with-navy-font-full-color.png" alt="Innovate Animal Ag">
+    </a>
+    <strong class="iaa-header-title">Broiler Industry Executive Chartbook</strong>
+    <a class="chartbook-switch" id="eggChartbookLink" href="egg-dashboard.html">Egg chartbook &rarr;</a>
   </header>
+  <script>
+  // Framed on innovateanimalag.org/broiler-chartbook: open the site's egg page
+  // in the whole window rather than swapping the chartbook inside the frame.
+  if (window.self !== window.top) {
+    var eggLink = document.getElementById('eggChartbookLink');
+    eggLink.href = 'https://innovateanimalag.org/egg-chartbook';
+    eggLink.target = '_top';
+  }
+  </script>
 
-  <nav class="topnav">
-    <a class="nav-link" href="index.html">Dashboard Home</a>
-    <a class="nav-link" href="egg-dashboard.html">Egg Industry</a>
-    <a class="nav-link active" href="broiler-dashboard.html">Broiler Industry</a>
+  <nav class="mobile-section-nav" id="mobileSectionNav" aria-label="Jump to section">
+    <select class="mobile-section-select" id="mobileSectionSelect">
+      <option value="">Jump to section…</option>
+    </select>
   </nav>
 
-  <section class="overview-band">
-    <div class="section-head">
-      <div>
-        <div class="section-number">I</div>
-        <h2>Market Snapshot</h2>
-        <p>Immediate read on key broiler pricing, supply throughput, hatchery flow, and retail feature activity.</p>
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar" aria-label="Broiler dashboard outline">
+      <div class="dashboard-sidebar-inner">
+        <nav class="dashboard-sidebar-nav" id="broilerSidebarNav"></nav>
       </div>
-    </div>
-    <div class="kpi-row">
-      <article class="kpi"><div class="label">Breast B/S</div><div class="value" id="kpiBreast">—</div><div class="sub" id="kpiBreastSub"></div></article>
-      <article class="kpi"><div class="label">Placements</div><div class="value" id="kpiPlacement">—</div><div class="sub" id="kpiPlacementSub"></div></article>
-      <article class="kpi"><div class="label">Chicks Hatched</div><div class="value" id="kpiHatch">—</div><div class="sub" id="kpiHatchSub"></div></article>
-      <article class="kpi"><div class="label">Retail Feature Rate</div><div class="value" id="kpiFeature">—</div><div class="sub" id="kpiFeatureSub"></div></article>
-    </div>
-  </section>
+    </aside>
+    <a class="sidebar-brand" id="sidebarBrand" href="https://innovateanimalag.org/" target="_blank" rel="noreferrer">
+      <img src="assets/iaa-logo-with-navy-font-full-color.png" alt="Innovate Animal Ag">
+    </a>
 
-  <section class="section">
-    <div class="section-head"><div><div class="section-number">II</div><h2>Wholesale Market</h2><p>Cut prices and traded volume.</p></div></div>
+    <main class="dashboard-content">
+  <div class="kpi-row broiler-kpis">
+    <article class="kpi"><div class="label">Hatchability</div><div class="value" id="kpiHatch">—</div><div class="sub" id="kpiHatchSub"></div></article>
+    <article class="kpi"><div class="label">Chicks Placed</div><div class="value" id="kpiPlacement">—</div><div class="sub" id="kpiPlacementSub"></div></article>
+    <article class="kpi"><div class="label">Breast B/S</div><div class="value" id="kpiBreast">—</div><div class="sub" id="kpiBreastSub"></div></article>
+    <article class="kpi"><div class="label">Leg Quarters</div><div class="value" id="kpiLegQ">—</div><div class="sub" id="kpiLegQSub"></div></article>
+  </div>
+
+  <section class="section" id="hatchery-performance">
+    <div class="section-head"><div><h2>Hatchery Performance</h2><p>Broiler hatchability: the long decline in the share of eggs set that hatch.</p></div></div>
     <div class="grid">
-      <article class="card wide" id="wholesaleCutsWrap"><h3>Wholesale Chicken Cut Prices</h3><div class="sub">Top broiler cuts</div><canvas id="wholesaleCutsChart" height="120"></canvas></article>
-      <article class="card wide"><h3>Wholesale Chicken Volume</h3><div class="sub">Loads traded by leading cuts</div><canvas id="wholesaleVolumeChart" height="120"></canvas></article>
+      <article class="card wide" id="hatchabilityWrap"><h3>Broiler Hatchability</h3><div class="sub" id="hatchabilitySub">Weekly share of broiler-type eggs set that hatched, the average of reports in the trailing 52 weeks, and the 2012–2019 average of available reports</div><canvas id="hatchabilityChart"></canvas></article>
+      <article class="card"><h3>Hatchability by Year</h3><div class="sub">Average of the weekly reports in each calendar year; the latest year to date, with last year over the same weeks</div><canvas id="hatchAnnualChart"></canvas></article>
+      <article class="card"><h3>Hatchability Seasonal Comparison</h3><div class="sub">Monthly average hatchability: this year, last year and the 2012–2019 average of available reports</div><canvas id="hatchSeasonalChart"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><div class="section-number">III</div><h2>Supply and Processing</h2><p>Placements, hatchery output, and storage.</p></div></div>
+  <section class="section" id="breeder-flock">
+    <div class="section-head"><div><h2>Breeder Flock</h2><p>Broiler-type hatching hens, their productivity, and the pullet pipeline behind them.</p></div></div>
     <div class="grid">
-      <article class="card"><h3>Broiler Placements</h3><div class="sub">Weekly national placements</div><canvas id="placementsChart" height="120"></canvas></article>
-      <article class="card"><h3>Hatchery</h3><div class="sub">Broiler chicks hatched and eggs set</div><canvas id="hatcheryChart" height="120"></canvas></article>
-      <article class="card"><h3>Cold Storage — Weekly</h3><div class="sub">MARS weekly storage holdings</div><canvas id="coldStorageWeeklyChart" height="120"></canvas></article>
-      <article class="card"><h3>Cold Storage — Monthly</h3><div class="sub">NASS monthly chicken stocks</div><canvas id="coldStorageMonthlyChart" height="120"></canvas></article>
-      <article class="card wide" id="hatchabilityWrap"><h3>Broiler Hatchability</h3><div class="sub">Weekly reported hatchability with rolling 1-month and 1-year averages</div><canvas id="hatchabilityChart" height="120"></canvas></article>
+      <article class="card"><h3>Broiler Breeder Flock</h3><div class="sub">Broiler-type hatching layers on hand (first of month) and change vs a year earlier</div><canvas id="breederHensChart"></canvas></article>
+      <article class="card"><h3>Breeder Productivity</h3><div class="sub">Hatching eggs produced and chicks hatched per breeder hen per month, 12-month averages</div><canvas id="breederProductivityChart"></canvas></article>
+      <article class="card"><h3>Breeder Pullet Pipeline</h3><div class="sub">Broiler-type hatching hens on hand vs the potential flock from U.S. pullet chicks placed 7–15 months earlier (USDA's measure; known up to 7 months ahead)</div><canvas id="pulletPipelineChart"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><div class="section-number">IV</div><h2>Retail and Pricing</h2><p>Retail pricing and feature activity.</p></div></div>
+  <section class="section" id="chick-supply">
+    <div class="section-head"><div><h2>Chick Supply</h2><p>Weekly eggs set and chicks placed: forward signals for meat supply. Chicks placed now reach slaughter in about 5–9 weeks, depending on bird size; eggs set hatch about 3 weeks later, so they lead by roughly 8–12 weeks.</p></div></div>
     <div class="grid">
-      <article class="card"><h3>NASS Prices Received</h3><div class="sub">Monthly broiler price received</div><canvas id="pricesReceivedChart" height="120"></canvas></article>
-      <article class="card"><h3>Retail Chicken Prices</h3><div class="sub">National featured retail prices by cut</div><canvas id="retailChickenChart" height="120"></canvas></article>
-      <article class="card"><h3>Feature Activity</h3><div class="sub">National retail chicken feature rate</div><canvas id="featureActivityChart" height="120"></canvas></article>
-      <article class="card" id="feedIndexWrap"><h3>Feed Index</h3><div class="sub">Macro cost context for broiler economics</div><canvas id="feedIndexChart" height="120"></canvas></article>
+      <article class="card" id="placementsYoYWrap"><h3>Chicks Placed and Eggs Set vs Prior Year</h3><div class="sub">Trailing 4-week total, % change vs the same weeks a year earlier</div><canvas id="placementsYoYChart"></canvas></article>
+      <article class="card"><h3 id="placementsWeeklyTitle">Weekly Chick Placements by Year</h3><div class="sub" id="placementsWeeklySub">Broiler chicks placed for meat production, by USDA reporting week</div><canvas id="placementsWeeklyChart"></canvas></article>
+      <article class="card"><h3>Broiler-Type Chicks Hatched</h3><div class="sub">Monthly broiler-type chicks hatched: this year, last year and the multi-year average</div><canvas id="chicksHatchedChart"></canvas></article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><div><div class="section-number">V</div><h2>Risk</h2><p>Commercial disease pressure relevant to poultry markets.</p></div></div>
+  <section class="section" id="prices">
+    <div class="section-head"><div><h2>Prices</h2><p>Wholesale parts, retail feature prices and the live price received by growers' integrators.</p></div></div>
     <div class="grid">
-      <article class="card wide"><h3>Commercial Birds Affected by HPAI</h3><div class="sub">Monthly APHIS timeline</div><canvas id="hpaiChart" height="120"></canvas></article>
+      <article class="card wide"><h3>Wholesale Chicken Prices</h3><div class="sub">National weekly negotiated prices for domestic fresh product: major parts (FOB plant) and whole bird without giblets (WOG, delivered, all sizes)</div><canvas id="wholesaleCutsChart"></canvas></article>
+      <article class="card"><h3>Retail Chicken Feature Prices</h3><div class="sub">National average advertised price, fresh, conventional, regular pack, 8-week average</div><canvas id="retailChickenChart"></canvas></article>
+      <article class="card"><h3>Broiler Price Received</h3><div class="sub">Monthly live-weight price received, with the 12-month average</div><canvas id="pricesReceivedChart"></canvas></article>
     </div>
   </section>
 
-  <div class="footer">Broiler dashboard updated November 12, 2026. Sources in this build include USDA MARS, USDA NASS, USDA APHIS, and USDA ESMIS/NASS Broiler Hatchery releases.</div>
+  <section class="section" id="feed-margin">
+    <div class="section-head"><div><h2>Feed and Margin</h2><p>Feed is the largest cost of growing a broiler. These are price indicators built from corn and soybean meal futures, not measured costs or margins.</p></div></div>
+    <div class="grid">
+      <article class="card" id="feedCostWrap"><h3>Corn and Soybean Meal Cost Component</h3><div class="sub">Cost of the corn and soybean meal in one short ton (2,000 lb) of broiler feed, assuming 65% corn and 28% soybean meal; the other 7% of the ration is not included</div><canvas id="feedCostChart"></canvas></article>
+      <article class="card" id="feedRatioWrap"><h3>Broiler-to-Feed Price Ratio</h3><div class="sub">Pounds of the corn and soybean meal component that one pound of live broiler buys. Higher means live prices are strong relative to feed grain prices, all else equal</div><canvas id="feedRatioChart"></canvas></article>
+    </div>
+  </section>
+
+  <section class="section" id="storage-trade">
+    <div class="section-head"><div><h2>Storage and Trade</h2><p>Frozen inventories and the export markets that set dark-meat value.</p></div></div>
+    <div class="grid">
+      <article class="card"><h3>Frozen Chicken in Cold Storage</h3><div class="sub">Total frozen chicken stocks (end of month)</div><canvas id="coldStorageChart"></canvas></article>
+      <article class="card" id="exportsWrap"><h3>Broiler Meat Exports</h3><div class="sub">Monthly U.S. broiler meat exports</div><canvas id="exportsChart"></canvas></article>
+    </div>
+  </section>
+
+  <section class="section" id="avian-influenza">
+    <div class="section-head"><div><h2>Avian Influenza</h2><p>HPAI detections in flocks APHIS classifies as commercial broiler, broiler breeder or broiler breeder pullet.</p></div></div>
+    <div class="grid">
+      <article class="card wide"><h3>Broiler Birds Affected by HPAI</h3><div class="sub">Birds in confirmed commercial broiler, broiler breeder and breeder pullet flocks, by month, with the number of flocks detected</div><canvas id="hpaiBroilerChart"></canvas></article>
+    </div>
+  </section>
+
+  <div class="footer">Broiler dashboard updated November 12, 2026. Sources in this build include USDA NASS, USDA AMS Market News, USDA ESMIS Broiler Hatchery, USDA ERS, USDA APHIS and CME Group.</div>
+    </main>
+  </div>
 </div>
-<script src="assets/dashboard-common.js?v=20260320bs"></script>
-<script src="assets/broiler-dashboard.js?v=20260320bs"></script>
+<script src="assets/dashboard-common.js?v=20261112b"></script>
+<script src="assets/broiler-dashboard.js?v=20261112b"></script>
 </body>
 </html>

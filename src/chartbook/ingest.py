@@ -107,6 +107,9 @@ MARS_REPORTS = {
         "title": "Weekly National Chicken Report",
         "table": "chicken_wholesale",
         "parser": parsers.parse_chicken_wholesale,
+        "extra": [
+            (parsers.parse_chicken_wholesale_detail, "chicken_wholesale_detail"),
+        ],
         "earliest": "2023-01-02",
         "freq": "weekly",
     },
@@ -122,6 +125,7 @@ MARS_REPORTS = {
         "table": "retail_prices",
         "parser": parsers.parse_retail_prices,
         "extra": [
+            (parsers.parse_retail_prices_detail, "retail_prices_detail"),
             (parsers.parse_retail_metrics, "retail_metrics"),
             (parsers.parse_narratives, "report_narratives"),
         ],
@@ -179,6 +183,9 @@ NASS_SERIES = [
     {"short_desc": "CHICKENS, BROILERS - PLACEMENTS, MEASURED IN HEAD", "label": "Broiler Placements"},
     {"short_desc": "CHICKENS, CHICKS, BROILER TYPE, PULLET - PLACEMENTS, INTENDED, MEASURED IN HEAD",
      "label": "Broiler Pullet Intended Placements"},
+    # U.S. placements only; the series above also counts pullets hatched here for export.
+    {"short_desc": "CHICKENS, CHICKS, BROILER TYPE, PULLET, FOR DOMESTIC USE - PLACEMENTS, INTENDED, MEASURED IN HEAD",
+     "label": "Broiler Pullet Intended Placements (US)"},
     {"short_desc": "CHICKENS, CHICKS, EGG TYPE, PULLET - PLACEMENTS, INTENDED, MEASURED IN HEAD",
      "label": "Egg-Type Pullet Intended Placements"},
 
@@ -295,7 +302,9 @@ def ingest_mars_report(conn, slug_id, start_date, end_date):
 
     # Extra parsers (volumes, narratives, metrics)
     for extra_parser, extra_table in config.get("extra", []):
-        if extra_parser in (parsers.parse_retail_metrics,):
+        if extra_parser in (parsers.parse_retail_metrics,
+                            parsers.parse_chicken_wholesale_detail,
+                            parsers.parse_retail_prices_detail):
             extra_rows = extra_parser(slug_id, sections)
         elif extra_parser == parsers.parse_narratives:
             extra_rows = extra_parser(slug_id, sections)
@@ -654,9 +663,12 @@ def update_mars(conn, report_filter=None):
 
 
 def update_nass(conn):
-    """Incremental NASS update: re-fetch current year + prior year."""
+    """Incremental NASS update: re-fetch the current year and the two before it.
+
+    NASS annual summaries revise the prior year (e.g. Dec 2024 chicks hatched was
+    revised in 2026), so a one-year window misses revisions."""
     current_year = date.today().year
-    year_ge = current_year - 1
+    year_ge = current_year - 2
     print(f"\n{'='*60}")
     print(f"  NASS Incremental Update (year >= {year_ge})")
     print(f"{'='*60}")
