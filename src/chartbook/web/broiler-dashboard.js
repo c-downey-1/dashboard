@@ -42,6 +42,9 @@ function setChartSources() {
     placementsWeeklyChart: SRC.hatch,
     chicksHatchedChart: SRC.hatchery,
     productionChart: `${SRC.slaughter} • USDA reports broilers as "young chickens"; federally inspected plants handle nearly all U.S. production`,
+    productionMonthlyChart: SRC.slaughter,
+    productionYoYChart: `${SRC.slaughter} • IAA calculation`,
+    productionYtdChart: `${SRC.slaughter} • IAA calculation`,
     productionDriversChart: `${SRC.slaughter} • IAA calculation`,
     liveWeightChart: SRC.slaughter,
     condemnChart: `${SRC.slaughter} • Rates also reflect inspection and plant practices, not only flock health`,
@@ -176,7 +179,7 @@ function renderBroilerMixed(id, labels, datasets, yLabel, y2Label, extra = {}) {
   });
   const options = baseOptions(yLabel, Object.assign({ chartId: id, y2: y2Label, maxTicks: 12 }, extra));
   if (extra.stacked) options.scales.y2 && (options.scales.y2.stacked = false);
-  charts[id] = new Chart(ctx, { type: 'bar', data: { labels, datasets: normalized }, options });
+  charts[id] = new Chart(ctx, { type: 'bar', data: { labels, datasets: normalized }, options, plugins: extra.plugins || [] });
 }
 
 /* Monthly seasonal comparison: prior year + current year bars, history-average diamonds. */
@@ -552,31 +555,103 @@ async function bootBroilerDashboard() {
   });
 
   /* ── Production ────────────────────────────────────────── */
-  let prodMode = 'total';
-  const renderProduction = range => {
-    if (prodMode === 'seasonal') {
-      const sets = seasonalDatasets(PD.dates, PD.rtc.map(v => v / 1e9), range === 'all' ? '10y' : range, 2001);
-      renderBroilerMixed('productionChart', MON_SHORT, sets, 'Billion lb', undefined,
-        Object.assign({ yTickCallback: tickFmt({ suffix: 'B' }) }, niceBounds(sets.flatMap(s => s.data), 0.2)));
-      broilerText('productionSub', 'Ready-to-cook broiler meat certified at federally inspected plants, by month: this year, last year and the multi-year average');
-      return;
+  registerRangeControl({
+    chartId: 'productionChart',
+    options: ['5y', '10y', 'all'],
+    defaultRange: '10y',
+    renderer(range) {
+      const { start, end } = getRangeSlice(PD.dates, range);
+      const vals = PD.rtc_12m.slice(start, end).map(v => v != null ? v / 1e9 : null);
+      renderBroilerMixed('productionChart', PD.dates.slice(start, end), [
+        dataset('12-month total', vals, DASH_COLORS.navy, { type: 'line' }),
+        dataset('Change vs year ago', PD.rtc_12m_yoy.slice(start, end), DASH_COLORS.orange, { type: 'line', yAxisID: 'y2', borderWidth: 2.2 })
+      ], 'Billion lb, trailing 12 months', '% vs year ago', Object.assign({
+        yTickCallback: tickFmt({ suffix: 'B' }),
+        y2TickCallback: tickFmt({ suffix: '%', sign: true })
+      }, niceBounds(vals, 0.1)));
     }
-    const { start, end } = getRangeSlice(PD.dates, range);
-    const vals = PD.rtc_12m.slice(start, end).map(v => v != null ? v / 1e9 : null);
-    renderBroilerMixed('productionChart', PD.dates.slice(start, end), [
-      dataset('12-month total', vals, DASH_COLORS.navy, { type: 'line' }),
-      dataset('Change vs year ago', PD.rtc_12m_yoy.slice(start, end), DASH_COLORS.orange, { type: 'line', yAxisID: 'y2', borderWidth: 2.2 })
-    ], 'Billion lb, trailing 12 months', '% vs year ago', Object.assign({
-      yTickCallback: tickFmt({ suffix: 'B' }),
-      y2TickCallback: tickFmt({ suffix: '%', sign: true })
-    }, niceBounds(vals, 0.1)));
-    broilerText('productionSub', 'Ready-to-cook broiler meat certified at federally inspected plants, total for the trailing 12 months');
-  };
-  registerRangeControl({ chartId: 'productionChart', options: ['5y', '10y', 'all'], defaultRange: '10y', renderer: renderProduction });
-  insertModeToggle('productionChart', [
-    { mode: 'total', label: '12-month total' },
-    { mode: 'seasonal', label: 'By month' }
-  ], 'total', mode => { prodMode = mode; renderProduction(chartRanges.productionChart || '10y'); });
+  });
+
+  /* Month-by-month: this year and last year as bars, the five years before
+     that as diamonds. */
+  const rtcMap = buildYearMonthMap(PD.dates, PD.rtc.map(v => (v == null ? null : v / 1e9)));
+  const rtcYears = Object.keys(rtcMap).map(Number).sort((x, y) => x - y);
+  const rtcCur = rtcYears[rtcYears.length - 1];
+  const rtcAvgYears = rtcYears.filter(y => y < rtcCur - 1).slice(-5);
+  const rtcAvgLabel = `${rtcAvgYears[0]}–${rtcAvgYears[rtcAvgYears.length - 1]} avg`;
+  const rtcPrev = monthsForYear(rtcMap, rtcCur - 1);
+  const rtcNow = monthsForYear(rtcMap, rtcCur);
+  const rtcAvg = averageMonths(rtcMap, rtcAvgYears);
+  const rtcLastMonth = rtcNow.reduce((acc, v, i) => (v != null ? i : acc), -1);
+
+  registerRangeControl({
+    chartId: 'productionMonthlyChart',
+    options: [],
+    defaultRange: 'all',
+    renderer() {
+      const bounds = niceBounds(rtcPrev.concat(rtcNow, rtcAvg), 0.25);
+      renderBroilerMixed('productionMonthlyChart', MON_SHORT, [
+        dataset(String(rtcCur - 1), rtcPrev, DASH_COLORS.navy, { type: 'bar', backgroundColor: DASH_COLORS.navy }),
+        dataset(String(rtcCur), rtcNow, DASH_COLORS.orange, { type: 'bar', backgroundColor: DASH_COLORS.orange }),
+        dataset(rtcAvgLabel, rtcAvg, DASH_COLORS.gold, {
+          type: 'line', showLine: false, borderWidth: 2, pointStyle: 'rectRot', pointRadius: 7, pointHoverRadius: 8,
+          pointBackgroundColor: DASH_COLORS.gold, pointBorderColor: DASH_COLORS.navy
+        })
+      ], 'Billion lb', undefined, Object.assign({
+        yTickCallback: tickFmt({ suffix: 'B' }),
+        tooltip: { callbacks: { title: items => items[0].label, label: c => (c.parsed?.y == null ? '' : `${c.dataset.label}: ${fmtNum(c.parsed.y, 2)}B lb`) } }
+      }, bounds));
+      broilerText('productionMonthlySub', `Ready-to-cook broiler meat by month: ${rtcCur - 1} and ${rtcCur} as bars, the ${rtcAvgYears[0]}–${rtcAvgYears[rtcAvgYears.length - 1]} average as diamonds`);
+    }
+  });
+
+  registerRangeControl({
+    chartId: 'productionYoYChart',
+    options: [],
+    defaultRange: 'all',
+    renderer() {
+      const yoy = rtcNow.map((v, i) => (v != null && rtcPrev[i] ? (v / rtcPrev[i] - 1) * 100 : null));
+      renderBroilerMixed('productionYoYChart', MON_SHORT, [yoyBars(`${rtcCur} vs ${rtcCur - 1}`, yoy)],
+        '% vs same month last year', undefined, {
+          legend: false,
+          yTickCallback: tickFmt({ suffix: '%', sign: true }),
+          tooltip: { callbacks: { title: items => items[0].label, label: c => (c.parsed?.y == null ? '' : signed(c.parsed.y)) } }
+        });
+      broilerText('productionYoYSub', `${rtcCur} ready-to-cook production, % change from the same month of ${rtcCur - 1}`);
+    }
+  });
+
+  registerRangeControl({
+    chartId: 'productionYtdChart',
+    options: [],
+    defaultRange: 'all',
+    renderer() {
+      const ytd = arr => arr.slice(0, rtcLastMonth + 1).reduce((sum, v) => sum + (v || 0), 0);
+      const avgYtd = rtcAvgYears.reduce((sum, y) => sum + ytd(monthsForYear(rtcMap, y)), 0) / rtcAvgYears.length;
+      const vals = [avgYtd, ytd(rtcPrev), ytd(rtcNow)];
+      const span = rtcLastMonth === 0 ? 'January' : `January to ${MON_SHORT[rtcLastMonth]}`;
+      const valueLabels = {
+        id: 'valueLabels',
+        afterDatasetsDraw(chart) {
+          const c = chart.ctx;
+          c.save();
+          c.font = `600 ${isMobileWidth() ? 11 : 13}px Lexend`;
+          c.fillStyle = DASH_COLORS.navy;
+          c.textAlign = 'center';
+          chart.getDatasetMeta(0).data.forEach((bar, i) => c.fillText(`${fmtNum(vals[i], 1)}B`, bar.x, bar.y - 8));
+          c.restore();
+        }
+      };
+      renderBroilerMixed('productionYtdChart', [rtcAvgLabel, String(rtcCur - 1), String(rtcCur)], [
+        dataset(`${span} total`, vals, DASH_COLORS.navy, { type: 'bar', backgroundColor: ['#B9C2C8', DASH_COLORS.navy, DASH_COLORS.orange] })
+      ], 'Billion lb', undefined, {
+        legend: false, plugins: [valueLabels], yMin: 0, yMax: niceBounds([0, Math.max(...vals) * 1.12], 0).yMax,
+        yTickCallback: tickFmt({ suffix: 'B' }),
+        tooltip: { callbacks: { title: items => items[0].label, label: c => `${fmtNum(c.parsed.y, 2)}B lb` } }
+      });
+      broilerText('productionYtdSub', `Ready-to-cook production, ${span}: ${rtcCur} against ${rtcCur - 1} and the ${rtcAvgYears[0]}–${rtcAvgYears[rtcAvgYears.length - 1]} average`);
+    }
+  });
 
   registerRangeControl({
     chartId: 'productionDriversChart',
@@ -852,7 +927,7 @@ function setAllLatest(B) {
   setLatest('placementsWeeklyChart', `week ending ${latestDay(lastDateOf(B.placements.dates, B.placements.values))}`);
   setLatest('chicksHatchedChart', latestMonth(lastDateOf(B.chicks_hatched.dates, B.chicks_hatched.values)));
   const PDL = latestMonth(B.production.dates[B.production.dates.length - 1]);
-  ['productionChart', 'productionDriversChart', 'liveWeightChart', 'condemnChart'].forEach(id => setLatest(id, PDL));
+  ['productionChart', 'productionMonthlyChart', 'productionYoYChart', 'productionYtdChart', 'productionDriversChart', 'liveWeightChart', 'condemnChart'].forEach(id => setLatest(id, PDL));
   if (B.production.states && B.production.states.year) setLatest('stateProductionChart', String(B.production.states.year));
   const W = B.wholesale;
   setLatest('wholesaleCutsChart', `week of ${latestDay(W.dates[W.dates.length - 1])}`);
