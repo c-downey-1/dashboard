@@ -112,7 +112,7 @@ function initBroilerSidebarNav() {
     const head = document.createElement('a');
     head.className = 'sidebar-section-link';
     head.href = `#${section.id}`;
-    head.textContent = section.querySelector('.section-head h2')?.textContent?.trim() || section.id;
+    head.textContent = section.dataset.sidebarTitle || section.querySelector('.section-head h2')?.textContent?.trim() || section.id;
     group.appendChild(head);
     const links = document.createElement('div');
     links.className = 'sidebar-chart-links';
@@ -159,7 +159,7 @@ function initBroilerSidebarNav() {
     sections.forEach(s => {
       const opt = document.createElement('option');
       opt.value = s.id;
-      opt.textContent = s.querySelector('.section-head h2')?.textContent?.trim() || s.id;
+      opt.textContent = s.dataset.sidebarTitle || s.querySelector('.section-head h2')?.textContent?.trim() || s.id;
       select.appendChild(opt);
     });
     select.addEventListener('change', () => {
@@ -341,8 +341,44 @@ function fullRollingAverage(values, windowSize) {
   });
 }
 
+/* Monthly-updates signup: adds the visitor to the Broiler Chartbook list in
+   Brevo (through the IAA website), and to the main newsletter list if they
+   tick the research box. */
+function initBroilerDashboardSignup() {
+  const form = document.getElementById('broilerDashboardSignupForm');
+  const status = document.getElementById('broilerDashboardSignupStatus');
+  if (!form || !status) return;
+  const setStatus = text => { status.textContent = text || ''; };
+  form.querySelectorAll('input').forEach(input => input.addEventListener('input', () => setStatus('')));
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const body = new FormData();
+    body.append('firstName', form.elements.firstName.value.trim());
+    body.append('lastName', form.elements.lastName.value.trim());
+    body.append('email', form.elements.email.value.trim());
+    if (form.elements.broilerResearch.checked) body.append('broilerResearch', '1');
+    if (form.elements.website.value) body.append('website', form.elements.website.value);
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    setStatus('Submitting…');
+    fetch('https://innovateanimalag.org/api/broiler-chartbook-signup', { method: 'POST', body })
+      .then(async response => {
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || !result.ok) throw new Error(result.error || 'Something went wrong. Please try again.');
+        setStatus('Thank you! You have been signed up.');
+        form.reset();
+      })
+      .catch(error => setStatus(error.message || 'Something went wrong. Please try again.'))
+      .finally(() => { submitBtn.disabled = false; });
+  });
+}
+
 async function bootBroilerDashboard() {
   initBroilerSidebarNav();
+  initBroilerDashboardSignup();
   setChartSources();
   const response = await fetch(`data.json?v=${Date.now()}`);
   const D = await response.json();

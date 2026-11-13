@@ -8,7 +8,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112j">
+<link rel="stylesheet" href="assets/split-dashboard.css?v=20261112k">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <!-- Microsoft Clarity: same project as innovateanimalag.org (z2ge5ap319); runs only
      on innovateanimalag.org hosts. Tag "chartbook" = broiler. -->
@@ -128,12 +128,50 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </div>
   </section>
 
+  <section class="section" id="monthly-updates" data-sidebar-title="Subscribe for Free">
+    <div class="section-head"><div><h2>Monthly Updates</h2><p>Sign up for monthly updates of the Broiler Executive Chartbook.</p></div></div>
+    <div class="grid">
+      <article class="card">
+        <form class="dashboard-signup-form" id="broilerDashboardSignupForm">
+          <div class="dashboard-signup-row">
+            <label class="dashboard-signup-field" for="dashboardSignupFirstName">
+              <span>First Name</span>
+              <input id="dashboardSignupFirstName" name="firstName" type="text" autocomplete="given-name" placeholder="First name" required>
+            </label>
+            <label class="dashboard-signup-field" for="dashboardSignupLastName">
+              <span>Last Name</span>
+              <input id="dashboardSignupLastName" name="lastName" type="text" autocomplete="family-name" placeholder="Last name">
+            </label>
+          </div>
+          <label class="dashboard-signup-field" for="dashboardSignupEmail">
+            <span>Email</span>
+            <input id="dashboardSignupEmail" name="email" type="email" autocomplete="email" placeholder="Email address" required>
+          </label>
+          <div class="dashboard-signup-checkboxes">
+            <span class="dashboard-signup-checkboxes-label">I'm interested in:</span>
+            <label class="dashboard-signup-checkbox">
+              <input type="checkbox" name="broilerUpdates" checked disabled>
+              <span>Broiler Executive Monthly Updates</span>
+            </label>
+            <label class="dashboard-signup-checkbox">
+              <input type="checkbox" name="broilerResearch">
+              <span>Other Innovate Animal Ag Broiler Industry Research</span>
+            </label>
+          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <button class="dashboard-signup-button" type="submit">Submit</button>
+          <p class="dashboard-signup-status" id="broilerDashboardSignupStatus" aria-live="polite"></p>
+        </form>
+      </article>
+    </div>
+  </section>
+
   <div class="footer">Broiler dashboard updated __UPDATED__. Sources in this build include USDA NASS, USDA AMS Market News, USDA ESMIS Broiler Hatchery, USDA ERS, USDA APHIS and CME Group.</div>
     </main>
   </div>
 </div>
-<script src="assets/dashboard-common.js?v=20261112j"></script>
-<script src="assets/broiler-dashboard.js?v=20261112j"></script>
+<script src="assets/dashboard-common.js?v=20261112k"></script>
+<script src="assets/broiler-dashboard.js?v=20261112k"></script>
 </body>
 </html>
 """
