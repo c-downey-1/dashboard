@@ -279174,3 +279174,790 @@ report_date,region,type,environment,condition,price_avg,price_min,price_max,stor
 2026-11-02,Southwest,Whole Bagged Fryer,USDA Organic,Fresh,2.88,2.79,3.99,139,Per lb
 2026-11-02,Southwest,"Whole Rotisserie Chicken, 2.1-3.0 Lbs",Conventional,Prepared,8.99,8.99,8.99,66,Each
 2026-11-02,Southwest,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,8.91,7.99,9.99,1379,Each
+2026-11-09,Alaska,Breast Tenders,Conventional,Fresh,2.49,2.49,2.49,3,Per lb
+2026-11-09,Alaska,"Breast, Boneless/Skinless",Conventional,Fresh,2.49,2.49,2.49,2,Per lb
+2026-11-09,Alaska,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.99,4.99,4.99,3,Per lb
+2026-11-09,Alaska,Drumsticks,Conventional,Fresh,1.39,1.29,1.49,23,Per lb
+2026-11-09,Alaska,Fried/Baked Breast Tenders,Conventional,Prepared,10.99,10.99,10.99,10,Per lb
+2026-11-09,Alaska,"Fried/Baked Chicken, Mixed",Conventional,Prepared,7.99,7.99,7.99,12,Each
+2026-11-09,Alaska,Leg Quarters,Conventional,Fresh,1.29,1.29,1.29,12,Per lb
+2026-11-09,Alaska,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.43,3.43,3.43,3,Per lb
+2026-11-09,Alaska,Service Deli - Cat 1,Conventional,Prepared,11.59,10.99,12.49,5,Per lb
+2026-11-09,Alaska,Thighs,Conventional,Fresh,1.47,1.29,2.49,25,Per lb
+2026-11-09,Alaska,"Thighs, Boneless/Skinless",Conventional,Fresh,3.18,3.18,3.18,3,Per lb
+2026-11-09,Alaska,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,9.99,9.99,9.99,2,Each
+2026-11-09,Hawaii,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,3.99,3.99,3.99,3,Per lb
+2026-11-09,Hawaii,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,4.29,4.29,4.29,25,Per lb
+2026-11-09,Hawaii,Drumsticks,Conventional,Fresh,1.29,1.29,1.29,23,Per lb
+2026-11-09,Hawaii,"Fried/Baked Chicken, Mixed",Conventional,Prepared,7.99,7.99,7.99,23,Each
+2026-11-09,Hawaii,"Fried/Baked Wings, Bone-In",Conventional,Prepared,10.72,9.59,10.99,36,Per lb
+2026-11-09,Hawaii,Leg Quarters,Conventional,Fresh,1.29,1.29,1.29,23,Per lb
+2026-11-09,Hawaii,Thighs,Conventional,Frozen,2.29,2.1,2.99,32,Per lb
+2026-11-09,Hawaii,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.99,3.99,3.99,3,Per lb
+2026-11-09,Hawaii,"Thighs, Boneless/Skinless",Conventional,Frozen,4.29,4.29,4.29,25,Per lb
+2026-11-09,Hawaii,Whole Bagged Fryer,USDA Organic,Fresh,4.0,4.0,4.0,4,Per lb
+2026-11-09,Midwest,Breast Tenders,Antibiotic Free,Fresh,8.47,7.99,8.56,112,Per lb
+2026-11-09,Midwest,Breast Tenders,Conventional,Fresh,3.33,2.99,4.99,143,Per lb
+2026-11-09,Midwest,Breast Tenders,Conventional,Fresh,4.1,3.49,4.99,52,Per lb
+2026-11-09,Midwest,"Breast Tenders, IQF",Conventional,Frozen,4.06,3.4,4.4,478,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,6.7,3.99,6.99,563,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,6.66,6.66,6.66,42,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless",Conventional,Fresh,3.31,1.69,4.99,635,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless",Conventional,Fresh,3.09,0.99,3.99,452,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.11,1.99,4.4,694,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless, Marinated",Conventional,Fresh,6.6,5.66,6.67,285,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,7.19,6.99,7.99,141,Per lb
+2026-11-09,Midwest,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.94,1.99,4.99,36,Per lb
+2026-11-09,Midwest,Drumsticks,Antibiotic Free,Fresh,2.2,1.49,2.69,207,Per lb
+2026-11-09,Midwest,Drumsticks,Antibiotic Free,Fresh,1.34,0.99,1.99,31,Per lb
+2026-11-09,Midwest,Drumsticks,Conventional,Fresh,1.34,1.29,1.49,580,Per lb
+2026-11-09,Midwest,Drumsticks,Conventional,Fresh,1.68,1.29,1.99,50,Per lb
+2026-11-09,Midwest,Fried/Baked Breast Tenders,Conventional,Prepared,6.94,4.99,8.99,414,Per lb
+2026-11-09,Midwest,Fried/Baked Breast Tenders,Conventional,Prepared,12.0,12.0,12.0,20,Each
+2026-11-09,Midwest,Fried/Baked Breast Tenders,Conventional,Prepared,1.25,1.25,1.25,18,Each
+2026-11-09,Midwest,"Fried/Baked Chicken, Dark",Conventional,Prepared,6.99,6.99,6.99,4,Each
+2026-11-09,Midwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,12.99,12.99,12.99,79,Each
+2026-11-09,Midwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,9.49,7.99,13.98,116,Each
+2026-11-09,Midwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.25,1.25,1.25,60,Each
+2026-11-09,Midwest,"Fried/Baked Wings, Bone-In",Conventional,Prepared,6.79,5.0,6.99,210,Per lb
+2026-11-09,Midwest,"Fried/Baked Wings, Bone-In",Conventional,Prepared,0.92,0.89,0.93,17,Each
+2026-11-09,Midwest,Gizzards,Conventional,Fresh,1.99,1.99,1.99,20,Per lb
+2026-11-09,Midwest,Grilled Chicken Strips,Conventional,Prepared,10.95,6.67,11.97,318,Per lb
+2026-11-09,Midwest,Ground Chicken,Antibiotic Free,Fresh,3.99,3.99,3.99,6,Per lb
+2026-11-09,Midwest,Ground Chicken,Conventional,Fresh,5.99,5.99,5.99,16,Per lb
+2026-11-09,Midwest,Leg Quarters,Conventional,Fresh,1.21,0.99,1.99,193,Per lb
+2026-11-09,Midwest,Leg Quarters,Conventional,Fresh,1.29,1.29,1.29,7,Per lb
+2026-11-09,Midwest,"Leg Quarters, Marinated",Conventional,Fresh,2.99,2.99,2.99,21,Per lb
+2026-11-09,Midwest,Liver,Conventional,Fresh,1.99,1.99,1.99,20,Per lb
+2026-11-09,Midwest,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,4.98,3.2,4.99,259,Per lb
+2026-11-09,Midwest,"Party Wings, Flats and Drums",Conventional,Fresh,3.17,1.59,3.99,66,Per lb
+2026-11-09,Midwest,"Party Wings, Flats and Drums",Conventional,Fresh,2.99,2.99,2.99,275,Per lb
+2026-11-09,Midwest,"Party Wings, Flats and Drums, IQF",Antibiotic Free,Frozen,2.99,2.99,2.99,16,Per lb
+2026-11-09,Midwest,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.5,2.4,3.66,394,Per lb
+2026-11-09,Midwest,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,8.32,7.09,8.87,150,Per lb
+2026-11-09,Midwest,Service Deli - Cat 1,Conventional,Prepared,9.54,7.99,10.99,997,Per lb
+2026-11-09,Midwest,"Split Breast, Bone-In",Antibiotic Free,Fresh,2.49,2.49,2.49,16,Per lb
+2026-11-09,Midwest,"Split Breast, Bone-In",Conventional,Fresh,1.72,1.69,2.99,882,Per lb
+2026-11-09,Midwest,Thighs,Antibiotic Free,Fresh,2.36,1.79,2.99,230,Per lb
+2026-11-09,Midwest,Thighs,Antibiotic Free,Fresh,1.63,1.49,1.99,39,Per lb
+2026-11-09,Midwest,Thighs,Conventional,Fresh,1.57,1.29,1.99,569,Per lb
+2026-11-09,Midwest,Thighs,Conventional,Fresh,1.36,1.29,1.99,413,Per lb
+2026-11-09,Midwest,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.0,2.97,3.49,35,Per lb
+2026-11-09,Midwest,"Thighs, Boneless/Skinless",Conventional,Fresh,4.39,2.99,4.99,333,Per lb
+2026-11-09,Midwest,"Thighs, Boneless/Skinless",Conventional,Fresh,1.82,1.69,1.99,48,Per lb
+2026-11-09,Midwest,V-Cut Wings,Conventional,Fresh,2.99,2.99,2.99,20,Per lb
+2026-11-09,Midwest,V-Cut Wings,Conventional,Fresh,2.99,2.99,2.99,21,Per lb
+2026-11-09,Midwest,"V-Cut Wings, IQF",Conventional,Frozen,1.45,1.45,1.45,55,Per lb
+2026-11-09,Midwest,Whole Bagged Fryer,Antibiotic Free,Fresh,2.36,1.49,2.79,566,Per lb
+2026-11-09,Midwest,Whole Bagged Fryer,Conventional,Fresh,1.41,1.29,1.99,120,Per lb
+2026-11-09,Midwest,Whole Bagged Fryer,USDA Organic,Fresh,4.0,4.0,4.0,66,Per lb
+2026-11-09,Midwest,Whole Bagged Roaster,Conventional,Fresh,1.79,1.79,1.79,22,Per lb
+2026-11-09,Midwest,Whole Cornish Hen,Conventional,Frozen,4.36,4.36,4.36,42,Per lb
+2026-11-09,Midwest,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,6.27,5.99,8.99,255,Each
+2026-11-09,NATIONAL,Breast Tenders,"ABF, Free Range",Fresh,5.99,5.99,5.99,135,Per lb
+2026-11-09,NATIONAL,Breast Tenders,Antibiotic Free,Fresh,5.53,2.99,8.56,1069,Per lb
+2026-11-09,NATIONAL,Breast Tenders,Conventional,Fresh,3.26,1.88,4.99,1408,Per lb
+2026-11-09,NATIONAL,Breast Tenders,Conventional,Fresh,3.39,1.98,4.99,813,Per lb
+2026-11-09,NATIONAL,"Breast Tenders, IQF",Conventional,Frozen,4.21,3.4,4.4,846,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless","ABF, Free Range",Fresh,5.99,5.99,5.99,135,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.11,1.99,8.49,2833,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,6.06,2.99,6.66,608,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless",Conventional,Fresh,2.95,1.69,4.99,1924,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless",Conventional,Fresh,2.53,0.99,3.99,2401,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless",Halal,Fresh,6.99,6.99,6.99,131,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless",USDA Organic,Fresh,9.37,8.99,9.99,50,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless","USDA Organic, Free Range",Fresh,7.36,6.99,8.99,93,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.18,1.99,4.4,1490,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless, Marinated",Antibiotic Free,Fresh,6.17,5.99,8.99,200,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless, Marinated",Conventional,Fresh,5.84,5.66,6.67,1752,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,5.12,2.99,7.99,1386,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.99,4.99,4.99,130,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,4.19,1.99,4.99,734,Per lb
+2026-11-09,NATIONAL,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.37,1.99,5.99,240,Per lb
+2026-11-09,NATIONAL,Drumsticks,Antibiotic Free,Fresh,1.52,0.99,2.69,1510,Per lb
+2026-11-09,NATIONAL,Drumsticks,Antibiotic Free,Fresh,1.29,0.99,1.99,469,Per lb
+2026-11-09,NATIONAL,Drumsticks,Conventional,Fresh,0.99,0.99,0.99,29,Per lb
+2026-11-09,NATIONAL,Drumsticks,Conventional,Fresh,1.34,0.49,1.99,1317,Per lb
+2026-11-09,NATIONAL,Drumsticks,Conventional,Fresh,1.18,0.68,1.99,2777,Per lb
+2026-11-09,NATIONAL,Fried/Baked Breast Tenders,Conventional,Prepared,7.34,4.99,10.99,845,Per lb
+2026-11-09,NATIONAL,Fried/Baked Breast Tenders,Conventional,Prepared,12.0,12.0,12.0,20,Each
+2026-11-09,NATIONAL,Fried/Baked Breast Tenders,Conventional,Prepared,1.25,1.25,1.25,158,Each
+2026-11-09,NATIONAL,"Fried/Baked Chicken, Dark",Conventional,Prepared,6.88,5.99,8.99,2020,Each
+2026-11-09,NATIONAL,"Fried/Baked Chicken, Mixed",Conventional,Prepared,12.99,12.99,12.99,85,Each
+2026-11-09,NATIONAL,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.95,7.99,13.98,1874,Each
+2026-11-09,NATIONAL,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.2,0.99,1.25,93,Each
+2026-11-09,NATIONAL,"Fried/Baked Wings, Bone-In",Conventional,Prepared,7.22,4.49,10.99,629,Per lb
+2026-11-09,NATIONAL,"Fried/Baked Wings, Bone-In",Conventional,Prepared,0.88,0.79,0.99,2003,Each
+2026-11-09,NATIONAL,"Fried/Baked Wings, Boneless",Conventional,Prepared,8.0,8.0,8.0,84,Per lb
+2026-11-09,NATIONAL,Gizzards,Conventional,Frozen,1.29,1.29,1.29,25,Per lb
+2026-11-09,NATIONAL,Grilled Chicken Strips,Antibiotic Free,Prepared,6.12,5.99,6.99,151,Per lb
+2026-11-09,NATIONAL,Grilled Chicken Strips,Antibiotic Free,Prepared,7.07,6.66,8.0,295,Per lb
+2026-11-09,NATIONAL,Grilled Chicken Strips,Conventional,Prepared,7.49,7.49,7.49,25,Per lb
+2026-11-09,NATIONAL,Grilled Chicken Strips,Conventional,Prepared,10.81,6.67,11.97,505,Per lb
+2026-11-09,NATIONAL,Ground Chicken,Antibiotic Free,Fresh,4.02,2.39,6.98,2046,Per lb
+2026-11-09,NATIONAL,Ground Chicken,Conventional,Fresh,3.97,2.79,5.99,210,Per lb
+2026-11-09,NATIONAL,"Leg Meat, Boneless/Skinless",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-09,NATIONAL,"Leg Meat, Boneless/Skinless",Conventional,Fresh,2.48,2.48,2.48,45,Per lb
+2026-11-09,NATIONAL,"Leg Meat, Boneless/Skinless, Marinated",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-09,NATIONAL,Leg Quarters,Conventional,Fresh,0.77,0.59,0.99,277,Per lb
+2026-11-09,NATIONAL,Leg Quarters,Conventional,Fresh,1.2,0.99,1.99,313,Per lb
+2026-11-09,NATIONAL,Leg Quarters,Conventional,Fresh,1.2,0.79,1.29,1247,Per lb
+2026-11-09,NATIONAL,"Leg Quarters, Marinated",Conventional,Fresh,2.99,2.99,2.99,21,Per lb
+2026-11-09,NATIONAL,Legs,Antibiotic Free,Fresh,1.49,1.49,1.49,188,Per lb
+2026-11-09,NATIONAL,Legs,USDA Organic,Fresh,5.29,5.29,5.29,19,Per lb
+2026-11-09,NATIONAL,Liver,Conventional,Fresh,1.59,1.49,1.99,261,Per lb
+2026-11-09,NATIONAL,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,4.62,3.2,5.49,868,Per lb
+2026-11-09,NATIONAL,"Party Wings, Flats and Drums",Conventional,Fresh,2.41,1.59,3.99,211,Per lb
+2026-11-09,NATIONAL,"Party Wings, Flats and Drums",Conventional,Fresh,3.11,1.98,3.49,776,Per lb
+2026-11-09,NATIONAL,"Party Wings, Flats and Drums, IQF",Antibiotic Free,Frozen,2.99,2.99,2.99,16,Per lb
+2026-11-09,NATIONAL,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.17,2.0,3.66,1132,Per lb
+2026-11-09,NATIONAL,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,4.99,4.99,4.99,39,Per lb
+2026-11-09,NATIONAL,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,8.68,7.09,9.98,1106,Per lb
+2026-11-09,NATIONAL,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,7.92,7.92,7.92,47,Per lb
+2026-11-09,NATIONAL,Service Deli - Cat 1,Conventional,Prepared,9.58,7.99,12.49,2274,Per lb
+2026-11-09,NATIONAL,Service Deli - Cat 2,Conventional,Prepared,6.49,6.49,6.49,365,Per lb
+2026-11-09,NATIONAL,"Split Breast, Bone-In",Antibiotic Free,Fresh,1.98,1.79,2.49,330,Per lb
+2026-11-09,NATIONAL,"Split Breast, Bone-In",Conventional,Fresh,1.7,1.58,2.99,2683,Per lb
+2026-11-09,NATIONAL,"Split Breast, Bone-In",Conventional,Fresh,1.99,1.99,1.99,13,Per lb
+2026-11-09,NATIONAL,Thighs,"ABF, Free Range",Fresh,3.99,3.99,3.99,11,Per lb
+2026-11-09,NATIONAL,Thighs,Antibiotic Free,Fresh,1.6,0.99,2.99,1482,Per lb
+2026-11-09,NATIONAL,Thighs,Antibiotic Free,Fresh,1.56,1.29,3.49,489,Per lb
+2026-11-09,NATIONAL,Thighs,Conventional,Fresh,1.5,0.99,1.99,1132,Per lb
+2026-11-09,NATIONAL,Thighs,Conventional,Frozen,2.29,2.1,2.99,32,Per lb
+2026-11-09,NATIONAL,"Thighs, Boneless/Skinless","ABF, Free Range",Fresh,5.99,5.99,5.99,135,Per lb
+2026-11-09,NATIONAL,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,4.23,2.39,5.99,681,Per lb
+2026-11-09,NATIONAL,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.99,3.99,3.99,3,Per lb
+2026-11-09,NATIONAL,"Thighs, Boneless/Skinless",Conventional,Frozen,4.29,4.29,4.29,25,Per lb
+2026-11-09,NATIONAL,"Thighs, Boneless/Skinless",Conventional,Fresh,2.96,1.69,3.57,416,Per lb
+2026-11-09,NATIONAL,"Thighs, Boneless/Skinless",USDA Organic,Fresh,5.99,5.99,5.99,313,Per lb
+2026-11-09,NATIONAL,V-Cut Wings,Antibiotic Free,Fresh,1.99,1.99,1.99,429,Per lb
+2026-11-09,NATIONAL,V-Cut Wings,Antibiotic Free,Fresh,2.35,1.99,3.99,317,Per lb
+2026-11-09,NATIONAL,V-Cut Wings,Conventional,Fresh,2.59,2.47,2.99,89,Per lb
+2026-11-09,NATIONAL,V-Cut Wings,Conventional,Fresh,2.08,1.77,2.99,181,Per lb
+2026-11-09,NATIONAL,"V-Cut Wings, IQF",Conventional,Frozen,1.54,1.45,1.99,109,Per lb
+2026-11-09,NATIONAL,Whole Bagged Fryer,"ABF, Free Range",Fresh,2.33,2.29,2.99,379,Per lb
+2026-11-09,NATIONAL,Whole Bagged Fryer,Antibiotic Free,Fresh,2.2,1.29,2.99,1168,Per lb
+2026-11-09,NATIONAL,Whole Bagged Fryer,Conventional,Frozen,1.38,0.98,1.78,78,Per lb
+2026-11-09,NATIONAL,Whole Bagged Fryer,USDA Organic,Fresh,4.02,1.49,4.99,576,Per lb
+2026-11-09,NATIONAL,Whole Bagged Fryer,"USDA Organic, Free Range",Fresh,2.15,1.99,3.99,214,Per lb
+2026-11-09,NATIONAL,Whole Bagged Roaster,Antibiotic Free,Fresh,1.42,1.37,1.49,40,Per lb
+2026-11-09,NATIONAL,Whole Bagged Roaster,Conventional,Fresh,1.44,1.39,1.79,190,Per lb
+2026-11-09,NATIONAL,Whole Baking Hen,Conventional,Fresh,1.71,1.38,1.89,91,Per lb
+2026-11-09,NATIONAL,Whole Cornish Hen,Conventional,Frozen,4.5,4.36,4.99,181,Per lb
+2026-11-09,NATIONAL,"Whole Rotisserie Chicken, 2.1-3.0 Lbs",Conventional,Prepared,8.99,8.99,8.99,128,Each
+2026-11-09,NATIONAL,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,7.06,4.98,9.99,1055,Each
+2026-11-09,Northeast,Breast Tenders,Antibiotic Free,Fresh,4.92,2.99,5.99,764,Per lb
+2026-11-09,Northeast,Breast Tenders,Conventional,Fresh,3.12,1.99,4.99,796,Per lb
+2026-11-09,Northeast,Breast Tenders,Conventional,Fresh,3.99,3.99,3.99,131,Per lb
+2026-11-09,Northeast,"Breast Tenders, IQF",Conventional,Frozen,4.4,4.4,4.4,132,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,3.76,1.99,8.49,1388,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.99,5.99,5.99,23,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless",Conventional,Fresh,1.97,1.69,2.49,184,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless",Conventional,Fresh,2.27,1.69,2.99,932,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless",Halal,Fresh,6.99,6.99,6.99,131,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless",USDA Organic,Fresh,9.99,9.99,9.99,19,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.2,1.99,4.4,264,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless, Marinated",Antibiotic Free,Fresh,5.99,5.99,5.99,188,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.69,2.99,6.99,1108,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,4.32,3.99,4.99,540,Per lb
+2026-11-09,Northeast,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.99,1.99,5.99,38,Per lb
+2026-11-09,Northeast,Drumsticks,Antibiotic Free,Fresh,1.45,1.29,1.99,592,Per lb
+2026-11-09,Northeast,Drumsticks,Antibiotic Free,Fresh,1.28,1.19,1.29,427,Per lb
+2026-11-09,Northeast,Drumsticks,Conventional,Fresh,0.99,0.99,0.99,192,Per lb
+2026-11-09,Northeast,Drumsticks,Conventional,Fresh,1.03,0.99,1.29,564,Per lb
+2026-11-09,Northeast,Fried/Baked Breast Tenders,Conventional,Prepared,7.02,6.99,8.99,191,Per lb
+2026-11-09,Northeast,"Fried/Baked Chicken, Dark",Conventional,Prepared,6.41,5.99,7.0,634,Each
+2026-11-09,Northeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.62,7.99,10.64,354,Each
+2026-11-09,Northeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.08,0.99,1.25,25,Each
+2026-11-09,Northeast,"Fried/Baked Wings, Bone-In",Conventional,Prepared,8.39,7.99,8.49,183,Per lb
+2026-11-09,Northeast,"Fried/Baked Wings, Bone-In",Conventional,Prepared,0.86,0.79,0.99,471,Each
+2026-11-09,Northeast,Gizzards,Conventional,Fresh,1.59,1.49,1.99,260,Per lb
+2026-11-09,Northeast,Grilled Chicken Strips,Antibiotic Free,Prepared,6.12,5.99,6.99,151,Per lb
+2026-11-09,Northeast,Grilled Chicken Strips,Antibiotic Free,Prepared,7.09,6.66,8.0,283,Per lb
+2026-11-09,Northeast,Ground Chicken,Antibiotic Free,Fresh,2.39,2.39,2.39,313,Per lb
+2026-11-09,Northeast,Ground Chicken,Conventional,Fresh,3.81,2.79,3.99,154,Per lb
+2026-11-09,Northeast,Leg Quarters,Conventional,Fresh,0.79,0.79,0.79,19,Per lb
+2026-11-09,Northeast,Leg Quarters,Conventional,Fresh,1.2,0.99,1.49,113,Per lb
+2026-11-09,Northeast,Leg Quarters,Conventional,Fresh,1.05,0.99,1.29,352,Per lb
+2026-11-09,Northeast,Legs,Antibiotic Free,Fresh,1.49,1.49,1.49,188,Per lb
+2026-11-09,Northeast,Legs,USDA Organic,Fresh,5.29,5.29,5.29,19,Per lb
+2026-11-09,Northeast,Liver,Conventional,Fresh,1.56,1.49,1.59,241,Per lb
+2026-11-09,Northeast,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,4.47,3.99,5.49,528,Per lb
+2026-11-09,Northeast,"Party Wings, Flats and Drums",Conventional,Fresh,3.39,1.99,3.49,296,Per lb
+2026-11-09,Northeast,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,2.83,2.0,3.66,411,Per lb
+2026-11-09,Northeast,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,8.71,7.09,9.98,844,Per lb
+2026-11-09,Northeast,Service Deli - Cat 1,Conventional,Prepared,9.51,7.99,11.99,872,Per lb
+2026-11-09,Northeast,Service Deli - Cat 2,Conventional,Prepared,6.49,6.49,6.49,365,Per lb
+2026-11-09,Northeast,"Split Breast, Bone-In",Antibiotic Free,Fresh,1.91,1.79,2.09,277,Per lb
+2026-11-09,Northeast,"Split Breast, Bone-In",Conventional,Fresh,1.69,1.69,1.69,542,Per lb
+2026-11-09,Northeast,Thighs,Antibiotic Free,Fresh,1.41,1.29,1.49,524,Per lb
+2026-11-09,Northeast,Thighs,Antibiotic Free,Fresh,1.48,1.29,1.99,427,Per lb
+2026-11-09,Northeast,Thighs,Conventional,Fresh,0.99,0.99,0.99,192,Per lb
+2026-11-09,Northeast,Thighs,Conventional,Fresh,1.22,0.99,1.99,661,Per lb
+2026-11-09,Northeast,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,4.33,2.39,5.99,621,Per lb
+2026-11-09,Northeast,"Thighs, Boneless/Skinless",Conventional,Fresh,2.99,2.99,2.99,360,Per lb
+2026-11-09,Northeast,"Thighs, Boneless/Skinless",Conventional,Fresh,3.49,3.49,3.49,147,Per lb
+2026-11-09,Northeast,"Thighs, Boneless/Skinless",USDA Organic,Fresh,5.99,5.99,5.99,313,Per lb
+2026-11-09,Northeast,V-Cut Wings,Antibiotic Free,Fresh,1.99,1.99,1.99,127,Per lb
+2026-11-09,Northeast,V-Cut Wings,Antibiotic Free,Fresh,3.99,3.99,3.99,49,Per lb
+2026-11-09,Northeast,V-Cut Wings,Conventional,Fresh,2.11,1.79,2.99,72,Per lb
+2026-11-09,Northeast,"V-Cut Wings, IQF",Conventional,Frozen,1.81,1.66,1.99,25,Per lb
+2026-11-09,Northeast,Whole Bagged Fryer,"ABF, Free Range",Fresh,2.33,2.29,2.99,379,Per lb
+2026-11-09,Northeast,Whole Bagged Fryer,Antibiotic Free,Fresh,2.21,1.37,2.99,325,Per lb
+2026-11-09,Northeast,Whole Bagged Fryer,Conventional,Fresh,1.78,1.49,1.99,500,Per lb
+2026-11-09,Northeast,Whole Bagged Fryer,USDA Organic,Fresh,4.0,4.0,4.0,146,Per lb
+2026-11-09,Northeast,Whole Bagged Fryer,"USDA Organic, Free Range",Fresh,1.99,1.99,1.99,104,Per lb
+2026-11-09,Northeast,Whole Bagged Roaster,Antibiotic Free,Fresh,1.42,1.37,1.49,40,Per lb
+2026-11-09,Northeast,Whole Bagged Roaster,Conventional,Fresh,1.39,1.39,1.39,168,Per lb
+2026-11-09,Northeast,Whole Cornish Hen,Conventional,Frozen,4.99,4.99,4.99,38,Per lb
+2026-11-09,Northeast,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,7.05,5.99,9.99,173,Each
+2026-11-09,Northwest,Breast Tenders,Antibiotic Free,Fresh,4.99,4.99,4.99,41,Per lb
+2026-11-09,Northwest,Breast Tenders,Conventional,Fresh,1.99,1.99,1.99,24,Per lb
+2026-11-09,Northwest,Breast Tenders,Conventional,Fresh,2.49,2.49,2.49,100,Per lb
+2026-11-09,Northwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.09,3.49,6.99,80,Per lb
+2026-11-09,Northwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,3.79,2.99,5.99,15,Per lb
+2026-11-09,Northwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.71,1.99,2.99,152,Per lb
+2026-11-09,Northwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.49,2.49,2.49,4,Per lb
+2026-11-09,Northwest,"Breast, Boneless/Skinless","USDA Organic, Free Range",Fresh,6.99,6.99,6.99,76,Per lb
+2026-11-09,Northwest,"Breast, Boneless/Skinless, Marinated",Antibiotic Free,Fresh,8.99,8.99,8.99,12,Per lb
+2026-11-09,Northwest,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.99,4.99,4.99,100,Per lb
+2026-11-09,Northwest,Drumsticks,Antibiotic Free,Fresh,1.89,1.89,1.89,76,Per lb
+2026-11-09,Northwest,Drumsticks,Antibiotic Free,Fresh,1.49,1.49,1.49,11,Per lb
+2026-11-09,Northwest,Drumsticks,Conventional,Fresh,1.34,1.29,1.49,422,Per lb
+2026-11-09,Northwest,Fried/Baked Breast Tenders,Conventional,Prepared,7.99,7.99,7.99,43,Per lb
+2026-11-09,Northwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,7.99,7.99,7.99,307,Each
+2026-11-09,Northwest,Grilled Chicken Strips,Conventional,Prepared,10.64,10.64,10.64,34,Per lb
+2026-11-09,Northwest,Ground Chicken,Antibiotic Free,Fresh,4.99,4.99,4.99,2,Per lb
+2026-11-09,Northwest,Ground Chicken,Conventional,Fresh,4.99,4.99,4.99,11,Per lb
+2026-11-09,Northwest,Leg Quarters,Conventional,Fresh,1.29,1.29,1.29,307,Per lb
+2026-11-09,Northwest,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,5.49,5.49,5.49,1,Per lb
+2026-11-09,Northwest,Service Deli - Cat 1,Conventional,Prepared,9.61,7.99,12.49,221,Per lb
+2026-11-09,Northwest,Thighs,"ABF, Free Range",Fresh,3.99,3.99,3.99,11,Per lb
+2026-11-09,Northwest,Thighs,Antibiotic Free,Fresh,2.27,1.89,2.49,65,Per lb
+2026-11-09,Northwest,Thighs,Conventional,Fresh,1.36,1.29,2.49,426,Per lb
+2026-11-09,Northwest,"Thighs, Boneless/Skinless",Conventional,Fresh,1.99,1.99,1.99,33,Per lb
+2026-11-09,Northwest,"Thighs, Boneless/Skinless",Conventional,Fresh,3.53,3.48,3.57,42,Per lb
+2026-11-09,Northwest,V-Cut Wings,Antibiotic Free,Fresh,2.99,2.99,2.99,11,Per lb
+2026-11-09,Northwest,Whole Bagged Fryer,Antibiotic Free,Fresh,2.49,1.49,2.99,75,Per lb
+2026-11-09,Northwest,Whole Bagged Fryer,USDA Organic,Fresh,3.69,1.49,4.99,47,Per lb
+2026-11-09,Northwest,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,8.2,7.99,9.99,39,Each
+2026-11-09,Southcentral,Breast Tenders,Antibiotic Free,Fresh,7.99,7.99,7.99,2,Per lb
+2026-11-09,Southcentral,Breast Tenders,Conventional,Fresh,3.32,1.88,3.49,236,Per lb
+2026-11-09,Southcentral,Breast Tenders,Conventional,Fresh,3.14,1.98,3.89,104,Per lb
+2026-11-09,Southcentral,"Breast Tenders, IQF",Conventional,Frozen,4.4,4.4,4.4,61,Per lb
+2026-11-09,Southcentral,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.75,3.99,6.99,258,Per lb
+2026-11-09,Southcentral,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,6.23,5.99,6.66,197,Per lb
+2026-11-09,Southcentral,"Breast, Boneless/Skinless",Conventional,Fresh,2.76,1.69,3.99,300,Per lb
+2026-11-09,Southcentral,"Breast, Boneless/Skinless",Conventional,Fresh,2.74,1.99,3.49,277,Per lb
+2026-11-09,Southcentral,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.2,1.99,4.4,157,Per lb
+2026-11-09,Southcentral,"Breast, Boneless/Skinless, Marinated",Conventional,Fresh,6.67,6.67,6.67,41,Per lb
+2026-11-09,Southcentral,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.3,3.29,3.49,62,Per lb
+2026-11-09,Southcentral,Drumsticks,Antibiotic Free,Fresh,2.42,1.49,2.49,81,Per lb
+2026-11-09,Southcentral,Drumsticks,Conventional,Fresh,0.99,0.99,0.99,29,Per lb
+2026-11-09,Southcentral,Drumsticks,Conventional,Fresh,1.09,0.49,1.99,119,Per lb
+2026-11-09,Southcentral,Drumsticks,Conventional,Fresh,1.23,0.97,1.69,865,Per lb
+2026-11-09,Southcentral,Fried/Baked Breast Tenders,Conventional,Prepared,8.74,7.99,8.99,8,Per lb
+2026-11-09,Southcentral,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.82,5.99,8.99,153,Each
+2026-11-09,Southcentral,"Fried/Baked Chicken, Mixed",Conventional,Prepared,12.99,12.99,12.99,6,Each
+2026-11-09,Southcentral,"Fried/Baked Chicken, Mixed",Conventional,Prepared,10.8,7.99,13.98,217,Each
+2026-11-09,Southcentral,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.25,1.25,1.25,6,Each
+2026-11-09,Southcentral,"Fried/Baked Wings, Bone-In",Conventional,Prepared,6.28,4.49,7.99,121,Per lb
+2026-11-09,Southcentral,Gizzards,Conventional,Frozen,1.29,1.29,1.29,25,Per lb
+2026-11-09,Southcentral,Grilled Chicken Strips,Conventional,Prepared,7.49,7.49,7.49,25,Per lb
+2026-11-09,Southcentral,Grilled Chicken Strips,Conventional,Prepared,10.48,7.97,11.97,76,Per lb
+2026-11-09,Southcentral,Ground Chicken,Antibiotic Free,Fresh,5.9,4.99,6.98,281,Per lb
+2026-11-09,Southcentral,Ground Chicken,Conventional,Fresh,3.33,3.33,3.33,29,Per lb
+2026-11-09,Southcentral,Leg Quarters,Conventional,Fresh,0.68,0.59,0.99,136,Per lb
+2026-11-09,Southcentral,Leg Quarters,Conventional,Fresh,0.99,0.99,0.99,4,Per lb
+2026-11-09,Southcentral,Leg Quarters,Conventional,Fresh,1.29,1.29,1.29,95,Per lb
+2026-11-09,Southcentral,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,4.31,3.2,4.99,66,Per lb
+2026-11-09,Southcentral,"Party Wings, Flats and Drums",Conventional,Fresh,2.4,1.59,3.49,68,Per lb
+2026-11-09,Southcentral,"Party Wings, Flats and Drums",Conventional,Fresh,2.6,1.98,2.68,145,Per lb
+2026-11-09,Southcentral,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,2.69,2.0,3.66,147,Per lb
+2026-11-09,Southcentral,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,4.99,4.99,4.99,39,Per lb
+2026-11-09,Southcentral,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,7.09,7.09,7.09,29,Per lb
+2026-11-09,Southcentral,Service Deli - Cat 1,Conventional,Prepared,10.18,7.99,10.99,116,Per lb
+2026-11-09,Southcentral,"Split Breast, Bone-In",Conventional,Fresh,1.69,1.69,1.69,341,Per lb
+2026-11-09,Southcentral,Thighs,Antibiotic Free,Fresh,2.49,2.49,2.49,75,Per lb
+2026-11-09,Southcentral,Thighs,Antibiotic Free,Fresh,1.49,1.49,1.49,6,Per lb
+2026-11-09,Southcentral,Thighs,Conventional,Fresh,1.4,1.29,1.99,74,Per lb
+2026-11-09,Southcentral,Thighs,Conventional,Fresh,1.24,0.99,1.78,667,Per lb
+2026-11-09,Southcentral,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.49,3.49,3.49,25,Per lb
+2026-11-09,Southcentral,"Thighs, Boneless/Skinless",Conventional,Fresh,3.59,1.99,4.49,295,Per lb
+2026-11-09,Southcentral,"Thighs, Boneless/Skinless",Conventional,Fresh,2.05,1.69,3.57,38,Per lb
+2026-11-09,Southcentral,V-Cut Wings,Conventional,Fresh,2.47,2.47,2.47,3,Per lb
+2026-11-09,Southcentral,V-Cut Wings,Conventional,Fresh,1.84,1.77,1.99,88,Per lb
+2026-11-09,Southcentral,Whole Bagged Fryer,Antibiotic Free,Fresh,1.95,1.49,1.97,43,Per lb
+2026-11-09,Southcentral,Whole Bagged Fryer,Conventional,Fresh,1.24,0.99,1.89,366,Per lb
+2026-11-09,Southcentral,Whole Bagged Fryer,USDA Organic,Fresh,4.02,4.0,4.99,83,Per lb
+2026-11-09,Southcentral,Whole Baking Hen,Conventional,Fresh,1.89,1.89,1.89,59,Per lb
+2026-11-09,Southcentral,Whole Cornish Hen,Conventional,Frozen,4.37,4.36,4.4,101,Per lb
+2026-11-09,Southcentral,"Whole Rotisserie Chicken, 2.1-3.0 Lbs",Conventional,Prepared,8.99,8.99,8.99,62,Each
+2026-11-09,Southcentral,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,6.95,4.98,8.99,168,Each
+2026-11-09,Southeast,Breast Tenders,Antibiotic Free,Fresh,4.99,4.99,4.99,32,Per lb
+2026-11-09,Southeast,Breast Tenders,Conventional,Fresh,3.83,2.49,3.98,209,Per lb
+2026-11-09,Southeast,Breast Tenders,Conventional,Fresh,3.85,2.49,3.98,214,Per lb
+2026-11-09,Southeast,"Breast Tenders, IQF",Conventional,Frozen,4.4,4.4,4.4,175,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.86,2.99,6.99,159,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.99,5.99,5.99,103,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless",Conventional,Fresh,3.72,2.49,4.79,99,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless",Conventional,Fresh,2.24,1.69,2.99,342,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.2,1.99,4.4,350,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless, Marinated",Conventional,Fresh,5.66,5.66,5.66,1426,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,3.41,2.99,6.99,19,Per lb
+2026-11-09,Southeast,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.79,1.99,4.99,5,Per lb
+2026-11-09,Southeast,Drumsticks,Antibiotic Free,Fresh,1.0,0.99,1.69,305,Per lb
+2026-11-09,Southeast,Drumsticks,Conventional,Fresh,1.89,0.99,1.99,208,Per lb
+2026-11-09,Southeast,Drumsticks,Conventional,Fresh,0.92,0.68,1.58,358,Per lb
+2026-11-09,Southeast,Fried/Baked Breast Tenders,Conventional,Prepared,1.25,1.25,1.25,140,Each
+2026-11-09,Southeast,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.0,6.99,8.99,1178,Each
+2026-11-09,Southeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,9.65,7.99,10.0,312,Each
+2026-11-09,Southeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.06,0.99,1.12,2,Each
+2026-11-09,Southeast,"Fried/Baked Wings, Bone-In",Conventional,Prepared,7.99,7.99,7.99,14,Per lb
+2026-11-09,Southeast,"Fried/Baked Wings, Bone-In",Conventional,Prepared,0.89,0.89,0.89,1426,Each
+2026-11-09,Southeast,"Fried/Baked Wings, Boneless",Conventional,Prepared,8.0,8.0,8.0,84,Per lb
+2026-11-09,Southeast,Grilled Chicken Strips,Antibiotic Free,Prepared,6.66,6.66,6.66,12,Per lb
+2026-11-09,Southeast,Ground Chicken,Antibiotic Free,Fresh,3.99,3.99,3.99,1426,Per lb
+2026-11-09,Southeast,Leg Quarters,Conventional,Fresh,1.19,1.19,1.19,3,Per lb
+2026-11-09,Southeast,Leg Quarters,Conventional,Fresh,0.98,0.79,1.29,96,Per lb
+2026-11-09,Southeast,"Party Wings, Flats and Drums",Conventional,Fresh,1.76,1.59,1.99,77,Per lb
+2026-11-09,Southeast,"Party Wings, Flats and Drums",Conventional,Fresh,3.44,1.98,3.49,60,Per lb
+2026-11-09,Southeast,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.65,2.4,3.66,177,Per lb
+2026-11-09,Southeast,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,9.66,8.87,9.98,83,Per lb
+2026-11-09,Southeast,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,7.92,7.92,7.92,47,Per lb
+2026-11-09,Southeast,Service Deli - Cat 1,Conventional,Prepared,9.1,8.99,10.99,36,Per lb
+2026-11-09,Southeast,"Split Breast, Bone-In",Antibiotic Free,Fresh,2.29,2.29,2.29,37,Per lb
+2026-11-09,Southeast,"Split Breast, Bone-In",Conventional,Fresh,1.68,1.58,1.69,790,Per lb
+2026-11-09,Southeast,Thighs,Antibiotic Free,Fresh,1.21,0.99,2.99,339,Per lb
+2026-11-09,Southeast,Thighs,Conventional,Fresh,1.89,0.99,1.99,208,Per lb
+2026-11-09,Southeast,Thighs,Conventional,Fresh,1.33,0.99,1.98,138,Per lb
+2026-11-09,Southeast,"Thighs, Boneless/Skinless",Conventional,Fresh,2.99,2.99,2.99,32,Per lb
+2026-11-09,Southeast,"Thighs, Boneless/Skinless",Conventional,Fresh,2.98,2.98,2.98,17,Per lb
+2026-11-09,Southeast,V-Cut Wings,Antibiotic Free,Fresh,1.99,1.99,1.99,302,Per lb
+2026-11-09,Southeast,V-Cut Wings,Antibiotic Free,Fresh,3.99,3.99,3.99,3,Per lb
+2026-11-09,Southeast,"V-Cut Wings, IQF",Conventional,Frozen,1.47,1.45,1.99,29,Per lb
+2026-11-09,Southeast,Whole Bagged Fryer,Antibiotic Free,Fresh,2.49,2.49,2.49,17,Per lb
+2026-11-09,Southeast,Whole Bagged Fryer,Conventional,Fresh,1.75,1.49,1.88,207,Per lb
+2026-11-09,Southeast,Whole Bagged Fryer,USDA Organic,Fresh,4.0,4.0,4.0,95,Per lb
+2026-11-09,Southeast,Whole Bagged Fryer,"USDA Organic, Free Range",Fresh,1.99,1.99,1.99,93,Per lb
+2026-11-09,Southeast,Whole Baking Hen,Conventional,Fresh,1.38,1.38,1.38,32,Per lb
+2026-11-09,Southeast,Whole Cornish Hen,Conventional,Fresh,3.19,3.19,3.19,1,Per lb
+2026-11-09,Southeast,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,6.89,5.99,7.99,278,Each
+2026-11-09,Southwest,Breast Tenders,"ABF, Free Range",Fresh,5.99,5.99,5.99,135,Per lb
+2026-11-09,Southwest,Breast Tenders,Antibiotic Free,Fresh,6.99,6.99,6.99,118,Per lb
+2026-11-09,Southwest,Breast Tenders,Conventional,Fresh,2.93,2.49,2.99,209,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless","ABF, Free Range",Fresh,5.99,5.99,5.99,135,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,6.9,5.58,6.99,382,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.99,5.99,5.99,228,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.88,1.99,3.49,554,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.6,1.99,2.99,392,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless",USDA Organic,Fresh,8.99,8.99,8.99,31,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless","USDA Organic, Free Range",Fresh,8.99,8.99,8.99,17,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,6.99,6.99,6.99,118,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.99,4.99,4.99,27,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.79,3.49,4.0,153,Per lb
+2026-11-09,Southwest,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.23,2.99,3.49,140,Per lb
+2026-11-09,Southwest,Drumsticks,Antibiotic Free,Fresh,1.38,1.29,1.47,249,Per lb
+2026-11-09,Southwest,Drumsticks,Conventional,Fresh,1.26,1.19,1.29,218,Per lb
+2026-11-09,Southwest,Drumsticks,Conventional,Fresh,1.29,0.97,1.69,472,Per lb
+2026-11-09,Southwest,Fried/Baked Breast Tenders,Conventional,Prepared,8.19,5.99,8.99,179,Per lb
+2026-11-09,Southwest,"Fried/Baked Chicken, Dark",Conventional,Prepared,6.97,6.97,6.97,51,Each
+2026-11-09,Southwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.49,7.99,10.0,533,Each
+2026-11-09,Southwest,"Fried/Baked Wings, Bone-In",Conventional,Prepared,4.99,4.99,4.99,65,Per lb
+2026-11-09,Southwest,"Fried/Baked Wings, Bone-In",Conventional,Prepared,0.93,0.93,0.93,89,Each
+2026-11-09,Southwest,Grilled Chicken Strips,Conventional,Prepared,10.64,10.64,10.64,77,Per lb
+2026-11-09,Southwest,Ground Chicken,Antibiotic Free,Fresh,4.99,4.99,4.99,18,Per lb
+2026-11-09,Southwest,"Leg Meat, Boneless/Skinless",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-09,Southwest,"Leg Meat, Boneless/Skinless",Conventional,Fresh,2.48,2.48,2.48,45,Per lb
+2026-11-09,Southwest,"Leg Meat, Boneless/Skinless, Marinated",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-09,Southwest,Leg Quarters,Conventional,Fresh,0.87,0.77,0.99,122,Per lb
+2026-11-09,Southwest,Leg Quarters,Conventional,Fresh,1.29,1.29,1.29,355,Per lb
+2026-11-09,Southwest,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,5.49,5.49,5.49,14,Per lb
+2026-11-09,Southwest,Service Deli - Cat 1,Conventional,Prepared,10.99,10.99,10.99,27,Per lb
+2026-11-09,Southwest,"Split Breast, Bone-In",Conventional,Fresh,1.69,1.69,1.69,128,Per lb
+2026-11-09,Southwest,"Split Breast, Bone-In",Conventional,Fresh,1.99,1.99,1.99,13,Per lb
+2026-11-09,Southwest,Thighs,Antibiotic Free,Fresh,1.38,1.29,1.47,249,Per lb
+2026-11-09,Southwest,Thighs,Antibiotic Free,Fresh,3.49,3.49,3.49,17,Per lb
+2026-11-09,Southwest,Thighs,Conventional,Fresh,1.29,1.29,1.29,89,Per lb
+2026-11-09,Southwest,Thighs,Conventional,Fresh,1.85,1.29,2.99,588,Per lb
+2026-11-09,Southwest,"Thighs, Boneless/Skinless","ABF, Free Range",Fresh,5.99,5.99,5.99,135,Per lb
+2026-11-09,Southwest,"Thighs, Boneless/Skinless",Conventional,Fresh,1.99,1.99,1.99,41,Per lb
+2026-11-09,Southwest,"Thighs, Boneless/Skinless",Conventional,Fresh,2.85,2.69,3.57,124,Per lb
+2026-11-09,Southwest,V-Cut Wings,Antibiotic Free,Fresh,1.99,1.99,1.99,254,Per lb
+2026-11-09,Southwest,V-Cut Wings,Conventional,Fresh,2.47,2.47,2.47,66,Per lb
+2026-11-09,Southwest,Whole Bagged Fryer,Antibiotic Free,Fresh,1.42,1.29,2.99,142,Per lb
+2026-11-09,Southwest,Whole Bagged Fryer,Conventional,Fresh,1.59,1.59,1.59,2,Per lb
+2026-11-09,Southwest,Whole Bagged Fryer,USDA Organic,Fresh,4.17,4.0,4.99,135,Per lb
+2026-11-09,Southwest,Whole Bagged Fryer,"USDA Organic, Free Range",Fresh,3.99,3.99,3.99,17,Per lb
+2026-11-09,Southwest,"Whole Rotisserie Chicken, 2.1-3.0 Lbs",Conventional,Prepared,8.99,8.99,8.99,66,Each
+2026-11-09,Southwest,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,8.63,7.99,8.99,140,Each
+2026-11-16,Alaska,Breast Tenders,Conventional,Fresh,3.99,3.99,3.99,38,Per lb
+2026-11-16,Alaska,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,4.99,4.99,4.99,11,Per lb
+2026-11-16,Alaska,"Breast, Boneless/Skinless",Conventional,Fresh,2.78,2.78,2.78,3,Per lb
+2026-11-16,Alaska,"Breast, Boneless/Skinless, Marinated",Conventional,Fresh,3.28,3.28,3.28,3,Per lb
+2026-11-16,Alaska,Drumsticks,Conventional,Fresh,1.59,1.59,1.59,3,Per lb
+2026-11-16,Alaska,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.99,8.99,8.99,2,Each
+2026-11-16,Alaska,Whole Bagged Fryer,Antibiotic Free,Fresh,1.59,1.59,1.59,3,Per lb
+2026-11-16,Hawaii,Drumsticks,Conventional,Frozen,2.59,2.59,2.59,25,Per lb
+2026-11-16,Hawaii,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,2.2,2.2,2.2,25,Per lb
+2026-11-16,Hawaii,Thighs,Conventional,Frozen,2.59,2.59,2.59,25,Per lb
+2026-11-16,Hawaii,Whole Cornish Hen,Conventional,Frozen,5.06,5.06,5.06,7,Per lb
+2026-11-16,Midwest,Breast Tenders,Antibiotic Free,Fresh,5.89,5.49,5.99,458,Per lb
+2026-11-16,Midwest,Breast Tenders,Conventional,Fresh,4.99,4.99,4.99,20,Per lb
+2026-11-16,Midwest,Breast Tenders,Conventional,Fresh,2.99,2.99,2.99,18,Per lb
+2026-11-16,Midwest,"Breast Tenders, IQF",Conventional,Frozen,4.4,4.4,4.4,311,Per lb
+2026-11-16,Midwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.85,3.99,7.1,500,Per lb
+2026-11-16,Midwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.51,1.99,4.99,151,Per lb
+2026-11-16,Midwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.73,2.59,3.99,347,Per lb
+2026-11-16,Midwest,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.17,1.99,4.4,655,Per lb
+2026-11-16,Midwest,"Breast, Boneless/Skinless, Marinated",Conventional,Fresh,4.0,4.0,4.0,22,Per lb
+2026-11-16,Midwest,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,5.69,4.49,5.99,141,Per lb
+2026-11-16,Midwest,Drumsticks,Antibiotic Free,Fresh,2.61,2.38,2.69,121,Per lb
+2026-11-16,Midwest,Drumsticks,Antibiotic Free,Fresh,0.99,0.99,0.99,20,Per lb
+2026-11-16,Midwest,Drumsticks,Conventional,Fresh,1.49,1.49,1.49,107,Per lb
+2026-11-16,Midwest,Drumsticks,Conventional,Fresh,1.34,1.29,1.99,297,Per lb
+2026-11-16,Midwest,Fried/Baked Breast Tenders,Conventional,Prepared,8.99,8.99,8.99,18,Per lb
+2026-11-16,Midwest,Fried/Baked Breast Tenders,Conventional,Prepared,12.0,12.0,12.0,28,Each
+2026-11-16,Midwest,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.15,6.99,7.44,31,Each
+2026-11-16,Midwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,9.99,9.99,9.99,189,Each
+2026-11-16,Midwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,9.4,7.99,9.99,32,Each
+2026-11-16,Midwest,"Fried/Baked Wings, Bone-In",Conventional,Prepared,6.49,5.0,6.66,210,Per lb
+2026-11-16,Midwest,Gizzards,Conventional,Fresh,3.01,1.99,3.99,41,Per lb
+2026-11-16,Midwest,Ground Chicken,Antibiotic Free,Fresh,5.44,2.99,6.49,73,Per lb
+2026-11-16,Midwest,Hearts,Conventional,Fresh,3.99,3.99,3.99,21,Per lb
+2026-11-16,Midwest,Leg Quarters,Antibiotic Free,Fresh,1.49,1.49,1.49,16,Per lb
+2026-11-16,Midwest,Leg Quarters,Antibiotic Free,Fresh,1.49,1.49,1.49,112,Per lb
+2026-11-16,Midwest,Leg Quarters,Conventional,Fresh,1.99,1.99,1.99,20,Per lb
+2026-11-16,Midwest,"Leg Quarters, Marinated",Conventional,Fresh,2.99,2.99,2.99,21,Per lb
+2026-11-16,Midwest,Liver,Conventional,Fresh,3.01,1.99,3.99,41,Per lb
+2026-11-16,Midwest,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,3.99,3.99,3.99,53,Per lb
+2026-11-16,Midwest,"Party Wings, Flats and Drums",Conventional,Fresh,3.07,1.69,3.99,70,Per lb
+2026-11-16,Midwest,"Party Wings, Flats and Drums",Conventional,Fresh,3.99,3.99,3.99,18,Per lb
+2026-11-16,Midwest,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.03,1.36,3.66,750,Per lb
+2026-11-16,Midwest,Rotisserie Leg Quarter,Conventional,Prepared,0.99,0.99,0.99,21,Each
+2026-11-16,Midwest,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,5.99,5.99,5.99,22,Per lb
+2026-11-16,Midwest,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,7.54,7.09,7.98,514,Per lb
+2026-11-16,Midwest,Service Deli - Cat 1,Conventional,Prepared,9.77,8.99,10.99,730,Per lb
+2026-11-16,Midwest,Service Deli - Cat 2,Conventional,Prepared,6.99,6.99,6.99,20,Per lb
+2026-11-16,Midwest,"Split Breast, Bone-In",Conventional,Fresh,2.99,2.99,2.99,20,Per lb
+2026-11-16,Midwest,Thighs,Antibiotic Free,Fresh,2.11,1.88,2.69,378,Per lb
+2026-11-16,Midwest,Thighs,Conventional,Fresh,1.49,1.49,1.49,107,Per lb
+2026-11-16,Midwest,Thighs,Conventional,Fresh,2.47,1.99,2.99,42,Per lb
+2026-11-16,Midwest,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.41,2.99,3.99,38,Per lb
+2026-11-16,Midwest,"Thighs, Boneless/Skinless",Conventional,Fresh,3.48,2.99,3.99,41,Per lb
+2026-11-16,Midwest,V-Cut Wings,Conventional,Fresh,2.99,2.99,2.99,20,Per lb
+2026-11-16,Midwest,V-Cut Wings,Conventional,Fresh,2.99,2.99,2.99,21,Per lb
+2026-11-16,Midwest,Whole Bagged Fryer,Antibiotic Free,Fresh,1.77,1.49,2.49,363,Per lb
+2026-11-16,Midwest,Whole Bagged Fryer,Conventional,Fresh,1.38,0.99,1.99,408,Per lb
+2026-11-16,Midwest,Whole Bagged Roaster,Conventional,Fresh,1.79,1.79,1.79,22,Per lb
+2026-11-16,Midwest,Whole Baking Hen,Conventional,Fresh,0.99,0.99,0.99,22,Per lb
+2026-11-16,Midwest,Whole Cornish Hen,Antibiotic Free,Frozen,3.0,3.0,3.0,20,Per lb
+2026-11-16,Midwest,Whole Cornish Hen,Conventional,Fresh,4.58,4.36,4.79,43,Per lb
+2026-11-16,Midwest,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,8.39,7.59,8.99,61,Each
+2026-11-16,NATIONAL,Breast Tenders,"ABF, Free Range",Fresh,6.99,6.99,6.99,360,Per lb
+2026-11-16,NATIONAL,Breast Tenders,Antibiotic Free,Fresh,5.86,2.49,7.99,1190,Per lb
+2026-11-16,NATIONAL,Breast Tenders,Conventional,Fresh,4.09,1.88,4.99,273,Per lb
+2026-11-16,NATIONAL,Breast Tenders,Conventional,Fresh,2.67,1.97,3.99,526,Per lb
+2026-11-16,NATIONAL,Breast Tenders,USDA Organic,Fresh,7.99,7.99,7.99,313,Per lb
+2026-11-16,NATIONAL,"Breast Tenders, IQF",Conventional,Frozen,4.37,3.19,4.4,697,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless","ABF, Free Range",Fresh,6.08,5.99,6.99,396,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless","ABF, Free Range",Fresh,5.99,5.99,5.99,11,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,4.51,2.49,7.1,3046,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,4.54,1.99,5.99,755,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless",Conventional,Fresh,2.28,0.98,4.99,915,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless",Conventional,Fresh,2.44,1.79,3.99,2151,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless",Kosher,Fresh,10.99,10.99,10.99,166,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless","USDA Organic, Free Range",Fresh,7.58,6.99,8.99,58,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.19,1.99,4.4,1409,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless, Marinated",Conventional,Fresh,3.91,3.28,4.0,25,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.89,2.99,7.99,799,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.39,2.49,4.99,521,Per lb
+2026-11-16,NATIONAL,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,2.57,2.5,2.99,198,Per lb
+2026-11-16,NATIONAL,Drumsticks,Antibiotic Free,Fresh,1.78,0.99,2.69,693,Per lb
+2026-11-16,NATIONAL,Drumsticks,Antibiotic Free,Fresh,1.28,0.99,1.59,481,Per lb
+2026-11-16,NATIONAL,Drumsticks,Conventional,Fresh,0.99,0.99,0.99,29,Per lb
+2026-11-16,NATIONAL,Drumsticks,Conventional,Frozen,2.59,2.59,2.59,25,Per lb
+2026-11-16,NATIONAL,Drumsticks,Conventional,Frozen,1.29,1.29,1.29,45,Per lb
+2026-11-16,NATIONAL,Fried/Baked Breast Tenders,Conventional,Prepared,7.75,6.99,8.99,483,Per lb
+2026-11-16,NATIONAL,Fried/Baked Breast Tenders,Conventional,Prepared,12.0,12.0,12.0,34,Each
+2026-11-16,NATIONAL,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.69,6.99,7.99,551,Each
+2026-11-16,NATIONAL,"Fried/Baked Chicken, Mixed",Conventional,Prepared,9.99,9.99,9.99,189,Each
+2026-11-16,NATIONAL,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.49,7.99,11.99,1719,Each
+2026-11-16,NATIONAL,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.06,0.99,1.12,24,Each
+2026-11-16,NATIONAL,"Fried/Baked Wings, Bone-In",Conventional,Prepared,6.72,4.49,8.99,523,Per lb
+2026-11-16,NATIONAL,"Fried/Baked Wings, Bone-In",Conventional,Prepared,1.2,1.2,1.2,147,Each
+2026-11-16,NATIONAL,Gizzards,Antibiotic Free,Fresh,1.49,1.49,1.49,91,Per lb
+2026-11-16,NATIONAL,Gizzards,Conventional,Frozen,1.44,1.29,1.49,101,Per lb
+2026-11-16,NATIONAL,Grilled Chicken Strips,Antibiotic Free,Prepared,7.7,5.98,11.0,111,Per lb
+2026-11-16,NATIONAL,Ground Chicken,Antibiotic Free,Fresh,4.5,2.99,6.49,1175,Per lb
+2026-11-16,NATIONAL,Ground Chicken,"USDA Organic, Free Range",Fresh,6.99,6.99,6.99,17,Per lb
+2026-11-16,NATIONAL,Ground Chicken Patties,Antibiotic Free,Fresh,4.99,4.99,4.99,19,Per lb
+2026-11-16,NATIONAL,Hearts,Conventional,Fresh,2.32,1.59,3.99,73,Per lb
+2026-11-16,NATIONAL,"Leg Meat, Boneless/Skinless",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-16,NATIONAL,"Leg Meat, Boneless/Skinless",Conventional,Fresh,2.48,2.48,2.48,45,Per lb
+2026-11-16,NATIONAL,"Leg Meat, Boneless/Skinless, Marinated",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-16,NATIONAL,Leg Quarters,Antibiotic Free,Fresh,1.24,0.99,1.49,232,Per lb
+2026-11-16,NATIONAL,Leg Quarters,Antibiotic Free,Fresh,1.49,1.49,1.49,114,Per lb
+2026-11-16,NATIONAL,Leg Quarters,Conventional,Fresh,0.7,0.59,0.99,238,Per lb
+2026-11-16,NATIONAL,Leg Quarters,Conventional,Fresh,1.41,0.79,1.99,39,Per lb
+2026-11-16,NATIONAL,Leg Quarters,Conventional,Fresh,1.63,1.29,1.69,390,Per lb
+2026-11-16,NATIONAL,"Leg Quarters, Marinated",Conventional,Fresh,2.0,1.29,2.99,50,Per lb
+2026-11-16,NATIONAL,Legs,"ABF, Free Range",Fresh,4.49,4.49,4.49,12,Per lb
+2026-11-16,NATIONAL,Legs,Antibiotic Free,Fresh,3.49,3.49,3.49,168,Per lb
+2026-11-16,NATIONAL,Legs,Antibiotic Free,Fresh,1.19,1.19,1.19,41,Per lb
+2026-11-16,NATIONAL,Legs,Conventional,Fresh,1.49,1.49,1.49,30,Per lb
+2026-11-16,NATIONAL,Liver,Antibiotic Free,Fresh,3.55,3.55,3.55,20,Per lb
+2026-11-16,NATIONAL,Liver,Conventional,Frozen,1.49,1.49,1.49,76,Per lb
+2026-11-16,NATIONAL,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,3.76,3.69,3.99,470,Per lb
+2026-11-16,NATIONAL,"Party Wings, Flats and Drums",Conventional,Fresh,2.79,1.69,3.99,126,Per lb
+2026-11-16,NATIONAL,"Party Wings, Flats and Drums",Conventional,Fresh,2.76,1.77,3.99,631,Per lb
+2026-11-16,NATIONAL,"Party Wings, Flats and Drums","USDA Organic, Free Range",Fresh,4.99,4.99,4.99,17,Per lb
+2026-11-16,NATIONAL,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.01,1.36,3.66,1431,Per lb
+2026-11-16,NATIONAL,Rotisserie Leg Quarter,Conventional,Prepared,0.99,0.99,0.99,21,Each
+2026-11-16,NATIONAL,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,5.91,4.99,6.57,113,Per lb
+2026-11-16,NATIONAL,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,7.39,5.32,7.98,646,Per lb
+2026-11-16,NATIONAL,Service Deli - Cat 1,Conventional,Prepared,9.81,8.99,11.99,1115,Per lb
+2026-11-16,NATIONAL,Service Deli - Cat 2,Conventional,Prepared,7.74,6.99,7.99,79,Per lb
+2026-11-16,NATIONAL,"Split Breast, Bone-In",Antibiotic Free,Fresh,2.88,2.29,4.99,127,Per lb
+2026-11-16,NATIONAL,"Split Breast, Bone-In",Conventional,Fresh,2.61,2.49,2.99,84,Per lb
+2026-11-16,NATIONAL,"Split Breast, Bone-In",Conventional,Fresh,2.05,1.99,2.39,231,Per lb
+2026-11-16,NATIONAL,Thighs,Antibiotic Free,Fresh,2.04,1.79,2.99,897,Per lb
+2026-11-16,NATIONAL,Thighs,Antibiotic Free,Fresh,1.41,1.29,1.99,391,Per lb
+2026-11-16,NATIONAL,Thighs,Conventional,Frozen,2.59,2.59,2.59,25,Per lb
+2026-11-16,NATIONAL,Thighs,Conventional,Fresh,1.77,1.48,2.99,429,Per lb
+2026-11-16,NATIONAL,Thighs,USDA Organic,Fresh,5.49,5.49,5.49,17,Per lb
+2026-11-16,NATIONAL,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.5,2.99,3.99,206,Per lb
+2026-11-16,NATIONAL,"Thighs, Boneless/Skinless",Conventional,Frozen,3.19,3.19,3.19,18,Per lb
+2026-11-16,NATIONAL,"Thighs, Boneless/Skinless",Conventional,Fresh,2.85,1.58,3.99,541,Per lb
+2026-11-16,NATIONAL,V-Cut Wings,Antibiotic Free,Fresh,3.99,3.99,3.99,52,Per lb
+2026-11-16,NATIONAL,V-Cut Wings,Antibiotic Free,Fresh,2.99,2.99,2.99,11,Per lb
+2026-11-16,NATIONAL,V-Cut Wings,Conventional,Fresh,3.34,2.99,4.0,491,Per lb
+2026-11-16,NATIONAL,V-Cut Wings,Conventional,Fresh,2.37,1.77,2.99,297,Per lb
+2026-11-16,NATIONAL,"V-Cut Wings, IQF",Conventional,Frozen,1.99,1.99,1.99,12,Per lb
+2026-11-16,NATIONAL,Whole Bagged Fryer,"ABF, Free Range",Fresh,1.49,1.49,1.49,11,Per lb
+2026-11-16,NATIONAL,Whole Bagged Fryer,"ABF, Pasture Raised",Fresh,3.99,3.99,3.99,484,Per lb
+2026-11-16,NATIONAL,Whole Bagged Fryer,Antibiotic Free,Fresh,2.0,1.49,2.49,1489,Per lb
+2026-11-16,NATIONAL,Whole Bagged Fryer,Conventional,Frozen,1.11,0.88,1.59,196,Per lb
+2026-11-16,NATIONAL,Whole Bagged Fryer,USDA Organic,Fresh,5.47,4.59,5.99,40,Per lb
+2026-11-16,NATIONAL,Whole Bagged Roaster,Conventional,Fresh,1.71,1.39,2.29,341,Per lb
+2026-11-16,NATIONAL,Whole Baking Hen,Conventional,Frozen,1.38,1.29,1.48,68,Per lb
+2026-11-16,NATIONAL,Whole Cornish Hen,Antibiotic Free,Frozen,3.57,3.0,3.63,214,Per lb
+2026-11-16,NATIONAL,Whole Cornish Hen,Conventional,Frozen,3.38,2.99,5.06,1904,Per lb
+2026-11-16,NATIONAL,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,7.65,4.99,9.99,3543,Each
+2026-11-16,Northeast,Breast Tenders,"ABF, Free Range",Fresh,6.99,6.99,6.99,360,Per lb
+2026-11-16,Northeast,Breast Tenders,Antibiotic Free,Fresh,5.33,2.49,7.99,455,Per lb
+2026-11-16,Northeast,Breast Tenders,Conventional,Fresh,2.49,2.49,2.49,77,Per lb
+2026-11-16,Northeast,Breast Tenders,USDA Organic,Fresh,7.99,7.99,7.99,313,Per lb
+2026-11-16,Northeast,"Breast Tenders, IQF",Conventional,Frozen,4.4,4.4,4.4,132,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless","ABF, Free Range",Fresh,6.04,5.99,6.99,379,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,3.07,2.49,4.99,702,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,3.32,1.99,3.99,309,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless",Conventional,Fresh,2.24,1.99,2.99,194,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless",Conventional,Fresh,2.2,1.88,2.99,960,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless",Kosher,Fresh,10.99,10.99,10.99,108,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.2,1.99,4.4,264,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.22,2.99,7.99,532,Per lb
+2026-11-16,Northeast,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.02,2.49,4.99,268,Per lb
+2026-11-16,Northeast,Drumsticks,Antibiotic Free,Fresh,1.47,0.99,2.49,470,Per lb
+2026-11-16,Northeast,Drumsticks,Antibiotic Free,Fresh,1.3,0.99,1.59,461,Per lb
+2026-11-16,Northeast,Drumsticks,Conventional,Fresh,1.69,1.69,1.69,278,Per lb
+2026-11-16,Northeast,Fried/Baked Breast Tenders,Conventional,Prepared,6.99,6.99,6.99,91,Per lb
+2026-11-16,Northeast,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.95,7.0,7.99,266,Each
+2026-11-16,Northeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,9.26,7.99,9.99,267,Each
+2026-11-16,Northeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.06,0.99,1.12,22,Each
+2026-11-16,Northeast,"Fried/Baked Wings, Bone-In",Conventional,Prepared,5.99,5.99,5.99,91,Per lb
+2026-11-16,Northeast,"Fried/Baked Wings, Bone-In",Conventional,Prepared,1.2,1.2,1.2,147,Each
+2026-11-16,Northeast,Gizzards,Antibiotic Free,Fresh,1.49,1.49,1.49,91,Per lb
+2026-11-16,Northeast,Gizzards,Conventional,Fresh,1.72,1.59,1.99,283,Per lb
+2026-11-16,Northeast,Grilled Chicken Strips,Antibiotic Free,Prepared,7.7,5.98,11.0,111,Per lb
+2026-11-16,Northeast,Ground Chicken,Antibiotic Free,Fresh,4.53,2.99,5.99,805,Per lb
+2026-11-16,Northeast,Ground Chicken Patties,Antibiotic Free,Fresh,4.99,4.99,4.99,19,Per lb
+2026-11-16,Northeast,Hearts,Conventional,Fresh,1.59,1.59,1.59,23,Per lb
+2026-11-16,Northeast,Leg Quarters,Antibiotic Free,Fresh,1.22,0.99,1.29,213,Per lb
+2026-11-16,Northeast,Leg Quarters,Conventional,Fresh,0.79,0.79,0.79,19,Per lb
+2026-11-16,Northeast,Leg Quarters,Conventional,Fresh,1.69,1.69,1.69,278,Per lb
+2026-11-16,Northeast,Legs,Antibiotic Free,Fresh,3.49,3.49,3.49,168,Per lb
+2026-11-16,Northeast,Legs,Antibiotic Free,Fresh,1.19,1.19,1.19,41,Per lb
+2026-11-16,Northeast,Liver,Antibiotic Free,Fresh,3.55,3.55,3.55,20,Per lb
+2026-11-16,Northeast,Liver,Conventional,Fresh,1.56,1.49,1.59,264,Per lb
+2026-11-16,Northeast,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,3.69,3.69,3.69,360,Per lb
+2026-11-16,Northeast,"Party Wings, Flats and Drums",Conventional,Fresh,2.39,1.79,2.49,366,Per lb
+2026-11-16,Northeast,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,2.7,1.99,3.66,339,Per lb
+2026-11-16,Northeast,Service Deli - Cat 1,Conventional,Prepared,9.73,8.99,11.99,298,Per lb
+2026-11-16,Northeast,"Split Breast, Bone-In",Antibiotic Free,Fresh,3.15,2.49,4.99,87,Per lb
+2026-11-16,Northeast,"Split Breast, Bone-In",Conventional,Fresh,1.99,1.99,1.99,53,Per lb
+2026-11-16,Northeast,Thighs,Antibiotic Free,Fresh,1.79,1.79,1.79,365,Per lb
+2026-11-16,Northeast,Thighs,Antibiotic Free,Fresh,1.41,1.29,1.99,391,Per lb
+2026-11-16,Northeast,Thighs,Conventional,Fresh,1.93,1.59,2.49,290,Per lb
+2026-11-16,Northeast,Thighs,Conventional,Fresh,1.69,1.69,1.69,278,Per lb
+2026-11-16,Northeast,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.99,3.99,3.99,73,Per lb
+2026-11-16,Northeast,"Thighs, Boneless/Skinless",Conventional,Fresh,2.99,2.99,2.99,14,Per lb
+2026-11-16,Northeast,"Thighs, Boneless/Skinless",Conventional,Fresh,2.99,2.99,2.99,278,Per lb
+2026-11-16,Northeast,V-Cut Wings,Antibiotic Free,Fresh,3.99,3.99,3.99,49,Per lb
+2026-11-16,Northeast,V-Cut Wings,Conventional,Fresh,2.99,2.99,2.99,19,Per lb
+2026-11-16,Northeast,"V-Cut Wings, IQF",Conventional,Frozen,1.99,1.99,1.99,11,Per lb
+2026-11-16,Northeast,Whole Bagged Fryer,"ABF, Pasture Raised",Fresh,3.99,3.99,3.99,23,Per lb
+2026-11-16,Northeast,Whole Bagged Fryer,Antibiotic Free,Fresh,2.33,1.69,2.49,359,Per lb
+2026-11-16,Northeast,Whole Bagged Fryer,Conventional,Fresh,1.66,1.49,1.99,280,Per lb
+2026-11-16,Northeast,Whole Bagged Fryer,USDA Organic,Fresh,5.99,5.99,5.99,25,Per lb
+2026-11-16,Northeast,Whole Bagged Roaster,Conventional,Fresh,1.53,1.39,1.83,245,Per lb
+2026-11-16,Northeast,Whole Cornish Hen,Conventional,Frozen,3.86,2.99,4.99,261,Per lb
+2026-11-16,Northeast,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,6.28,4.99,9.99,511,Each
+2026-11-16,Northwest,Breast Tenders,Antibiotic Free,Fresh,6.73,4.49,7.99,53,Per lb
+2026-11-16,Northwest,"Breast, Boneless/Skinless","ABF, Free Range",Fresh,5.99,5.99,5.99,11,Per lb
+2026-11-16,Northwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,4.73,3.49,4.99,139,Per lb
+2026-11-16,Northwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,4.99,4.99,4.99,25,Per lb
+2026-11-16,Northwest,"Breast, Boneless/Skinless",Conventional,Fresh,3.99,3.99,3.99,13,Per lb
+2026-11-16,Northwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.22,1.99,2.37,34,Per lb
+2026-11-16,Northwest,"Breast, Boneless/Skinless","USDA Organic, Free Range",Fresh,6.99,6.99,6.99,41,Per lb
+2026-11-16,Northwest,Drumsticks,Antibiotic Free,Fresh,1.89,1.89,1.89,41,Per lb
+2026-11-16,Northwest,Drumsticks,Conventional,Fresh,1.49,1.49,1.49,2,Per lb
+2026-11-16,Northwest,Drumsticks,Conventional,Fresh,1.64,1.59,1.79,134,Per lb
+2026-11-16,Northwest,Fried/Baked Breast Tenders,Conventional,Prepared,6.99,6.99,6.99,11,Per lb
+2026-11-16,Northwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.99,8.99,8.99,25,Each
+2026-11-16,Northwest,Thighs,Antibiotic Free,Fresh,2.49,2.49,2.49,76,Per lb
+2026-11-16,Northwest,Thighs,Conventional,Fresh,1.49,1.49,1.49,2,Per lb
+2026-11-16,Northwest,Thighs,Conventional,Fresh,1.78,1.77,1.79,34,Per lb
+2026-11-16,Northwest,"Thighs, Boneless/Skinless",Conventional,Fresh,3.49,3.49,3.49,22,Per lb
+2026-11-16,Northwest,V-Cut Wings,Antibiotic Free,Fresh,2.99,2.99,2.99,11,Per lb
+2026-11-16,Northwest,Whole Bagged Fryer,"ABF, Free Range",Fresh,1.49,1.49,1.49,11,Per lb
+2026-11-16,Northwest,Whole Bagged Fryer,"ABF, Pasture Raised",Fresh,3.99,3.99,3.99,4,Per lb
+2026-11-16,Northwest,Whole Bagged Fryer,Antibiotic Free,Fresh,1.63,1.59,1.99,111,Per lb
+2026-11-16,Northwest,Whole Bagged Fryer,Conventional,Fresh,1.49,1.49,1.49,76,Per lb
+2026-11-16,Northwest,Whole Bagged Fryer,USDA Organic,Fresh,4.59,4.59,4.59,1,Per lb
+2026-11-16,Northwest,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,9.99,9.99,9.99,58,Each
+2026-11-16,Southcentral,Breast Tenders,Antibiotic Free,Fresh,6.38,5.99,7.99,51,Per lb
+2026-11-16,Southcentral,Breast Tenders,Conventional,Fresh,1.88,1.88,1.88,25,Per lb
+2026-11-16,Southcentral,Breast Tenders,Conventional,Fresh,1.97,1.97,1.97,52,Per lb
+2026-11-16,Southcentral,"Breast Tenders, IQF",Conventional,Frozen,4.12,3.19,4.4,79,Per lb
+2026-11-16,Southcentral,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.44,3.99,7.1,96,Per lb
+2026-11-16,Southcentral,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.2,3.99,5.99,104,Per lb
+2026-11-16,Southcentral,"Breast, Boneless/Skinless",Conventional,Fresh,1.92,0.98,3.99,363,Per lb
+2026-11-16,Southcentral,"Breast, Boneless/Skinless",Conventional,Fresh,2.88,1.97,3.48,328,Per lb
+2026-11-16,Southcentral,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.19,1.99,4.4,140,Per lb
+2026-11-16,Southcentral,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,4.49,4.49,4.49,6,Per lb
+2026-11-16,Southcentral,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,2.99,2.99,2.99,29,Per lb
+2026-11-16,Southcentral,Drumsticks,Conventional,Fresh,0.99,0.99,0.99,29,Per lb
+2026-11-16,Southcentral,Drumsticks,Conventional,Fresh,1.32,0.49,1.49,388,Per lb
+2026-11-16,Southcentral,Drumsticks,Conventional,Fresh,1.35,0.97,1.79,118,Per lb
+2026-11-16,Southcentral,Fried/Baked Breast Tenders,Conventional,Prepared,7.0,6.99,7.97,172,Per lb
+2026-11-16,Southcentral,Fried/Baked Breast Tenders,Conventional,Prepared,12.0,12.0,12.0,6,Each
+2026-11-16,Southcentral,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.32,6.99,7.99,92,Each
+2026-11-16,Southcentral,"Fried/Baked Chicken, Mixed",Conventional,Prepared,9.83,8.99,11.99,163,Each
+2026-11-16,Southcentral,"Fried/Baked Wings, Bone-In",Conventional,Prepared,7.56,4.49,8.99,91,Per lb
+2026-11-16,Southcentral,Gizzards,Conventional,Fresh,1.69,1.69,1.69,29,Per lb
+2026-11-16,Southcentral,Ground Chicken,Antibiotic Free,Fresh,2.99,2.99,2.99,18,Per lb
+2026-11-16,Southcentral,Hearts,Conventional,Fresh,1.69,1.69,1.69,29,Per lb
+2026-11-16,Southcentral,Leg Quarters,Antibiotic Free,Fresh,1.49,1.49,1.49,2,Per lb
+2026-11-16,Southcentral,Leg Quarters,Conventional,Fresh,0.69,0.59,0.99,120,Per lb
+2026-11-16,Southcentral,Leg Quarters,Conventional,Fresh,1.69,1.69,1.69,2,Per lb
+2026-11-16,Southcentral,"Leg Quarters, Marinated",Conventional,Fresh,1.29,1.29,1.29,29,Per lb
+2026-11-16,Southcentral,Legs,Conventional,Fresh,1.49,1.49,1.49,30,Per lb
+2026-11-16,Southcentral,Liver,Conventional,Frozen,1.49,1.49,1.49,62,Per lb
+2026-11-16,Southcentral,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,3.99,3.99,3.99,25,Per lb
+2026-11-16,Southcentral,"Party Wings, Flats and Drums",Conventional,Fresh,2.45,1.69,3.2,56,Per lb
+2026-11-16,Southcentral,"Party Wings, Flats and Drums",Conventional,Fresh,2.44,1.77,3.49,63,Per lb
+2026-11-16,Southcentral,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.32,2.8,3.66,114,Per lb
+2026-11-16,Southcentral,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,5.89,4.99,6.57,91,Per lb
+2026-11-16,Southcentral,Self-Service Deli Chicken Tub/Pouch,Conventional,Prepared,6.82,5.32,7.98,132,Per lb
+2026-11-16,Southcentral,Service Deli - Cat 1,Conventional,Prepared,10.29,8.99,10.99,70,Per lb
+2026-11-16,Southcentral,"Split Breast, Bone-In",Conventional,Fresh,2.36,1.99,2.39,38,Per lb
+2026-11-16,Southcentral,Thighs,Antibiotic Free,Fresh,1.88,1.88,1.88,41,Per lb
+2026-11-16,Southcentral,Thighs,Conventional,Fresh,1.37,1.29,1.49,363,Per lb
+2026-11-16,Southcentral,Thighs,Conventional,Fresh,1.56,1.48,1.79,39,Per lb
+2026-11-16,Southcentral,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,2.99,2.99,2.99,18,Per lb
+2026-11-16,Southcentral,"Thighs, Boneless/Skinless",Conventional,Frozen,3.19,3.19,3.19,18,Per lb
+2026-11-16,Southcentral,"Thighs, Boneless/Skinless",Conventional,Fresh,2.55,1.58,2.99,136,Per lb
+2026-11-16,Southcentral,V-Cut Wings,Conventional,Fresh,1.84,1.77,1.99,88,Per lb
+2026-11-16,Southcentral,Whole Bagged Fryer,"ABF, Pasture Raised",Fresh,3.99,3.99,3.99,126,Per lb
+2026-11-16,Southcentral,Whole Bagged Fryer,Antibiotic Free,Fresh,2.32,1.49,2.48,180,Per lb
+2026-11-16,Southcentral,Whole Bagged Fryer,Conventional,Frozen,1.02,0.88,1.59,149,Per lb
+2026-11-16,Southcentral,Whole Baking Hen,Conventional,Fresh,1.66,0.99,1.97,169,Per lb
+2026-11-16,Southcentral,Whole Cornish Hen,Antibiotic Free,Frozen,3.63,3.63,3.63,12,Per lb
+2026-11-16,Southcentral,Whole Cornish Hen,Conventional,Frozen,4.18,3.63,4.8,116,Per lb
+2026-11-16,Southcentral,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,8.65,7.99,8.99,90,Each
+2026-11-16,Southeast,Breast Tenders,Antibiotic Free,Fresh,2.86,2.49,5.99,19,Per lb
+2026-11-16,Southeast,Breast Tenders,Conventional,Fresh,4.99,4.99,4.99,59,Per lb
+2026-11-16,Southeast,Breast Tenders,Conventional,Fresh,2.8,1.99,2.99,172,Per lb
+2026-11-16,Southeast,"Breast Tenders, IQF",Conventional,Frozen,4.4,4.4,4.4,175,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,4.45,2.49,4.49,1480,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,3.99,3.99,3.99,29,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless",Conventional,Fresh,2.04,1.99,2.99,63,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless",Conventional,Fresh,2.56,1.79,2.98,315,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless",Kosher,Fresh,10.99,10.99,10.99,58,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless, IQF",Conventional,Frozen,3.2,1.99,4.4,350,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,5.99,5.99,5.99,2,Per lb
+2026-11-16,Southeast,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,2.87,2.49,4.99,20,Per lb
+2026-11-16,Southeast,Drumsticks,Antibiotic Free,Fresh,2.48,2.29,2.49,61,Per lb
+2026-11-16,Southeast,Drumsticks,Conventional,Fresh,1.37,0.99,1.49,135,Per lb
+2026-11-16,Southeast,Drumsticks,Conventional,Fresh,1.22,1.18,1.58,19,Per lb
+2026-11-16,Southeast,Fried/Baked Breast Tenders,Conventional,Prepared,8.99,8.99,8.99,140,Per lb
+2026-11-16,Southeast,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.78,6.99,7.99,73,Each
+2026-11-16,Southeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.04,7.99,9.99,1132,Each
+2026-11-16,Southeast,"Fried/Baked Chicken, Mixed",Conventional,Prepared,1.06,0.99,1.12,2,Each
+2026-11-16,Southeast,Gizzards,Conventional,Frozen,1.49,1.49,1.49,14,Per lb
+2026-11-16,Southeast,Ground Chicken,Antibiotic Free,Fresh,4.26,2.99,4.5,279,Per lb
+2026-11-16,Southeast,Leg Quarters,Antibiotic Free,Fresh,0.99,0.99,0.99,3,Per lb
+2026-11-16,Southeast,Leg Quarters,Conventional,Fresh,0.59,0.59,0.59,39,Per lb
+2026-11-16,Southeast,Leg Quarters,Conventional,Fresh,1.29,1.29,1.29,59,Per lb
+2026-11-16,Southeast,Liver,Conventional,Frozen,1.49,1.49,1.49,14,Per lb
+2026-11-16,Southeast,"Party Wings, Flats and Drums",Antibiotic Free,Fresh,3.99,3.99,3.99,32,Per lb
+2026-11-16,Southeast,"Party Wings, Flats and Drums",Conventional,Fresh,3.47,1.77,3.49,184,Per lb
+2026-11-16,Southeast,"Party Wings, Flats and Drums, IQF",Conventional,Frozen,3.34,1.36,3.66,203,Per lb
+2026-11-16,Southeast,Service Deli - Cat 1,Conventional,Prepared,10.99,10.99,10.99,17,Per lb
+2026-11-16,Southeast,Service Deli - Cat 2,Conventional,Prepared,7.99,7.99,7.99,59,Per lb
+2026-11-16,Southeast,"Split Breast, Bone-In",Antibiotic Free,Fresh,2.31,2.29,2.49,40,Per lb
+2026-11-16,Southeast,Thighs,Antibiotic Free,Fresh,2.99,2.99,2.99,37,Per lb
+2026-11-16,Southeast,Thighs,Conventional,Fresh,1.83,1.49,2.49,178,Per lb
+2026-11-16,Southeast,"Thighs, Boneless/Skinless",Antibiotic Free,Fresh,3.2,2.99,3.49,77,Per lb
+2026-11-16,Southeast,"Thighs, Boneless/Skinless",Conventional,Fresh,1.58,1.58,1.58,2,Per lb
+2026-11-16,Southeast,V-Cut Wings,Antibiotic Free,Fresh,3.99,3.99,3.99,3,Per lb
+2026-11-16,Southeast,V-Cut Wings,Conventional,Fresh,2.99,2.99,2.99,302,Per lb
+2026-11-16,Southeast,"V-Cut Wings, IQF",Conventional,Frozen,1.99,1.99,1.99,1,Per lb
+2026-11-16,Southeast,Whole Bagged Fryer,"ABF, Pasture Raised",Fresh,3.99,3.99,3.99,103,Per lb
+2026-11-16,Southeast,Whole Bagged Fryer,Antibiotic Free,Fresh,1.86,1.58,2.49,311,Per lb
+2026-11-16,Southeast,Whole Bagged Fryer,Conventional,Fresh,1.66,1.29,1.99,63,Per lb
+2026-11-16,Southeast,Whole Baking Hen,Conventional,Fresh,1.42,0.98,1.99,322,Per lb
+2026-11-16,Southeast,Whole Cornish Hen,Antibiotic Free,Frozen,3.63,3.63,3.63,182,Per lb
+2026-11-16,Southeast,Whole Cornish Hen,Conventional,Frozen,3.2,3.2,3.2,1426,Per lb
+2026-11-16,Southeast,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,7.76,5.0,8.99,2683,Each
+2026-11-16,Southwest,Breast Tenders,Antibiotic Free,Fresh,7.22,6.99,7.99,154,Per lb
+2026-11-16,Southwest,Breast Tenders,Conventional,Fresh,4.0,4.0,4.0,169,Per lb
+2026-11-16,Southwest,Breast Tenders,Conventional,Fresh,2.5,2.5,2.5,169,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless","ABF, Free Range",Fresh,6.99,6.99,6.99,17,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,6.99,6.99,6.99,118,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless",Antibiotic Free,Fresh,5.62,4.99,5.99,288,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless",Conventional,Fresh,3.01,2.49,3.99,128,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless",Conventional,Fresh,2.21,1.99,2.49,167,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless","USDA Organic, Free Range",Fresh,8.99,8.99,8.99,17,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless, Thin-Sliced",Antibiotic Free,Fresh,6.99,6.99,6.99,118,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,3.86,3.49,4.0,233,Per lb
+2026-11-16,Southwest,"Breast, Boneless/Skinless, Thin-Sliced",Conventional,Fresh,2.5,2.5,2.5,169,Per lb
+2026-11-16,Southwest,Drumsticks,Conventional,Fresh,1.41,0.99,1.79,238,Per lb
+2026-11-16,Southwest,Drumsticks,Conventional,Frozen,1.29,1.29,1.29,45,Per lb
+2026-11-16,Southwest,Fried/Baked Breast Tenders,Conventional,Prepared,7.97,7.97,7.97,51,Per lb
+2026-11-16,Southwest,"Fried/Baked Chicken, Dark",Conventional,Prepared,7.44,7.44,7.44,89,Each
+2026-11-16,Southwest,"Fried/Baked Chicken, Mixed",Conventional,Prepared,8.99,8.99,8.99,98,Each
+2026-11-16,Southwest,"Fried/Baked Wings, Bone-In",Conventional,Prepared,7.01,4.99,8.99,131,Per lb
+2026-11-16,Southwest,Ground Chicken,"USDA Organic, Free Range",Fresh,6.99,6.99,6.99,17,Per lb
+2026-11-16,Southwest,"Leg Meat, Boneless/Skinless",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-16,Southwest,"Leg Meat, Boneless/Skinless",Conventional,Fresh,2.48,2.48,2.48,45,Per lb
+2026-11-16,Southwest,"Leg Meat, Boneless/Skinless, Marinated",Conventional,Fresh,3.29,3.29,3.29,64,Per lb
+2026-11-16,Southwest,Leg Quarters,Conventional,Fresh,0.77,0.77,0.79,79,Per lb
+2026-11-16,Southwest,Leg Quarters,Conventional,Fresh,1.69,1.69,1.69,51,Per lb
+2026-11-16,Southwest,Legs,"ABF, Free Range",Fresh,4.49,4.49,4.49,12,Per lb
+2026-11-16,Southwest,"Party Wings, Flats and Drums","USDA Organic, Free Range",Fresh,4.99,4.99,4.99,17,Per lb
+2026-11-16,Southwest,"Split Breast, Bone-In",Conventional,Fresh,2.49,2.49,2.49,64,Per lb
+2026-11-16,Southwest,"Split Breast, Bone-In",Conventional,Fresh,1.99,1.99,1.99,140,Per lb
+2026-11-16,Southwest,Thighs,Conventional,Fresh,1.56,1.49,1.79,173,Per lb
+2026-11-16,Southwest,Thighs,Conventional,Frozen,1.29,1.29,1.29,45,Per lb
+2026-11-16,Southwest,Thighs,USDA Organic,Fresh,5.49,5.49,5.49,17,Per lb
+2026-11-16,Southwest,"Thighs, Boneless/Skinless",Conventional,Fresh,2.24,1.97,3.49,62,Per lb
+2026-11-16,Southwest,V-Cut Wings,Conventional,Fresh,4.0,4.0,4.0,169,Per lb
+2026-11-16,Southwest,V-Cut Wings,Conventional,Fresh,2.5,2.5,2.5,169,Per lb
+2026-11-16,Southwest,Whole Bagged Fryer,"ABF, Pasture Raised",Fresh,3.99,3.99,3.99,228,Per lb
+2026-11-16,Southwest,Whole Bagged Fryer,Antibiotic Free,Fresh,1.92,1.59,1.99,162,Per lb
+2026-11-16,Southwest,Whole Bagged Fryer,Conventional,Fresh,0.99,0.99,0.99,89,Per lb
+2026-11-16,Southwest,Whole Bagged Fryer,USDA Organic,Fresh,4.59,4.59,4.59,14,Per lb
+2026-11-16,Southwest,Whole Bagged Roaster,Conventional,Fresh,2.29,2.29,2.29,74,Per lb
+2026-11-16,Southwest,"Whole Rotisserie Chicken, < 2 Lbs",Conventional,Prepared,8.63,7.99,8.99,140,Each
